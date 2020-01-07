@@ -1,0 +1,23 @@
+ MySQL  localhost+ ssl  world_x  JS > db.countryinfo.find('_id like 
+:param').limit(1).bind('param', 'HT%')
+{
+    "GNP": 3459,
+    "_id": "HTI",
+    "Name": "Haiti",
+    "IndepYear": 1804,
+    "geography": {
+        "Region": "Caribbean",
+        "Continent": "North America",
+        "SurfaceArea": 27750
+    },
+    "government": {
+        "HeadOfState": "Jean-Bertrand Aristide",
+        "GovernmentForm": "Republic"
+    },
+    "demographics": {
+        "Population": 8222000,
+        "LifeExpectancy": 49.20000076293945
+    }
+}
+1 document in set (0.0010 sec)
+

@@ -48,7 +48,7 @@ https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-commands.html
 . lancer le CLI (Command Level Interface) de MySQL Shell
 
 
-[Creation de l'utilisateur etudiant](MySQL.md#one-tous-les-ip)
+[Creation de l'utilisateur etudiant](https://github.com/CollegeBoreal/Tutoriels/tree/master/B.BD/MySQL.md#one-tous-les-ip)
 
 ```
 # mysqlsh --mysqlx --host localhost --user etudiants --password

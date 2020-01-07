@@ -1,5 +1,5 @@
-
- MySQL  localhost+ ssl  world_x  JS > db.countryinfo.find('_id like :param').limit(1).bind('param', 'HT%')
+```
+> db.countryinfo.find('_id like :param').limit(1).bind('param', 'HT%')
 {
     "GNP": 3459,
     "_id": "HTI",
@@ -21,4 +21,4 @@
 }
 1 document in set (0.0010 sec)
 
-
+```

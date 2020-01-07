@@ -2,7 +2,7 @@
 
 *** Taches ***
 
-:a: Écrire un fichier de commande SQL permettant de créer votre domain dans un base de données MySQL
+:a: Consulter un Document Store
 
 
    :zero: Créer un répertoire avec votre :id: permettant de mettre deux fichiers ci-dessous

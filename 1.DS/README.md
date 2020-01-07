@@ -7,7 +7,7 @@
 
    :zero: Créer un répertoire avec votre :id: permettant de mettre deux fichiers ci-dessous
    
-   :one: Éxécuter les instruction [MySQLDS](MySQLDS.ms)
+   :one: Éxécuter les instruction [MySQLDS](MySQLDS.md)
    
 
 # [Participation](Participation.md)

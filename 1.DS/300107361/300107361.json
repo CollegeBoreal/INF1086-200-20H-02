@@ -1,5 +1,4 @@
-
-> db.countryinfo.find('_id like :param').limit(1).bind('param', 'HT%')
+```
 {
     "GNP": 3459,
     "_id": "HTI",
@@ -19,6 +18,6 @@
         "LifeExpectancy": 49.20000076293945
     }
 }
-1 document in set (0.0010 sec)
 
+```
 

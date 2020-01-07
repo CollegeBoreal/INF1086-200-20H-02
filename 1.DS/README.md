@@ -9,7 +9,9 @@
    
    :one: Éxécuter les instruction [MySQLDS](MySQLDS.md)
    
-   :two: Ajouter d'autres données
+   :two: Faire une requete permettant l'extration de données
+   
+   :three: Mettre les données extraites dans un fichier `:id:.json`
    
 
 # [Participation](Participation.md)

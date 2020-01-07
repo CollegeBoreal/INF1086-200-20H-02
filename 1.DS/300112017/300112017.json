@@ -1,0 +1,19 @@
+{
+    "GNP": 903,
+    "_id": "BDI",
+    "Name": "Burundi",
+    "IndepYear": 1962,
+    "geography": {
+        "Region": "Eastern Africa",
+        "Continent": "Africa",
+        "SurfaceArea": 27834
+    },
+    "government": {
+        "HeadOfState": "Pierre Buyoya",
+        "GovernmentForm": "Republic"
+    },
+    "demographics": {
+        "Population": 6695000,
+        "LifeExpectancy": 46.20000076293945
+    }
+}

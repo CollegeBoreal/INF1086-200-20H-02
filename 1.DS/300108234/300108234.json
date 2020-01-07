@@ -1,0 +1,19 @@
+{
+    "GNP": 36124,
+    "_id": "MAR",
+    "Name": "Morocco",
+    "IndepYear": 1956,
+    "geography": {
+        "Region": "Northern Africa",
+        "Continent": "Africa",
+        "SurfaceArea": 446550
+    },
+    "government": {
+        "HeadOfState": "Mohammed VI",
+        "GovernmentForm": "Constitutional Monarchy"
+    },
+    "demographics": {
+        "Population": 28351000,
+        "LifeExpectancy": 69.0999984741211
+    }
+}

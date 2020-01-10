@@ -31,8 +31,10 @@ $ docker container exec --interactive --tty some-mysqlds bash
 * Créer la base de données `world_x`
 
 ```
-$ docker container exec --interactive some-mysqlds mysql \
-                        --user root -ppassword --execute 'CREATE DATABASE world_x;'
+$ docker container exec --interactive some-mysqlds \
+         sh -c ' \
+           exec mysql --user root -p"$MYSQL_ROOT_PASSWORD" --execute "CREATE DATABASE world_x;" \
+         '
 ```
 
 * Charger la base de données

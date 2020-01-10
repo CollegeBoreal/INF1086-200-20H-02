@@ -1,0 +1,19 @@
+{
+    "GNP": 903,
+    "_id": "RDC",
+    "Name": "Republic Democratic of Congo",
+    "IndepYear": 1960,
+    "geography": {
+        "Region": "Central Africa",
+        "Continent": "Africa",
+        "SurfaceArea": 2345409
+    },
+    "government": {
+        "HeadOfState": "Félix Tshisekedi",
+        "GovernmentForm": "Republic"
+    },
+    "demographics": {
+        "Population": 81,34 millions,
+        "LifeExpectancy": 59,62 years
+    }
+}

@@ -1,5 +1,5 @@
 
-## :pushpin: Requette:
+## :pushpin: Requettes:
 
  ### :one: R1: Afficher les informations du pays "Maroc" :
 

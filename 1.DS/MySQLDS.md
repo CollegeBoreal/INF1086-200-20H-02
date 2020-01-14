@@ -16,12 +16,6 @@ $ docker container run \
          mysql/mysql-server:latest
 ```
 
-* Accéder au conteneur
-
-```
-$ docker container exec --interactive --tty some-mysqlds bash
-```
-
 ### Charger les données dans la base `world_x`
 
 * Recupérer le fichier SQL

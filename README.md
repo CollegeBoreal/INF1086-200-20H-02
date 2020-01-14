@@ -5,6 +5,8 @@ Administration de base de données
 
 | Date   |                     |     Commentaires                                                                         |
 |:------:|:--------------------|:-----------------------------------------------------------------------------------------|
+|14-01-20| [DS](./1.DS)        | MySQL Document Store                                                                     |
+
 
 
 ## Déroulement de cours:

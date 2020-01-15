@@ -1,22 +1,20 @@
+
 {
-    "GNP": 137635,
-    "_id": "SAU",
-    "Name": "Saudi Arabia",
-    "IndepYear": 1932,
+    "GNP": 4787,
+    "_id": "SEN",
+    "Name": "Senegal",
+    "IndepYear": 1960,
     "geography": {
-        "Region": "Middle East",
-        "Continent": "Asia",
-        "SurfaceArea": 2149690
+        "Region": "Western Africa",
+        "Continent": "Africa",
+        "SurfaceArea": 196722
     },
     "government": {
-        "HeadOfState": "Fahd ibn Abdul-Aziz al-Sa´ud",
-        "GovernmentForm": "Monarchy"
+        "HeadOfState": "Abdoulaye Wade",
+        "GovernmentForm": "Republic"
     },
     "demographics": {
-        "Population": 21607000,
-        "LifeExpectancy": 67.80000305175781
+        "Population": 9481000,
+        "LifeExpectancy": 62.20000076293945
     }
 }
-
-
-.

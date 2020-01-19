@@ -1,0 +1,21 @@
+
+
+
+
+"GNP": 2357,
+    "_id": "BEN",
+    "Name": "Benin",
+    "IndepYear": 1960,
+    "geography": {
+        "Region": "Western Africa",
+        "Continent": "Africa",
+        "SurfaceArea": 112622
+    },
+    "government": {
+        "HeadOfState": "Mathieu Kérékou",
+        "GovernmentForm": "Republic"
+    },
+    "demographics": {
+        "Population": 6097000,
+        "LifeExpectancy": 50.20000076293945
+    }

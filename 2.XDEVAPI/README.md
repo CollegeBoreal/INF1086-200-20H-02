@@ -10,5 +10,6 @@ https://dev.mysql.com/doc/x-devapi-userguide/en/working-with-collections-basic-c
 
 
 ```
-$ docker container exec --interactive --tty some-mysqlds mysqlsh --mysqlx --host localhost --user etudiants -petudiants_1
+$ docker container exec --interactive --tty some-mysqlds \
+                   mysqlsh --mysqlx --host localhost --user etudiants -petudiants_1
 ```

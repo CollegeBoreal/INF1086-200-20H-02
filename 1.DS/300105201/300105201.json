@@ -1,0 +1,19 @@
+{
+    "GNP": 6871,
+    "_id": "JAM",
+    "Name": "Jamaica",
+    "IndepYear": 1962,
+    "geography": {
+        "Region": "Caribbean",
+        "Continent": "North America",
+        "SurfaceArea": 10990
+    },
+    "government": {
+        "HeadOfState": "Elisabeth II",
+        "GovernmentForm": "Constitutional Monarchy"
+    },
+    "demographics": {
+        "Population": 2583000,
+        "LifeExpectancy": 75.19999694824219
+    }
+}

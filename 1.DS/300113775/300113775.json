@@ -1,1 +1,20 @@
 
+{
+    "GNP": 3459,
+    "_id": "HTI",
+    "Name": "Haiti",
+    "IndepYear": 1804,
+    "geography": {
+        "Region": "Caribbean",
+        "Continent": "North America",
+        "SurfaceArea": 27750
+    },
+    "government": {
+        "HeadOfState": "Jean-Bertrand Aristide",
+        "GovernmentForm": "Republic"
+    },
+    "demographics": {
+        "Population": 8222000,
+        "LifeExpectancy": 49.20000076293945
+    }
+}

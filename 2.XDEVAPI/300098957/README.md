@@ -39,7 +39,8 @@ WARNING: Using a password on the command line interface can be insecure.
 ```
 $ docker container exec --interactive some-mysqlds mysqlsh --mysqlx \
                         --host localhost --user etudiants -petudiants_1 \
-                   < ~/Developer/INF1086-200-20H-02/2.XDEVAPI/300098957/b300098957.sh 1> b300098957.sh.json 2>/dev/null
+                   < ~/Developer/INF1086-200-20H-02/2.XDEVAPI/300098957/b300098957.sh \
+                   1> b300098957.sh.json 2>/dev/null
 ```
 
 :pushpin: Utilisation de `MySQL Python`
@@ -47,6 +48,7 @@ $ docker container exec --interactive some-mysqlds mysqlsh --mysqlx \
 ```
 $ docker container exec --interactive some-mysqlds mysqlsh --py \
                         --host localhost --user etudiants -petudiants_1 \
-                   < ~/Developer/INF1086-200-20H-02/2.XDEVAPI/300098957/b300098957.py 1> b300098957.py.json 2>/dev/null
+                   < ~/Developer/INF1086-200-20H-02/2.XDEVAPI/300098957/b300098957.py \
+                   1> b300098957.py.json 2>/dev/null
 ```
 

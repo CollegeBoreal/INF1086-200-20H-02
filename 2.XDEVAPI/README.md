@@ -4,7 +4,7 @@
 https://dev.mysql.com/doc/x-devapi-userguide/en/
 
 
-## [CRUD](https://fr.wikipedia.org/wiki/CRUD) Operations
+## :o: [CRUD](https://fr.wikipedia.org/wiki/CRUD) Operations
 
 https://dev.mysql.com/doc/x-devapi-userguide/en/working-with-collections-basic-crud.html
 

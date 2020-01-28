@@ -16,7 +16,7 @@ https://dev.mysql.com/doc/x-devapi-userguide/en/working-with-collections-basic-c
 
    :zero: Créer un répertoire avec votre :id: permettant de mettre deux fichiers ci-dessous
    
-   :one: Éxécuter les instruction [MySQLDS](../1.DS/docs/MySQLDS.md)
+   :one: Inspirer vous des instructions [MySQLDS](../1.DS/.docs/MySQLDS.md) pour créer votre Document Store
    
    :two: Faire une requete permettant l'extration de données
    

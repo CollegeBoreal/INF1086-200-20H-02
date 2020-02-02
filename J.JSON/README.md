@@ -2,7 +2,7 @@
 
 
 
-# Tools JQ
+## Tools JQ
 
 :o: Install JQ
 
@@ -19,7 +19,6 @@ PS > choco install jq
 ```
 
 
-
 ```
 % curl 'https://api.github.com/users/collegeboreal' | jq '. | { nom: .login, lieu: .location}'
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -31,3 +30,30 @@ PS > choco install jq
 }
 ```
 
+## Powershell JSON
+
+
+```
+PS C:\> $x = [XML]"<banana><stem>brown</stem><peel>yellow</peel><flesh>white</flesh></banana>"
+PS C:\> $x.banana.peel
+yellow
+```
+
+```
+PS C:\> $x = ConvertFrom-Json -InputObject '[{"banana" : {"stem" : "brown", "peel" : "yellow", "flesh" : "white"}}]'
+PS C:\> $x.banana.peel
+yellow
+```
+
+
+
+```
+PS C:\> $x = New-Object PSObject -Property @{banana = New-Object PSObject -Property @{stem = "brown"; peel = "yellow"; flesh = "white"}}
+PS C:\> $x.banana.peel
+yellow
+```
+
+```
+PS C:\> $x = @{banana = @{stem = "brown"; peel = "yellow"; flesh = "white"}}
+PS C:\> $x.banana.peel
+```

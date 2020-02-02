@@ -49,6 +49,13 @@ yellow
 
 ```
 PS C:\> $x = New-Object PSObject -Property @{banana = New-Object PSObject -Property @{stem = "brown"; peel = "yellow"; flesh = "white"}}
+PS C:\> $x = New-Object PSObject -Property `
+                     @{ `
+                        banana = New-Object PSObject -Property `
+                           @{ `
+                               stem = "brown"; peel = "yellow"; flesh = "white"
+                           }
+                      }
 PS C:\> $x.banana.peel
 yellow
 ```

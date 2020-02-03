@@ -10,17 +10,14 @@ from mysqlsh import mysqlx
 
 # Connect to server
 def connect():
-  session = mysqlx.get_session( {
-  'host': 'localhost', 'port': 33060,
-  'user': 'etudiants', 'password': 'etudiants_1'} )
-  return session
+  return mysqlx.get_session( { 'host': 'localhost', 'port': 33060, 'user': 'etudiants', 'password': 'etudiants_1'} )
 
 # Connect to DB
 def dbConnect(session, myDb):
   return session.get_schema(myDb)
 
 # Create a new collection
-def dbCollection(myDb, myCollection):
+def dbCreateCollection(myDb, myCollection):
   return myDb.create_collection(myCollection)
 
 # Insert documents
@@ -37,20 +34,27 @@ def dbFind(myColl):
             .bind('param2',20) \
             .execute()
 
+# Drop the collection
+def dbDropCollection(myDb, myCollection):
+  return myDb.drop_collection(myCollection)
+
 # Program
 def run(myDb, myCollection):
-  db = dbConnect(connect(), myDB)
-  col = dbCollection(db, myCollection)
+  session = connect()
+  db = dbConnect(session, myDb)
+  col = dbCreateCollection(db, myCollection)
   dbCRUD(col)
-  dbFind(col)
+  docs = dbFind(col)
   # Print document
   doc = docs.fetch_one()
   print(doc)
-  # Drop the collection
-  myDb.drop_collection(myCollection)
+  dbDropCollection(db, myCollection)
 
 # Program
-main():
-  myDB = 'world_x'
+def main():
+  myDb = 'world_x'
   myCollection = 'my_collection'
   run(myDb, myCollection)
+
+if __name__== "__main__":
+  main()

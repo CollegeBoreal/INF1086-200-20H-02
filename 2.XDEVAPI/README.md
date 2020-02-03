@@ -22,9 +22,3 @@ https://dev.mysql.com/doc/x-devapi-userguide/en/working-with-collections-basic-c
    
    :three: Mettre les données extraites dans les fichiers :id:`py.json` ou :id:`js.json`
    
-
-
-```
-$ docker container exec --interactive --tty some-mysqlds \
-                   mysqlsh --mysqlx --host localhost --user etudiants -petudiants_1
-```

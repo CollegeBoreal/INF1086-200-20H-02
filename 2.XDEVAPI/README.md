@@ -18,9 +18,9 @@ https://dev.mysql.com/doc/x-devapi-userguide/en/working-with-collections-basic-c
    
    :one: Inspirer vous des instructions [modele](.modele) pour créer votre Document Store
    
-   :two: Faire une requete permettant l'extration de données
+   :two: Créer votre programme en JavaScript et en Python pour générer votre collection ainsi que les opérations [CRUD](https://fr.wikipedia.org/wiki/CRUD) se rapportan à votre domaine
    
-   :three: Mettre les données extraites dans un fichier :id:`.json`
+   :three: Mettre les données extraites dans les fichiers :id:`py.json` ou :id:`js.json`
    
 
 

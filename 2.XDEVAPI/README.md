@@ -16,7 +16,7 @@ https://dev.mysql.com/doc/x-devapi-userguide/en/working-with-collections-basic-c
 
    :zero: Créer un répertoire avec votre :id: permettant de mettre deux fichiers ci-dessous
    
-   :one: Inspirer vous des instructions [modele](.modele) pour créer votre Document Store
+   :one: Inspirer vous des instructions du [modèle](.modele) pour créer votre Document Store
    
    :two: Créer votre programme en JavaScript et en Python pour générer votre collection ainsi que les opérations [CRUD](https://fr.wikipedia.org/wiki/CRUD) se rapportan à votre domaine
    

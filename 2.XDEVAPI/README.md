@@ -22,3 +22,6 @@ https://dev.mysql.com/doc/x-devapi-userguide/en/working-with-collections-basic-c
    
    :three: Mettre les données extraites dans les fichiers :id:`py.json` ou :id:`js.json`
    
+
+# [Participation](.scripts/Participation.md)
+   

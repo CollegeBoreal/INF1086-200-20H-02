@@ -26,7 +26,7 @@ $ docker container run \
 
 ```
 $ docker container exec --interactive some-mysqlds sh -c \
-          ' exec mysql --user root -p"$MYSQL_ROOT_PASSWORD" --execute "CREATE DATABASE world_x;" '
+          ' exec mysql --user root -ppassword --execute "CREATE DATABASE world_x;" '
 ```
 
 * Charger la base de données

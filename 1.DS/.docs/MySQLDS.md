@@ -33,7 +33,7 @@ $ docker container exec --interactive some-mysqlds sh -c \
 
 ```
 $ docker container exec --interactive some-mysqlds sh -c \
-          ' exec mysql --user root -p"$MYSQL_ROOT_PASSWORD" world_x ' \
+          ' exec mysql --user root -ppassword world_x ' \
            < ~/Downloads/world_x-db/world_x.sql
 ```
 

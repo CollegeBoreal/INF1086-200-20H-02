@@ -26,14 +26,14 @@ $ docker container run \
 
 ```
 $ docker container exec --interactive some-mysqlds sh -c \
-          ' exec mysql --user root -p"$MYSQL_ROOT_PASSWORD" --execute "CREATE DATABASE world_x;" '
+          ' exec mysql --user root -ppassword --execute "CREATE DATABASE world_x;" '
 ```
 
 * Charger la base de données
 
 ```
 $ docker container exec --interactive some-mysqlds sh -c \
-          ' exec mysql --user root -p"$MYSQL_ROOT_PASSWORD" world_x ' \
+          ' exec mysql --user root -ppassword world_x ' \
            < ~/Downloads/world_x-db/world_x.sql
 ```
 
@@ -48,7 +48,7 @@ https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-commands.html
 [Creation de l'utilisateur etudiant](https://github.com/CollegeBoreal/Tutoriels/tree/master/B.BD/MySQL.md#one-tous-les-ip)
 
 ```
-# mysqlsh --mysqlx --host localhost --user etudiants --password
+# mysqlsh --js --host localhost --user etudiants --password
 ```
 
 :bulb: socket access avec root

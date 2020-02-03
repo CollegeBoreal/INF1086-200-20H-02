@@ -48,7 +48,7 @@ https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-commands.html
 [Creation de l'utilisateur etudiant](https://github.com/CollegeBoreal/Tutoriels/tree/master/B.BD/MySQL.md#one-tous-les-ip)
 
 ```
-# mysqlsh --mysqlx --host localhost --user etudiants --password
+# mysqlsh --mysqlx --user etudiants --password
 ```
 
 :bulb: socket access avec root

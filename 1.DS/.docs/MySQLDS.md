@@ -4,7 +4,7 @@
 
 https://hub.docker.com/r/mysql/mysql-server/
 
-* Créer le conteneur
+## :a: Créer le conteneur (sans volume)
 
 ```
 $ docker container run \

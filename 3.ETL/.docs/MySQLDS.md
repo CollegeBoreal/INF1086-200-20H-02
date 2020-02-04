@@ -27,7 +27,7 @@ $ docker container run \
          mysql/mysql-server:latest
 ```
 
-:m: powershell
+:m: sous PowerShell
 
 
 ```

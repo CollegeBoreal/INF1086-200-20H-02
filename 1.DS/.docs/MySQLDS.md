@@ -16,6 +16,18 @@ $ docker container run \
          mysql/mysql-server:latest
 ```
 
+
+```
+$ docker container run \
+         --name some-mysqlds \
+         --env MYSQL_ROOT_PASSWORD=password \
+         --publish 3306:3306 \
+         --publish 33060:33060 \
+         --volume ${PWD}:/var/lib/mysql-files \
+         --detach \
+         mysql/mysql-server:latest
+```
+
 ### Charger les données dans la base `world_x`
 
 * Recupérer le fichier SQL

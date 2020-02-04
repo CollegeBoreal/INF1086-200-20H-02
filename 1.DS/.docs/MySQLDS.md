@@ -16,6 +16,7 @@ $ docker container run \
          mysql/mysql-server:latest
 ```
 
+* Créer le conteneur avec un volume
 
 ```
 $ docker container run \

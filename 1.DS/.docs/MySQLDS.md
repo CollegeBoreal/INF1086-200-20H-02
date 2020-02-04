@@ -145,4 +145,16 @@ https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-utilities-json.html
 
 ```
 MySQL JS> util.importJson("/var/lib/mysql-files/mp3.json", {schema: "world_x", collection: "mp3"})
+Importing from file "/var/lib/mysql-files/mp3.json" to collection `world_x`.`mp3` in MySQL Server at localhost:33060
+
+
+Processed 1.04 MB in 494 documents in 0.0193 sec (25.57K documents/s)
+Total successfully imported documents 0 (0.00 documents/s)
+Util.importJson: Input does not start with a JSON object at offset 1041012 (ArgumentError)
+```
+
+* use vi :goto offset command
+
+```
+:goto 1041012
 ```

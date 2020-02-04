@@ -8,6 +8,7 @@ $ echo ${PWD}
 /c/Users/300098957/Developer/INF1086-200-20H-02/3.ETL/300098957
 ```
 
+:warning: Remplacer '/c' pas 'C:'
 
 # :a: Créer le conteneur avec un volume
 

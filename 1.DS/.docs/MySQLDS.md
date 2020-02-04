@@ -175,6 +175,9 @@ Total successfully imported documents 3686 (4.85K documents/s)
 % cat mp3.json | jq '. | select (.format.tags.genre | contains("R&B")) | { "song": .format.filename, "title": .format.tags.title }'
 ```
 
+```
+% cat mp3.json | jq '. | select(.format.tags.genre !=null ) | select (.format.tags.genre | contains("R&B")) | { "song": .format.filename, "title": .format.tags.title }'
+```
 # References
 
 https://mysqlserverteam.com/import-json-to-mysql-made-easy-with-the-mysql-shell/

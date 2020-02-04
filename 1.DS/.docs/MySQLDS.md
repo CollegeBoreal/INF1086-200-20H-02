@@ -159,3 +159,12 @@ Util.importJson: Input does not start with a JSON object at offset 1041012 (Argu
 :goto 1041012
 [mjpeg @ 0000016b857b5340] No JPEG data found in image
 ```
+
+```
+MySQL JS>  util.importJson("/var/lib/mysql-files/mp3.json", {schema: "world_x", collection: "mp3"})
+Importing from file "/var/lib/mysql-files/mp3.json" to collection `world_x`.`mp3` in MySQL Server at localhost:33060
+
+.. 3686.. 3686
+Processed 8.20 MB in 3686 documents in 0.7606 sec (4.85K documents/s)
+Total successfully imported documents 3686 (4.85K documents/s)
+```

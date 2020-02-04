@@ -18,7 +18,7 @@ $ docker container run \
          --env MYSQL_ROOT_PASSWORD=password \
          --publish 3306:3306 \
          --publish 33060:33060 \
-         --volume C:/Users/300098957/Developer/INF1086-200-20H-02/3.ETL/300098957:/var/lib/mysql-files \
+         --volume C:\Users\300098957\Developer\INF1086-200-20H-02\3.ETL\300098957:/var/lib/mysql-files \
          --detach \
          mysql/mysql-server:latest
 ```

@@ -16,19 +16,6 @@ $ docker container run \
          mysql/mysql-server:latest
 ```
 
-* Créer le conteneur avec un volume
-
-```
-$ docker container run \
-         --name some-mysqlds \
-         --env MYSQL_ROOT_PASSWORD=password \
-         --publish 3306:3306 \
-         --publish 33060:33060 \
-         --volume ${PWD}:/var/lib/mysql-files \
-         --detach \
-         mysql/mysql-server:latest
-```
-
 ### Charger les données dans la base `world_x`
 
 * Recupérer le fichier SQL
@@ -139,6 +126,19 @@ Se connecter a une DB
 https://dev.mysql.com/doc/x-devapi-userguide/en/working-with-collections-basic-crud.html
 
 
+# :b: Créer le conteneur avec un volume
+
+```
+$ docker container run \
+         --name some-mysqlds \
+         --env MYSQL_ROOT_PASSWORD=password \
+         --publish 3306:3306 \
+         --publish 33060:33060 \
+         --volume ${PWD}:/var/lib/mysql-files \
+         --detach \
+         mysql/mysql-server:latest
+```
+
 ** Import d'un fichier dans une collection
 
 https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-utilities-json.html
@@ -168,3 +168,7 @@ Importing from file "/var/lib/mysql-files/mp3.json" to collection `world_x`.`mp3
 Processed 8.20 MB in 3686 documents in 0.7606 sec (4.85K documents/s)
 Total successfully imported documents 3686 (4.85K documents/s)
 ```
+
+# References
+
+https://mysqlserverteam.com/import-json-to-mysql-made-easy-with-the-mysql-shell/

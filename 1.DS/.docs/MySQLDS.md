@@ -172,7 +172,7 @@ Total successfully imported documents 3686 (4.85K documents/s)
 ## :o: jq test
 
 ```
-% cat mp3.json | jq '. | select ( .format.tags.genre | contains("R&B") ) | { "song": .filename, "title": .format.tags.title }  '
+% cat mp3.json | jq '. | select (.format.tags.genre | contains("R&B")) | { "song": .format.filename, "title": .format.tags.title }'
 ```
 
 # References

@@ -71,13 +71,13 @@ https://dev.mysql.com/doc/refman/8.0/en/mysql-shell-tutorial-javascript-document
 Se connecter a une DB 
 
 ```
-> \use world_x
+MySQL JS> \use world_x
 ```
 
 .. liste des collections de la BD
 
 ```
-> db.getCollections()
+MySQL JS> db.getCollections()
 [
     <Collection:countryinfo>
 ]
@@ -86,13 +86,13 @@ Se connecter a une DB
 ** afficher tout le contenu de la collection
 
 ```
-> db.countryinfo.find()
+MySQL JS> db.countryinfo.find()
 ```
 
 ** une partie de la collection
 
 ```
-> db.countryinfo.find('_id like :param').limit(1).bind('param','Z%')
+MySQL JS> db.countryinfo.find('_id like :param').limit(1).bind('param','Z%')
 {
     "GNP": 116729,
     "_id": "ZAF",
@@ -118,7 +118,7 @@ Se connecter a une DB
 ** une partie plus fine de la collection
 
 ```
-> db.countryinfo.find('geography.Continent like :param').bind('param','Afri%')
+MySQL JS> db.countryinfo.find('geography.Continent like :param').bind('param','Afri%')
 ```
 
 .. Creer d'autres collections

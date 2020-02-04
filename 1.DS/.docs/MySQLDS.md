@@ -136,3 +136,12 @@ Se connecter a une DB
 .. Creer d'autres collections
 
 https://dev.mysql.com/doc/x-devapi-userguide/en/working-with-collections-basic-crud.html
+
+
+** Import d'un fichier dans une collection
+
+https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-utilities-json.html
+
+```
+MySQL JS> util.importJson("/var/lib/mysql-files/mp3.json", {schema: "world_x", collection: "mp3"})
+```

@@ -29,6 +29,15 @@ $ docker container run \
 
 :m: sous PowerShell
 
+```
+PS > $pwd
+
+Path
+----
+C:\Users\300098957\Developer\INF1086-200-20H-02\3.ETL\300098957
+```
+
+- Remplacer la source ci-dessous
 
 ```
 $ docker container run `

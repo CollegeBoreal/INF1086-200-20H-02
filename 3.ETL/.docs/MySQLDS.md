@@ -12,6 +12,8 @@ $ echo ${PWD}
 
 # :a: Créer le conteneur avec un volume
 
+:m: gitbash
+
 ```
 $ docker container run \
          --name some-mysqlds \
@@ -22,6 +24,8 @@ $ docker container run \
          --detach \
          mysql/mysql-server:latest
 ```
+
+:m: powershell
 
 
 ```

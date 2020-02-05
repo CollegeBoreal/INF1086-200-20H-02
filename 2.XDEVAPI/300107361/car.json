@@ -517,10 +517,20 @@
 				}
 			   ]
 			},
-			{"Country":"UNITED 
-STATES (USA)","Mfr_CommonName":"Polaris","Mfr_ID":1132,"Mfr_Name":"POLARIS INDUSTRIES 
-INC.","VehicleTypes":[{"IsPrimary":true,"Name":"Motorcycle"},{"IsPrimary":false,"Name":"Low Speed 
-Vehicle (LSV)"}]},{"Country":"ITALY","Mfr_CommonName":"Ducati","Mfr_ID":1133,"Mfr_Name":"DUCATI 
+			{"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Polaris",
+			"Mfr_ID":1132,
+			"Mfr_Name":"POLARIS INDUSTRIES INC.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Motorcycle"
+				},
+				{
+				"IsPrimary":false,
+				"Name":"Low Speed Vehicle (LSV)"
+				}]},{"Country":"ITALY","Mfr_CommonName":"Ducati","Mfr_ID":1133,"Mfr_Name":"DUCATI 
 MOTOR HOLDING S.p.A. 
 ","VehicleTypes":[{"IsPrimary":true,"Name":"Motorcycle"}]},{"Country":"CANADA","Mfr_CommonName":"BRP
 ","Mfr_ID":1134,"Mfr_Name":"BOMBARDIER RECREATIONAL PRODUCTS INC 

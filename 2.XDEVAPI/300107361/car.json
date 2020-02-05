@@ -340,37 +340,184 @@
 			   ]
 			},
 			{
-			"Country":"UNITED STATES 
-(USA)","Mfr_CommonName":"Collins Welding","Mfr_ID":1116,"Mfr_Name":"COLLINS WELDING, 
-INC.","VehicleTypes":[{"IsPrimary":true,"Name":"Trailer"}]},{"Country":"UNITED STATES 
-(USA)","Mfr_CommonName":"Gillig","Mfr_ID":1118,"Mfr_Name":"GILLIG 
-LLC","VehicleTypes":[{"IsPrimary":true,"Name":"Bus"}]},{"Country":"UNITED STATES 
-(USA)","Mfr_CommonName":"Champion Trike","Mfr_ID":1119,"Mfr_Name":"CHAMPION TRIKE MANUFACTURING 
-INC.","VehicleTypes":[{"IsPrimary":true,"Name":"Motorcycle"}]},{"Country":"UNITED STATES 
-(USA)","Mfr_CommonName":null,"Mfr_ID":1120,"Mfr_Name":"CHAMPION TELECOM, 
-INC.","VehicleTypes":[{"IsPrimary":false,"Name":"Trailer"}]},{"Country":"UNITED STATES 
-(USA)","Mfr_CommonName":null,"Mfr_ID":1121,"Mfr_Name":"CHAMPION BRIDGE CO., 
-INC.","VehicleTypes":[{"IsPrimary":false,"Name":"Trailer"}]},{"Country":"UNITED STATES 
-(USA)","Mfr_CommonName":null,"Mfr_ID":1122,"Mfr_Name":"Champion Trailers, 
-Inc.","VehicleTypes":[{"IsPrimary":false,"Name":"Trailer"}]},{"Country":"UNITED STATES 
-(USA)","Mfr_CommonName":"Micro-Lite Trailer","Mfr_ID":1123,"Mfr_Name":"MICRO-LITE TRAILER MFG. 
-LLC","VehicleTypes":[]},{"Country":"UNITED STATES (USA)","Mfr_CommonName":"PIERCE 
-MANUFACTURING","Mfr_ID":1124,"Mfr_Name":"PIERCE MANUFACTURING 
-INC.","VehicleTypes":[{"IsPrimary":true,"Name":"Truck "}]},{"Country":"UNITED STATES 
-(USA)","Mfr_CommonName":"MCI","Mfr_ID":1126,"Mfr_Name":"MOTOR COACH INDUSTRIES, 
-INC.","VehicleTypes":[{"IsPrimary":true,"Name":"Bus"},{"IsPrimary":false,"Name":"Incomplete 
-Vehicle"}]},{"Country":"UNITED STATES 
-(USA)","Mfr_CommonName":null,"Mfr_ID":1127,"Mfr_Name":"TURTLEBACK TRAILERS 
-LLC","VehicleTypes":[{"IsPrimary":false,"Name":"Trailer"}]},{"Country":"UNITED STATES 
-(USA)","Mfr_CommonName":"Prevost","Mfr_ID":1128,"Mfr_Name":"PREVOST A DIVISION OF PREVOST CAR (US) 
-INC. (NOVA BUS, 
-INCORPORATED)","VehicleTypes":[{"IsPrimary":true,"Name":"Bus"}]},{"Country":"TURKEY","Mfr_CommonName
-":"TEMSA ","Mfr_ID":1129,"Mfr_Name":"TEMSA ULASIM ARACLARI SANAYI VE TICARET 
-A.S.","VehicleTypes":[{"IsPrimary":false,"Name":"Bus"}]},{"Country":"UNITED STATES 
-(USA)","Mfr_CommonName":"Yamaha","Mfr_ID":1130,"Mfr_Name":"YAMAHA MOTOR 
-CORPORATION","VehicleTypes":[{"IsPrimary":true,"Name":"Motorcycle"}]},{"Country":"UNITED STATES 
-(USA)","Mfr_CommonName":"Triumph Motorcycles","Mfr_ID":1131,"Mfr_Name":"TRIUMPH MOTORCYCLES 
-(AMERICA) LIMITED","VehicleTypes":[{"IsPrimary":true,"Name":"Motorcycle"}]},{"Country":"UNITED 
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Collins Welding",
+			"Mfr_ID":1116,
+			"Mfr_Name":"COLLINS WELDING, INC.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Gillig",
+			"Mfr_ID":1118,
+			"Mfr_Name":"GILLIG LLC",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Bus"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Champion Trike",
+			"Mfr_ID":1119,
+			"Mfr_Name":"CHAMPION TRIKE MANUFACTURING INC.",
+			"VehicleTypes":
+			   [
+			    {
+			    "IsPrimary":true,
+			    "Name":"Motorcycle"
+			    }
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":null,
+			"Mfr_ID":1120,
+			"Mfr_Name":"CHAMPION TELECOM, INC.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":false,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":null,
+			"Mfr_ID":1121,
+			"Mfr_Name":"CHAMPION BRIDGE CO., INC.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":false,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":null,
+			"Mfr_ID":1122,
+			"Mfr_Name":"Champion Trailers, Inc.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":false,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Micro-Lite Trailer",
+			"Mfr_ID":1123,
+			"Mfr_Name":"MICRO-LITE TRAILER MFG. LLC",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)"
+			,"Mfr_CommonName":"PIERCE MANUFACTURING",
+			"Mfr_ID":1124,
+			"Mfr_Name":"PIERCE MANUFACTURING INC.",
+			"VehicleTypes":
+			   [
+			    {"IsPrimary":true,
+				"Name":"Truck "
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"MCI",
+			"Mfr_ID":1126,
+			"Mfr_Name":"MOTOR COACH INDUSTRIES, INC.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Bus"
+				},
+				{
+				"IsPrimary":false,
+				"Name":"Incomplete Vehicle"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":null,
+			"Mfr_ID":1127,
+			"Mfr_Name":"TURTLEBACK TRAILERS LLC",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":false,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Prevost",
+			"Mfr_ID":1128,
+			"Mfr_Name":"PREVOST A DIVISION OF PREVOST CAR (US) INC. (NOVA BUS, INCORPORATED)",
+			"VehicleTypes":
+			   [
+			    {"IsPrimary":true,
+				"Name":"Bus"
+				}
+			   ]
+			},
+			{
+			"Country":"TURKEY",
+			"Mfr_CommonName":"TEMSA ",
+			"Mfr_ID":1129,
+			"Mfr_Name":"TEMSA ULASIM ARACLARI SANAYI VE TICARET A.S.",
+			"VehicleTypes":
+			   [
+			    {"IsPrimary":false,
+				"Name":"Bus"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Yamaha",
+			"Mfr_ID":1130,
+			"Mfr_Name":"YAMAHA MOTOR CORPORATION",
+			"VehicleTypes":
+			   [
+			    {
+			    "IsPrimary":true,
+				"Name":"Motorcycle"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Triumph Motorcycles",
+			"Mfr_ID":1131,
+			"Mfr_Name":"TRIUMPH MOTORCYCLES (AMERICA) LIMITED",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Motorcycle"
+				}
+			   ]
+			},
+			{"Country":"UNITED 
 STATES (USA)","Mfr_CommonName":"Polaris","Mfr_ID":1132,"Mfr_Name":"POLARIS INDUSTRIES 
 INC.","VehicleTypes":[{"IsPrimary":true,"Name":"Motorcycle"},{"IsPrimary":false,"Name":"Low Speed 
 Vehicle (LSV)"}]},{"Country":"ITALY","Mfr_CommonName":"Ducati","Mfr_ID":1133,"Mfr_Name":"DUCATI 

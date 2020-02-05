@@ -6,6 +6,8 @@ https://hub.docker.com/r/mysql/mysql-server/
 
 ## Créer le conteneur
 
+:pushpin: Bash
+
 ```
 $ docker container run \
          --name some-mysqlds \
@@ -15,6 +17,20 @@ $ docker container run \
          --detach \
          mysql/mysql-server:latest
 ```
+
+:pushpin: Powershell
+
+```
+PS> docker container run `
+         --name some-mysqlds `
+         --env MYSQL_ROOT_PASSWORD=password `
+         --publish 3306:3306 `
+         --publish 33060:33060 `
+         --detach `
+         mysql/mysql-server:latest
+```
+
+
 
 ### Charger les données dans la base `world_x`
 

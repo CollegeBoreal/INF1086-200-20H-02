@@ -8,7 +8,7 @@
 - [ ] Assurez vous qu'il utilise un volume pour importer les données
 
 
-- [ ] Créer l'utilisateur permmettant d'accéder au Document Store (DCL)
+- [ ] Créer l'utilisateur permettant d'accéder au Document Store (DCL)
 
 
 

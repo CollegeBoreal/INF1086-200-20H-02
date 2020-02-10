@@ -1,0 +1,19 @@
+{
+    "GNP": 2425,
+    "_id": "BFA",
+    "Name": "Burkina Faso",
+    "IndepYear": 1960,
+    "geography": {
+        "Region": "Western Africa",
+        "Continent": "Africa",
+        "SurfaceArea": 274000
+    },
+    "government": {
+        "HeadOfState": "Blaise Compaoré",
+        "GovernmentForm": "Republic"
+    },
+    "demographics": {
+        "Population": 11937000,
+        "LifeExpectancy": 46.70000076293945
+    }
+}

@@ -57,11 +57,12 @@ def mashup():
 - [ ] présenter votre modèle relationel
 
 
-- [ ] présenter votre modèles de collections
+- [ ] présenter votre modèle présentant les collections `dans un dossier`
 
 
 
-### :three: Backup
+### :four: Backup
 
 - [ ] Sauvegarder la base de données dans un fichier SQL
 
+### :o: Présenter le tout dans un fichier README.md

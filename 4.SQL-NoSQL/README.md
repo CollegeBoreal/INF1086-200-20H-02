@@ -28,6 +28,13 @@
 - [ ] Importer ces données dans vos propres collections
 
 
+### :three: Scripting avec API
+
+- [ ] En vous aidant de python, démontrer que vous utilisez le XDEVAPI
+
+
+- [ ] Créer une table produite par des collections
+
 
 ### :three: Modelisation
 

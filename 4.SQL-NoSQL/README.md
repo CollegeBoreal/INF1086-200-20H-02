@@ -1,5 +1,7 @@
 # Projet
 
+:bulb: Dans votre propre répertoire c.f. :id:
+
 ### :zero: Administration 
 
 - [ ] Créer votre base de données [MySQL/Server](../3.ETL/.docs/MySQLDS.md)

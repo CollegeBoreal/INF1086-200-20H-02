@@ -20,3 +20,10 @@
 - [ ] Importer votre base de données SQL
 
 
+### :three: Modelisation
+
+
+### :three: Backup
+
+- [ ] Sauvegarder la base de données dans un fichier SQL
+

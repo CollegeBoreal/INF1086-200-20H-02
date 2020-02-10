@@ -44,10 +44,10 @@ def mashup():
 ```
 
 
-- [ ] En Créant une table produite par des collections
+- [ ] La fonction `mashup` doit créer une table produite par des collections
 
 
-- [ ] ` ou ` en Créant une collection produite par des collections `importées `
+- [ ] ` ou ` La fonction `mashup` doit créer une collection produite par des collections `importées `
 
 
 ### :three: Modelisation

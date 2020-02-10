@@ -25,7 +25,7 @@
 - [ ] Chercher des données `json` correspondant à votre domaine d'activités
 
 
-- [ ] Importer ses données dans vos propres collections
+- [ ] Importer ces données dans vos propres collections
 
 
 

@@ -33,7 +33,7 @@
 - [ ] En vous aidant de python, démontrer que vous utilisez le XDEVAPI
 
 
-- [ ] Créer une table produite par des collections
+- [ ] En Créant une table produite par des collections
 
 
 ### :three: Modelisation

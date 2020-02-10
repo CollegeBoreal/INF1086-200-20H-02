@@ -38,7 +38,7 @@
 
 :pushpin: avec un nom de fonction nommé
 
-```
+```python
 def mashup():
 
 ```

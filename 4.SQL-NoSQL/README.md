@@ -41,6 +41,14 @@
 
 ### :three: Modelisation
 
+:bulb: À l'aide de MySQL Workbench,
+
+- [ ] présenter votre modèle relationel
+
+
+- [ ] présenter votre modèles de collections
+
+
 
 ### :three: Backup
 

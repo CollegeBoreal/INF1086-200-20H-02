@@ -5,7 +5,7 @@
 - [ ] Créer votre base de données [MySQL/Server](../3.ETL/.docs/MySQLDS.md)
 
 
-- [ ] Assurez vous qu'il utilise un volume pour importer les données
+- [ ] Assurez vous qu'il utilise un volume pour importer de nouvelles données
 
 
 - [ ] Créer l'utilisateur permettant d'accéder au Document Store (DCL)
@@ -18,6 +18,15 @@
 
 
 - [ ] Importer votre base de données SQL
+
+
+### :two: E.T.L
+
+- [ ] Chercher des données `json` correspondant à votre domaine d'activités
+
+
+- [ ] Importer ses données dans vos propres collections
+
 
 
 ### :three: Modelisation

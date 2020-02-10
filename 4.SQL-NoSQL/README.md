@@ -32,7 +32,16 @@
 
 ### :three: Scripting avec API
 
-- [ ] En vous aidant de python, démontrer que vous utilisez le XDEVAPI
+:bulb: En vous aidant de python, démontrer que vous utilisez le XDEVAPI
+
+:pushpin: Nom de fichier votre :id: précéder par un b
+
+:pushpin: avec un nom de fonction nommé
+
+```
+def mashup():
+
+```
 
 
 - [ ] En Créant une table produite par des collections

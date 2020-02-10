@@ -61,7 +61,8 @@ def mashup():
 
 
 
-### :three: Backup
+### :four: Backup
 
 - [ ] Sauvegarder la base de données dans un fichier SQL
 
+### :o: Présenter le tout dans un fichier README.md

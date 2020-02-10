@@ -57,7 +57,7 @@ def mashup():
 - [ ] présenter votre modèle relationel
 
 
-- [ ] présenter votre modèles de collections
+- [ ] présenter votre modèle présentant les collections `dans un dossier`
 
 
 

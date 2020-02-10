@@ -4,7 +4,8 @@
 
 - [ ] Créer votre base de données [MySQL/Server](../3.ETL/.docs/MySQLDS.md)
 
-- [ ] 
+
+- [ ] Assurez vous qu'il utilise un volume pour importer les données
 
 ### :one: Migration
 

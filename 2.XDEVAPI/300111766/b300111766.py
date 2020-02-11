@@ -37,7 +37,7 @@ def dbFind(myColl):
 doc = docs.fetch_one()
 print(doc)
 
-myDb.drop_collection('car_center')
+myDb.drop_collection('vente_portable')
 
 
 

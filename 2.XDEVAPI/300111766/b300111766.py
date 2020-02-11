@@ -13,7 +13,7 @@ def connect():
 
 # Connect to DB
 def dbConnect(session, myDb):
-  return session.get_schema(myDb)
+  return session.get_schema(vente_portable)
 
 # Create a new collection
 def dbCreateCollection(myDb, myCollection):
@@ -33,30 +33,11 @@ def dbFind(myColl):
             .bind('param2','g%') \
             .execute()
 
-# Drop the collection
-def dbDropCollection(myDb, myCollection):
-  return myDb.drop_collection(myCollection)
+# Print document
+doc = docs.fetch_one()
+print(doc)
 
-# Program
-def run(myDb, myCollection):
-  session = connect()
-  db = dbConnect(session, myDb)
-  col = dbCreateCollection(db, myCollection)
-  dbCRUD(col)
-  docs = dbFind(col)
-  # Print document
-  doc = docs.fetch_one()
-  print(doc)
-  dbDropCollection(db, myCollection)
-
-# Program
-def main():
-  myDb = 'world_x'
-  myCollection = 'my_collection'
-  run(myDb, myCollection)
-
-if __name__== "__main__":
-  main()
+myDb.drop_collection('car_center')
 
 
 

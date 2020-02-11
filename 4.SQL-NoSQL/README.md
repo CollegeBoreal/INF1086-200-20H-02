@@ -65,4 +65,10 @@ def mashup():
 
 - [ ] Sauvegarder la base de données dans un fichier SQL
 
+```
+$ docker exec some-mysqlds \
+    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" world_x ' \
+    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/world_x.sql
+```
+
 ### :o: Présenter le tout dans un fichier README.md

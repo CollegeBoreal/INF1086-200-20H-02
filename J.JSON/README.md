@@ -1,8 +1,10 @@
 # JSON
 
+## :m: Qu'est ce que JSON ?
+
 ![image](../images/json.png)
 
-## Tools JQ
+## Tools pour lire du JSON
 
 :o: Install JQ
 

@@ -1,4 +1,23 @@
 
+  "products": [
+    {
+      "sku": 1752654,
+      "name": "Apple - iPhone 4s 8GB Cell Phone - White (AT&T)"
+    },
+    {
+      "sku": 1761045,
+      "name": "Apple - iPhone 4s 8GB Cell Phone - White (Verizon Wireless)"
+    },
+    {
+      "sku": 1729354,
+      "name": "Apple - iPhone 5c 16GB  Cell Phone - Green (AT&T)"
+    },
+    {
+      "sku": 1752291,
+      "name": "Apple - iPhone 5c 16GB Cell Phone - Blue (AT&T)"
+    }
+  ],
+
 {
         "age": 2, 
         "carrier": "AT&amp;T", 

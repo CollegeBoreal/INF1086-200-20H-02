@@ -15,7 +15,8 @@
 
 
 * Lancer `PS> pwd` pour avoir le path du fichier pour vous assurez qu'il utilise un volume: 
-*``
+*
+```
  docker container run \
          --name some-mysqlds \
          --env MYSQL_ROOT_PASSWORD=password \
@@ -24,13 +25,14 @@
          --volume C:\Users\Tochgaly-K.J.Etienne\developer\INF1086-200-20H-02\4.SQL-NoSQL\300107361:/var/lib/mysql-files \
          --detach \
          mysql/mysql-server:latest
-``
+```
 
 * Creer l'utilisateur permettant d'acceder au Document Store
-*``
+*
+```
 mysql> CREATE USER 'joker'@'%' IDENTIFIED BY 'password';
 mysql> GRANT ALL ON car_center.* TO 'joker'@'%';
-``
+```
 
 ### :one: Migration
 

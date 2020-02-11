@@ -9,7 +9,7 @@ from mysqlsh import mysqlx
 
 # Connect to server
 def connect():
-  return mysqlx.get_session( { 'host': 'localhost', 'port': 33060, 'user': 'etudiant', 'password': 'password'} )
+  return mysqlx.get_session( { 'host': 'localhost', 'port': 33060, 'user': 'etudiants', 'password': 'password'} )
 
 # Connect to DB
 def dbConnect(session, myDb):
@@ -21,16 +21,16 @@ def dbCreateCollection(myDb, myCollection):
 
 # Insert documents
 def dbCRUD(myColl):
-  myColl.add({'_id': '1', 'mark': 'iphone', 'model': 19}).execute()
-  myColl.add({'_id': '2', 'mark': 'samsung', 'model': 54}).execute()
-  myColl.add({'_id': '3', 'mark': 'motorola', 'model': 32}).execute()
+  myColl.add({'_id': '1', 'mark': 'iphone', 'model': 'iphone11'}).execute()
+  myColl.add({'_id': '2', 'mark': 'samsung', 'model': 'galaxyS10'}).execute()
+  myColl.add({'_id': '3', 'mark': 'motorola', 'model': 'motorolaG7'}).execute()
 
 # Find a document
 def dbFind(myColl):
   return myColl.find('mark like :param1 AND model < :param2') \
             .limit(1) \
-            .bind('param1','L%') \
-            .bind('param2',20) \
+            .bind('param1','s%') \
+            .bind('param2','g%') \
             .execute()
 
 # Drop the collection

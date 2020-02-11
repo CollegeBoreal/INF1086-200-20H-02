@@ -1,1 +1,241 @@
 
+"product_list": [{
+        "id": "1",
+        "sr_no": "SPE181700LN",
+        "base_pid": "UBR10012",
+        "orderable_pid": "UBR10012",
+        "product_name": "Cisco PA-8T: Eight Serial Port Adapter 
+        for Cisco 7000 Series Routers",
+        "product_type": “ROUTER",
+        "product_series": "Cisco uBR10000 Series Universal Broadband Routers",
+        "product_category": "Video",
+        "product_subcategory": "10012 SERIES",
+        "release_date": “2005-05-02",
+        "orderable_status": “O",
+        "dimensions": {
+            "dimensions_format": "Dimensions (HxWxD)",
+            "dimensions_value": "31.25 x 17.2 x 22.75 in. (79.4 x 43.7 x 57.8 cm)"
+        },
+        "weight": "235 lb. (106.6 kg) fully-configured chassis"
+        "form_factor": "18 rack units (RU) Mounting: 19 in. rack mountable\n(front or rear); 2 units per 7 ft. rack. \nNote: Mounting in 23 in. racks is possible with optional third-party hardware",
+        "product_support_page": "",
+        "visio_stencil_url": "http://www.cisco.com/content/dam/assets/prod/visio/visio/product_visio_icon0900aecd8009b9c8.zip",
+        "rich_media_urls": {
+            "large_image_url": "",
+            "small_image_url": ""
+        }
+    },{
+        "id": "2",
+        "sr_no": "REF_CSJ07306405",
+        "base_pid": "UBR10-MC5X20U-D=",
+        "orderable_pid": "UBR10-MC5X20U-D=",
+        "product_name": "Cisco uBR10012 Universal Broadband Router",
+        "product_type": "BOARD",
+        "product_series": "Cisco uBR10000 Series Universal Broadband Routers",
+        "product_category": “Video",
+        "product_subcategory": "SPARE",
+        "release_date": “2005-05-05",
+        "orderable_status": "",
+        "dimensions": {
+            "dimensions_format": "Dimensions (HxWxD)",
+            "dimensions_value": "31.25 x 17.2 x 22.75 in. (79.4 x 43.7 x 57.8 cm)"
+        },
+        "form_factor": "18 rack units (RU) Mounting: 19 in. rack mountable (front or rear); 2 units per 7 ft. rack. Note: Mounting in 23 in. racks is possible with optional third-party hardware",
+        "weight": "235 lb. (106.6 kg) fully-configured chassis"
+        "product_support_page": "",
+        "visio_stencil_url": “http://www.cisco.com/content/dam/assets/prod/visio/visio/product_visio_icon0900aecd8009b9c8.zip",
+        "rich_media_urls": {
+            "large_image_url": "",
+            "small_image_url": ""
+        }
+    }]
+}
+
+
+
+
+{
+    "pagination_response_record": {
+        "title": "Product Info API - Get Product Information by Product Id(s)",
+        "page_index": 1,
+        "last_index": 1,
+        "total_records": 3
+        "page_records": 3,
+        "self_link": "https://api.cisco.com/product/v1/information/product_ids/UBR10012,ASR1001?page_index=1",
+    },
+    "product_list": [{
+        "id": "1",
+        "product_id": "UBR10012",
+        "product_name": "Cisco uBR10012 Universal Broadband Router”,
+        "product_type": "ROUTER",
+        "product_series": "Cisco uBR10000 Series Universal Broadband Routers",
+        "product_category": "Video",
+        "product_subcategory": "10012 SERIES",
+        "release_date": "2005-05-02",
+        "orderable_status": "O",
+        "dimensions": {
+            "dimensions_format": "Rack Units",
+            "dimensions_value": "18 rack units (RU) Mounting: 19 in. rack mountable \n(front or rear); 2 units per 7 ft. rack. \nNote: Mounting in 23 in. racks is possible with optional third-party hardware"
+        },
+        "weight": "235 lb. (106.6 kg) fully-configured chassis"
+        "form_factor": "18 rack units (RU) Mounting: 19 in. rack mountable \n(front or rear); 2 units per 7 ft. rack. \nNote: Mounting in 23 in. racks is possible with optional third-party hardware",
+        "product_support_page": "",
+        "visio_stencil_url": "http://www.cisco.com/content/dam/assets/prod/visio/visio/product_visio_icon0900aecd8009b9c8.zip",
+        "rich_media_urls": {
+            "large_image_url": "",
+            "small_image_url": "http://www.cisco.com/c/dam/en/us/products/video/ps8806/ps5684/ps2209/prod_small_photo0900aecd800620a1.jpg"
+        }
+    },{
+        "id": "2",
+        "product_id": "UBR10012",
+        "product_name": "Cisco uBR10012 Universal Broadband Router”,
+        "product_type": "ROUTER",
+        "product_series": "Cisco uBR10000 Series Universal Broadband Routers",
+        "product_category": "Video",
+        "product_subcategory": "10012 SERIES",
+        "release_date": "2005-05-02",
+        "orderable_status": "O",
+        "dimensions": {
+            "dimensions_format": "Dimensions (HxWxD)",
+            "dimensions_value": "31.25 x 17.2 x 22.75 in. (79.4 x 43.7 x 57.8 cm)"
+         },
+        "weight": "235 lb. (106.6 kg) fully-configured chassis"
+        "form_factor": "18 rack units (RU) Mounting: 19 in. rack mountable \n(front or rear); 2 units per 7 ft. rack. \nNote: Mounting in 23 in. racks is possible with optional third-party hardware",
+        "product_support_page": "",
+        "visio_stencil_url": "http://www.cisco.com/content/dam/assets/prod/visio/visio/product_visio_icon0900aecd8009b9c8.zip",
+        "rich_media_urls": {
+            "large_image_url": "",
+            "small_image_url": "http://www.cisco.com/c/dam/en/us/products/video/ps8806/ps5684/ps2209/prod_small_photo0900aecd800620a1.jpg"
+        }
+    },{
+        "id": "3",
+        "product_id": "ASR1001",
+        "product_name": "Cisco ASR 1001 Router",
+        "product_type": "ROUTER",
+        "product_series": "Cisco ASR 1000 Series Aggregation Services Routers",
+        "product_category": "Routers",
+        "product_subcategory": "ASR 1001 SER",
+        "release_date": "2010-10-04",
+        "orderable_status": "O",
+        "dimensions": {
+            "dimensions_format": "Dimensions (HxWxD)",
+            "dimensions_value": "22.8 x 17.2 x 22 in"
+        },
+        "weight": ""
+        "form_factor": "13 RU",
+        "product_support_page": "",
+        "visio_stencil_url": "http://www.cisco.com/content/dam/assets/prod/visio/visio/Routers_Cisco_ASR_1000_11_08.zip",
+        "rich_media_urls": {
+            "large_image_url": "",
+            "small_image_url": "http://www.cisco.com/c/dam/en/us/products/routers/ps9343/prod_small_photo.jpg"
+        }
+    }]
+}
+
+
+
+
+{
+  "pagination_response_record": {
+    "last_index": 1,
+    "page_index": 1,
+    "page_records": 1,
+    "self_link": "https://api.cisco.com/product/v1/information/product_ids_mdf/ASA5505-50-BUN-K9?page_index=1",
+    "title": "Product Info API - Get Product MDF Information by Product Id(s)",
+    "total_records": 1
+  },
+  "product_list": [
+    {
+      "id": "1",
+      "product_id": "ASA5505-50-BUN-K9",
+      "product_name": "Cisco ASA 5505 Adaptive Security Appliance",
+      "product_name_mdf": "280582808",
+      "product_series": "Cisco ASA 5500-X Series Firewalls",
+      "product_series_mdf": "279513386"
+    }
+  ]
+}
+
+
+
+
+
+
+{
+    "pagination_response_record": {
+        "title": "Product Info API - Get Product Information by Product Id(s)",
+        "page_index": 1,
+        "last_index": 1,
+        "total_records": 3
+        "page_records": 3,
+        "self_link": "https://api.cisco.com/product/v1/information/product_ids/UBR10012,ASR1001?page_index=1",
+    },
+    "product_list": [{
+        "id": "1",
+        "product_id": "UBR10012",
+        "product_name": "Cisco uBR10012 Universal Broadband Router”,
+        "product_type": "ROUTER",
+        "product_series": "Cisco uBR10000 Series Universal Broadband Routers",
+        "product_category": "Video",
+        "product_subcategory": "10012 SERIES",
+        "release_date": "2005-05-02",
+        "orderable_status": "O",
+        "dimensions": {
+            "dimensions_format": "Rack Units",
+            "dimensions_value": "18 rack units (RU) Mounting: 19 in. rack mountable \n(front or rear); 2 units per 7 ft. rack. \nNote: Mounting in 23 in. racks is possible with optional third-party hardware"
+        },
+        "weight": "235 lb. (106.6 kg) fully-configured chassis"
+        "form_factor": "18 rack units (RU) Mounting: 19 in. rack mountable \n(front or rear); 2 units per 7 ft. rack. \nNote: Mounting in 23 in. racks is possible with optional third-party hardware",
+        "product_support_page": "",
+        "visio_stencil_url": "http://www.cisco.com/content/dam/assets/prod/visio/visio/product_visio_icon0900aecd8009b9c8.zip",
+        "rich_media_urls": {
+            "large_image_url": "",
+            "small_image_url": "http://www.cisco.com/c/dam/en/us/products/video/ps8806/ps5684/ps2209/prod_small_photo0900aecd800620a1.jpg"
+        }
+    },{
+        "id": "2",
+        "product_id": "UBR10012",
+        "product_name": "Cisco uBR10012 Universal Broadband Router”,
+        "product_type": "ROUTER",
+        "product_series": "Cisco uBR10000 Series Universal Broadband Routers",
+        "product_category": "Video",
+        "product_subcategory": "10012 SERIES",
+        "release_date": "2005-05-02",
+        "orderable_status": "O",
+        "dimensions": {
+            "dimensions_format": "Dimensions (HxWxD)",
+            "dimensions_value": "31.25 x 17.2 x 22.75 in. (79.4 x 43.7 x 57.8 cm)"
+         },
+        "weight": "235 lb. (106.6 kg) fully-configured chassis"
+        "form_factor": "18 rack units (RU) Mounting: 19 in. rack mountable \n(front or rear); 2 units per 7 ft. rack. \nNote: Mounting in 23 in. racks is possible with optional third-party hardware",
+        "product_support_page": "",
+        "visio_stencil_url": "http://www.cisco.com/content/dam/assets/prod/visio/visio/product_visio_icon0900aecd8009b9c8.zip",
+        "rich_media_urls": {
+            "large_image_url": "",
+            "small_image_url": "http://www.cisco.com/c/dam/en/us/products/video/ps8806/ps5684/ps2209/prod_small_photo0900aecd800620a1.jpg"
+        }
+    },{
+        "id": "3",
+        "product_id": "ASR1001",
+        "product_name": "Cisco ASR 1001 Router",
+        "product_type": "ROUTER",
+        "product_series": "Cisco ASR 1000 Series Aggregation Services Routers",
+        "product_category": "Routers",
+        "product_subcategory": "ASR 1001 SER",
+        "release_date": "2010-10-04",
+        "orderable_status": "O",
+        "dimensions": {
+            "dimensions_format": "Dimensions (HxWxD)",
+            "dimensions_value": "22.8 x 17.2 x 22 in"
+        },
+        "weight": ""
+        "form_factor": "13 RU",
+        "product_support_page": "",
+        "visio_stencil_url": "http://www.cisco.com/content/dam/assets/prod/visio/visio/Routers_Cisco_ASR_1000_11_08.zip",
+        "rich_media_urls": {
+            "large_image_url": "",
+            "small_image_url": "http://www.cisco.com/c/dam/en/us/products/routers/ps9343/prod_small_photo.jpg"
+        }
+    }]
+}
+

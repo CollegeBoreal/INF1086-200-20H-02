@@ -15,7 +15,7 @@
 
 
 * Lancer `PS> pwd` pour avoir le path du fichier pour vous assurez qu'il utilise un volume: 
-*
+
 ```
  docker container run \
          --name some-mysqlds \
@@ -28,7 +28,7 @@
 ```
 
 * Creer l'utilisateur permettant d'acceder au Document Store
-*
+
 ```
 mysql> CREATE USER 'joker'@'%' IDENTIFIED BY 'password';
 mysql> GRANT ALL ON car_center.* TO 'joker'@'%';

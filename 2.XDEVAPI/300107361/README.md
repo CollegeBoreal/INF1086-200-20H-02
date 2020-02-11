@@ -1,6 +1,6 @@
 # Tester son Programme
 
-## :1: Avec MySQL Python
+## :one: Avec MySQL Python
 ```
  $ docker container exec --interactive some-mysqlds mysqlsh --py \
             --host localhost --user joker -ppassword \

@@ -28,9 +28,10 @@ def dbCRUD(myColl):
 
 # Find a document
 def dbFind(myColl):
-  return myColl.find('_id like :param').limit(1).bind('param','C%') \
+  return myColl.find('country like :param1 AND tissue < :param2') \
             .limit(1) \
-            .bind('param','C%') \
+            .bind('param1','M%') \
+            .bind('param2','c%') \
             .execute()
 
 # Drop the collection

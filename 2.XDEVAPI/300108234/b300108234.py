@@ -14,7 +14,7 @@ def connect():
 
 # Connect to DB
 def dbConnect(session, myDb):
-  return session.get_schema(myDb)
+  return session.get_schema('world_x')
 
 # Create a new collection
 def dbCreateCollection(myDb, myCollection):
@@ -35,11 +35,11 @@ def dbFind(myColl):
             .execute()
 
 # Drop the collection
-def dbDropCollection(myDb, hijabfashion):
+def dbDropCollection(myDb, myCollection):
   return myDb.drop_collection(hijabfashion)
 
 # Program
-def run(myDb, hijabfashion):
+def run(myDb, myCollection):
   session = connect()
   db = dbConnect(session, myDb)
   col = dbCreateCollection(db, hijabfashion)
@@ -53,7 +53,7 @@ def run(myDb, hijabfashion):
 # Program
 def main():
   myDb = 'world_x'
-  myCollection = 'my_collection'
+  myCollection = 'hijabfashion'
   run(myDb, hijabfashion)
 
 if __name__== "__main__":

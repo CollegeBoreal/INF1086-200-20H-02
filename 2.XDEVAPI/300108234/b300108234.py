@@ -22,9 +22,9 @@ def dbCreateCollection(myDb, myCollection):
 
 # Insert documents
 def dbCRUD(myColl):
-  myColl.add({'_id': '1', 'name': 'Canada', 'code_postal': 1234}).execute()
-  myColl.add({'_id': '2', 'name': 'USA', 'code_postal': 2345}).execute()
-  myColl.add({'_id': '3', 'name': 'France', 'code_postal': 6789}).execute()
+  myColl.add({'_id': '1', 'country': 'Canada', 'code_postal': 1234}).execute()
+  myColl.add({'_id': '2', 'country': 'USA', 'code_postal': 2345}).execute()
+  myColl.add({'_id': '3', 'country': 'France', 'code_postal': 6789}).execute()
 
 # Find a document
 def dbFind(myColl):
@@ -34,26 +34,26 @@ def dbFind(myColl):
             .execute()
 
 # Drop the collection
-def dbDropCollection(myDb, myCollection):
-  return myDb.drop_collection(myCollection)
+def dbDropCollection(myDb, hijabfashion):
+  return myDb.drop_collection(hijabfashion)
 
 # Program
-def run(myDb, myCollection):
+def run(myDb, hijabfashion):
   session = connect()
   db = dbConnect(session, myDb)
-  col = dbCreateCollection(db, myCollection)
+  col = dbCreateCollection(db, hijabfashion)
   dbCRUD(col)
   docs = dbFind(col)
   # Print document
   doc = docs.fetch_one()
   print(doc)
-  dbDropCollection(db, myCollection)
+  dbDropCollection(db, hijabfashion)
 
 # Program
 def main():
   myDb = 'world_x'
   myCollection = 'my_collection'
-  run(myDb, myCollection)
+  run(myDb, hijabfashion)
 
 if __name__== "__main__":
     main()

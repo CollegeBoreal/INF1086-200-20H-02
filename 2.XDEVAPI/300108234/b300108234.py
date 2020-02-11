@@ -22,9 +22,9 @@ def dbCreateCollection(myDb, myCollection):
 
 # Insert documents
 def dbCRUD(myColl):
-  myColl.add({'_id': '1', 'country': 'Canada', 'code_postal': 1234}).execute()
-  myColl.add({'_id': '2', 'country': 'USA', 'code_postal': 2345}).execute()
-  myColl.add({'_id': '3', 'country': 'France', 'code_postal': 6789}).execute()
+  myColl.add({'_id': '1', 'country': 'Canada', 'tissue': muslin}).execute()
+  myColl.add({'_id': '2', 'country': 'Maroc', 'tissue': coton}).execute()
+  myColl.add({'_id': '3', 'country': 'France', 'tissue': Printed}).execute()
 
 # Find a document
 def dbFind(myColl):

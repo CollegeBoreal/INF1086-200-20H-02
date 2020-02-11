@@ -14,8 +14,8 @@
 - [ ] Créer l'utilisateur permettant d'accéder au Document Store (DCL)
 
 
-Lancer `PS> pwd` pour avoir le path du fichier pour vous assurez qu'il utilise un volume: 
-``
+* Lancer `PS> pwd` pour avoir le path du fichier pour vous assurez qu'il utilise un volume: 
+*``
  docker container run \
          --name some-mysqlds \
          --env MYSQL_ROOT_PASSWORD=password \
@@ -25,11 +25,12 @@ Lancer `PS> pwd` pour avoir le path du fichier pour vous assurez qu'il utilise u
          --detach \
          mysql/mysql-server:latest
 ``
-Creer l'utilisateur permettant d'acceder au Document Store
-``
+
+* Creer l'utilisateur permettant d'acceder au Document Store
+*``
 mysql> CREATE USER 'joker'@'%' IDENTIFIED BY 'password';
 mysql> GRANT ALL ON car_center.* TO 'joker'@'%';
-
+``
 
 ### :one: Migration
 

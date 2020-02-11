@@ -16,8 +16,8 @@ myDb = mySession.get_schema('world_x')
 myColl = myDb.create_collection('boubou')
 
 # Insert documents
-myColl.add({'_id': '1', 'COULEUR': 'noir', 'GENRE': 'dashiki', 'QUANTITE':'1 a 3').execute()
-myColl.add({'_id': '2', 'COULEUR': 'bleu', 'GENRE': 'alabe', 'QUANTITE': '1 douzaine').execute()
+myColl.add({'_id': '1', 'COULEUR': 'noir', 'GENRE': 'dashiki', 'QUANTITE':'1 a 3'}).execute()
+myColl.add({'_id': '2', 'COULEUR': 'bleu', 'GENRE': 'alabe', 'QUANTITE': '1 douzaine'}).execute()
 
 # Find a document
 docs = myColl.find('COULEUR like: param1 AND GENRE < : param2').limit(1).bind('param1', 'n%').bind('param2', 'd%').execute()

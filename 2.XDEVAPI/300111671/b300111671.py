@@ -8,7 +8,7 @@ Created on Tue Jan 21 12:09:18 2020
 # Connect to a Server
 mySession = mysqlx.get_session( {
         'host': 'localhost', 'port': 33060,
-        'user': 'abbas', 'password': 'password'} )
+        'user': 'alade', 'password': 'password'} )
 
 myDb = mySession.get_schema('world_x')
 
@@ -20,7 +20,7 @@ myColl.add({'_id': '1', 'COULEUR': 'noir', 'GENRE': 'dashiki', 'QUANTITE':'1 a 3
 myColl.add({'_id': '2', 'COULEUR': 'bleu', 'GENRE': 'alabe', 'QUANTITE': '1 douzaine').execute()
 
 # Find a document
-docs = myColl.find('COULEUR like: param1 AND GENRE < : param2').limit(1).bind('param1', 'I%').bind('param2', 'V%').execute()
+docs = myColl.find('COULEUR like: param1 AND GENRE < : param2').limit(1).bind('param1', 'n%').bind('param2', 'd%').execute()
 
 # Print document
 doc = docs.fetch_one()

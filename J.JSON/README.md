@@ -1,6 +1,6 @@
 # JSON
 
-![image](../images/json.jpg)
+![image](../images/json.png)
 
 ## Tools JQ
 

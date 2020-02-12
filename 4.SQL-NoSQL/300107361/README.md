@@ -56,7 +56,9 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 
 
 - [ ] Importer ces données dans vos propres collections
-
+```
+util.importJson("/var/lib/mysql-files/car.json", {schema: "Car_Center", collection: "cars"})
+```
 
 ### :three: Scripting avec API
 

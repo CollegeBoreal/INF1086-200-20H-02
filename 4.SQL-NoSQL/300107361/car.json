@@ -1,0 +1,551 @@
+{
+ "Count":86,
+ "Message":"Response returned successfully",
+ "SearchCriteria":null,
+ "Results":[
+           {
+		   "Country":"CHINA",
+		   "Mfr_CommonName":null,
+		   "Mfr_ID":1080,
+		   "Mfr_Name":"GEELY GROUP ZHEJIANG MOTORCYCLE CO., LTD.",
+		   "VehicleTypes":
+		     [
+		      {
+			  "IsPrimary":false,
+			  "Name":"Motorcycle"
+			  }
+			 ]
+			},
+			{
+			"Country":"JAPAN",
+			"Mfr_CommonName":"Mitsubishi Fuso Truck",
+			"Mfr_ID":1081,
+			"Mfr_Name":"MITSUBISHI FUSO TRUCK & BUS CORPORATION",
+			"VehicleTypes":
+			  [
+			  ]
+			},
+			{
+			"Country":"MEXICO",
+			"Mfr_CommonName":"Mazda",
+			"Mfr_ID":1083,
+			"Mfr_Name":"MAZDA MOTOR MANUFACTURING DE MEXICO S.A. DE C.V.",
+			"VehicleTypes":
+			  [
+			  ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"FOREST RIVER, INC.",
+			"Mfr_ID":1084,
+			"Mfr_Name":"FOREST RIVER, INC.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":false,
+				"Name":"Truck "
+				},
+				{
+				"IsPrimary":false,
+				"Name":"Bus"
+				},
+				{
+				"IsPrimary":true,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"CANADA",
+			"Mfr_CommonName":"Toyota",
+			"Mfr_ID":1085,
+			"Mfr_Name":"TOYOTA MOTOR MANUFACTURING CANADA",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Thomas Built",
+			"Mfr_ID":1086,
+			"Mfr_Name":"Thomas Built Buses, Inc",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Toyota",
+			"Mfr_ID":1087,
+			"Mfr_Name":"TOYOTA MOTOR MANUFACTURING, INDIANA, INC.",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Toyota",
+			"Mfr_ID":1088,"Mfr_Name":"TOYOTA MOTOR MANUFACTURING, KENTUCKY, INC.",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":null,
+			"Mfr_ID":1089,
+			"Mfr_Name":"JOHN THOMAS, INC",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Toyota",
+			"Mfr_ID":1090,
+			"Mfr_Name":"TOYOTA MOTOR MANUFACTURING, TEXAS, INC.",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Toyota",
+			"Mfr_ID":1091,
+			"Mfr_Name":"TOYOTA MOTOR MANUFACTURING, NORTHERN KENTUCKY, INC.",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Thomas Grinding",
+			"Mfr_ID":1092,
+			"Mfr_Name":"THOMAS GRINDING INC.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"AM GENERAL",
+			"Mfr_ID":1093,
+			"Mfr_Name":"AM GENERAL CORPORATION ",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":false,
+				"Name":"Multipurpose Passenger Vehicle (MPV)"
+				}
+			   ]
+			},
+			{
+			"Country":"ENGLAND",
+			"Mfr_CommonName":"Morgan Motor",
+			"Mfr_ID":1094,
+			"Mfr_Name":"Morgan Motor Company Ltd",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Morgan Trailers",
+			"Mfr_ID":1095,
+			"Mfr_Name":"MORGAN TRAILERS, INC",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Altec",
+			"Mfr_ID":1096,
+			"Mfr_Name":"Altec Environmental Products, LLC",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"ENGLAND",
+			"Mfr_CommonName":"Morgan 3 Wheeler",
+			"Mfr_ID":1097,
+			"Mfr_Name":"The Morgan 3 Wheeler Limited",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Isuzu",
+			"Mfr_ID":1098,
+			"Mfr_Name":"ISUZU MANUFACTURING SERVICES OF AMERICA, INC.",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Central Ohio Fabrication",
+			"Mfr_ID":1099,
+			"Mfr_Name":"CENTRAL OHIO FABRICATION LLC",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Thor Motor Coach",
+			"Mfr_ID":1100,
+			"Mfr_Name":"THOR MOTOR COACH INC.",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Thor Industries",
+			"Mfr_ID":1101,
+			"Mfr_Name":"Thor Industries, Inc.",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Breckenridge",
+			"Mfr_ID":1102,
+			"Mfr_Name":"BRECKENRIDGE",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Cruiser RV",
+			"Mfr_ID":1104,
+			"Mfr_Name":"CRUISER RV ",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":null,
+			"Mfr_ID":1106,
+			"Mfr_Name":"MVP RV INC. (THOR CALIFORNIA, INC.)",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Thor Manufacturing",
+			"Mfr_ID":1107,
+			"Mfr_Name":"THOR MANUFACTURING LLC",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":false,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Winnebago Of Indiana",
+			"Mfr_ID":1108,
+			"Mfr_Name":"WINNEBAGO OF INDIANA, LLC",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"JAPAN",
+			"Mfr_CommonName":"HINO TRUCKS",
+			"Mfr_ID":1109,
+			"Mfr_Name":"HINO MOTORS, LTD.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":false,
+				"Name":"Truck "
+				},
+				{
+				"IsPrimary":false,
+				"Name":"Incomplete Vehicle"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Supreme Corp.",
+			"Mfr_ID":1110,
+			"Mfr_Name":"SUPREME CORPORATION",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Truck "
+				},
+				{
+				"IsPrimary":false,
+				"Name":"Trailer"
+				},
+				{
+				"IsPrimary":false,
+				"Name":"Incomplete Vehicle"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"KNAPHEIDE Truck",
+			"Mfr_ID":1115,
+			"Mfr_Name":"KNAPHEIDE TRUCK EQUIPMENT COMPANY SOUTHWEST",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":false,
+				"Name":"Truck "
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Collins Welding",
+			"Mfr_ID":1116,
+			"Mfr_Name":"COLLINS WELDING, INC.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Gillig",
+			"Mfr_ID":1118,
+			"Mfr_Name":"GILLIG LLC",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Bus"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Champion Trike",
+			"Mfr_ID":1119,
+			"Mfr_Name":"CHAMPION TRIKE MANUFACTURING INC.",
+			"VehicleTypes":
+			   [
+			    {
+			    "IsPrimary":true,
+			    "Name":"Motorcycle"
+			    }
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":null,
+			"Mfr_ID":1120,
+			"Mfr_Name":"CHAMPION TELECOM, INC.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":false,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":null,
+			"Mfr_ID":1121,
+			"Mfr_Name":"CHAMPION BRIDGE CO., INC.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":false,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":null,
+			"Mfr_ID":1122,
+			"Mfr_Name":"Champion Trailers, Inc.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":false,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Micro-Lite Trailer",
+			"Mfr_ID":1123,
+			"Mfr_Name":"MICRO-LITE TRAILER MFG. LLC",
+			"VehicleTypes":
+			   [
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)"
+			,"Mfr_CommonName":"PIERCE MANUFACTURING",
+			"Mfr_ID":1124,
+			"Mfr_Name":"PIERCE MANUFACTURING INC.",
+			"VehicleTypes":
+			   [
+			    {"IsPrimary":true,
+				"Name":"Truck "
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"MCI",
+			"Mfr_ID":1126,
+			"Mfr_Name":"MOTOR COACH INDUSTRIES, INC.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Bus"
+				},
+				{
+				"IsPrimary":false,
+				"Name":"Incomplete Vehicle"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":null,
+			"Mfr_ID":1127,
+			"Mfr_Name":"TURTLEBACK TRAILERS LLC",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":false,
+				"Name":"Trailer"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Prevost",
+			"Mfr_ID":1128,
+			"Mfr_Name":"PREVOST A DIVISION OF PREVOST CAR (US) INC. (NOVA BUS, INCORPORATED)",
+			"VehicleTypes":
+			   [
+			    {"IsPrimary":true,
+				"Name":"Bus"
+				}
+			   ]
+			},
+			{
+			"Country":"TURKEY",
+			"Mfr_CommonName":"TEMSA ",
+			"Mfr_ID":1129,
+			"Mfr_Name":"TEMSA ULASIM ARACLARI SANAYI VE TICARET A.S.",
+			"VehicleTypes":
+			   [
+			    {"IsPrimary":false,
+				"Name":"Bus"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Yamaha",
+			"Mfr_ID":1130,
+			"Mfr_Name":"YAMAHA MOTOR CORPORATION",
+			"VehicleTypes":
+			   [
+			    {
+			    "IsPrimary":true,
+				"Name":"Motorcycle"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Triumph Motorcycles",
+			"Mfr_ID":1131,
+			"Mfr_Name":"TRIUMPH MOTORCYCLES (AMERICA) LIMITED",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Motorcycle"
+				}
+			   ]
+			},
+			{
+			"Country":"UNITED STATES (USA)",
+			"Mfr_CommonName":"Polaris",
+			"Mfr_ID":1132,
+			"Mfr_Name":"POLARIS INDUSTRIES INC.",
+			"VehicleTypes":
+			   [
+			    {
+				"IsPrimary":true,
+				"Name":"Motorcycle"
+				},
+				{
+				"IsPrimary":false,
+				"Name":"Low Speed Vehicle (LSV)"
+				}
+			   ]
+			},
+			{
+			"Country":"ITALY",
+			"Mfr_CommonName":"Ducati",
+			"Mfr_ID":1133,
+			"Mfr_Name":"DUCATI MOTOR HOLDING S.p.A.",
+			"VehicleTypes":
+			   [
+		            {
+				"IsPrimary":true,
+				"Name":"Motorcycle"
+			    }
+			   ]
+			}
+       ]
+   }

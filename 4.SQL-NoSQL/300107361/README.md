@@ -37,11 +37,22 @@ mysql> GRANT ALL ON car_center.* TO 'joker'@'%';
 ### :one: Migration
 
 - [ ] Récupérer votre ancien projet [SQL](https://github.com/CollegeBoreal/INF1006-202-19A-01/tree/master/4.DML)
-
+```
+$ docker container exec --interactive some-mysqlds sh -c           ' exec mysql --user root -ppassword '            < ~/developer/INF1006-202-19A-01/Q.Query/300107361/300107361-schema.sql
+mysql: [Warning] Using a password on the command line interface can be insecure.
+```
 
 - [ ] Importer votre base de données SQL
+ ```
+ MySQL  localhost:33060+ ssl  JS > util.importJson("/var/lib/mysql-files/car.json"
+, {schema: "Car_Center", collection: "cars"})
+Importing from file "/var/lib/mysql-files/car.json" to collection `Car_Center`.`ca
+rs` in MySQL Server at localhost:33060
 
-
+.. 1.. 1
+Processed 10.87 KB in 1 document in 0.0079 sec (126.80 documents/s)
+Total successfully imported documents 1 (126.80 documents/s)
+```
 ### :two: E.T.L
 
 - [ ] Chercher des données `json` correspondant à votre domaine d'activités

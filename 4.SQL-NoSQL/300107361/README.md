@@ -31,7 +31,7 @@
 
 ```
 mysql> CREATE USER 'joker'@'%' IDENTIFIED BY 'password';
-mysql> GRANT ALL ON car_center.* TO 'joker'@'%';
+mysql> GRANT ALL ON Car_Center.* TO 'joker'@'%';
 ```
 
 ### :one: Migration
@@ -57,7 +57,12 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 
 - [ ] Importer ces données dans vos propres collections
 ```
-util.importJson("/var/lib/mysql-files/car.json", {schema: "Car_Center", collection: "cars"})
+ MySQL  localhost:33060+ ssl  JS > util.importJson("/var/lib/mysql-files/car.json", {schema: "Car_Center", collection: "cars"})
+Importing from file "/var/lib/mysql-files/car.json" to collection `Car_Center`.`cars` in MySQL Server at localhost:33060
+
+.. 1.. 1
+Processed 10.87 KB in 1 document in 0.0563 sec (17.75 documents/s)
+Total successfully imported documents 1 (17.75 documents/s)
 ```
 
 ### :three: Scripting avec API

@@ -17,13 +17,13 @@
 * Lancer `PS> pwd` pour avoir le path du fichier pour vous assurez qu'il utilise un volume: 
 
 ```
- docker container run \
-         --name some-mysqlds \
-         --env MYSQL_ROOT_PASSWORD=password \
-         --publish 3306:3306 \
-         --publish 33060:33060 \
-         --volume C:\Users\Tochgaly-K.J.Etienne\developer\INF1086-200-20H-02\4.SQL-NoSQL\300107361:/var/lib/mysql-files \
-         --detach \
+ docker container run `
+         --name some-mysqlds `
+         --env MYSQL_ROOT_PASSWORD=password `
+         --publish 3306:3306 `
+         --publish 33060:33060 `
+         --volume C:\Users\Tochgaly-K.J.Etienne\developer\INF1086-200-20H-02\4.SQL-NoSQL\300107361:/var/lib/mysql-files `
+         --detach `
          mysql/mysql-server:latest
 ```
 

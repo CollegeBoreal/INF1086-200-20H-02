@@ -36,20 +36,18 @@ docker container run `
 ```
 
 
-- [ ] Crétion de l'utilisateur permettant d'accéder au Document Store (DCL)
+-[ ] Crétion de l'utilisateur permettant d'accéder au Document Store (DCL)
 
 
 ```
 
 CREATE USER 'alade'@'%' IDENTIFIED BY 'password';
-
-```
-
-
-```
 GRANT ALL ON Boubou.* TO 'alade'@'%';
 
 ```
+
+
+
 
 ```
 

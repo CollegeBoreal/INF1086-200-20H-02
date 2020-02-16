@@ -98,3 +98,16 @@ No default schema selected; type \use <schema> to set one.
  ```
 
 
+```
+
+
+ MySQL  localhost:33060+ ssl  JS > util.importJson("/var/lib/mysql-files/Boubou.json", {schema: "Boubou", collection: "Boubou"})
+Importing from file "/var/lib/mysql-files/Boubou.json" to collection `Boubou`.`Boubou` in MySQL Server at localhost:33060
+
+.. 1.. 1
+Processed 1.54 KB in 1 document in 0.0988 sec (10.12 documents/s)
+Total successfully imported documents 1 (10.12 documents/s)
+
+
+```
+

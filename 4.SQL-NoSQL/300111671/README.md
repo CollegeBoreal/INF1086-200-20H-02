@@ -98,8 +98,12 @@ No default schema selected; type \use <schema> to set one.
  ```
 
 
-```
 
+
+
+- [ ] Importation de mes données dans ma collection Boubou
+
+```
 
  MySQL  localhost:33060+ ssl  JS > util.importJson("/var/lib/mysql-files/Boubou.json", {schema: "Boubou", collection: "Boubou"})
 Importing from file "/var/lib/mysql-files/Boubou.json" to collection `Boubou`.`Boubou` in MySQL Server at localhost:33060

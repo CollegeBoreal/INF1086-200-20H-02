@@ -71,6 +71,10 @@ GRANT ALL ON Boubou.* TO 'alade'@'%';
 
 - [ ]  Données `json` correspondant à MON domaine d'activités
 
+```
+INF1086-200-20H-02/4.SQL-NoSQL/300111671/Boubou.json
+```
+
 
 
 

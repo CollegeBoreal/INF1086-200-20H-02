@@ -65,3 +65,12 @@ GRANT ALL ON Boubou.* TO 'alade'@'%';
  
  
 ```
+
+
+### :two: E.T.L
+
+- [ ]  Données `json` correspondant à MON domaine d'activités
+
+
+
+

@@ -75,6 +75,26 @@ GRANT ALL ON Boubou.* TO 'alade'@'%';
 INF1086-200-20H-02/4.SQL-NoSQL/300111671/Boubou.json
 ```
 
+se connecter avec JS 
 
+```
+ # mysqlsh --js --host localhost --user alade --password
+ Please provide the password for 'alade@localhost': ********
+MySQL Shell 8.0.18
+
+Copyright (c) 2016, 2019, Oracle and/or its affiliates. All rights reserved.
+Oracle is a registered trademark of Oracle Corporation and/or its affiliates.
+Other names may be trademarks of their respective owners.
+
+Type '\help' or '\?' for help; '\quit' to exit.
+Creating a session to 'alade@localhost'
+Fetching schema names for autocompletion... Press ^C to stop.
+Your MySQL connection id is 186 (X protocol)
+Server version: 8.0.18 MySQL Community Server - GPL
+No default schema selected; type \use <schema> to set one.
+ MySQL  localhost:33060+ ssl  JS >
+
+ 
+ ```
 
 

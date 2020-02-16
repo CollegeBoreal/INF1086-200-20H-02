@@ -28,6 +28,13 @@ docker container run `
 
 ```
 
+ [ ]  Volume pour importer de nouvelles données
+ 
+ ``` 
+ C:\Users\LENOVO\Developer\INF1086-200-20H-02\4.SQL-NoSQL\300111671
+ 
+```
+
 ```
 
 CREATE USER 'alade'@'%' IDENTIFIED BY 'password';

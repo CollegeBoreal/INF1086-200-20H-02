@@ -41,6 +41,11 @@ docker container run `
 
 ```
 
+$  docker container exec --interactive some-mysqlds sh -c \
+>           ' exec mysql --user root -ppassword --execute "CREATE DATABASE Boubou;" '
+
+
+
 CREATE USER 'alade'@'%' IDENTIFIED BY 'password';
 GRANT ALL ON Boubou.* TO 'alade'@'%';
 

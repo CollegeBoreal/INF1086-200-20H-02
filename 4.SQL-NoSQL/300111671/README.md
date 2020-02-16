@@ -46,12 +46,18 @@ GRANT ALL ON Boubou.* TO 'alade'@'%';
 
 ```
 
+### :one: Migration
 
+- [ ] Récupération de l'ancien  projet [SQL](https://github.com/CollegeBoreal/INF1006-202-19A-01/tree/master/4.DML)
+
+
+- [ ] Importer votre base de données SQL
 
 
 ```
 
  docker container exec --interactive some-mysqlds sh -c           ' exec mysql --user root -ppassword '            < ~/developer/INF1086-200-20H-02/4.SQL-NoSQL/300111671/300111671-schema.sql
-
-
+ mysql: [Warning] Using a password on the command line interface can be insecure.
+ 
+ 
 ```

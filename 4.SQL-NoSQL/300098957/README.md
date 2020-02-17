@@ -23,6 +23,20 @@ $ docker container run \
          mysql/mysql-server:latest
 ```
 
+:pushpin: En éxécutant la commande suivante vos fichiers dans les conteneurs devraient s'afficher
+
+```
+% docker container exec --interactive some-mysqlds ls /var/lib/mysql-files
+300098957-data.sql
+300098957-dump.sql
+300098957-schema.sql
+README.md
+images
+students.json
+```
+
+
+
 ### :two: Récupération et chargement de la base de données `Etudiants`
 
 :pushpin: DCL création de la base de données

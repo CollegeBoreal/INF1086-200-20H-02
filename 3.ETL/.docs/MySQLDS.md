@@ -6,7 +6,7 @@
 # :a: Créer le conteneur avec un volume
 
 
-Les volumes dockers sont gérés par Linux
+:bulb: Les volumes dockers sont gérés par Linux
 
 ```
 * Remplacer \ par /
@@ -15,11 +15,15 @@ ou doubler les `\` par example '\\'
 
 :m: sous gitbash 
 
+:pushpin: Assigner le répertoire courant à la variable `$src`
+
 ```
 $ echo ${PWD}
 /c/Users/300098957/Developer/INF1086-200-20H-02/3.ETL/300098957
+$ src=${PWD}
 ```
 
+:pushpin: Lancer le conteneur avec un volume `$src`
 
 ```
 $ docker container run \
@@ -34,20 +38,17 @@ $ docker container run \
 
 :m: sous PowerShell
 
+:pushpin: Assigner le répertoire courant à la variable `$src`
+
 ```
 PS > $pwd
 
 Path
 ----
 C:\Users\300098957\Developer\INF1086-200-20H-02\3.ETL\300098957
-```
-
-- Remplacer la source ci-dessous
-
-```
 PS > $src = $pwd.Path | Foreach-Object {$_ -replace '\\','/'}
 ```
-
+:pushpin: Lancer le conteneur avec un volume `$src`
 
 ```
 $ docker container run `

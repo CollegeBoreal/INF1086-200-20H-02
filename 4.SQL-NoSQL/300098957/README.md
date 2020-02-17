@@ -10,6 +10,8 @@ $ mkdir <id> && cd <id>
 
 ### :one: Créer le conteneur avec un volume (dans le répertoire de son projet)
 
+:bulb: Le volume sert à charger le fichier `.json`
+
 ```
 $ docker container run \
          --name some-mysqlds \

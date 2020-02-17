@@ -15,11 +15,22 @@ $ docker container run \
 
 ### :two: Récupération et chargement de la base de données `Etudiants`
 
-:pushpin: DCL création de l'utilisateur
+:pushpin: DCL création de la base de données
+
 
 ```
-mysql> CREATE USER 'etudiants'@'%' IDENTIFIED BY 'etudiants_1';
-mysql> GRANT ALL ON etudiants.* TO 'etudiants'@'%';
+$ docker container exec --interactive some-mysqlds \
+                  mysql --user root -ppassword --execute "CREATE DATABASE etudiants;"
+```
+
+:pushpin: DCL création de l'utilisateur
+
+
+```
+$ docker container exec --interactive some-mysqlds \
+                  mysql --user root -ppassword --execute "CREATE USER 'etudiants'@'%' IDENTIFIED BY 'etudiants_1';"
+$ docker container exec --interactive some-mysqlds \
+                  mysql --user root -ppassword --execute "GRANT ALL ON etudiants.* TO 'etudiants'@'%';"
 ```
 
 

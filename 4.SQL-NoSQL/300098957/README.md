@@ -4,7 +4,8 @@
 
 ```
 $ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL
-$ mkdir ```:id: && cd :id:
+$ mkdir <id> && cd <id>
+```
 
 
 ### :one: Créer le conteneur avec un volume (dans le répertoire de son projet)

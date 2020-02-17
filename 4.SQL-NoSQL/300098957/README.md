@@ -57,7 +57,12 @@ $ docker container exec --interactive some-mysqlds \
          mysql --user root -ppassword --execute "GRANT ALL ON etudiants.* TO 'etudiants'@'%';"
 ```
 
+:pushpin: Chargement des données SQL
 
+```
+$ docker container exec --interactive some-mysqlds \
+         mysql --user root -ppassword etudiants ' < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/etudiants-schema.sql
+```
 
 
 ![image](images/schema.png)

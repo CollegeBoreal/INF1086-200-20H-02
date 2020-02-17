@@ -3,7 +3,7 @@
 ### :zero: Créer son projet dans un répertoire :id:
 
 ```
-$ cd ~/Developer/INF1086-200-20H-02/4SQL-NoSQL
+$ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL
 $ mkdir 300098957
 $ cd 300098957
 ```

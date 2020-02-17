@@ -61,7 +61,7 @@ $ docker container exec --interactive some-mysqlds \
 
 ```
 $ docker container exec --interactive some-mysqlds \
-         mysql --user root -ppassword etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/etudiants-schema.sql
+         mysql --user root -ppassword etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-schema.sql
 ```
 
 

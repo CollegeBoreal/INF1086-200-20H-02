@@ -9,15 +9,7 @@
 
 :m: sous gitbash 
 
-:pushpin: Assigner le répertoire courant à la variable `$src`
-
-```
-$ echo ${PWD}
-/c/Users/300098957/Developer/INF1086-200-20H-02/3.ETL/300098957
-$ src=${PWD}
-```
-
-:pushpin: Lancer le conteneur avec un volume `$src`
+:pushpin: Assigner le répertoire courant à la variable `$PWD`
 
 ```
 $ docker container run \
@@ -25,33 +17,8 @@ $ docker container run \
          --env MYSQL_ROOT_PASSWORD=password \
          --publish 3306:3306 \
          --publish 33060:33060 \
-         --volume ${src}:/var/lib/mysql-files \
+         --volume ${PWD}:/var/lib/mysql-files \
          --detach \
-         mysql/mysql-server:latest
-```
-
-:m: sous PowerShell
-
-:pushpin: Assigner le répertoire courant à la variable `$src`
-
-```
-PS > $pwd
-
-Path
-----
-C:\Users\300098957\Developer\INF1086-200-20H-02\3.ETL\300098957
-PS > $src = $pwd.Path | Foreach-Object {$_ -replace '\\','/'}
-```
-:pushpin: Lancer le conteneur avec un volume `$src`
-
-```
-$ docker container run `
-         --name some-mysqlds `
-         --env MYSQL_ROOT_PASSWORD=password `
-         --publish 3306:3306 `
-         --publish 33060:33060 `
-         --volume C:/Users/Administrator/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957:/var/lib/mysql-files `
-         --detach `
          mysql/mysql-server:latest
 ```
 

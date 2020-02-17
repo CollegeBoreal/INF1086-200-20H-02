@@ -5,13 +5,7 @@
 
 # :a: Créer le conteneur avec un volume
 
-
-:bulb: Les volumes dockers sont gérés par Linux
-
-```
-* Remplacer \ par /
-ou doubler les `\` par example '\\'
-```
+:red_pepper:
 
 :m: sous gitbash 
 

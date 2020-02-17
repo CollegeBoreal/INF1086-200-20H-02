@@ -15,6 +15,12 @@ $ docker container run \
 
 ### :two: Récupération et chargement de la base de données `Etudiants`
 
+:pushpin: DCL création de l'utilisateur
+
+```
+mysql> CREATE USER 'etudiants'@'%' IDENTIFIED BY 'etudiants_1';
+mysql> GRANT ALL ON etudiants.* TO 'etudiants'@'%';
+```
 
 
 

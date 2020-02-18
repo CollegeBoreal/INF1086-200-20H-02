@@ -16,7 +16,7 @@ $ mkdir <id> && cd <id>
 
 - sous gitbash
 
-`$ SRC=`pwd -W` `
+`$ SRC=\`pwd -W\` `
 
 - sous un terminal Unix (Linux, MacOS)
 

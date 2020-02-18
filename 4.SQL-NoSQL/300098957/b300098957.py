@@ -21,13 +21,6 @@ myColl = myDb.get_collection('import_students')
 # Accessing an existing table
 myTable = myDb.get_table('ETUDIANTS')
 
-
-# Find a row in the SQL Table
-myResult = myTable.select(['_id', 'name', 'birthday']) \
-  .where('name like :name AND age < :age') \
-  .bind('name', 'L%') \
-  .bind('age', 30).execute()
-
 # Find objects from document
 objs = myColl.find().execute()
 

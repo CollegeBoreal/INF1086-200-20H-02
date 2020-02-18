@@ -56,8 +56,8 @@ GRANT ALL ON Boubou.* TO 'alade'@'%';
 - [ ] Récupération de l'ancien  projet [SQL](https://github.com/CollegeBoreal/INF1006-202-19A-01/tree/master/4.DML)
 
 ```
+   INF1086-200-20H-02/4.SQL-NoSQL/300111671/300111671-data.sql
    INF1086-200-20H-02/4.SQL-NoSQL/300111671/300111671-schema.sql
-
 ```
 
 - [ ] Importer votre base de données SQL

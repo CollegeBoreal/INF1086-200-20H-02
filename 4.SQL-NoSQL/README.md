@@ -74,3 +74,8 @@ $ docker exec some-mysqlds \
 ### :o: Présenter le tout dans un fichier README.md
 
 # [Participation](.scripts/Participation.md)
+
+
+# References
+
+[Learn API Documentation with JSON and XML](https://www.linkedin.com/learning/learn-api-documentation-with-json-and-xml)

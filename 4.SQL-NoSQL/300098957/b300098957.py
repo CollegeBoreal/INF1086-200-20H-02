@@ -18,6 +18,16 @@ myDb = mySession.get_schema('etudiants')
 # Create a new collection 'my_collection'
 myColl = myDb.get_collection('import_students')
 
+# Accessing an existing table
+myTable = myDb.get_table('ETUDIANTS')
+
+
+# Find a row in the SQL Table
+myResult = myTable.select(['_id', 'name', 'birthday']) \
+  .where('name like :name AND age < :age') \
+  .bind('name', 'L%') \
+  .bind('age', 30).execute()
+
 # Find objects from document
 objs = myColl.find().execute()
 
@@ -28,6 +38,8 @@ while obj:
    while i < c_s:
      student = obj.students.student[i]
      print("INSERT INTO ETUDIANTS ( initiale, nom ) VALUES ('" + student.name.first_name + "', '" +  student.name.last_name + "')" )
+     # Insert SQL Table data
+     myTable.insert(['initial','nom']).values(student.name.first_name, student.name.last_name).execute()
      i = i + 1
    obj = objs.fetch_one()
 

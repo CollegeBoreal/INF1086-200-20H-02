@@ -136,15 +136,21 @@ MySQL  JS > \use etudiants;
 MySQL  JS > db.import_students.find()
 ```
 
-### :five: XDEVAPI 
+### :six: XDEVAPI 
 
 :pushpin: Utilisation de MySQL Python
+
+Écrire le programme python permettant de rajouter des étudiants importés par le fichier `students.json`
 
 ```
 $ docker container exec --interactive some-mysqlds mysqlsh --py \
                         --host localhost --user etudiants -petudiants_1 \
                    < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/b300098957.py
 ```
+
+### :seven: Modèle
+
+Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (i.e. forward engineering)
 
 ![image](images/schema.png)
 

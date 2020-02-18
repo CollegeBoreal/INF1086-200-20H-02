@@ -14,15 +14,17 @@ $ mkdir <id> && cd <id>
 
 :bulb: Le volume sert à charger le fichier `.json`
 
+$ SRC=C:\\Users\\300098957\\Developer\\INF1086-200-20H-02\\4.SQL-NoSQL\\300098957 
+
 
 ```
-$ d1=C:\\Users\\300098957\\Developer\\INF1086-200-20H-02\\4.SQL-NoSQL\\300098957 
+$ SRC=`pwd -W` 
 $ docker container run \
          --name some-mysqlds \
          --env MYSQL_ROOT_PASSWORD=password \
          --publish 3306:3306 \
          --publish 33060:33060 \
-         --volume ${d1}:/var/lib/mysql-files \
+         --volume ${SRC}:/var/lib/mysql-files \
          --detach \
          mysql/mysql-server:latest
 ```

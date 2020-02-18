@@ -19,6 +19,8 @@ $ SRC=`pwd -W`
 $ SRC=`pwd -L`
 ```
 
+:bulb: Lancer le conteneur avec un volume
+
 ```
 $ docker container run \
          --name some-mysqlds \

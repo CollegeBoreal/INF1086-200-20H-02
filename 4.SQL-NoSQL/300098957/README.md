@@ -12,19 +12,19 @@ $ mkdir <id> && cd <id>
 
 - [x] Créer le conteneur avec un volume (dans le répertoire de son projet)
 
-         :bookmark: Donner le nom du répertoire source à la variable `SRC` (respectez les backtick)
+:bookmark: Donner le nom du répertoire source à la variable `SRC` (respectez les backtick)
 
-         <sup>:m:</sup> sous `gitbash` afficher le format Windows -W
+<sup>:m:</sup> sous `gitbash` afficher le format Windows -W
 
-         ```
-         $ SRC=`pwd -W`
-         ```
+```
+$ SRC=`pwd -W`
+```
 
-         <sup>:m:</sup> sous un terminal classique (Linux, MacOS)
+<sup>:m:</sup> sous un terminal classique (Linux, MacOS)
 
-         ```
-         $ SRC=`pwd -W`
-         ```
+```
+$ SRC=`pwd -W`
+```
 
 :bulb: Le volume sert à charger le fichier `.json`
 

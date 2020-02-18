@@ -4,13 +4,12 @@
 
 ```
 $ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL
-$ mkdir <300110529> && cd <300110529>
+$ mkdir <300110529>
+cd <300110529>
 ```
 
 
 ### :one: Créer le conteneur dans le répertoire
-
-:bulb: Le volume sert à charger le fichier `.json`
 
 ```
 $ docker container run \

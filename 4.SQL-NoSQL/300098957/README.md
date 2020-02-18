@@ -12,13 +12,18 @@ $ mkdir <id> && cd <id>
 
 - [x] Créer le conteneur avec un volume (dans le répertoire de son projet)
 
-:bulb: Le volume sert à charger le fichier `.json`
+:warning: Donner le nom du répertoire source à la variable `SRC
 
 - sous gitbash
 
 `$ SRC=`pwd -W` `
 
+- sous un terminal Unix (Linux, MacOS)
 
+`$ SRC=${PWD}`
+
+
+:bulb: Le volume sert à charger le fichier `.json`
 
 ```
 $ docker container run \

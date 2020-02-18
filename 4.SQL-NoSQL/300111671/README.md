@@ -41,14 +41,10 @@ docker container run `
 
 ```
 
-$  docker container exec --interactive some-mysqlds sh -c \
->           ' exec mysql --user root -ppassword --execute "CREATE DATABASE Boubou;" '
-
-
-
-CREATE USER 'alade'@'%' IDENTIFIED BY 'password';
-GRANT ALL ON Boubou.* TO 'alade'@'%';
-
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "CREATE USER 'abbas'@'127.0.0.1' IDENTIFIED BY 'password';"
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "GRANT ALL ON Boubou.* TO 'abbas'@'127.0.0.1';"
 ```
 
 :pushpin: Contexte permettant d'utiliser `Mysql Workbench` 

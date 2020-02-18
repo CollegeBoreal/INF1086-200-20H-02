@@ -136,7 +136,15 @@ MySQL  JS > \use etudiants;
 MySQL  JS > db.import_students.find()
 ```
 
+### :five: XDEVAPI 
 
+:pushpin: Utilisation de MySQL Python
+
+```
+$ docker container exec --interactive some-mysqlds mysqlsh --py \
+                        --host localhost --user etudiants -petudiants_1 \
+                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/b300098957.py
+```
 
 ![image](images/schema.png)
 

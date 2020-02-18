@@ -20,6 +20,11 @@ $ mkdir <id> && cd <id>
 $ SRC=`pwd -W`
 ```
 
+
+```
+PS> $SRC = $PWD.Path | Foreach-Object {$_ -replace '\\','/'}
+```
+
 <sup>:m:</sup> sous un terminal classique afficher le format (Linux, MacOS)
 
 ```
@@ -36,6 +41,18 @@ $ docker container run \
          --publish 33060:33060 \
          --volume ${SRC}:/var/lib/mysql-files \
          --detach \
+         mysql/mysql-server:latest
+```
+
+
+```
+PS > docker container run `
+         --name some-mysqlds `
+         --env MYSQL_ROOT_PASSWORD=password `
+         --publish 3306:3306 `
+         --publish 33060:33060 `
+         --volume ${SRC}:/var/lib/mysql-files `
+         --detach `
          mysql/mysql-server:latest
 ```
 

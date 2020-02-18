@@ -14,11 +14,13 @@ $ mkdir <id> && cd <id>
 
 :bangbang: Donner le nom du répertoire source à la variable `SRC` (respectez les backticks)
 
+| Terminal   | Commande   | 
+|------------|------------|
+| `gitbash`  | ```$ SRC=`pwd -W```` |
+ 
+
 <sup>:m:</sup> sous un terminal `gitbash` afficher le format Windows `-W`
 
-```
-$ SRC=`pwd -W`
-```
 
 <sup>:m:</sup> sous un terminal classique afficher le format (Linux, MacOS)
 

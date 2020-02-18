@@ -90,11 +90,18 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 ### :five: ETL
 
-:pushpin: Se connecter à mysql SH
+:pushpin: Se connecter au conteneur
 
 ```
 $ docker container exec --interactive --tty some-mysqlds bash
 ```
+
+:pushpin: Se connecter à mysql SH
+
+```
+bash-4.2# mysqlsh --js --host localhost --user etudiants --password
+```
+
 
 > util.importJson("/var/lib/mysql-files/students.json", {schema: "etudiants", collection: "import_students"})
 

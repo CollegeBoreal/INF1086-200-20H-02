@@ -2,7 +2,7 @@
 
 ### :zero: Administration 
 
-Créer son répertoire :id:
+Créer son répertoire avec son :id:
 
 ```
 $ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL

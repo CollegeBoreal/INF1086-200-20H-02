@@ -14,23 +14,11 @@ $ mkdir <id> && cd <id>
 
 <sup>:m:</sup> Donner le nom du répertoire source à la variable `SRC` (respectez les backticks)
 
-| Terminal     | Commande                                                 |  Commentaires                          | 
-|--------------|----------------------------------------------------------|----------------------------------------|
-| classique    | SRC=\`pwd -L\`                                           | afficher le format Unix (Linux, MacOS) |
-| `gitbash`    | SRC=\`pwd -W\`                                           | afficher le format Windows `-W`        |
-| `Powershell` | $SRC = $PWD.Path \| Foreach-Object {$_ -replace '\\','/'} | afficher le format Windows `-W`        |
- 
-
-```
-$ SRC=`pwd -L`
-```
-
-<sup>:m:</sup> sous un terminal Powershell
-
-```
-PS> 
-```
-
+| Terminal     | Commande                                                       |  Commentaires                          | 
+|--------------|----------------------------------------------------------------|----------------------------------------|
+| classique    | $ SRC=\`pwd -L\`                                               | afficher le format Unix (Linux, MacOS) |
+| `gitbash`    | $ SRC=\`pwd -W\`                                               | afficher le format Windows `-W`        |
+| `Powershell` | PS > $SRC = $PWD.Path \| Foreach-Object {$_ -replace '\\','/'} | afficher le format Windows `-W`        |
 
 :bulb: Le volume sert à charger le fichier `.json`
 
@@ -47,7 +35,7 @@ $ docker container run \
          mysql/mysql-server:latest
 ```
 
-<sup>:m:</sup> sous `Powershell`
+<sup>:m:</sup> sous `Powershell` remplacer `\` avec ```
 
 ```
 PS > docker container run `

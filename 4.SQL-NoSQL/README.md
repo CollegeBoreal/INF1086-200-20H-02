@@ -39,12 +39,12 @@
 :pushpin: avec un nom de fonction nommé
 
 ```python
-def mashup():
+def mashup(myDb):
 
 ```
 
 
-- [ ] La fonction `mashup` doit créer une table produite par des collections
+- [ ] La fonction `mashup` doit gérer une table produite par des collections
 
 
 - [ ] ` ou ` La fonction `mashup` doit créer une collection produite par des collections `importées `

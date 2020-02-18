@@ -62,15 +62,15 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 * Création du `schema`
 
 ```
-$ docker container exec --interactive some-mysqlds \
-         mysql --user root -ppassword etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-schema.sql
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+          etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-schema.sql
 ```
 
 * Charger les données SQL
 
 ```
-$ docker container exec --interactive some-mysqlds \
-         mysql --user root -ppassword etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-data.sql
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+         etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-data.sql
 ```
 
 * Vérifier les données SQL en se connectant à Workbench

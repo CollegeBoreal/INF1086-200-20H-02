@@ -14,7 +14,7 @@ $ mkdir <id> && cd <id>
 
 :warning: Donner le nom du répertoire source à la variable `SRC` (respectez les backtick)
 
-:m: sous `gitbash` afficher le format Windows -W
+<sup>:m:</sup> sous `gitbash` afficher le format Windows -W
 
 ```
 $ SRC=`pwd -W`

@@ -163,7 +163,7 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
                    < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/b300098957.py
 ```
 
-### :three: Modèlisation
+### :four: Modèlisation
 
 Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (i.e. forward engineering)
 
@@ -174,7 +174,7 @@ Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (
 <img src="images/schema.png" witdth=920 height=791 ></img>
 
 
-### :four: Backup
+### :five: Backup
 
 - [x] Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql
  

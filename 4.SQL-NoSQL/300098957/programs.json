@@ -1,0 +1,532 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "p5jw-vmgp",
+      "name" : "Number of Participants in the Registered Apprenticeship Program by Trade as of December 31, 2012",
+      "attribution" : "Alberta Innovates",
+      "attributionLink" : "http://tradesecrets.alberta.ca/sources/pdfs/BOARD_ANNUAL_REPORT/PDF/2012_STATISTICAL_REPORT.PDF",
+      "averageRating" : 0,
+      "createdAt" : 1391539305,
+      "description" : "The number of individuals in high school registered in the RAP, the number of individuals who participated in RAP in high school who are now registered in a regular apprenticeship program, and the number of individuals who participated in RAP and have since become certified. The data is presented by trade for the most recent calendar year.",
+      "displayType" : "table",
+      "downloadCount" : 76,
+      "indexUpdatedAt" : 1414723700,
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 7290785,
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1392155095,
+      "publicationGroup" : 1465748,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1391539312,
+      "rowsUpdatedBy" : "us8s-63ci",
+      "tableId" : 1465748,
+      "totalTimesRated" : 0,
+      "viewCount" : 339132,
+      "viewLastModified" : 1392947154,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : 131950533,
+        "name" : "Trade Type",
+        "dataTypeName" : "text",
+        "fieldName" : "trade_type",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 17953861,
+        "width" : 220,
+        "cachedContents" : {
+          "non_null" : 153,
+          "smallest" : "Trade",
+          "null" : 0,
+          "largest" : "Trade",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Trade"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 131950534,
+        "name" : "Trade Name",
+        "dataTypeName" : "text",
+        "fieldName" : "trade_name",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 17953862,
+        "width" : 220,
+        "cachedContents" : {
+          "non_null" : 153,
+          "smallest" : "Agricultural Equipment Technician",
+          "null" : 0,
+          "largest" : "Welder",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Roofer"
+          }, {
+            "count" : 19,
+            "item" : "Sawfiler"
+          }, {
+            "count" : 18,
+            "item" : "Sheet Metal Worker"
+          }, {
+            "count" : 17,
+            "item" : "Sprinkler Systems Installer"
+          }, {
+            "count" : 16,
+            "item" : "Steamfitter-Pipefitter"
+          }, {
+            "count" : 15,
+            "item" : "Structural Steel and Plate Fitter"
+          }, {
+            "count" : 14,
+            "item" : "Tilesetter"
+          }, {
+            "count" : 13,
+            "item" : "Transport Refrigeration Mechanic"
+          }, {
+            "count" : 12,
+            "item" : "Water Well Driller"
+          }, {
+            "count" : 11,
+            "item" : "Welder"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 131950535,
+        "name" : "Date",
+        "dataTypeName" : "calendar_date",
+        "fieldName" : "date",
+        "position" : 3,
+        "renderTypeName" : "calendar_date",
+        "tableColumnId" : 17953863,
+        "width" : 148,
+        "cachedContents" : {
+          "non_null" : 153,
+          "smallest" : "2013-12-31T00:00:00",
+          "null" : 0,
+          "largest" : "2013-12-31T00:00:00",
+          "top" : [ {
+            "count" : 20,
+            "item" : "2013-12-31T00:00:00"
+          } ]
+        },
+        "format" : {
+          "view" : "date",
+          "align" : "left"
+        }
+      }, {
+        "id" : 131950536,
+        "name" : "Participant Type",
+        "dataTypeName" : "text",
+        "fieldName" : "participant_type",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 17953864,
+        "width" : 292,
+        "cachedContents" : {
+          "non_null" : 153,
+          "smallest" : "Certified*",
+          "null" : 0,
+          "largest" : "High School",
+          "top" : [ {
+            "count" : 20,
+            "item" : "High School"
+          }, {
+            "count" : 19,
+            "item" : "Full Time"
+          }, {
+            "count" : 18,
+            "item" : "Certified*"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 131950537,
+        "name" : "RAP Participants",
+        "dataTypeName" : "number",
+        "fieldName" : "rap_participants",
+        "position" : 5,
+        "renderTypeName" : "number",
+        "tableColumnId" : 17953865,
+        "width" : 292,
+        "cachedContents" : {
+          "non_null" : 153,
+          "smallest" : "0",
+          "sum" : "7504",
+          "null" : 0,
+          "average" : "49.04575163398693",
+          "largest" : "746",
+          "top" : [ {
+            "count" : 20,
+            "item" : "0"
+          }, {
+            "count" : 19,
+            "item" : "3"
+          }, {
+            "count" : 18,
+            "item" : "4"
+          }, {
+            "count" : 17,
+            "item" : "10"
+          }, {
+            "count" : 16,
+            "item" : "8"
+          }, {
+            "count" : 15,
+            "item" : "1"
+          }, {
+            "count" : 14,
+            "item" : "6"
+          }, {
+            "count" : 13,
+            "item" : "5"
+          }, {
+            "count" : 12,
+            "item" : "79"
+          }, {
+            "count" : 11,
+            "item" : "2"
+          }, {
+            "count" : 10,
+            "item" : "13"
+          }, {
+            "count" : 9,
+            "item" : "35"
+          }, {
+            "count" : 8,
+            "item" : "53"
+          }, {
+            "count" : 7,
+            "item" : "42"
+          }, {
+            "count" : 6,
+            "item" : "100"
+          }, {
+            "count" : 5,
+            "item" : "90"
+          }, {
+            "count" : 4,
+            "item" : "12"
+          }, {
+            "count" : 3,
+            "item" : "17"
+          }, {
+            "count" : 2,
+            "item" : "23"
+          }, {
+            "count" : 1,
+            "item" : "25"
+          } ]
+        },
+        "format" : {
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "custom_fields" : {
+          "API & Download Information" : {
+            "Available Download Formats" : "CSV, JSON, PDF, RDF, RSS, XLS, XLSX, XML",
+            "API Access Endpoint" : "http://data.iae.alberta.ca/resource/p5jw-vmgp.json",
+            "Dataset API Format" : "SODA"
+          },
+          "Creator Information" : {
+            "Creator Phone Number" : "780-427-0829",
+            "Creator Website URL" : "http://tradesecrets.alberta.ca/sources/pdfs/BOARD_ANNUAL_REPORT/PDF/2012_STATISTICAL_REPORT.PDF",
+            "Creator Email" : "carol.chovanec@gov.ab.ca"
+          },
+          "Test" : {
+            "Test" : ""
+          },
+          "Dataset Information" : {
+            "Sensitivity" : "Unrestricted",
+            "Secondary Data Provided By" : "",
+            "Attribution Source" : "",
+            "Alternate Title" : "",
+            "DatasetId" : "p5jw-vmgp",
+            "Language" : "en-ca",
+            "Frequency" : "Annually",
+            "Secondary Source Link" : "",
+            "Time Coverage" : "since Dec 2012"
+          },
+          "Publisher Information" : {
+            "Publisher Phone Number" : "780-427-0829",
+            "Publisher Website URL" : "http://tradesecrets.alberta.ca/about-us/forms-and-references/",
+            "Publisher Email" : "carol.chovanec@gov.ab.ca"
+          },
+          "Usage" : {
+            "Usage Consideration" : "See attachment for usage"
+          }
+        },
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "rdfSubject" : "0",
+        "attachments" : [ {
+          "assetId" : "7j1ytZZ2d3temv6Dy_K3CLk8g24W-K7AmbMqFCjtnt8",
+          "blobId" : "",
+          "name" : "Usage Considerations - Number of Participants in the RAP by Trade as of 2012-12-31.pdf",
+          "filename" : "Usage Considerations - Number of Participants in the RAP by Trade as of 2012-12-31.pdf"
+        } ],
+        "rowIdentifier" : "0",
+        "rdfClass" : ""
+      },
+      "owner" : {
+        "id" : "us8s-63ci",
+        "displayName" : "Government of Alberta",
+        "roleName" : "administrator",
+        "screenName" : "Government of Alberta",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards" ]
+      },
+      "query" : {
+      },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "us8s-63ci",
+        "displayName" : "Government of Alberta",
+        "roleName" : "administrator",
+        "screenName" : "Government of Alberta",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards" ]
+      },
+      "tags" : [ "apprenticeship", "industry", "trades", "occupations", "apprentice", "tradesperson", "education and training", "apprenticeship and trades", "post-secondary" ],
+      "flags" : [ "default" ]
+    }
+  },
+  "data" : [ [ 1, "2A7E1F40-1F24-496B-A4E7-985404C0C852", 1, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Agricultural Equipment Technician", "2013-12-31T00:00:00", "High School", "25" ]
+, [ 2, "23121012-42CD-4798-A65A-22E60CAC8DFB", 2, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Agricultural Equipment Technician", "2013-12-31T00:00:00", "Full Time", "40" ]
+, [ 3, "D3D0D24E-A328-4068-9C7D-FACC3DB56A01", 3, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Agricultural Equipment Technician", "2013-12-31T00:00:00", "Certified*", "37" ]
+, [ 4, "6F7E51FE-03AC-49AF-B2B8-F705FF489809", 4, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Appliance Service Technician", "2013-12-31T00:00:00", "High School", "0" ]
+, [ 5, "D9186654-F325-40CB-A8BD-2DB1F5C3FD69", 5, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Appliance Service Technician", "2013-12-31T00:00:00", "Full Time", "3" ]
+, [ 6, "29EB634F-0EF2-45D1-8CD2-73883F1B21F0", 6, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Appliance Service Technician", "2013-12-31T00:00:00", "Certified*", "4" ]
+, [ 7, "83D16EAF-E3F0-40D1-8FBE-AB031D39E331", 7, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Auto Body Technician", "2013-12-31T00:00:00", "High School", "30" ]
+, [ 8, "F9CFA076-3AB9-4371-AB22-ECE177857164", 8, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Auto Body Technician", "2013-12-31T00:00:00", "Full Time", "81" ]
+, [ 9, "36B3DC7A-12D1-456C-A34C-225B4DAB070D", 9, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Auto Body Technician", "2013-12-31T00:00:00", "Certified*", "78" ]
+, [ 10, "47E131A4-0227-4327-A0AC-8BA2E1DAF97A", 10, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Automotive Service Technician", "2013-12-31T00:00:00", "High School", "122" ]
+, [ 11, "B52E2CAD-B00F-4088-8920-BF0881C09CDF", 11, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Automotive Service Technician", "2013-12-31T00:00:00", "Full Time", "308" ]
+, [ 12, "C1E31A8F-F15C-430F-9514-786D694239B8", 12, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Automotive Service Technician", "2013-12-31T00:00:00", "Certified*", "337" ]
+, [ 13, "B99EF16C-D961-4518-9395-E0E231E12B2D", 13, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Baker", "2013-12-31T00:00:00", "High School", "10" ]
+, [ 14, "9CE19C0A-21BD-4E8D-8B6F-9CC55CBFC113", 14, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Baker", "2013-12-31T00:00:00", "Full Time", "10" ]
+, [ 15, "D7C5DE47-3C4F-40A1-AAE4-846B2BC16A0F", 15, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Baker", "2013-12-31T00:00:00", "Certified*", "8" ]
+, [ 16, "3F800180-BFC1-43AB-B886-3EA7B8D9C22A", 16, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Boilermaker", "2013-12-31T00:00:00", "High School", "0" ]
+, [ 17, "2D36566F-8A52-44C9-9266-8E9F000DB5EB", 17, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Boilermaker", "2013-12-31T00:00:00", "Full Time", "1" ]
+, [ 18, "0B7639E8-D270-403C-A468-E65A410BC4BE", 18, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Boilermaker", "2013-12-31T00:00:00", "Certified*", "0" ]
+, [ 19, "1A7EB8D5-C9F7-4F30-87EF-8998B141775B", 19, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Bricklayer", "2013-12-31T00:00:00", "High School", "6" ]
+, [ 20, "B1ECBD29-BBFF-472B-833A-6133303FC783", 20, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Bricklayer", "2013-12-31T00:00:00", "Full Time", "6" ]
+, [ 21, "2B8C5EE0-B4A2-4A7F-8722-7E98E42E94AD", 21, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Bricklayer", "2013-12-31T00:00:00", "Certified*", "11" ]
+, [ 22, "2A947807-2B74-4571-9B46-836BF0D8784F", 22, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Cabinetmaker", "2013-12-31T00:00:00", "High School", "22" ]
+, [ 23, "EB5C92CD-8B21-450A-8835-F3BB385B3BEB", 23, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Cabinetmaker", "2013-12-31T00:00:00", "Full Time", "45" ]
+, [ 24, "2994059C-DC23-4259-8DE9-E93C17080A1D", 24, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Cabinetmaker", "2013-12-31T00:00:00", "Certified*", "36" ]
+, [ 25, "D1451A6D-E233-40A2-B439-E97AB75E1D19", 25, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Carpenter", "2013-12-31T00:00:00", "High School", "117" ]
+, [ 26, "9C225728-58F3-48E6-AA72-9014505494DB", 26, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Carpenter", "2013-12-31T00:00:00", "Full Time", "234" ]
+, [ 27, "66CE213F-EADA-4C05-9420-89367E2C6D8F", 27, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Carpenter", "2013-12-31T00:00:00", "Certified*", "211" ]
+, [ 28, "57823AE2-995A-4053-B5F6-F008D0236890", 28, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Communication Technician", "2013-12-31T00:00:00", "High School", "4" ]
+, [ 29, "706545BB-630E-4ABB-87D2-1E87DA6450ED", 29, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Communication Technician", "2013-12-31T00:00:00", "Full Time", "1" ]
+, [ 30, "0A5FF1E2-F7E3-4F40-AA46-9CEE9DF410E7", 30, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Communication Technician", "2013-12-31T00:00:00", "Certified*", "1" ]
+, [ 31, "BBD07F47-10C4-4B5A-AA1A-863A8DBF4D6D", 31, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Concrete Finisher", "2013-12-31T00:00:00", "High School", "4" ]
+, [ 32, "D1A15309-1A4E-43F5-BDB9-6621B6287A97", 32, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Concrete Finisher", "2013-12-31T00:00:00", "Full Time", "5" ]
+, [ 33, "35B87157-F66D-499C-9238-30137A8E0D01", 33, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Concrete Finisher", "2013-12-31T00:00:00", "Certified*", "4" ]
+, [ 34, "0CE21247-0F5E-4392-8855-BC6014AFEE84", 34, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Cook", "2013-12-31T00:00:00", "High School", "58" ]
+, [ 35, "E043E877-2DE5-436A-B7C7-A26BD747FCF6", 35, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Cook", "2013-12-31T00:00:00", "Full Time", "72" ]
+, [ 36, "898C77B5-7CC8-4EBE-8C9D-51F58686E4C7", 36, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Cook", "2013-12-31T00:00:00", "Certified*", "59" ]
+, [ 37, "6021CAF4-A40D-4F5C-99CD-2AB5254A58EC", 37, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Crane and Hoisting Equipment Operator", "2013-12-31T00:00:00", "High School", "9" ]
+, [ 38, "1BCAC0F3-7767-42C3-93A7-E2714756E35D", 38, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Crane and Hoisting Equipment Operator", "2013-12-31T00:00:00", "Full Time", "8" ]
+, [ 39, "CBEB13F1-B1DF-407A-9382-30A6BD25A0DF", 39, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Crane and Hoisting Equipment Operator", "2013-12-31T00:00:00", "Certified*", "17" ]
+, [ 40, "016AF81B-2BDD-4EDB-8CC4-4F980E65105F", 40, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Electric Motor Systems Technician", "2013-12-31T00:00:00", "High School", "0" ]
+, [ 41, "7F7D23C9-084D-4A44-804A-0B91443F8301", 41, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Electric Motor Systems Technician", "2013-12-31T00:00:00", "Full Time", "0" ]
+, [ 42, "BDE26025-89BB-4DA8-A420-199DC34E7C26", 42, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Electric Motor Systems Technician", "2013-12-31T00:00:00", "Certified*", "1" ]
+, [ 43, "5E9DEC12-B966-4170-9976-1A819D38E2A0", 43, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Electrician", "2013-12-31T00:00:00", "High School", "129" ]
+, [ 44, "5C40A2FD-30FE-4734-8A34-FE56727851D0", 44, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Electrician", "2013-12-31T00:00:00", "Full Time", "393" ]
+, [ 45, "D15FB95C-7456-45E2-A2A7-CB9A7520664C", 45, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Electrician", "2013-12-31T00:00:00", "Certified*", "398" ]
+, [ 46, "4E790003-AE09-42F2-9626-3CBAAB85FEC5", 46, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Elevator Constructor", "2013-12-31T00:00:00", "High School", "1" ]
+, [ 47, "59A748F9-9950-4E1E-A288-B6CB3B6237F3", 47, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Elevator Constructor", "2013-12-31T00:00:00", "Full Time", "0" ]
+, [ 48, "FF468EB3-0EA6-4D60-93F3-E0FF6E688FAB", 48, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Elevator Constructor", "2013-12-31T00:00:00", "Certified*", "0" ]
+, [ 49, "CAD9AD62-4DC1-4C18-A33A-4BB75E7CA283", 49, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Floorcovering Installer", "2013-12-31T00:00:00", "High School", "2" ]
+, [ 50, "90DDC29E-3291-4A4B-8B22-091F64B631EC", 50, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Floorcovering Installer", "2013-12-31T00:00:00", "Full Time", "3" ]
+, [ 51, "7E574922-E5E0-4269-AB34-D35BE759FCB2", 51, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Floorcovering Installer", "2013-12-31T00:00:00", "Certified*", "3" ]
+, [ 52, "2E20E4C6-F67B-407C-95B7-F1579C8A366D", 52, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Gasfitter", "2013-12-31T00:00:00", "High School", "5" ]
+, [ 53, "E35F36CC-5C07-4130-8BB6-59E71E72AECE", 53, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Gasfitter", "2013-12-31T00:00:00", "Full Time", "4" ]
+, [ 54, "555B6011-A929-4D70-A275-720581CE2789", 54, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Gasfitter", "2013-12-31T00:00:00", "Certified*", "3" ]
+, [ 55, "94DDD4C1-D238-4520-85BE-7DABD4A341E5", 55, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Glazier", "2013-12-31T00:00:00", "High School", "3" ]
+, [ 56, "B01DBD33-911B-482F-8402-42908B53C464", 56, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Glazier", "2013-12-31T00:00:00", "Full Time", "10" ]
+, [ 57, "7183E6AD-10CE-467B-BFAE-ACD8821FF0FA", 57, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Glazier", "2013-12-31T00:00:00", "Certified*", "6" ]
+, [ 58, "5C3D029E-BB2F-4212-AD14-93BFA6AE3F79", 58, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Hairstylist", "2013-12-31T00:00:00", "High School", "71" ]
+, [ 59, "033865DC-94B0-4DAF-AFAC-AE88FF600946", 59, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Hairstylist", "2013-12-31T00:00:00", "Full Time", "192" ]
+, [ 60, "0708B06B-BAC4-4BB2-8D04-3E24A31E773E", 60, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Hairstylist", "2013-12-31T00:00:00", "Certified*", "436" ]
+, [ 61, "FF0973A6-5557-4D14-94F1-61D5360BB664", 61, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Heavy Equipment Technician", "2013-12-31T00:00:00", "High School", "276" ]
+, [ 62, "49B930DE-45C2-493D-BEED-5BBF05E34288", 62, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Heavy Equipment Technician", "2013-12-31T00:00:00", "Full Time", "420" ]
+, [ 63, "C6A7EA6E-689B-4D34-9FBA-4F70AA8CF695", 63, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Heavy Equipment Technician", "2013-12-31T00:00:00", "Certified*", "399" ]
+, [ 64, "9E7AB747-D6A1-462E-B1CA-7ECA00303696", 64, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Instrument Technician", "2013-12-31T00:00:00", "High School", "31" ]
+, [ 65, "BA7CF173-DB4B-464A-ABCA-F82B40FDE5F7", 65, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Instrument Technician", "2013-12-31T00:00:00", "Full Time", "76" ]
+, [ 66, "B2CE23E0-B5B5-44F8-A4C2-891D35ABC9CB", 66, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Instrument Technician", "2013-12-31T00:00:00", "Certified*", "79" ]
+, [ 67, "120DD287-BBEC-4040-B0CE-1CF1745DEC03", 67, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Insulator", "2013-12-31T00:00:00", "High School", "1" ]
+, [ 68, "A11CA118-8232-4A6A-AF0A-26F4099C1A72", 68, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Insulator", "2013-12-31T00:00:00", "Full Time", "2" ]
+, [ 69, "41D96E8C-912E-4EEF-9F56-E5E5E2A8547B", 69, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Insulator", "2013-12-31T00:00:00", "Certified*", "1" ]
+, [ 70, "E6E7BF7C-AFF5-4AB8-AAD1-90536AA65F88", 70, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Ironworker", "2013-12-31T00:00:00", "High School", "2" ]
+, [ 71, "413F9EEE-367D-40AB-8784-721B8423A576", 71, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Ironworker", "2013-12-31T00:00:00", "Full Time", "2" ]
+, [ 72, "0FFEC522-E942-414C-99CA-6FC403F6D4C9", 72, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Ironworker", "2013-12-31T00:00:00", "Certified*", "1" ]
+, [ 73, "E016F3DD-8DAC-4B22-AE29-2287C5ECDAD3", 73, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Ironworker - Metal Building Systems Erector", "2013-12-31T00:00:00", "High School", "0" ]
+, [ 74, "47DBE9AB-EA1B-4756-A7E2-1D4672F1FA97", 74, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Ironworker - Metal Building Systems Erector", "2013-12-31T00:00:00", "Full Time", "1" ]
+, [ 75, "3DA48976-B240-46C6-8230-B46E031933F9", 75, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Ironworker - Metal Building Systems Erector", "2013-12-31T00:00:00", "Certified*", "0" ]
+, [ 76, "AC125AEC-EA39-41C2-86B5-8EA26A47E8BF", 76, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Landscape Gardener", "2013-12-31T00:00:00", "High School", "5" ]
+, [ 77, "35810C29-C09B-42C8-9B7D-CDB61AC62243", 77, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Landscape Gardener", "2013-12-31T00:00:00", "Full Time", "6" ]
+, [ 78, "0B361C74-FB0F-4C7E-A8C5-9873EDA575BA", 78, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Landscape Gardener", "2013-12-31T00:00:00", "Certified*", "5" ]
+, [ 79, "560F1813-D807-41F5-9EB7-79801125E8FB", 79, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Lather-Interior Systems Mechanic", "2013-12-31T00:00:00", "High School", "8" ]
+, [ 80, "00E7212D-0014-4D60-9087-E011A5D41EE7", 80, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Lather-Interior Systems Mechanic", "2013-12-31T00:00:00", "Full Time", "1" ]
+, [ 81, "8DA8EAC6-DC04-44F4-A625-2A24524CCCDE", 81, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Lather-Interior Systems Mechanic", "2013-12-31T00:00:00", "Certified*", "1" ]
+, [ 82, "A7B706B6-20AC-4D3E-968C-D1D7AFFDA618", 82, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Locksmith", "2013-12-31T00:00:00", "High School", "2" ]
+, [ 83, "6E47D434-77DF-4768-B523-CDF7DF1A3827", 83, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Locksmith", "2013-12-31T00:00:00", "Full Time", "4" ]
+, [ 84, "9C91345D-F197-4850-BE72-D86B1F58154B", 84, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Locksmith", "2013-12-31T00:00:00", "Certified*", "2" ]
+, [ 85, "805C8BB1-AF43-4ECE-BCDA-A38130DAB38C", 85, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Machinist", "2013-12-31T00:00:00", "High School", "13" ]
+, [ 86, "81D76141-76DB-479F-B47A-2000D19D8F4C", 86, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Machinist", "2013-12-31T00:00:00", "Full Time", "35" ]
+, [ 87, "310F4344-4C09-4825-9787-B86C4B62B305", 87, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Machinist", "2013-12-31T00:00:00", "Certified*", "53" ]
+, [ 88, "078FDBA5-556A-48EE-A60E-EF73E79FD2C6", 88, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Millwright", "2013-12-31T00:00:00", "High School", "42" ]
+, [ 89, "9961B9F7-9C45-4953-8F1E-17CCF5097962", 89, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Millwright", "2013-12-31T00:00:00", "Full Time", "100" ]
+, [ 90, "C702B544-E427-48A2-91C6-CFC7DAB6F41A", 90, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Millwright", "2013-12-31T00:00:00", "Certified*", "90" ]
+, [ 91, "4FA8499A-670E-4E3A-B7B6-3F13B217DB03", 91, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Motorcycle Mechanic", "2013-12-31T00:00:00", "High School", "12" ]
+, [ 92, "533A33E6-7DFF-4563-B90A-5F982B1072FD", 92, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Motorcycle Mechanic", "2013-12-31T00:00:00", "Full Time", "17" ]
+, [ 93, "61504312-A3AB-4D9F-8135-72F32C70AAF7", 93, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Motorcycle Mechanic", "2013-12-31T00:00:00", "Certified*", "23" ]
+, [ 94, "3887F3D5-64F7-44C9-B80C-633610AE2FBE", 94, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Natural Gas Compression Technician", "2013-12-31T00:00:00", "High School", "1" ]
+, [ 95, "F20262C5-578E-4F14-AE1F-57972F095EDB", 95, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Natural Gas Compression Technician", "2013-12-31T00:00:00", "Full Time", "0" ]
+, [ 96, "75DD7C9C-6413-4374-A8D2-040D32BB0444", 96, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Natural Gas Compression Technician", "2013-12-31T00:00:00", "Certified*", "0" ]
+, [ 97, "CD57E704-AB9A-4A2D-9962-A70DE2B58E80", 97, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Outdoor Power Equipment Technician", "2013-12-31T00:00:00", "High School", "13" ]
+, [ 98, "C43FE09F-B367-4B2E-8BD4-AA48FA4C1E7C", 98, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Outdoor Power Equipment Technician", "2013-12-31T00:00:00", "Full Time", "10" ]
+, [ 99, "35DE6CD6-8397-4788-BBA3-040CDC784FDA", 99, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Outdoor Power Equipment Technician", "2013-12-31T00:00:00", "Certified*", "3" ]
+, [ 100, "5318232F-76AB-4BE6-B228-F7E95C17FAEE", 100, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Painter and Decorator", "2013-12-31T00:00:00", "High School", "3" ]
+, [ 101, "AA74ECD9-71DC-4A0E-A5BE-205AC689E4F1", 101, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Painter and Decorator", "2013-12-31T00:00:00", "Full Time", "3" ]
+, [ 102, "45C94DAF-27E8-4EDD-BC3D-D967ECA536B0", 102, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Painter and Decorator", "2013-12-31T00:00:00", "Certified*", "6" ]
+, [ 103, "FFDF6878-C5B4-448F-B859-A6B08EB2CF4D", 103, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Parts Technician", "2013-12-31T00:00:00", "High School", "25" ]
+, [ 104, "E8EF8B7D-06A9-40C9-BB35-75F973826C69", 104, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Parts Technician", "2013-12-31T00:00:00", "Full Time", "46" ]
+, [ 105, "F5833BA1-FF7B-4FB7-9495-C2CF2BA920D4", 105, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Parts Technician", "2013-12-31T00:00:00", "Certified*", "59" ]
+, [ 106, "4C04C1CB-9A37-4C4F-957A-01A0C94AA4F9", 106, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Plumber", "2013-12-31T00:00:00", "High School", "49" ]
+, [ 107, "3C36333F-792B-4121-BE8F-CA9E94424E2A", 107, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Plumber", "2013-12-31T00:00:00", "Full Time", "130" ]
+, [ 108, "A5D0B238-3918-4454-A79C-0C0EC6AFD86C", 108, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Plumber", "2013-12-31T00:00:00", "Certified*", "108" ]
+, [ 109, "51857416-D606-4F16-A9A7-3B422CDDE4CB", 109, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Power Lineman", "2013-12-31T00:00:00", "High School", "4" ]
+, [ 110, "335834C2-3659-4781-8764-17EF8EEB6C06", 110, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Power Lineman", "2013-12-31T00:00:00", "Full Time", "15" ]
+, [ 111, "A72E9BA8-55D0-4C1D-BEB2-3BD3409384A9", 111, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Power Lineman", "2013-12-31T00:00:00", "Certified*", "15" ]
+, [ 112, "DA11BF61-0A81-41CE-B13C-CF642E6D366C", 112, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Power System Electrician", "2013-12-31T00:00:00", "High School", "0" ]
+, [ 113, "60FF11C1-F157-4A50-9B01-565D6D111904", 113, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Power System Electrician", "2013-12-31T00:00:00", "Full Time", "0" ]
+, [ 114, "5B27EE91-D448-4C38-8B3B-CEC7B61BD620", 114, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Power System Electrician", "2013-12-31T00:00:00", "Certified*", "0" ]
+, [ 115, "9B1FBBBA-BC3F-45AD-819C-DE5C19DD7B5B", 115, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Recreational Vehicle Service Technician", "2013-12-31T00:00:00", "High School", "6" ]
+, [ 116, "E32B1A32-7231-49BA-B206-39A7D2AEE28A", 116, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Recreational Vehicle Service Technician", "2013-12-31T00:00:00", "Full Time", "1" ]
+, [ 117, "0301A23E-C985-4426-8A7E-EB0CEA3E2C4F", 117, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Recreational Vehicle Service Technician", "2013-12-31T00:00:00", "Certified*", "4" ]
+, [ 118, "C4DDA2C0-27F9-49FB-854C-91F2D190C54D", 118, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Refrigeration and Air Conditioning Mechanic", "2013-12-31T00:00:00", "High School", "6" ]
+, [ 119, "9A7FE724-0214-4B62-86EB-3F264D7833E3", 119, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Refrigeration and Air Conditioning Mechanic", "2013-12-31T00:00:00", "Full Time", "13" ]
+, [ 120, "13646C26-380B-4851-A47B-694D7E1F7FA3", 120, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Refrigeration and Air Conditioning Mechanic", "2013-12-31T00:00:00", "Certified*", "19" ]
+, [ 121, "79123080-9B22-4A02-980F-82521EACED29", 121, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Rig Technician", "2013-12-31T00:00:00", "High School", "0" ]
+, [ 122, "0CC6A769-7B5B-4514-BF9A-D3EB11715EAB", 122, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Rig Technician", "2013-12-31T00:00:00", "Full Time", "0" ]
+, [ 123, "208FEE5C-A7A8-4CD1-A9DA-A1DDE3ADE8D4", 123, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Rig Technician", "2013-12-31T00:00:00", "Certified*", "0" ]
+, [ 124, "EC05CEEC-508D-4320-BD4E-D295B15AB5DB", 124, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Roofer", "2013-12-31T00:00:00", "High School", "0" ]
+, [ 125, "DB905439-E367-4A49-A1F5-546587699617", 125, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Roofer", "2013-12-31T00:00:00", "Full Time", "1" ]
+, [ 126, "DA9A6F64-D429-4C07-9568-F77204198CD2", 126, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Roofer", "2013-12-31T00:00:00", "Certified*", "4" ]
+, [ 127, "17B41080-3802-48B0-A879-D40F8AFD5C3F", 127, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Sawfiler", "2013-12-31T00:00:00", "High School", "0" ]
+, [ 128, "84AD690C-3815-4BA2-A61B-47B039327CEA", 128, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Sawfiler", "2013-12-31T00:00:00", "Full Time", "0" ]
+, [ 129, "EBAF6221-EB39-4F2F-8823-AD0D842E08C6", 129, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Sawfiler", "2013-12-31T00:00:00", "Certified*", "0" ]
+, [ 130, "E50D0D26-2D60-4DCD-BAE6-A9E466FCD50A", 130, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Sheet Metal Worker", "2013-12-31T00:00:00", "High School", "13" ]
+, [ 131, "C1EA5E2D-73AA-4FA9-BFC0-9C24F352EC1D", 131, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Sheet Metal Worker", "2013-12-31T00:00:00", "Full Time", "31" ]
+, [ 132, "A920B828-F427-4967-A165-66B387F78BF4", 132, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Sheet Metal Worker", "2013-12-31T00:00:00", "Certified*", "15" ]
+, [ 133, "08F5559B-817B-4EF0-84F4-DD9A37B018F9", 133, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Sprinkler Systems Installer", "2013-12-31T00:00:00", "High School", "2" ]
+, [ 134, "AEBCAD49-E976-412C-B504-C5AF7FBA776C", 134, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Sprinkler Systems Installer", "2013-12-31T00:00:00", "Full Time", "3" ]
+, [ 135, "1CF15087-6506-40A5-A0CB-EFD862311403", 135, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Sprinkler Systems Installer", "2013-12-31T00:00:00", "Certified*", "9" ]
+, [ 136, "5F4D6DE6-347C-40DD-8E99-2F9CD6233685", 136, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Steamfitter-Pipefitter", "2013-12-31T00:00:00", "High School", "32" ]
+, [ 137, "A8FBD189-C4FF-4472-9C4C-44B9E288154C", 137, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Steamfitter-Pipefitter", "2013-12-31T00:00:00", "Full Time", "28" ]
+, [ 138, "7FCBD42A-13A2-44DD-9CCA-46DE7C70160C", 138, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Steamfitter-Pipefitter", "2013-12-31T00:00:00", "Certified*", "49" ]
+, [ 139, "74ACFE01-3E3C-4499-B66B-222F463223F0", 139, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Structural Steel and Plate Fitter", "2013-12-31T00:00:00", "High School", "1" ]
+, [ 140, "8567CC93-1E38-4730-83A5-D9B9668F2A1A", 140, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Structural Steel and Plate Fitter", "2013-12-31T00:00:00", "Full Time", "1" ]
+, [ 141, "0ACD5BB3-1974-4917-ABE9-000FF99E5DED", 141, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Structural Steel and Plate Fitter", "2013-12-31T00:00:00", "Certified*", "8" ]
+, [ 142, "9D843222-4957-45C1-9A42-E581E78C3D8F", 142, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Tilesetter", "2013-12-31T00:00:00", "High School", "0" ]
+, [ 143, "4A9CB847-A735-4804-8B05-FCB54F74D270", 143, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Tilesetter", "2013-12-31T00:00:00", "Full Time", "3" ]
+, [ 144, "DB3C2E6C-D207-46D2-812E-0C43C2B14991", 144, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Tilesetter", "2013-12-31T00:00:00", "Certified*", "3" ]
+, [ 145, "F8A8EFFE-51E8-4EDD-8E7B-C8B76FFE53B1", 145, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Transport Refrigeration Mechanic", "2013-12-31T00:00:00", "High School", "1" ]
+, [ 146, "0742CC93-6EEF-4EEB-8443-3103E789C8E2", 146, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Transport Refrigeration Mechanic", "2013-12-31T00:00:00", "Full Time", "0" ]
+, [ 147, "C859E50D-B20E-4449-BF80-F601CF6ED0B5", 147, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Transport Refrigeration Mechanic", "2013-12-31T00:00:00", "Certified*", "3" ]
+, [ 148, "221C16F3-1E00-4871-8FB3-F5208521DF4D", 148, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Water Well Driller", "2013-12-31T00:00:00", "High School", "3" ]
+, [ 149, "413BD157-0D4B-4F2A-991C-D913CB00925E", 149, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Water Well Driller", "2013-12-31T00:00:00", "Full Time", "3" ]
+, [ 150, "F3EBA442-CCA1-4ACB-8CB7-FFB45E10A371", 150, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Water Well Driller", "2013-12-31T00:00:00", "Certified*", "2" ]
+, [ 151, "A5C94E4B-C861-4443-8ABD-E647C85183E8", 151, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Welder", "2013-12-31T00:00:00", "High School", "209" ]
+, [ 152, "7B93EEDB-9A42-4ADD-9736-8AAAFCA338F6", 152, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Welder", "2013-12-31T00:00:00", "Full Time", "401" ]
+, [ 153, "8D03175A-19C8-4CEC-8602-32EFE591EA32", 153, 1391539309, "710753", 1391539309, "710753", "{\n}", "Trade", "Welder", "2013-12-31T00:00:00", "Certified*", "746" ]
+ ]
+}

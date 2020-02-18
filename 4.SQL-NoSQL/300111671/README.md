@@ -51,6 +51,17 @@ GRANT ALL ON Boubou.* TO 'alade'@'%';
 
 ```
 
+:pushpin: Contexte permettant d'utiliser `Mysql Workbench` 
+
+
+```
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "CREATE USER 'abbas'@'%' IDENTIFIED BY 'password';"
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "GRANT ALL ON Boubou.* TO 'abbas'@'%';"
+```
+
+
 ### :one: Migration
 
 - [ ] Récupération de l'ancien  projet [SQL](https://github.com/CollegeBoreal/INF1006-202-19A-01/tree/master/4.DML)

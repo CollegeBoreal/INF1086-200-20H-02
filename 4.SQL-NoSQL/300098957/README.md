@@ -1,6 +1,8 @@
 # Etudiants
 
-### :zero: Créer son projet dans un répertoire :id:
+### :zero: Administration
+
+- [x] Créer son projet dans un répertoire :id:
 
 ```
 $ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL
@@ -8,7 +10,7 @@ $ mkdir <id> && cd <id>
 ```
 
 
-### :one: Créer le conteneur avec un volume (dans le répertoire de son projet)
+- [x] Créer le conteneur avec un volume (dans le répertoire de son projet)
 
 :bulb: Le volume sert à charger le fichier `.json`
 
@@ -23,7 +25,7 @@ $ docker container run \
          mysql/mysql-server:latest
 ```
 
-:pushpin: En éxécutant la commande suivante vos fichiers dans les conteneurs devraient s'afficher
+* En éxécutant la commande suivante vos fichiers dans les conteneurs devraient s'afficher
 
 ```
 % docker container exec --interactive some-mysqlds ls /var/lib/mysql-files
@@ -37,17 +39,14 @@ students.json
 
 
 
-### :two: Création de la base de données `Etudiants`
-
-:pushpin: DCL création de la base de données
-
+- [x] Création de la base de données `Etudiants`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "CREATE DATABASE etudiants;"
 ```
 
-### :three: DCL création de l'utilisateur
+- [x]  DCL création de l'utilisateur
 
 :pushpin: Contexte permettant d'utiliser `mysqlsh` 
 
@@ -68,7 +67,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
                         --execute "GRANT ALL ON etudiants.* TO 'etudiants'@'%';"
 ```
 
-### :four: Récupération et chargement de la base de données `Etudiants`
+### :one: Récupération et chargement de la base de données `Etudiants`
 
 :pushpin: Charger le `schema`
 

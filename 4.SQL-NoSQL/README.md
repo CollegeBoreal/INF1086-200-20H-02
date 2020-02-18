@@ -72,3 +72,5 @@ $ docker exec some-mysqlds \
 ```
 
 ### :o: Présenter le tout dans un fichier README.md
+
+# [Participation](.scripts/Participation.md)

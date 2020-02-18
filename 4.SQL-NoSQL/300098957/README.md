@@ -73,6 +73,8 @@ $ docker container exec --interactive some-mysqlds \
          mysql --user root -ppassword etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-data.sql
 ```
 
+* Vérifier les données SQL en se connectant à Workbench
+
 <img src="images/connect-mysql.png" witdth=342 height=162 ></img>
 
 ![image](images/schema.png)

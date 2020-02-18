@@ -35,7 +35,7 @@ $ docker container run \
          mysql/mysql-server:latest
 ```
 
-<sup>:m:</sup> sous `Powershell` remplacer `\` avec ```
+<sup>:m:</sup> sous `Powershell` remplacer `\` (backslash) avec `\`` (backtick)
 
 ```
 PS > docker container run `

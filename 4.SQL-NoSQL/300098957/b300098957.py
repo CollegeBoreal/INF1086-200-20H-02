@@ -24,16 +24,10 @@ myTable = myDb.get_table('ETUDIANTS')
 # Find objects from document
 objs = myColl.find().execute()
 
-obj = objs.fetch_one()
-while obj:
-   c_s = len(obj.students)
-   i = 0
-   while i < c_s:
-     student = obj.students.student[i]
-     print("INSERT INTO ETUDIANTS ( initiale, nom ) VALUES ('" + student.name.first_name + "', '" +  student.name.last_name + "')" )
-     # Insert SQL Table data
-     myTable.insert(['initiale','nom']).values(student.name.first_name, student.name.last_name).execute()
-     i = i + 1
-   obj = objs.fetch_one()
+for obj in objs.fetch_all():
+   for student in obj.students.student:
+      print("INSERT INTO ETUDIANTS ( initiale, nom ) VALUES ('" + student.name.first_name + "', '" +  student.name.last_name + "')" )
+      # Insert SQL Table data
+      myTable.insert(['initiale','nom']).values(student.name.first_name, student.name.last_name).execute()
 
 

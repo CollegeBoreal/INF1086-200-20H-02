@@ -3,6 +3,8 @@
 # Projet
 
 :bulb: Dans votre propre répertoire c.f. :id:
+~/4.SQL-NOSQL
+```$ mkdir 300107361```
 
 ### :zero: Administration 
 
@@ -46,7 +48,9 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 
 - [ ] Importer votre base de données SQL
  ```
-$ docker container exec --interactive some-mysqlds sh -c           ' exec mysql --user root -ppassword '            < ~/developer/INF1006-202-19A-01/Q.Query/300107361/300107361-schema.sql
+$ docker container exec --interactive some-mysqlds sh -c \
+>           ' exec mysql --user root -ppassword ' \
+>           < ~/developer/INF1006-202-19A-01/Q.Query/300107361/300107361-schema.sql
 
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
@@ -54,6 +58,11 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 
 - [ ] Chercher des données `json` correspondant à votre domaine d'activités
 
+Tochgaly-K.J.Etienne@XXX MINGW64 ~/developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361 (master)
+```$ curl 'https://vpic.nhtsa.dot.gov/api/vehicles/getallmanufacturers?format=json&page=2' | jq > car.json ```
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 14168  100 14168    0     0  16192      0 --:--:-- --:--:-- --:--:-- 16192
 
 - [ ] Importer ces données dans vos propres collections
 ```

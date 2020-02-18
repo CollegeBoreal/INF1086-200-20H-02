@@ -10,7 +10,6 @@ $ mkdir <300110529>
 cd <300110529>
 ```
 
-
 ### :one: Créer le conteneur dans le répertoire
 
 ```

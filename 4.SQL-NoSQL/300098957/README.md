@@ -49,6 +49,13 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 :pushpin: DCL création de l'utilisateur
 
+```
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "CREATE USER 'etudiants'@'localhost' IDENTIFIED BY 'etudiants_1';"
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "GRANT ALL ON etudiants.* TO 'etudiants'@'localhost';"
+```
+
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
@@ -76,6 +83,16 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 * Vérifier les données SQL en se connectant à Workbench
 
 <img src="images/connect-mysql.png" witdth=342 height=162 ></img>
+
+:four: ETL
+
+* Se connecter à mysql SH
+
+```
+$ docker container exec --interactive --tty some-mysqlds bash
+```
+
+
 
 ![image](images/schema.png)
 

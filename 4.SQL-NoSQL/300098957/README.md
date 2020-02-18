@@ -138,9 +138,9 @@ MySQL  JS > db.import_students.find()
 
 ### :six: XDEVAPI 
 
-:pushpin: Utilisation de MySQL Python
+:pushpin: Utilisation de MySQL Python 
 
-Écrire le programme python permettant de rajouter des étudiants importés par le fichier `students.json`
+Écrire le programme python [b300098957.py](b300098957.py) permettant de rajouter des étudiants importés par le fichier `students.json`
 
 ```
 $ docker container exec --interactive some-mysqlds mysqlsh --py \

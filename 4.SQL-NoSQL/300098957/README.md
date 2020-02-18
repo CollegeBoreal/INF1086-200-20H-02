@@ -43,18 +43,18 @@ students.json
 
 
 ```
-$ docker container exec --interactive some-mysqlds \
-         mysql --user root -ppassword --execute "CREATE DATABASE etudiants;"
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "CREATE DATABASE etudiants;"
 ```
 
 :pushpin: DCL création de l'utilisateur
 
 
 ```
-$ docker container exec --interactive some-mysqlds \
-         mysql --user root -ppassword --execute "CREATE USER 'etudiants'@'%' IDENTIFIED BY 'etudiants_1';"
-$ docker container exec --interactive some-mysqlds \
-         mysql --user root -ppassword --execute "GRANT ALL ON etudiants.* TO 'etudiants'@'%';"
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "CREATE USER 'etudiants'@'%' IDENTIFIED BY 'etudiants_1';"
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "GRANT ALL ON etudiants.* TO 'etudiants'@'%';"
 ```
 
 :pushpin: Chargement des données SQL

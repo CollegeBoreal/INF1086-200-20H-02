@@ -12,9 +12,9 @@ $ mkdir <id> && cd <id>
 
 - [x] Créer le conteneur avec un volume (dans le répertoire de son projet)
 
-:warning: Donner le nom du répertoire source à la variable `SRC
+:warning: Donner le nom du répertoire source à la variable `SRC` (respectez les backtick)
 
-- sous gitbash (respectez les backtick) afficher le format Windows -W
+- sous `gitbash` afficher le format Windows -W
 
 ```
 $ SRC=`pwd -W`

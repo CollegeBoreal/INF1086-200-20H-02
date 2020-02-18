@@ -67,16 +67,18 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
                         --execute "GRANT ALL ON etudiants.* TO 'etudiants'@'%';"
 ```
 
-### :one: Récupération et chargement de la base de données `Etudiants`
+### :one: Migration
 
-:pushpin: Charger le `schema`
+:bulb: Récupération et chargement de la base de données `Etudiants`
+
+- [x] Charger le `schema`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
           etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-schema.sql
 ```
 
-:pushpin:  Charger les données SQL
+- [x] Charger les données SQL
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
@@ -87,7 +89,19 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 <img src="images/connect-mysql.png" witdth=342 height=162 ></img>
 
-### :five: ETL
+### :two: ETL
+
+- [x] Chercher des données `JSON`
+
+[students.json](students.json) * https://codebeautify.org/jsonviewer/cb5d0fd8
+
+[programs.json](programs.json)
+
+```
+$ curl https://open.alberta.ca/dataset/3afb1138-ac83-4981-9177-45b0f9108208/resource/66131de0-996a-49e6-b521-90cadbe9646a/download/rows.json > programs.json
+```
+
+- [x] Importer ces données dans vos propres collections
 
 :pushpin: Se connecter au conteneur
 
@@ -157,8 +171,3 @@ Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (
 
 # :x: Références de Données
  
-https://codebeautify.org/jsonviewer/cb5d0fd8
-
-```
-$ curl https://open.alberta.ca/dataset/3afb1138-ac83-4981-9177-45b0f9108208/resource/66131de0-996a-49e6-b521-90cadbe9646a/download/rows.json > programs.json
-```

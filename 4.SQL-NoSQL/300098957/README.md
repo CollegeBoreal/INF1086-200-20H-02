@@ -37,7 +37,7 @@ students.json
 
 
 
-### :two: Récupération et chargement de la base de données `Etudiants`
+### :two: Création de la base de données `Etudiants`
 
 :pushpin: DCL création de la base de données
 
@@ -47,7 +47,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
                         --execute "CREATE DATABASE etudiants;"
 ```
 
-### :two: DCL création de l'utilisateur
+### :three: DCL création de l'utilisateur
 
 :pushpin: Contexte permettant d'utiliser `mysqlsh` 
 
@@ -68,29 +68,29 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
                         --execute "GRANT ALL ON etudiants.* TO 'etudiants'@'%';"
 ```
 
-:pushpin: Chargement des données SQL
+### :four: Récupération et chargement de la base de données `Etudiants`
 
-* Création du `schema`
+:pushpin: Charger le `schema`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
           etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-schema.sql
 ```
 
-* Charger les données SQL
+:pushpin:  Charger les données SQL
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
          etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-data.sql
 ```
 
-* Vérifier les données SQL en se connectant à Workbench
+:pushpin:  Vérifier les données SQL en se connectant à Workbench
 
 <img src="images/connect-mysql.png" witdth=342 height=162 ></img>
 
-:four: ETL
+### :five: ETL
 
-* Se connecter à mysql SH
+:pushpin: Se connecter à mysql SH
 
 ```
 $ docker container exec --interactive --tty some-mysqlds bash

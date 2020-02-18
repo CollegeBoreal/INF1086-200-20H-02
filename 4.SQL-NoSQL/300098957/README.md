@@ -16,7 +16,7 @@ $ mkdir <id> && cd <id>
 
 | Terminal   | Commande     | 
 |------------|--------------|
-| `gitbash`  | SRC=``pwd -W`` |
+| `gitbash`  | SRC=\`pwd -W\` |
  
 
 <sup>:m:</sup> sous un terminal `gitbash` afficher le format Windows `-W`

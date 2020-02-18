@@ -50,7 +50,7 @@ def mashup(myDb):
 - [ ] ` ou ` La fonction `mashup` doit créer une collection produite par des collections `importées `
 
 
-### :three: Modelisation
+### :four: Modelisation
 
 :bulb: À l'aide de MySQL Workbench,
 
@@ -61,7 +61,7 @@ def mashup(myDb):
 
 
 
-### :four: Backup
+### :five: Backup
 
 - [ ] Sauvegarder la base de données dans un fichier SQL nommé :id:-dump.sql
 

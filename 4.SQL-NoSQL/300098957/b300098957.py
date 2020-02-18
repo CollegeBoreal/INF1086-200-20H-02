@@ -27,7 +27,7 @@ while obj:
    i = 0
    while i < c_s:
      student = obj.students.student[i]
-     print("INSERT INTO ETUDIANTS ( prenom, nom ) VALUES ('" + student.name.first_name + "', '" +  student.name.last_name + "')" )
+     print("INSERT INTO ETUDIANTS ( initiale, nom ) VALUES ('" + student.name.first_name + "', '" +  student.name.last_name + "')" )
      i = i + 1
    obj = objs.fetch_one()
 

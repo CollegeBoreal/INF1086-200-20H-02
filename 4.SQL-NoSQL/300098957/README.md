@@ -12,17 +12,14 @@ $ mkdir <id> && cd <id>
 
 - [x] Créer le conteneur avec un volume (dans le répertoire de son projet)
 
-:bangbang: Donner le nom du répertoire source à la variable `SRC` (respectez les backticks)
+<sup>:m:</sup> Donner le nom du répertoire source à la variable `SRC` (respectez les backticks)
 
-| Terminal   | Commande     | 
-|------------|--------------|
-| `gitbash`  | SRC=\`pwd -W\` |
+| Terminal     | Commande                                                 |  Commentaires                          | 
+|--------------|----------------------------------------------------------|----------------------------------------|
+| classique    | SRC=\`pwd -L\`                                           | afficher le format Unix (Linux, MacOS) |
+| `gitbash`    | SRC=\`pwd -W\`                                           | afficher le format Windows `-W`        |
+| `Powershell` | $SRC = $PWD.Path \| Foreach-Object {$_ -replace '\\','/'} | afficher le format Windows `-W`        |
  
-
-<sup>:m:</sup> sous un terminal `gitbash` afficher le format Windows `-W`
-
-
-<sup>:m:</sup> sous un terminal classique afficher le format (Linux, MacOS)
 
 ```
 $ SRC=`pwd -L`
@@ -31,7 +28,7 @@ $ SRC=`pwd -L`
 <sup>:m:</sup> sous un terminal Powershell
 
 ```
-PS> $SRC = $PWD.Path | Foreach-Object {$_ -replace '\\','/'}
+PS> 
 ```
 
 

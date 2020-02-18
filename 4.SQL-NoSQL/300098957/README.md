@@ -152,7 +152,7 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
 
 Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (i.e. forward engineering)
 
-![image](images/schema.png)
+<img src="images/schema.png" witdth=920 height=791 ></img>
 
 
 

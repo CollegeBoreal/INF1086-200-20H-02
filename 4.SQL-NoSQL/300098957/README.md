@@ -102,7 +102,9 @@ $ docker container exec --interactive --tty some-mysqlds bash
 bash-4.2# mysqlsh --js --host localhost --user etudiants --password
 ```
 
-:pushpin: Importer le fichier `json` (i.e. ETL)
+:pushpin: Importer les fichiers `json` (i.e. ETL)
+
+* students.json
 
 ```
 MySQL JS> util.importJson(
@@ -113,6 +115,19 @@ MySQL JS> util.importJson(
               }
           )
 ```
+
+* programs.json
+
+```
+MySQL JS> util.importJson(
+              "/var/lib/mysql-files/programs.json", 
+              {
+                  schema: "etudiants", 
+                  collection: "import_programs"
+              }
+          )
+```
+
 
 :pushpin: Tester la collection
 

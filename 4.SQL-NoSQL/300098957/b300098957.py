@@ -26,7 +26,7 @@ objs = myColl.find().execute()
 
 for obj in objs.fetch_all():
    for student in obj.students.student:
-      print("INSERT INTO ETUDIANTS ( initiale, nom ) VALUES ('" + student.name.first_name + "', '" +  student.name.last_name + "')" )
+      print("INSERT INTO ETUDIANTS (initiale,nom) VALUES ('"+student.name.first_name+"', '"+ student.name.last_name+"')")
       # Insert SQL Table data
       myTable.insert(['initiale','nom']).values(student.name.first_name, student.name.last_name).execute()
 

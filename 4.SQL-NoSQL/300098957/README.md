@@ -96,14 +96,24 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 $ docker container exec --interactive --tty some-mysqlds bash
 ```
 
-:pushpin: Se connecter à mysql SH
+:pushpin: Se connecter à mysql SH en utilisant `JavaScript`
 
 ```
 bash-4.2# mysqlsh --js --host localhost --user etudiants --password
 ```
 
+:pushpin: Importer le fichier `json` (i.e. ETL)
 
-> util.importJson("/var/lib/mysql-files/students.json", {schema: "etudiants", collection: "import_students"})
+```
+MySQL JS> util.importJson("/var/lib/mysql-files/students.json", {schema: "etudiants", collection: "import_students"})
+```
+
+:pushpin: Tester la collection
+
+```
+MySQL  JS > \use etudiants;
+MySQL  JS > db.import_students.find()
+```
 
 
 

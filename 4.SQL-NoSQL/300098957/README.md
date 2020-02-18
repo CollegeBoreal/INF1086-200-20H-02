@@ -30,7 +30,7 @@ $ docker container run \
 * En éxécutant la commande suivante vos fichiers dans les conteneurs devraient s'afficher
 
 ```
-% docker container exec --interactive some-mysqlds ls /var/lib/mysql-files
+$ docker container exec --interactive some-mysqlds sh -c "ls /var/lib/mysql-files"
 300098957-data.sql
 300098957-dump.sql
 300098957-schema.sql

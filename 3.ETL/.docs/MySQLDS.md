@@ -5,16 +5,11 @@
 
 # :a: Créer le conteneur avec un volume
 
+🌶️ La compatibilité des volumes entre machine hotes et conteneur (Windows ou Linux) n'est pas fiables. Utiliser gitbash uniquement
+
 :m: sous gitbash 
 
-```
-$ echo ${PWD}
-/c/Users/300098957/Developer/INF1086-200-20H-02/3.ETL/300098957
-```
-
-* Remplacer '/c' pas 'C:'
-
-* doubler les `\`
+:pushpin: Assigner le répertoire courant à la variable `$PWD`
 
 ```
 $ docker container run \
@@ -22,31 +17,8 @@ $ docker container run \
          --env MYSQL_ROOT_PASSWORD=password \
          --publish 3306:3306 \
          --publish 33060:33060 \
-         --volume C:\\Users\\300098957\\Developer\\INF1086-200-20H-02\\3.ETL\\300098957:/var/lib/mysql-files \
+         --volume ${PWD}:/var/lib/mysql-files \
          --detach \
-         mysql/mysql-server:latest
-```
-
-:m: sous PowerShell
-
-```
-PS > $pwd
-
-Path
-----
-C:\Users\300098957\Developer\INF1086-200-20H-02\3.ETL\300098957
-```
-
-- Remplacer la source ci-dessous
-
-```
-$ docker container run `
-         --name some-mysqlds `
-         --env MYSQL_ROOT_PASSWORD=password `
-         --publish 3306:3306 `
-         --publish 33060:33060 `
-         --volume C:\Users\300098957\Developer\INF1086-200-20H-02\3.ETL\300098957:/var/lib/mysql-files `
-         --detach `
          mysql/mysql-server:latest
 ```
 

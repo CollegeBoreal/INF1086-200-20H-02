@@ -3,6 +3,8 @@
 # Projet
 
 :bulb: Dans votre propre répertoire c.f. :id:
+~/4.SQL-NOSQL
+```$ mkdir 300107361```
 
 ### :zero: Administration 
 
@@ -31,35 +33,48 @@
 
 ```
 mysql> CREATE USER 'joker'@'%' IDENTIFIED BY 'password';
-mysql> GRANT ALL ON car_center.* TO 'joker'@'%';
+mysql> GRANT ALL ON Car_Center.* TO 'joker'@'%';
 ```
 
 ### :one: Migration
 
 - [ ] Récupérer votre ancien projet [SQL](https://github.com/CollegeBoreal/INF1006-202-19A-01/tree/master/4.DML)
 ```
-$ docker container exec --interactive some-mysqlds sh -c           ' exec mysql --user root -ppassword '            < ~/developer/INF1006-202-19A-01/Q.Query/300107361/300107361-schema.sql
+$  docker container exec --interactive some-mysqlds sh -c \
+>           ' exec mysql --user root -ppassword --execute "CREATE DATABASE Car_Center;" '
+
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
 
 - [ ] Importer votre base de données SQL
  ```
- MySQL  localhost:33060+ ssl  JS > util.importJson("/var/lib/mysql-files/car.json"
-, {schema: "Car_Center", collection: "cars"})
-Importing from file "/var/lib/mysql-files/car.json" to collection `Car_Center`.`ca
-rs` in MySQL Server at localhost:33060
+$ docker container exec --interactive some-mysqlds sh -c \
+>           ' exec mysql --user root -ppassword ' \
+>           < ~/developer/INF1006-202-19A-01/Q.Query/300107361/300107361-schema.sql
 
-.. 1.. 1
-Processed 10.87 KB in 1 document in 0.0079 sec (126.80 documents/s)
-Total successfully imported documents 1 (126.80 documents/s)
+mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
 ### :two: E.T.L
 
 - [ ] Chercher des données `json` correspondant à votre domaine d'activités
 
+Tochgaly-K.J.Etienne@XXX MINGW64 ~/developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361 (master)
+
+```$ curl 'https://vpic.nhtsa.dot.gov/api/vehicles/getallmanufacturers?format=json&page=2' | jq > car.json ```
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 14168  100 14168    0     0  16192      0 --:--:-- --:--:-- --:--:-- 16192
 
 - [ ] Importer ces données dans vos propres collections
+```
+ MySQL  localhost:33060+ ssl  JS > util.importJson("/var/lib/mysql-files/car.json", {schema: "Car_Center", collection: "cars"})
+Importing from file "/var/lib/mysql-files/car.json" to collection `Car_Center`.`cars` in MySQL Server at localhost:33060
 
+.. 1.. 1
+Processed 10.87 KB in 1 document in 0.0563 sec (17.75 documents/s)
+Total successfully imported documents 1 (17.75 documents/s)
+```
 
 ### :three: Scripting avec API
 

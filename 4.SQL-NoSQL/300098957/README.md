@@ -141,9 +141,8 @@ MySQL  JS > db.import_students.find()
 ![image](images/schema.png)
 
 
-![image](images/pk-fk.png)
 
-:x: Données
+# :x: Données
  
 https://codebeautify.org/jsonviewer/cb5d0fd8
 

@@ -149,9 +149,11 @@ MySQL  JS > \use etudiants;
 MySQL  JS > db.import_students.find()
 ```
 
-### :six: XDEVAPI 
+### :three: Scripting avec API
 
-:pushpin: Utilisation de MySQL Python 
+:pushpin: Utilisation de MySQL Python : XDEVAPI 
+
+- [x] La fonction mashup doit gérer une table produite par des collections
 
 Écrire le programme python [b300098957.py](b300098957.py) permettant de rajouter des étudiants importés par le fichier `students.json`
 
@@ -161,13 +163,23 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
                    < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/b300098957.py
 ```
 
-### :seven: Modèle
+### :three: Modèlisation
 
 Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (i.e. forward engineering)
+
+- [x] présenter votre modèle relationel
+
+- [x] présenter votre modèle présentant les collections `dans un dossier`
 
 <img src="images/schema.png" witdth=920 height=791 ></img>
 
 
+### :four: Backup
 
-# :x: Références de Données
+- [x] Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql
  
+```
+$ docker exec some-mysqlds \
+    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" etudiants ' \
+    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-dump.sql
+```

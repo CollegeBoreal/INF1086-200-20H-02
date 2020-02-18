@@ -14,7 +14,7 @@ $ mkdir <id> && cd <id>
 
 :warning: Donner le nom du répertoire source à la variable `SRC
 
-- sous gitbash (respectz les backtick)
+- sous gitbash (respectez les backtick)
 
 ```
 $ SRC=`pwd -W`

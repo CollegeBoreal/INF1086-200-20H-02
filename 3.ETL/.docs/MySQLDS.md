@@ -5,9 +5,6 @@
 
 # :a: Créer le conteneur avec un volume
 
-🌶️ La compatibilité des volumes entre machine hotes et conteneur (Windows ou Linux) n'est pas fiables. Utiliser gitbash uniquement
-
-
 :bangbang: Donner le nom du répertoire source à la variable `SRC` (respectez les backticks)
 
 <sup>:m:</sup> sous `gitbash` afficher le format Windows `-W`

@@ -24,7 +24,7 @@ myTable = myDb.get_table('ETUDIANTS')
 # Find objects from document
 objs = myColl.find().execute()
 
-for obj in objs.fetch_all():
+for obj in objs.fetch_one():
    for student in obj.students.student:
       print("INSERT INTO ETUDIANTS ( initiale, nom ) VALUES ('" + student.name.first_name + "', '" +  student.name.last_name + "')" )
       # Insert SQL Table data

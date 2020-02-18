@@ -7,9 +7,20 @@
 
 🌶️ La compatibilité des volumes entre machine hotes et conteneur (Windows ou Linux) n'est pas fiables. Utiliser gitbash uniquement
 
-:m: sous gitbash 
 
-:pushpin: Assigner le répertoire courant à la variable `$PWD`
+:bangbang: Donner le nom du répertoire source à la variable `SRC` (respectez les backticks)
+
+<sup>:m:</sup> sous `gitbash` afficher le format Windows `-W`
+
+```
+$ SRC=`pwd -W`
+```
+
+<sup>:m:</sup> sous un terminal classique afficher le format (Linux, MacOS)
+
+```
+$ SRC=`pwd -L`
+```
 
 ```
 $ docker container run \
@@ -17,7 +28,7 @@ $ docker container run \
          --env MYSQL_ROOT_PASSWORD=password \
          --publish 3306:3306 \
          --publish 33060:33060 \
-         --volume ${PWD}:/var/lib/mysql-files \
+         --volume ${SRC}:/var/lib/mysql-files \
          --detach \
          mysql/mysql-server:latest
 ```

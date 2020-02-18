@@ -21,5 +21,17 @@ mysql> GRANT ALL ON Hijabfashion.* TO 'halima'@'localhost';
 Query OK, 0 rows affected, 1 warning (0.01 sec)
 
 
-$ docker container exec --interactive some-mysqlds sh -c \
-> >           ' exec mysql --user root -ppassword --execute "CREATE DATABASE Hijabfa shion;" '
+
+ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+>                         --execute "CREATE DATABASE Hijabfashion;"
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+
+
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword           Hijabfashion < ~/Developer/INF1006-202-19A-01/Q.Query/300108234/300108234-schema.sql
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword           Hijabfashion < ~/Developer/INF1006-202-19A-01/Q.Query/300108234/300108234-data.sql
+mysql: [Warning] Using a password on the command line interface can be insecure.

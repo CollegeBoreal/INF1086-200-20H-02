@@ -8,7 +8,7 @@ Created on 2020
 # Connecting to MySQL Server and working with a Collection
 from mysqlsh import mysqlx
 
-
+# La fonction mashup
 def mashup(myDb):
    # Create a new collection 'my_collection'
    myColl = myDb.get_collection('import_students')

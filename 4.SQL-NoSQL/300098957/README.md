@@ -14,8 +14,13 @@ $ mkdir <id> && cd <id>
 
 :bulb: Le volume sert à charger le fichier `.json`
 
+- sous gitbash
+
+`$ SRC=`pwd -W` `
+
+
+
 ```
-$ SRC=`pwd -W` 
 $ docker container run \
          --name some-mysqlds \
          --env MYSQL_ROOT_PASSWORD=password \

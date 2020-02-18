@@ -73,7 +73,7 @@ $ docker container exec --interactive some-mysqlds \
          mysql --user root -ppassword etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-data.sql
 ```
 
-<img src="images/connect-mysql.png" witdth=1366 height=650></img>
+<img src="images/connect-mysql.png" witdth=342 height=162 ></img>
 
 ![image](images/schema.png)
 

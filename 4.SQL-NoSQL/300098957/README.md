@@ -53,9 +53,9 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'etudiants'@'localhost' IDENTIFIED BY 'etudiants_1';"
+                        --execute "CREATE USER 'etudiants'@'127.0.0.1' IDENTIFIED BY 'etudiants_1';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "GRANT ALL ON etudiants.* TO 'etudiants'@'localhost';"
+                        --execute "GRANT ALL ON etudiants.* TO 'etudiants'@'127.0.0.1';"
 ```
 
 :pushpin: Contexte permettant d'utiliser `Mysql Workbench` 

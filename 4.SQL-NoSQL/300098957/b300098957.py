@@ -32,7 +32,7 @@ while obj:
      student = obj.students.student[i]
      print("INSERT INTO ETUDIANTS ( initiale, nom ) VALUES ('" + student.name.first_name + "', '" +  student.name.last_name + "')" )
      # Insert SQL Table data
-     myTable.insert(['initial','nom']).values(student.name.first_name, student.name.last_name).execute()
+     myTable.insert(['initiale','nom']).values(student.name.first_name, student.name.last_name).execute()
      i = i + 1
    obj = objs.fetch_one()
 

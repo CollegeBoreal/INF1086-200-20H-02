@@ -105,7 +105,9 @@ bash-4.2# mysqlsh --js --host localhost --user etudiants --password
 :pushpin: Importer le fichier `json` (i.e. ETL)
 
 ```
-MySQL JS> util.importJson("/var/lib/mysql-files/students.json", {schema: "etudiants", collection: "import_students"})
+MySQL JS> util.importJson("/var/lib/mysql-files/students.json", 
+                  {schema: "etudiants", collection: "import_students"}
+          )
 ```
 
 :pushpin: Tester la collection

@@ -47,7 +47,9 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
                         --execute "CREATE DATABASE etudiants;"
 ```
 
-:pushpin: DCL création de l'utilisateur
+### :two: DCL création de l'utilisateur
+
+:pushpin: Contexte permettant d'utiliser `mysqlsh` 
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
@@ -55,6 +57,8 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "GRANT ALL ON etudiants.* TO 'etudiants'@'localhost';"
 ```
+
+:pushpin: Contexte permettant d'utiliser `Mysql Workbench` 
 
 
 ```
@@ -91,6 +95,8 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 ```
 $ docker container exec --interactive --tty some-mysqlds bash
 ```
+
+> util.importJson("/var/lib/mysql-files/students.json", {schema: "etudiants", collection: "import_students"})
 
 
 

@@ -1,18 +1,38 @@
-{ name: 'United States',
-  native: 'United States',
-  phone: '1',
-  continent: 'NA',
-  capital: 'Washington D.C.',
-  currency: 'USD,USN,USS',
-  languages: [ 'en' ],
-  emoji: '🇺🇸',
-  emojiU: 'U+1F1FA U+1F1F8',
-  states:
-   { Alabama:
-      [ [Object],
-        [Object],
-        [Object],
-                ...
-            ]
-     }
+{
+    "GNP": 116729,
+    "_id": "ZAF",
+    "Name": "South Africa",
+    "IndepYear": 1910,
+    "geography": {
+        "Region": "Southern Africa",
+        "Continent": "Africa",
+        "SurfaceArea": 1221037
+    },
+    "government": {
+        "HeadOfState": "Thabo Mbeki",
+        "GovernmentForm": "Republic"
+    },
+    "demographics": {
+        "Population": 40377000,
+        "LifeExpectancy": 51.099998474121094
+    }
+}
+{
+    "GNP": 3377,
+    "_id": "ZMB",
+    "Name": "Zambia",
+    "IndepYear": 1964,
+    "geography": {
+        "Region": "Eastern Africa",
+        "Continent": "Africa",
+        "SurfaceArea": 752618
+    },
+    "government": {
+        "HeadOfState": "Frederick Chiluba",
+        "GovernmentForm": "Republic"
+    },
+    "demographics": {
+        "Population": 9169000,
+        "LifeExpectancy": 37.20000076293945
+    }
 }

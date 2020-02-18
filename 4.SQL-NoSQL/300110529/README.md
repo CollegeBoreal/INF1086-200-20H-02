@@ -23,16 +23,3 @@ $ docker container run `
          --detach `
          mysql/mysql-server:latest
 ```
-
-:pushpin: Executer la commande suivante pour afficher vos fichiers dans les conteneurs
-
-```
-% docker container exec --interactive some-mysqlds ls /var/lib/mysql-files
-300110529-data.sql
-300110529-dump.sql
-300110529-schema.sql
-README.md
-image
-Carte_graphique.json
-
-```

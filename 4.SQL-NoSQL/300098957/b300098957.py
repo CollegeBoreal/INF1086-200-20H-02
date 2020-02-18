@@ -16,18 +16,19 @@ mySession = mysqlx.get_session( {
 myDb = mySession.get_schema('etudiants')
 
 # Create a new collection 'my_collection'
-myColl = myDb.get_collection('my_collection')
+myColl = myDb.get_collection('import_students')
 
-# Find a document
-docs = myColl.find('name like :param1 AND age < :param2') \
-          .limit(1) \
-          .bind('param1','L%') \
-          .bind('param2',20) \
-          .execute()
+# Find objects from document
+objs = myColl.find().execute()
 
-# Print document
-doc = docs.fetch_one()
-print(doc)
+obj = objs.fetch_one()
+while obj:
+   c_s = len(obj.students)
+   i = 0
+   while i < c_s:
+     student = obj.students.student[i]
+     print("INSERT INTO ETUDIANTS ( prenom, nom ) VALUES ('" + student.name.first_name + "', '" +  student.name.last_name + "')" )
+     i = i + 1
+   obj = objs.fetch_one()
 
-# Drop the collection
-myDb.drop_collection('my_collection')
+

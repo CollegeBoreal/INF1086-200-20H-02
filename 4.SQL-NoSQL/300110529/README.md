@@ -22,3 +22,4 @@ $ docker container run `
          --detach `
          mysql/mysql-server:latest
 ```
+

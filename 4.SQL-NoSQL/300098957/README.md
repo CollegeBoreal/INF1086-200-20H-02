@@ -14,14 +14,17 @@ $ mkdir <id> && cd <id>
 
 :warning: Donner le nom du répertoire source à la variable `SRC
 
-- sous gitbash
+- sous gitbash (respectz les backtick)
 
-`$ SRC=\`pwd -W\` `
+```
+$ SRC=`pwd -W`
+```
 
 - sous un terminal Unix (Linux, MacOS)
 
-`$ SRC=${PWD}`
-
+```
+$ SRC=${PWD}
+```
 
 :bulb: Le volume sert à charger le fichier `.json`
 

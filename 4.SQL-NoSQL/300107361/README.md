@@ -59,7 +59,9 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 - [ ] Chercher des données `json` correspondant à votre domaine d'activités
 
 Tochgaly-K.J.Etienne@XXX MINGW64 ~/developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361 (master)
+
 ```$ curl 'https://vpic.nhtsa.dot.gov/api/vehicles/getallmanufacturers?format=json&page=2' | jq > car.json ```
+
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 14168  100 14168    0     0  16192      0 --:--:-- --:--:-- --:--:-- 16192

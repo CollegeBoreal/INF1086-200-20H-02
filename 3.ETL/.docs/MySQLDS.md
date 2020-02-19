@@ -5,11 +5,21 @@
 
 # :a: Créer le conteneur avec un volume
 
-🌶️ La compatibilité des volumes entre machine hotes et conteneur (Windows ou Linux) n'est pas fiables. Utiliser gitbash uniquement
+:bangbang: Donner le nom du répertoire source à la variable `SRC` (respectez les backticks)
 
-:m: sous gitbash 
+<sup>:m:</sup> sous `gitbash` afficher le format Windows `-W`
 
-:pushpin: Assigner le répertoire courant à la variable `$PWD`
+```
+$ SRC=`pwd -W`
+```
+
+<sup>:m:</sup> sous un terminal classique afficher le format (Linux, MacOS)
+
+```
+$ SRC=`pwd -L`
+```
+
+:bulb: Lancer le conteneur avec un volume
 
 ```
 $ docker container run \
@@ -17,7 +27,7 @@ $ docker container run \
          --env MYSQL_ROOT_PASSWORD=password \
          --publish 3306:3306 \
          --publish 33060:33060 \
-         --volume ${PWD}:/var/lib/mysql-files \
+         --volume ${SRC}:/var/lib/mysql-files \
          --detach \
          mysql/mysql-server:latest
 ```

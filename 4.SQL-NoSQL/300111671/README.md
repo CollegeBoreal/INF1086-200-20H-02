@@ -130,4 +130,14 @@ Total successfully imported documents 1 (10.12 documents/s)
 
 
 ```
+### :three: Scripting avec API
 
+:pushpin: Utilisation de MySQL Python : XDEVAPI 
+
+
+
+```
+$ docker container exec --interactive some-mysqlds mysqlsh --py \
+                        --host localhost --user abbas -ppassword \
+                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300111671/b300111671.py
+```

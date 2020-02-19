@@ -12,18 +12,39 @@ $ mkdir <id> && cd <id>
 
 - [x] Créer le conteneur avec un volume (dans le répertoire de son projet)
 
+<sup>:m:</sup> Donner le nom du répertoire source à la variable `SRC` (respectez les backticks)
+
+| Terminal     | Commande                                                       |  Commentaires                          | 
+|--------------|----------------------------------------------------------------|----------------------------------------|
+| classique    | $ SRC=\`pwd -L\`                                               | afficher le format Unix (Linux, MacOS) |
+| `gitbash`    | $ SRC=\`pwd -W\`                                               | afficher le format Windows `-W`        |
+| `Powershell` | PS > $SRC = $PWD.Path \| Foreach-Object {$_ -replace '\\','/'} | afficher le format Windows `-W`        |
+
 :bulb: Le volume sert à charger le fichier `.json`
 
+<sup>:m:</sup> sous `shell` ou `bash`
 
 ```
-$ d1=C:\\Users\\300098957\\Developer\\INF1086-200-20H-02\\4.SQL-NoSQL\\300098957 
 $ docker container run \
          --name some-mysqlds \
          --env MYSQL_ROOT_PASSWORD=password \
          --publish 3306:3306 \
          --publish 33060:33060 \
-         --volume ${d1}:/var/lib/mysql-files \
+         --volume ${SRC}:/var/lib/mysql-files \
          --detach \
+         mysql/mysql-server:latest
+```
+
+<sup>:m:</sup> sous `Powershell` remplacer `\` (backslash) avec  ` (backtick)
+
+```
+PS > docker container run `
+         --name some-mysqlds `
+         --env MYSQL_ROOT_PASSWORD=password `
+         --publish 3306:3306 `
+         --publish 33060:33060 `
+         --volume ${SRC}:/var/lib/mysql-files `
+         --detach `
          mysql/mysql-server:latest
 ```
 

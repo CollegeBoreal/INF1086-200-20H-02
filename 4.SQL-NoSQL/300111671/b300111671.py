@@ -15,7 +15,7 @@ mySession = mysqlx.get_session( {
 myDb = mySession.get_schema('Boubou')
 
 # Create a new Collection
-myColl = myDb.create_collection('Boubou')
+myColl = myDb.create_collection('Boubou2')
 
 # Insert documents
 myColl.add({'_id': '1', 'COULEUR': 'noir', 'GENRE': 'dashiki', 'QUANTITE':'1 a 3'}).execute()
@@ -28,4 +28,4 @@ docs = myColl.find('COULEUR like: param').limit(1).bind('param', 'noir').execute
 doc = docs.fetch_one()
 print(doc)
 
-myDb.drop_collection('Boubou')
+myDb.drop_collection('Boubou2')

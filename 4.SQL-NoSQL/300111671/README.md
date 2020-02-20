@@ -137,7 +137,9 @@ Total successfully imported documents 1 (10.12 documents/s)
 
 
 ```
-$ docker container exec --interactive some-mysqlds mysqlsh --py \
-                        --host localhost --user abbas -ppassword \
-                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300111671/b300111671.py
+$   docker container exec --interactive some-mysqlds mysqlsh --py \
+>                         --host localhost --user abbas -ppassword \
+>                    < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300111671/b300111671.py
+WARNING: Using a password on the command line interface can be insecure.
+{"COULEUR": "noir", "GENRE": "dashiki", "QUANTITE": "1 a 3", "_id": "1"}
 ```

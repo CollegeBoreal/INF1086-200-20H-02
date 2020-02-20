@@ -5,6 +5,7 @@
 :bulb: Creer son projet dans un repertoire avec son :id:
 
 ``$ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL``
+
 ``$ mkdir 300107361`` && `$ cd 300107361`
 
 ### :zero: Administration 
@@ -13,9 +14,7 @@
 
 - [ ] Assurez vous qu'il utilise un volume pour importer de nouvelles données
  
- Le volume sert à charger les fichiers `.json`
-
-- [ ] Créer l'utilisateur permettant d'accéder au Document Store (DCL)
+:bulb:  Le volume sert à charger les fichiers `.json`
 
 
 * Lancer `PS> pwd` pour avoir le path du fichier pour vous assurez qu'il utilise un volume: 
@@ -47,7 +46,7 @@ car.json
 
 - [ ] Ceer votre base de données
 ```
-$   docker container exec --interactive some-mysqlds mysql --user root -ppassword                        --execute "CREATE DATABASE car_center;"
+$   docker container exec --interactive some-mysqlds mysql --user root -ppassword                        --execute "CREATE DATABASE Car_Center;"
 
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
@@ -58,21 +57,21 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
  docker container exec --interactive some-mysqlds mysql --user root -ppassword \
 >                         --execute "CREATE USER 'joker'@'%' IDENTIFIED BY 'password';"
 
-docker container exec --interactive some-mysqlds mysql --user root -ppassword                        --execute "GRANT ALL ON car_center.* TO 'joker'@'%';"
+docker container exec --interactive some-mysqlds mysql --user root -ppassword                        --execute "GRANT ALL ON Car_Center.* TO 'joker'@'%';"
 ```
 
 - [ ] Importer votre base de données SQL
 - [ ] Charger le `schema`
  ```
 $  docker container exec --interactive some-mysqlds mysql --user root -ppassword \
->           car_center < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/300107361-schema.sql
+>           Car_Center < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/300107361-schema.sql
 
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
 - [ ] Charger les `données` SQL
 ```
 $  docker container exec --interactive some-mysqlds mysql --user root -ppassword \
->           car_center < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/300107361-data.sql
+>           Car_Center < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/300107361-data.sql
 ```
 
 
@@ -92,6 +91,7 @@ Tochgaly-K.J.Etienne@XXX MINGW64 ~/developer/INF1086-200-20H-02/4.SQL-NoSQL/3001
 :a: Se connecter au conteneur
 ```
 $ docker container exec --interactive --tty some-mysqlds bash
+
 $ winpty  docker container exec --interactive --tty some-mysqlds bash
 ```
 :b: Se connecter à mysqlSH en utilisant `JavaScript`
@@ -100,7 +100,7 @@ bash-4.2# mysqlsh --js --user joker -ppassword
 ```
 :ab: Importer les donnees Json
 ```
- MySQL  localhost:33060+ ssl  JS > util.importJson("/var/lib/mysql-files/car.json", {schema: "car_center", collection: "cars"})
+ MySQL  localhost:33060+ ssl  JS > util.importJson("/var/lib/mysql-files/car.json", {schema: "Car_Center", collection: "cars"})
 Importing from file "/var/lib/mysql-files/car.json" to collection `Car_Center`.`cars` in MySQL Server at localhost:33060
 
 .. 1.. 1
@@ -125,7 +125,7 @@ def mashup():
 - [ ] La fonction `mashup` doit créer une table produite par des collections
 
 
-- [ ] ` ou ` La fonction `mashup` doit créer une collection produite par des collections `importées `
+- [ ] ` ou ` La fonction `mashup` doit créer une collection produite par des collections `importées`
 
 
 ### :four: Modelisation

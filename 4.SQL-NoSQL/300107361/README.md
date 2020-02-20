@@ -88,16 +88,19 @@ Tochgaly-K.J.Etienne@XXX MINGW64 ~/developer/INF1086-200-20H-02/4.SQL-NoSQL/3001
 100 14168  100 14168    0     0  16192      0 --:--:-- --:--:-- --:--:-- 16192
 
 - [ ] Importer ces données dans vos propres collections
+
 :a: Se connecter au conteneur
 ```
 $ docker container exec --interactive --tty some-mysqlds bash
 
 $ winpty  docker container exec --interactive --tty some-mysqlds bash
 ```
+
 :b: Se connecter à mysqlSH en utilisant `JavaScript`
 ```
 bash-4.2# mysqlsh --js --user joker -ppassword
 ```
+
 :ab: Importer les donnees Json
 ```
  MySQL  localhost:33060+ ssl  JS > util.importJson("/var/lib/mysql-files/car.json", {schema: "Car_Center", collection: "cars"})

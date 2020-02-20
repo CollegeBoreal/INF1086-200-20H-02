@@ -3,6 +3,7 @@
 # Projet
 
 :bulb: Creer son projet dans un repertoire avec son :id:
+
 ``$ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL``
 ``$ mkdir 300107361`` && `$ cd 300107361`
 
@@ -11,7 +12,8 @@
 - [ ] Créer votre base de données [MySQL/Server](../3.ETL/.docs/MySQLDS.md)
 
 - [ ] Assurez vous qu'il utilise un volume pour importer de nouvelles données
-  Le volume sert à charger les fichiers `.json`
+ 
+ Le volume sert à charger les fichiers `.json`
 
 - [ ] Créer l'utilisateur permettant d'accéder au Document Store (DCL)
 

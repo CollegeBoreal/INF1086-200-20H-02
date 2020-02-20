@@ -10,7 +10,7 @@ from mysqlsh import mysqlx
 # Connect to a Server
 mySession = mysqlx.get_session( {
         'host': 'localhost', 'port': 33060,
-        'user': 'alade', 'password': 'password'} )
+        'user': 'abbas', 'password': 'password'} )
 
 myDb = mySession.get_schema('world_x')
 

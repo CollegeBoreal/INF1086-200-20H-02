@@ -12,7 +12,7 @@ mySession = mysqlx.get_session( {
         'host': 'localhost', 'port': 33060,
         'user': 'abbas', 'password': 'password'} )
 
-myDb = mySession.get_schema('world_x')
+myDb = mySession.get_schema('Boubou')
 
 # Create a new Collection
 myColl = myDb.create_collection('boubou')

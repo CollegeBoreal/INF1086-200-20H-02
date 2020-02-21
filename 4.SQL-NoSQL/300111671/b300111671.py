@@ -25,7 +25,7 @@ mySession = mysqlx.get_session( {
 myDb = mySession.get_schema('Boubou')
 
 # Create a new Collection
-myColl = myDb.create_collection('Boubou2')
+myColl = myDb.create_collection('Agbada')
 
 # Insert documents
 myColl.add({'_id': '1', 'COULEUR': 'noir', 'GENRE': 'dashiki', 'QUANTITE':'1 a 3'}).execute()

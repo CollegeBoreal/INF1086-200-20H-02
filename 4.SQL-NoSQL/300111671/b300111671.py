@@ -12,7 +12,7 @@ from mysqlsh import mysqlx
 
 def mashup(myDb):
    # Create a new collection 'my_collection'
-myColl = myDb.get_collection('Boubou.json')
+myColl = myDb.get_collection('Boubou')
 
 
 

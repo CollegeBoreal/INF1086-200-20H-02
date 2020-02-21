@@ -142,3 +142,25 @@ Total successfully imported documents 1 (10.12 documents/s)
 WARNING: Using a password on the command line interface can be insecure.
 
 ```
+
+
+### :four: Modèlisation
+
+Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (i.e. forward engineering)
+
+- [x] présenter votre modèle relationel
+
+- [x] présenter votre modèle présentant les collections `dans un dossier`
+
+<img src="images/schema.png" witdth=920 height=791 ></img>
+
+
+### :five: Backup
+
+- [x] Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql
+ 
+```
+$ docker container exec some-mysqlds \
+    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" etudiants ' \
+    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-dump.sql
+```

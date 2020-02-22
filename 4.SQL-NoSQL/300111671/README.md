@@ -56,7 +56,20 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "GRANT ALL ON Boubou.* TO 'abbas'@'%';"
 ```
+ - [ ] En éxécutant la commande suivante vos fichiers dans les conteneurs devraient s'afficher
 
+```
+
+$ docker container exec --interactive some-mysqlds sh -c "ls /var/lib/mysql-files"
+300111671-data.sql
+300111671-dump.sql
+300111671-schema.sql
+Boubou.json
+Collection.PNG
+README.md
+b300111671.py
+
+```
 
 ### :one: Migration
 

@@ -160,7 +160,9 @@ Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (
 - [x] Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql
  
 ```
-$ docker container exec some-mysqlds \
-    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" etudiants ' \
-    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-dump.sql
+ docker container exec some-mysqlds \
+>     sh -c 'exec mysqldump --user root -p"password" Boubou ' \
+>     > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300111671/300111671-dump.sql
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+
 ```

@@ -152,7 +152,7 @@ WARNING: Using a password on the command line interface can be insecure.
 
 - [x] présentation du modèle présentant les collections 
 
-<img src="images/Collection.png"></img>
+![image](Collection.PNG)
 
 
 ### :five: Backup

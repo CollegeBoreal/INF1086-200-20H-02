@@ -146,13 +146,13 @@ WARNING: Using a password on the command line interface can be insecure.
 
 ### :four: Modèlisation
 
-Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (i.e. forward engineering)
 
-- [x] présenter votre modèle relationel
 
-- [x] présenter votre modèle présentant les collections `dans un dossier`
+- [x] présentation du modèle relationel
 
-<img src="images/schema.png" witdth=920 height=791 ></img>
+- [x] présentation du modèle présentant les collections 
+
+<img src="images/Collection.png"></img>
 
 
 ### :five: Backup

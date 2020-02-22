@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -- MySQL dump 10.13  Distrib 8.0.18, for Linux (x86_64)
 --
 -- Host: localhost    Database: Boubou
@@ -373,3 +374,6 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2020-02-22  0:37:48
+=======
+
+>>>>>>> e2a3a9ba50f9b567dfbfb930bb25dcde5cef2dbf

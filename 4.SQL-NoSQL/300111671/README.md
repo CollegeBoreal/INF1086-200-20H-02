@@ -142,3 +142,27 @@ Total successfully imported documents 1 (10.12 documents/s)
 WARNING: Using a password on the command line interface can be insecure.
 
 ```
+
+
+### :four: Modèlisation
+
+
+
+- [x] présentation du modèle relationel
+
+- [x] présentation du modèle présentant les collections 
+
+<img src="images/Collection.png"></img>
+
+
+### :five: Backup
+
+- [x] Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql
+ 
+```
+ docker container exec some-mysqlds \
+>     sh -c 'exec mysqldump --user root -p"password" Boubou ' \
+>     > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300111671/300111671-dump.sql
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+
+```

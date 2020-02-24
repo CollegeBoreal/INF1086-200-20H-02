@@ -1,0 +1,50 @@
+"coFundingshipping": [
+      {
+        "id": "134",
+        "type": "coton",
+        "acronym": null,
+        "city": "toronto",
+        "state": "ON",
+        "country": "Canada"
+      }
+    ],
+    "coFundingshipping": [
+      {
+        "id": "123",
+        "type": "muslin",
+        "acronym": null,
+        "city": "Agadir",
+        "state": "AG",
+        "country": "Maroc"
+      }
+    ],
+    "coFundingshipping": [
+      {
+        
+        "id": "190",
+        "type": "muslin",
+        "acronym": null,
+        "city": "Agadir",
+        "state": "AG",
+        "country": "Maroc"
+      },
+      {
+        "id": "34",
+        "type": "printed",
+        "acronym": null,
+        "city": "ottawa",
+        "state": "ON",
+        "country": "Canada"
+      },
+      {
+        "id": "908",
+        "type": "cotton",
+        "acronym": null,
+        "city": "Paris",
+        "state": "PR",
+        "country": "France"
+      }
+    ],
+    "additionalTas": []
+  }
+}

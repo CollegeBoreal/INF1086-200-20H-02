@@ -41,13 +41,33 @@ docker container run `
 
 ```
 
-$  docker container exec --interactive some-mysqlds sh -c \
->           ' exec mysql --user root -ppassword --execute "CREATE DATABASE Boubou;" '
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "CREATE USER 'abbas'@'127.0.0.1' IDENTIFIED BY 'password';"
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "GRANT ALL ON Boubou.* TO 'abbas'@'127.0.0.1';"
+```
+
+:pushpin: Contexte permettant d'utiliser `Mysql Workbench` 
 
 
+```
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "CREATE USER 'abbas'@'%' IDENTIFIED BY 'password';"
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "GRANT ALL ON Boubou.* TO 'abbas'@'%';"
+```
+ - [ ] En éxécutant la commande suivante vos fichiers dans les conteneurs devraient s'afficher
 
-CREATE USER 'alade'@'%' IDENTIFIED BY 'password';
-GRANT ALL ON Boubou.* TO 'alade'@'%';
+```
+
+$ docker container exec --interactive some-mysqlds sh -c "ls /var/lib/mysql-files"
+300111671-data.sql
+300111671-dump.sql
+300111671-schema.sql
+Boubou.json
+Collection.PNG
+README.md
+b300111671.py
 
 ```
 
@@ -123,4 +143,39 @@ Total successfully imported documents 1 (10.12 documents/s)
 
 
 ```
+### :three: Scripting avec API
 
+:pushpin: Utilisation de MySQL Python : XDEVAPI 
+
+
+
+```
+  docker container exec --interactive some-mysqlds mysqlsh --py                         --host localhost --user abbas
+-ppassword                    < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300111671/b300111671.py
+WARNING: Using a password on the command line interface can be insecure.
+
+```
+
+
+### :four: Modèlisation
+
+
+
+- [x] présentation du modèle relationel
+
+- [x] présentation du modèle présentant les collections 
+
+![image](Collection.PNG)
+
+
+### :five: Backup
+
+- [x] Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql
+ 
+```
+ docker container exec some-mysqlds \
+>     sh -c 'exec mysqldump --user root -p"password" Boubou ' \
+>     > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300111671/300111671-dump.sql
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+
+```

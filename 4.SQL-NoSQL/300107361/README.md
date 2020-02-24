@@ -2,22 +2,24 @@
 
 # Projet
 
-:bulb: Dans votre propre répertoire c.f. :id:
-~/4.SQL-NOSQL
-```$ mkdir 300107361```
+:bulb: Creer son projet dans un repertoire avec son :id:
+
+``$ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL``
+
+``$ mkdir 300107361`` && `$ cd 300107361`
 
 ### :zero: Administration 
 
 - [ ] Créer votre base de données [MySQL/Server](../3.ETL/.docs/MySQLDS.md)
 
 - [ ] Assurez vous qu'il utilise un volume pour importer de nouvelles données
-
-
-- [ ] Créer l'utilisateur permettant d'accéder au Document Store (DCL)
+ 
+:bulb:  Le volume sert à charger les fichiers `.json`
 
 
 * Lancer `PS> pwd` pour avoir le path du fichier pour vous assurez qu'il utilise un volume: 
 
+Sous Powershell 
 ```
  docker container run `
          --name some-mysqlds `
@@ -28,32 +30,51 @@
          --detach `
          mysql/mysql-server:latest
 ```
-
-* Creer l'utilisateur permettant d'acceder au Document Store
-
+* En éxécutant la commande suivante vos fichiers dans les conteneurs devraient s'afficher
 ```
-mysql> CREATE USER 'joker'@'%' IDENTIFIED BY 'password';
-mysql> GRANT ALL ON Car_Center.* TO 'joker'@'%';
+$ docker container exec --interactive some-mysqlds sh -c "ls /var/lib/mysql-files"
+
+300107361-data.sql
+300107361-schema.sql
+README.md
+b300107361.py
+car.json
+
 ```
 
 ### :one: Migration
 
-- [ ] Récupérer votre ancien projet [SQL](https://github.com/CollegeBoreal/INF1006-202-19A-01/tree/master/4.DML)
+- [ ] Ceer votre base de données
 ```
-$  docker container exec --interactive some-mysqlds sh -c \
->           ' exec mysql --user root -ppassword --execute "CREATE DATABASE Car_Center;" '
+$   docker container exec --interactive some-mysqlds mysql --user root -ppassword                        --execute "CREATE DATABASE Car_Center;"
 
 mysql: [Warning] Using a password on the command line interface can be insecure.
+```
+
+* Creer l'utilisateur permettant d'acceder au Document Store
+
+```
+ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+>                         --execute "CREATE USER 'joker'@'%' IDENTIFIED BY 'password';"
+
+docker container exec --interactive some-mysqlds mysql --user root -ppassword                        --execute "GRANT ALL ON Car_Center.* TO 'joker'@'%';"
 ```
 
 - [ ] Importer votre base de données SQL
+- [ ] Charger le `schema`
  ```
-$ docker container exec --interactive some-mysqlds sh -c \
->           ' exec mysql --user root -ppassword ' \
->           < ~/developer/INF1006-202-19A-01/Q.Query/300107361/300107361-schema.sql
+$  docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+>           Car_Center < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/300107361-schema.sql
 
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
+- [ ] Charger les `données` SQL
+```
+$  docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+>           Car_Center < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/300107361-data.sql
+```
+
+
 ### :two: E.T.L
 
 - [ ] Chercher des données `json` correspondant à votre domaine d'activités
@@ -67,6 +88,20 @@ Tochgaly-K.J.Etienne@XXX MINGW64 ~/developer/INF1086-200-20H-02/4.SQL-NoSQL/3001
 100 14168  100 14168    0     0  16192      0 --:--:-- --:--:-- --:--:-- 16192
 
 - [ ] Importer ces données dans vos propres collections
+
+:a: Se connecter au conteneur
+```
+$ docker container exec --interactive --tty some-mysqlds bash
+
+$ winpty  docker container exec --interactive --tty some-mysqlds bash
+```
+
+:b: Se connecter à mysqlSH en utilisant `JavaScript`
+```
+bash-4.2# mysqlsh --js --user joker -ppassword
+```
+
+:ab: Importer les donnees Json
 ```
  MySQL  localhost:33060+ ssl  JS > util.importJson("/var/lib/mysql-files/car.json", {schema: "Car_Center", collection: "cars"})
 Importing from file "/var/lib/mysql-files/car.json" to collection `Car_Center`.`cars` in MySQL Server at localhost:33060
@@ -93,7 +128,7 @@ def mashup():
 - [ ] La fonction `mashup` doit créer une table produite par des collections
 
 
-- [ ] ` ou ` La fonction `mashup` doit créer une collection produite par des collections `importées `
+- [ ] ` ou ` La fonction `mashup` doit créer une collection produite par des collections `importées`
 
 
 ### :four: Modelisation

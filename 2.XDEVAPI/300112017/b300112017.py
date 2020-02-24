@@ -4,7 +4,10 @@ Created on Tue Jan 21 10:52:48 2020
 
 @author: Ador
 """
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002815afbd6007dd598bf7d0807f2d84dd2d15b9
 # Connecting to MySQL Server and working with a Collection
 from mysqlsh import mysqlx
 
@@ -30,3 +33,8 @@ doc = docs.fetch_one()
 print(doc)
 
 myDb.drop_collection('magasin')
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 002815afbd6007dd598bf7d0807f2d84dd2d15b9

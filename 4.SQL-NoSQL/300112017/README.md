@@ -1,5 +1,5 @@
 
-# Etudiants
+# magasin
 
 ### :zero: Administration
 

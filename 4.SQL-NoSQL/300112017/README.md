@@ -36,7 +36,6 @@ PS > docker container run `
 ```
 $ docker container exec --interactive some-mysqlds sh -c "ls /var/lib/mysql-files"
 300112017-data.sql
-300112017-dump.sql
 300112017-schema.sql
 README.md
 Moto.json

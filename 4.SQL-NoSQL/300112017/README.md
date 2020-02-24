@@ -94,7 +94,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 - [] Chercher des données `JSON`
 
 ```
-$ curl  > Moto.json
+$ curl https://raw.githubusercontent.com/MarinescuEvghenii/Cars-Motorcycles-DataBase-JSON/master/moto_brands.json > Moto.json
 ```
 
 - [] Importer ces données dans vos propres collections

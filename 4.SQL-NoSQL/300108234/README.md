@@ -2,21 +2,21 @@
 mkdir 300108234 cd 300108234
 ```
 ```
-pwd /c/Users/User/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300108234
+$ SRC=`pwd -W`	
 ```
 ```
-docker container run \
+$ docker container run \
          --name some-mysqlds \
          --env MYSQL_ROOT_PASSWORD=password \
          --publish 3306:3306 \
          --publish 33060:33060 \
-         --volume ${SRC}:C:/Users/User/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300108234:/var/lib/mysql-files \
+         --volume ${SRC}:/var/lib/mysql-files \
          --detach \
          mysql/mysql-server:latest
 ```
 
 ```
-docker container exec --interactive some-mysqlds sh -c "ls C:/Users/User/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300108234:/var/lib/mysql-files"
+$ docker container exec --interactive some-mysqlds sh -c "ls C:/Users/User/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300108234:/var/lib/mysql-files"
 ```
 
 ```

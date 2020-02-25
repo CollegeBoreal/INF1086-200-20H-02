@@ -1,6 +1,6 @@
 import sys; sys.path.append('.') # Rajouter le repertoire courant
 from b300106918 import rightTriangle
-test = rightTriangle(11) == [(8, 6, 10)] 
+test = masheup(null) == [(8, 6, 10)] 
 if  test:
      print('--------------------')
      print(':tada: :tada: :tada:')

@@ -1,6 +1,5 @@
 # My Project nosql
 
-/c/Users/didie/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110500
 
 :bulb: Creer son projet dans un repertoire avec son :id:
 
@@ -16,9 +15,7 @@
 
 
 - [ ] Assurez vous qu'il utilise un volume pour importer de nouvelles données
-
-
-
+```
 
 docker container run `
          --name some-mysqlds `
@@ -29,6 +26,7 @@ docker container run `
          --detach `
          mysql/mysql-server:latest
 
+```
 
 - [ ] Créer l'utilisateur permettant d'accéder au Document Store (DCL)
 

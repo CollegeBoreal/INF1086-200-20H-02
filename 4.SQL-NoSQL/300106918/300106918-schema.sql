@@ -27,7 +27,6 @@ CREATE TABLE PRODUCTS ( IDproduit INT AUTO_INCREMENT,
 
 CREATE TABLE CLIENTS (IDclient INT NOT NULL AUTO_INCREMENT, 
                       Nom_client VARCHAR(30) NOT NULL, Ville VARCHAR(30) NOT NULL,
-                      téléphone  INT,
                       PRIMARY KEY(IDclient)
                      );
  

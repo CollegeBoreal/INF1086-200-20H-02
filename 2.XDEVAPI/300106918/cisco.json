@@ -58,8 +58,8 @@
             "dimensions_value": "31.25 x 17.2 x 22.75 in. (79.4 x 43.7 x 57.8 cm)"
         },
         "form_factor": "18 rack units (RU) Mounting: 19 in. rack mountable (front or rear); 2 units per 7 ft. rack. Note: Mounting in 23 in. racks is possible with optional third-party hardware",
-        "weight": "235 lb. (106.6 kg) fully-configured chassis"
-        "product_support_page": "",
+        "weight": "235 lb. (106.6 kg) fully-configured chassis",
+        "product_support_page" : " ",
         "visio_stencil_url": "http://www.cisco.com/content/dam/assets/prod/visio/visio/product_visio_icon0900aecd8009b9c8.zip",
         "rich_media_urls": {
             "large_image_url": "",

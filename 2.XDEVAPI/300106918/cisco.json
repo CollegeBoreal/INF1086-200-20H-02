@@ -80,9 +80,9 @@
     "product_list"  [{
         "id": "1",
         "product_id": "UBR10012",
-        "product_name": "Cisco uBR10012 Universal Broadband Router”,
+        "product_name": "Cisco uBR10012 Universal Broadband Router",
         "product_type": "ROUTER",
-        "product_series": "Cisco uBR10000 Series Universal Broadband Routers",
+        "product_series" : "Cisco uBR10000 Series Universal Broadband Routers",
         "product_category": "Video",
         "product_subcategory": "10012 SERIES",
         "release_date": "2005-05-02",

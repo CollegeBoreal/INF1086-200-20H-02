@@ -17,7 +17,7 @@
         "orderable_pid" : "UBR10012",
         "product_name" : "Cisco PA-8T: Eight Serial Port Adapter 
         for Cisco 7000 Series Routers",
-        "product_type" : “ROUTER",
+        "product_type" : ROUTER,
         "product_series" : "Cisco uBR10000 Series Universal Broadband Routers",
         "product_category" : "Video",
         "product_subcategory" : "10012 SERIES",

@@ -1,6 +1,14 @@
-# My Project no sql
+# My Project nosql
 
 /c/Users/didie/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110500
+
+:bulb: Creer son projet dans un repertoire avec son :id:
+
+``$ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL``
+
+``$ mkdir 300107361`` && `$ cd 300110500`
+
+
 
 ### :zero: Administration 
 

@@ -5,9 +5,9 @@ CREATE DATABASE IF NOT EXISTS network_IT;
 
 -- Mon utilisateur
 
-CREATE USER 'AEK'@'127.0.0.1' IDENTIFIED BY 'etudiants_1';
+CREATE USER 'AEK'@'localhost' IDENTIFIED BY 'etudiants_1';
 
-GRANT ALL ON network_IT.* TO 'AEK'@'127.0.0.1';
+GRANT ALL ON network_IT.* TO 'AEK'@'localhost';
 
 -- selectionner la base de donnees
 

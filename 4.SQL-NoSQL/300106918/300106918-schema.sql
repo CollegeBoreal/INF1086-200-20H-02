@@ -33,7 +33,7 @@ CREATE TABLE CLIENTS (IDclient INT NOT NULL AUTO_INCREMENT,
  CREATE TABLE COMMANDES ( IDproduit INT,
                           IDclient INT,
                           IDfacture INT, 
-                          Quantité INT NOT NULL, 
+                          Quantité INT , 
                          
             PRIMARY KEY(IDproduit, IDclient),
             FOREIGN KEY(IDproduit) 

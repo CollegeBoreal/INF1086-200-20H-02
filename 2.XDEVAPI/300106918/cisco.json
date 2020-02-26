@@ -2,11 +2,11 @@
  {
     "pagination_response_record": {
         "title": "Product Info API - Get Product Information by Serial Number(s)",
-        "page_index": 1,
-        "last_index": 1,
-        "total_records": 2
-        "page_records": 2
-        "self_link": "https://api.cisco.com/product/v1/information/serial_numbers/SPE181700LN,REF_CSJ07306405?page_index=1",
+        "page_index" : 1,
+        "last_index" : 1,
+        "total_records" : 2,
+        "page_records" : 2,
+        "self_link" : "https://api.cisco.com/product/v1/information/serial_numbers/SPE181700LN,REF_CSJ07306405?page_index=1",
      }
  },
     

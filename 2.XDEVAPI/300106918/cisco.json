@@ -76,7 +76,7 @@
         "page_records": 3,
         "self_link": "https://api.cisco.com/product/v1/information/product_ids/UBR10012,ASR1001?page_index=1",
     }
-    
+}
     "product_list": [{
         "id": "1",
         "product_id": "UBR10012",

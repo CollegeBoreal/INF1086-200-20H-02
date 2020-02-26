@@ -22,8 +22,8 @@
         "product_series" : "Cisco uBR10000 Series Universal Broadband Routers",
         "product_category" : "Video",
         "product_subcategory" : "10012 SERIES",
-        "release_date" : “2005-05-02",
-        "orderable_status" : “O",
+        "release_date" : "2005-05-02",
+        "orderable_status" : "O",
         "dimensions": {
             "dimensions_format": "Dimensions (HxWxD)",
             "dimensions_value": "31.25 x 17.2 x 22.75 in. (79.4 x 43.7 x 57.8 cm)"

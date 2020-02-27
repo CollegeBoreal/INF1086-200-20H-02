@@ -36,24 +36,7 @@ CREATE TABLE INSTALLATIONS (installation INT NOT NULL AUTO_INCREMENT,
                            PRIMARY KEY(installation)
                            );
                            
-CREATE TABLE COMMANDES ( 
-                        IDclient INT,
-                        IDproduit INT,
 
-                        IDfacture INT, 
-
-                          Quantité INT
-            PRIMARY KEY(IDclient, IDproduit ),
-
-            FOREIGN KEY(IDclient) 
-
-            REFERENCES CLIENTS(IDproduit),
-
-            FOREIGN KEY(IDproduit) 
-
-            REFERENCES PRODUITS (IDproduit)
-
-                  );
   
 CREATE TABLE PRIX (
         solution INT,
@@ -61,12 +44,14 @@ CREATE TABLE PRIX (
         IDclient INT,
         prix INT,
  
-        PRIMARY KEY (solution, installation, IDclient),
+        PRIMARY KEY (solution, installation, IDclient, IDproduit),
         FOREIGN KEY(solution)
         REFERENCES SOLUTIONS(solution),
         FOREIGN KEY(installation)
         REFERENCES INSTALLATIONS(installation),
         FOREIGN KEY(IDclient)
         REFERENCES CLIENTS(IDclient)
+        FOREIGN KEY(IDproduit) 
+        REFERENCES PRODUITS (IDproduit)
     
        );

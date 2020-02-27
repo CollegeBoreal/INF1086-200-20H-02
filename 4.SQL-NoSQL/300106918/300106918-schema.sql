@@ -50,7 +50,7 @@ CREATE TABLE PRIX (
         FOREIGN KEY(installation)
         REFERENCES INSTALLATIONS(installation),
         FOREIGN KEY(IDclient)
-        REFERENCES CLIENTS(IDclient)
+        REFERENCES CLIENTS(IDclient),
         FOREIGN KEY(IDproduit) 
         REFERENCES PRODUITS (IDproduit)
     

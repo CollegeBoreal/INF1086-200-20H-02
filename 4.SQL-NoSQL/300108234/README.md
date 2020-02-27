@@ -74,7 +74,7 @@ Please provide the password for 'halima@localhost': ********
 
 ```
 MySQL JS> util.importJson(
-              "C:/Users/User/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300108234:/var/lib/mysql-files/students.json", 
+              "/var/lib/mysql-files/hijab.json", 
               {
                   schema: "Hijabfashion", 
                   collection: "import_hijab"

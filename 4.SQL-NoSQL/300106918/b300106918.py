@@ -15,7 +15,7 @@ from mysqlsh import mysqlx
 # La fonction mashup
 
 def mashup(myDb):
-   # Create a new collection 'aek_collection'
+   # Create a new collection 'my_collection'
    myColl = myDb.get_collection('import_cisco')
    # Accessing an existing table
    myTable = myDb.get_table('network_IT')

@@ -36,22 +36,22 @@ CREATE TABLE INSTALLATIONS (installation INT NOT NULL AUTO_INCREMENT,
                            PRIMARY KEY(installation)
                            );
                            
-CREATE TABLE COMMANDES ( IDproduit INT,
+CREATE TABLE COMMANDES ( 
+                        IDclient INT,
+                        IDproduit INT,
 
-                          IDclient INT,
-
-                          IDfacture INT, 
+                        IDfacture INT, 
 
                           Quantité INT
-            PRIMARY KEY(IDproduit, IDclient),
-
-            FOREIGN KEY(IDproduit) 
-
-            REFERENCES PRODUCTS (IDproduit),
+            PRIMARY KEY(IDclient, IDproduit ),
 
             FOREIGN KEY(IDclient) 
 
-            REFERENCES CLIENTS (IDclient)
+            REFERENCES CLIENTS(IDproduit),
+
+            FOREIGN KEY(IDproduit) 
+
+            REFERENCES PRODUITS (IDproduit)
 
                   );
   

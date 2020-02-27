@@ -5,7 +5,7 @@ use network_IT;
 
 -- Données de la table SOLUTIONS
 
-INSERT INTO SOLUTIONS ( solution, Nom_solution, date  ) VALUES (14, 'maintenance', '2020-04-01');
+
 INSERT INTO SOLUTIONS ( solution, Nom_solution, date ) VALUES (22, 'configuration', '2020-01-01');
 INSERT INTO SOLUTIONS ( solution, Nom_solution, date  ) VALUES (34, 'vlan', '2019-01-10');
 INSERT INTO SOLUTIONS ( solution, Nom_solution, date  ) VALUES (56, 'routeur', '2020-12-12');

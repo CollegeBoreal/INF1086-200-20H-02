@@ -42,7 +42,7 @@ CREATE TABLE INSTALLATIONS (installation INT NOT NULL AUTO_INCREMENT,
 
                           IDfacture INT, 
 
-                          Quantité INT NOT NULL, Date_livraison Date,
+                          Quantité INT NOT NULL,
 
                          
 

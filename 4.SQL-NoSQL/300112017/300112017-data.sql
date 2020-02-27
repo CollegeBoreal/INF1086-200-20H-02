@@ -4,6 +4,7 @@ use magasin;
 
 -- Données de la table clients
 
+
 INSERT INTO MARCHANDISES (marchandise, Marchandises, description_marchandise) VALUES (1, 'Accessoires de moto', 'Casques, Gants, Lunettes');
 INSERT INTO MARCHANDISES (marchandise, Marchandises, description_marchandise) VALUES (2, 'Types de Motos', 'Les Cross, Les Trials, Les Roadsters');
 
@@ -47,4 +48,3 @@ INSERT INTO VENTES (vente, DateDeVente, marchandise) VALUES (2, '2019-12-28', 2)
 
 INSERT INTO PAYMENTS (payment, vente, client, Montant) VALUES (1, 1, 1, 20300.99);
 INSERT INTO PAYMENTS (payment, vente, client, Montant) VALUES (2, 2, 2, 16789.70);
-

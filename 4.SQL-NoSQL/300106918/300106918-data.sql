@@ -31,6 +31,6 @@ INSERT INTO INSTALLATIONS (installation, Nom_installation ) VALUES (8, 'anti-vir
 INSERT INTO INSTALLATIONS (installation, Nom_installation ) VALUES (9, 'mise a jours');
                                                   
   -- Données de la table prix
-INSERT INTO PRIX (solution, installation, IDclient, prix ) VALUES (22, 4, 40, 1000);
-INSERT INTO PRIX (solution, installation, IDclient, prix ) VALUES (34, 5, 50, 3000);
-INSERT INTO PRIX (solution, installation, IDclient, prix ) VALUES (56, 6, 60, 3335);
+INSERT INTO PRIX (solution, installation, IDclient, prix ) VALUES (21, 7, 71, 1000);
+INSERT INTO PRIX (solution, installation, IDclient, prix ) VALUES (31, 8, 81, 3000);
+INSERT INTO PRIX (solution, installation, IDclient, prix ) VALUES (51, 9, 91, 3335);

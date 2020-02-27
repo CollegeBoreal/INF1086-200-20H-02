@@ -42,7 +42,7 @@ CREATE TABLE COMMANDES ( IDproduit INT,
 
                           IDfacture INT, 
 
-                          Quantité INT,
+                          Quantité INT
             PRIMARY KEY(IDproduit, IDclient),
 
             FOREIGN KEY(IDproduit) 

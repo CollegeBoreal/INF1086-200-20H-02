@@ -108,7 +108,7 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
 
 ### :four: Modeling
 
-<img src="images/schema.png" witdth=920 height=791 ></img>
+<img src="schema.png" witdth=920 height=791 ></img>
 
 
 ### :five: Backup

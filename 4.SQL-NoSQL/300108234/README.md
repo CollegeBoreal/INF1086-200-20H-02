@@ -59,18 +59,22 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 mysql: [Warning] Using a password on the command line interface can be insecure.
 
 ```
-### ETL
+### :two: ETL
 
-#### Se connecter au conteneur
+#### 📌 Connect to the container
 
 ```
  winpty docker container exec --interactive --tty some-mysqlds bash
 ```
-#### Se connecter à mysql SH en utilisant JavaScript
+#### 📌 Connecting to mysql SH using JavaScript
 ```
 bash-4.2# mysqlsh --js --host localhost --user halima --password
 Please provide the password for 'halima@localhost': ********
 ```
+
+#### 📌 Import json files
+
+* hijab.json
 
 ```
 MySQL JS> util.importJson(
@@ -80,3 +84,38 @@ MySQL JS> util.importJson(
                   collection: "import_hijab"
               }
           )
+
+* shipement.json
+
+```
+MySQL JS> util.importJson(
+              "/var/lib/mysql-files/shipment.json", 
+              {
+                  schema: "Hijabfashion", 
+                  collection: "import_shipment"
+              }
+          )
+
+### :three: Scripting avec API
+
+#### :pushpin: Using MySQL Python
+
+```
+$ docker container exec --interactive some-mysqlds mysqlsh --py \
+                        --host localhost --user halima -ppassword \
+                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300108234/b300108234.py
+```
+
+### :four: Modeling
+
+<img src="schema.png"></img>
+
+
+### :five: Backup
+ 
+```
+$ docker container exec some-mysqlds \
+    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" halima ' \
+    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300108234/300108234-dump.sql
+```
+

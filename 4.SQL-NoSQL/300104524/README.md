@@ -42,7 +42,7 @@ computer.json
 
 
 
-- [] Création de la base de données `magasin`
+- [] Création de la base de données `technical support`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \

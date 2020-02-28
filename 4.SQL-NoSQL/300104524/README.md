@@ -55,9 +55,9 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'pierre'@'127.0.0.1' IDENTIFIED BY 'password';"
+                        --execute "CREATE USER 'Geneus'@'127.0.0.1' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "GRANT ALL ON technical support.* TO 'pierre'@'127.0.0.1';"
+                        --execute "GRANT ALL ON technical support.* TO 'Geneus'@'127.0.0.1';"
 ```
 
 :pushpin: Contexte permettant d'utiliser `Mysql Workbench` 
@@ -65,9 +65,9 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'pierre'@'%' IDENTIFIED BY 'password';"
+                        --execute "CREATE USER 'Geneus'@'%' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "GRANT ALL ON technical support.* TO 'pierre'@'%';"
+                        --execute "GRANT ALL ON technical support.* TO 'Geneus'@'%';"
 ```
 
 ### :one: Migration
@@ -78,7 +78,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-          magasin < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300104524/300104524-schema.sql
+          technical support < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300104524/300104524-schema.sql
 ```
 
 - [] Charger les données SQL

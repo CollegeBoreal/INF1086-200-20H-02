@@ -21,9 +21,9 @@ def mashup(myDb):
 
    for obj in objs.fetch_all():
       for tissu in obj.tissu:
-         print("INSERT INTO TISSUS (id, type, country) VALUES ('"+id+"', '"+type+"', '"+country+"')")
+         print("INSERT INTO TISSUS (id, type) VALUES ('"+id+"', '"+type+"')")
          # Insert SQL Table data
-         myTable.insert(['id','type', 'country']).values(tissu.id, tissu.type, tissu.country).execute()
+         myTable.insert(['id','type']).values(tissu.id, tissu.type).execute()
 
 # Connect to server
 mySession = mysqlx.get_session( {

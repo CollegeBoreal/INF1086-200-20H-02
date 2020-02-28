@@ -93,7 +93,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 - [] Chercher des données `JSON`
 
 ```
-$ curl https:https://github.com/danielgtaylor/arista/blob/master/presets/computer.json > computer.json
+$ curl https://raw.githubusercontent.com/danielgtaylor/arista/master/presets/computer.json
 ```
 
 - [] Importer ces données dans vos propres collections

@@ -115,7 +115,7 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
  
 ```
 $ docker container exec some-mysqlds \
-    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" halima ' \
+    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" Hijabfashion ' \
     > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300108234/300108234-dump.sql
 ```
 

@@ -25,7 +25,7 @@ PS > docker container run `
          --env MYSQL_ROOT_PASSWORD=password `
          --publish 3306:3306 `
          --publish 33060:33060 `
-         --volume C:\Users\pierre\developer\INF1086-200-20H-02\4.SQL-NoSQL\300104524:/var/lib/mysql-files `
+         --volume C:\Users\Geneus\developer\INF1086-200-20H-02\4.SQL-NoSQL\300104524:/var/lib/mysql-files `
          --detach `
          mysql/mysql-server:latest
 ```

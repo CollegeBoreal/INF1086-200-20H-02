@@ -33,3 +33,4 @@ mySession = mysqlx.get_session( {
 myDb = mySession.get_schema('Hijabfashion')
 
 mashup(myDb)
+

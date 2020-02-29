@@ -1,4 +1,4 @@
-# technical supprot
+# technical_supprot
 
 ### :zero: Administration
 
@@ -42,11 +42,11 @@ computer.json
 
 
 
-- [] Création de la base de données `technical support`
+- [] Création de la base de données `technical_support`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE DATABASE technical support;"
+                        --execute "CREATE DATABASE technical_support;"
 ```
 
 - []  DCL création de l'utilisateur
@@ -57,7 +57,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "CREATE USER 'Geneus'@'127.0.0.1' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "GRANT ALL ON technical support.* TO 'Geneus'@'127.0.0.1';"
+                        --execute "GRANT ALL ON technical_support.* TO 'Geneus'@'127.0.0.1';"
 ```
 
 :pushpin: Contexte permettant d'utiliser `Mysql Workbench` 
@@ -67,25 +67,25 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "CREATE USER 'Geneus'@'%' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "GRANT ALL ON technical support.* TO 'Geneus'@'%';"
+                        --execute "GRANT ALL ON technical_support.* TO 'Geneus'@'%';"
 ```
 
 ### :one: Migration
 
-:bulb: Récupération et chargement de la base de données `technical support`
+:bulb: Récupération et chargement de la base de données `technical_support`
 
 - [] Charger le `schema`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-          technical support < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300104524/300104524-schema.sql
+          technical_support < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300104524/300104524-schema.sql
 ```
 
 - [] Charger les données SQL
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-         technical support < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300104524/300104524-data.sql
+         technical_support < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300104524/300104524-data.sql
 ```
 
 ### :two: ETL
@@ -107,7 +107,7 @@ $ docker container exec --interactive --tty some-mysqlds bash
 :pushpin: Se connecter à mysql SH en utilisant `JavaScript`
 
 ```
-bash-4.2# mysqlsh --js --host localhost --user ador --password
+bash-4.2# mysqlsh --js --host localhost --user Geneus --password
 ```
 
 :pushpin: Importer les fichiers `json` (i.e. ETL)
@@ -118,7 +118,7 @@ bash-4.2# mysqlsh --js --host localhost --user ador --password
 MySQL JS> util.importJson(
               "/var/lib/mysql-files/computer.json", 
               {
-                  schema: "technical support", 
+                  schema: "technical_support", 
                   collection: "computer"
               }
           )
@@ -127,6 +127,6 @@ MySQL JS> util.importJson(
 :pushpin: Tester la collection
 
 ```
-MySQL  JS > \use technical support;
+MySQL  JS > \use technical_support;
 MySQL  JS > db.computer.find()
 ```

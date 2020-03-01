@@ -7,6 +7,7 @@ $ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL
 $ mkdir 300111766 && cd 300111766
 
    📗 Chargement du fichier .jso
+   
 $ docker container run \
          --name some-mysqlds \
          --env MYSQL_ROOT_PASSWORD=password \

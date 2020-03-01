@@ -1,4 +1,6 @@
-"coFundingshipping": [
+{
+      
+"tissu": [
       {
         "id": "134",
         "type": "coton",
@@ -6,9 +8,9 @@
         "city": "toronto",
         "state": "ON",
         "country": "Canada"
-      }
-    ],
-    "coFundingshipping": [
+      },
+      
+    
       {
         "id": "123",
         "type": "muslin",
@@ -16,9 +18,9 @@
         "city": "Agadir",
         "state": "AG",
         "country": "Maroc"
-      }
-    ],
-    "coFundingshipping": [
+      },
+      
+      
       {
         
         "id": "190",
@@ -28,6 +30,9 @@
         "state": "AG",
         "country": "Maroc"
       },
+      
+   
+     
       {
         "id": "34",
         "type": "printed",
@@ -36,6 +41,8 @@
         "state": "ON",
         "country": "Canada"
       },
+      
+      
       {
         "id": "908",
         "type": "cotton",
@@ -44,7 +51,6 @@
         "state": "PR",
         "country": "France"
       }
-    ],
-    "additionalTas": []
-  }
+    ]
 }
+

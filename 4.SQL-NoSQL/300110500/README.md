@@ -1,6 +1,13 @@
-# My Project no sql
+# My Project nosql
 
-/c/Users/didie/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110500
+
+:bulb: Creer son projet dans un repertoire avec son :id:
+
+``$ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL``
+
+``$ mkdir 300107361`` && `$ cd 300110500`
+
+
 
 ### :zero: Administration 
 
@@ -8,18 +15,20 @@
 
 
 - [ ] Assurez vous qu'il utilise un volume pour importer de nouvelles données
+```
 
 docker container run `
          --name some-mysqlds `
          --env MYSQL_ROOT_PASSWORD=password `
          --publish 3306:3306 `
          --publish 33060:33060 `
-         --volume C:/Users/didie/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110500:/var/lib/mysql-files `
+         --volume C:\Users\didie\Developer\INF1086-200-20H-02\4.SQL-NoSQL\300110500:/var/lib\mysql-files `
          --detach `
          mysql/mysql-server:latest
 
-- [ ] Créer l'utilisateur permettant d'accéder au Document Store (DCL)
+```
 
+- [ ] Créer l'utilisateur permettant d'accéder au Document Store (DCL)
 
 
 ### :one: Migration

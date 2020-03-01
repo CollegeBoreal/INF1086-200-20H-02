@@ -5,9 +5,9 @@ CREATE DATABASE IF NOT EXISTS network_IT;
 
 -- Mon utilisateur
 
-CREATE USER 'network_IT'@'localhost' IDENTIFIED BY 'AEK';
+CREATE USER IF NOT EXISTS 'AEK'@'localhost' IDENTIFIED BY 'etudiants_1';
 
-GRANT ALL ON network_IT.* TO 'network_IT'@'localhost';
+GRANT ALL ON etudiants.* TO 'AEK'@'localhost';
 
 -- selectionner la base de donnees
 
@@ -27,28 +27,18 @@ CREATE TABLE PRODUCTS ( IDproduit INT AUTO_INCREMENT,
 
 CREATE TABLE CLIENTS (IDclient INT NOT NULL AUTO_INCREMENT, 
                       Nom_client VARCHAR(30) NOT NULL, Ville VARCHAR(30) NOT NULL,
-                      téléphone  INT,
                       PRIMARY KEY(IDclient)
                      );
  
- CREATE TABLE COMMANDES ( IDproduit INT,
-                          IDclient INT,
-                          IDfacture INT, 
-                          Quantité INT NOT NULL, Date_livraison Date,
-                         
-            PRIMARY KEY(IDproduit, IDclient),
-            FOREIGN KEY(IDproduit) 
-            REFERENCES PRODUCTS (IDproduit),
-            FOREIGN KEY(IDclient) 
-            REFERENCES CLIENTS (IDclient)
-                  );
-                     
+
 CREATE TABLE INSTALLATIONS (installation INT NOT NULL AUTO_INCREMENT,
                            Nom_installation VARCHAR(30) NOT NULL,
                            PRIMARY KEY(installation)
                            );
+                          
+                          
   
-CREATE TABLE PRIX (
+ CREATE TABLE PRIX (
         solution INT,
         installation INT,
         IDclient INT,

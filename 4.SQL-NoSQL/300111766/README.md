@@ -37,7 +37,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
                         --execute "GRANT ALL ON vente_portable.* TO 'CHEIKH'@'127.0.0.1';"
     
     
-  📌Contexte permettant d'utiliser Mysql Workbench
+  📌 Contexte permettant d'utiliser Mysql Workbench
   
 
 

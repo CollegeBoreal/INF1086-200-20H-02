@@ -24,6 +24,7 @@ images
 phone.json 
 
    📗 création de l'utilisateur: DCL
+   
   📌 Contexte permettant d'utiliser mysqlsh
 
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \

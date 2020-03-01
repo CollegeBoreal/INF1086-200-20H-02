@@ -3,6 +3,7 @@
    📗 Créer son projet dans un répertoire 300111766
    
 $ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL
+
 $ mkdir 300111766 && cd 300111766
 
    📗 Chargement du fichier .jso

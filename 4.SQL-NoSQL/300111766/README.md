@@ -18,6 +18,7 @@ $ docker container run \
          mysql/mysql-server:latest
  
    📗 En éxécutant la commande suivante vos fichiers dans les conteneurs devraient s'afficher
+   
 $ docker container exec --interactive some-mysqlds sh -c "ls /var/lib/mysql-files"
 300111766-data.sql
 300111766-dump.sql

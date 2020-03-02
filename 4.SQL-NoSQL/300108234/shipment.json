@@ -1,0 +1,90 @@
+{
+  "alt_order_id": "12345",
+  "shipments": [
+    {
+      "alt_shipment_id": "11223344",
+      "shipment_tracking_number": "1Z12342452342",
+      "response_shipment_date": "2014-06-11T18:00:00.0000000-04:00",
+      "response_shipment_method": "ups_ground",
+      "expected_delivery_date": "2014-06-11T18:00:00.0000000-04:00",
+      "ship_from_zip_code": "12061",
+      "carrier_pick_up_date": "2014-06-11T18:00:00.0000000-04:00",
+      "carrier": "UPS",
+      "shipment_items": [
+        {
+          "alt_shipment_item_id": "129900120",
+          "merchant_sku": "15a1010",
+          "response_shipment_sku_quantity": 1
+        }
+      ]
+    }
+  ]
+}
+
+    "shipping_to": {
+        "recipient" : {
+                "name" : "Pepper Potts",
+                "phone_number" : " 555-888-8888"
+            },
+        "address" : {
+                "address1": "10880 Malibu Point",
+                "address2": "",
+                "city": "Malibu",
+                "state": "CA",
+                "zip_code": "90265"
+            }
+        
+    },
+    "order_totals": {
+        "item_price": {
+            "base_price": 20,
+            "item_tax" : 0.14,
+            "item_shipping_cost" : 5,
+            "item_shipping_tax" : 0.35
+        },
+        "item_fees": 2.01,
+        "fee_adjustments": [
+            {
+                "adjustment_name": "",
+                "adjustment_type": "base",
+                "commission_id":"",
+                "value": 1.20
+            }
+        ],
+        "regulatory_fees" : 0.00
+    }, 
+    
+    
+    "order_items": [
+        {
+            "order_item_id": "8f5e15",
+            "merchant_sku": "B289B4B",
+            "request_order_quantity": 2,
+            "item_tax_code": "",
+            "item_price": {
+                "base_price": 20,
+                "item_tax" : 0.14,
+                "item_shipping_cost" : 5,
+                "item_shipping_tax" : 0.35
+            },
+            "item_fees": 2.01,
+            "fee_adjustments": [
+                {
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "commission_id":"",
+                    "value": 1.20
+                }
+            ],
+            "regulatory_fees" : 0.00,
+            "product_title": "blue pair of socks",
+            "url": ""
+        }
+    ],
+    "order_detail": {
+        "request_shipping_carrier" : "UPS",
+        "request_shipping_method" : "UPS_ground",
+        "request_service_level" : "Standard",
+        "request_ship_by": "2014-07-26T04:04:00.0000000Z",
+        "request_delivery_by": "2014-07-28T04:00:00.0000000Z"            
+   }

@@ -18,7 +18,7 @@ $ mkdir <id> && cd <id>
 |--------------|----------------------------------------------------------------|----------------------------------------|
 | classique    | $ SRC=\`pwd -L\`                                               | afficher le format Unix (Linux, MacOS) |
 | `gitbash`    | $ SRC=\`pwd -W\`                                               | afficher le format Windows `-W`        |
-| `Powershell` | PS > $SRC = $PWD.Path \| Foreach-Object {$_ -replace '\\','/'} | afficher le format Windows `-W`        |
+| `Powershell` | PS > $SRC = $PWD.Path \| Foreach-Object {$_ -replace '\\\\','/'} | afficher le format Windows `-W`        |
 
 :bulb: Le volume sert à charger le fichier `.json`
 

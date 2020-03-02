@@ -35,23 +35,21 @@ CREATE TABLE INSTALLATIONS (installation INT NOT NULL AUTO_INCREMENT,
                            Nom_installation VARCHAR(30) NOT NULL,
                            PRIMARY KEY(installation)
                            );
-                           
-
+                          
+                          
   
-CREATE TABLE PRIX (
+ CREATE TABLE PRIX (
         solution INT,
         installation INT,
         IDclient INT,
         prix INT,
  
-        PRIMARY KEY (solution, installation, IDclient, IDproduit),
+        PRIMARY KEY (solution, installation, IDclient),
         FOREIGN KEY(solution)
         REFERENCES SOLUTIONS(solution),
         FOREIGN KEY(installation)
         REFERENCES INSTALLATIONS(installation),
         FOREIGN KEY(IDclient)
-        REFERENCES CLIENTS(IDclient),
-        FOREIGN KEY(IDproduit) 
-        REFERENCES PRODUITS (IDproduit)
+        REFERENCES CLIENTS(IDclient)
     
        );

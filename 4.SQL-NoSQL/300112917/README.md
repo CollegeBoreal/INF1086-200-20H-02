@@ -132,6 +132,20 @@ MySQL  JS > \use hairasset;
 MySQL  JS > db.products.find()
 ```
 
+### :three: Scripting avec API
+
+:pushpin: Utilisation de MySQL Python : XDEVAPI 
+
+- [x] La fonction mashup doit gérer une table produite par des collections
+
+Écrire le programme python [b300112917.py](b300112917.py) permettant de rajouter des étudiants importés par le fichier `products.json`
+
+```
+$ docker container exec --interactive some-mysqlds mysqlsh --py \
+                        --host localhost --user djumaster -ppassword \
+                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112917/b300112917.py
+```
+
 ### :four: Modèlisation
 
 Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (i.e. forward engineering)

@@ -57,13 +57,18 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
                         --execute "CREATE USER 'guigma'@'%' IDENTIFIED BY 'etudiants_1';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "GRANT ALL ON immigration_consulting.* TO 'guigma'@'%';"
-                        
-                        
-                                 
-### :one: Migration
+                    
+ ### :one: Migration
+                                
+    💡 Récupération et chargement de la base de données Etudiants
 
-- [ ] Récupérer votre ancien projet [SQL](https://github.com/CollegeBoreal/INF1006-202-19A-01/tree/master/4.DML)
+ Charger le schema
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+          immigration_consulting < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110500/300110500-schema.sql                     
 
+Charger les données SQL
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+        immigration_consulting  < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110500/300110500-data.sql
 
 - [ ] Importer votre base de données SQL
 

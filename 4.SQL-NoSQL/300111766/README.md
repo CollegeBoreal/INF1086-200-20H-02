@@ -85,6 +85,12 @@ Importing from file "/var/lib/mysql-files/phone.json" to collection `vente_porta
 Processed 7.02 KB in 1 document in 0.2587 sec (3.87 documents/s)
 Total successfully imported documents 1 (3.87 documents/s)
 
+ 
+ 📗 Tester la collection
+
+MySQL  JS > \use vente_portable
+MySQL  JS > db.import_phone.find()
+
  📗 Scripting avec API
  
 📌 Using MySQL Python

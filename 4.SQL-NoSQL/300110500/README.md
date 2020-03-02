@@ -22,11 +22,7 @@ $ docker container run \
          --detach \
          mysql/mysql-server:latest
     ```
-         
    27a38d871e3d75b1ee2c9b5ba1ee6f7ae20a1b30837cb113b9f30b8deff843fe
-
-         
-         ```
          
    -- visualiser mes fichiers
    

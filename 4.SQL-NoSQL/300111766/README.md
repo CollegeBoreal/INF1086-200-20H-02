@@ -40,6 +40,66 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
     
   📌 Contexte permettant d'utiliser Mysql Workbench
   
+  docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "CREATE DATABASE vente_portable;"
+
+
+docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "CREATE USER 'CHEIKH'@'%' IDENTIFIED BY 'password';"
+
+
+docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "GRANT ALL ON vente_portable.* TO 'CHEIKH'@'%';"
+                        
+  📗 Migration
+
+💡 Récupération et chargement de la base de données vente_portable
+
+✔ Charger le schema
+
+docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+          vente_portable < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300111766/300111766-schema.sql
+
+✔ Charger les données SQL
+
+
+docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+         vente_portable < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300111766/300111766-data.sql
+
+
+  📗 Importer les fichiers json (i.e. ETL)
+
+phone.json
+
+ MySQL  localhost:33060+ ssl  JS > util.importJson(
+                                ->               "/var/lib/mysql-files/phone.json",
+                                ->               {
+                                ->                   schema: "vente_portable",
+                                ->                   collection: "import_phone"
+                                ->               }
+                                ->           )
+                                ->
+Importing from file "/var/lib/mysql-files/phone.json" to collection `vente_portable`.`import_phone` in MySQL Server at localhost:33060
+
+.. 1.. 1
+Processed 7.02 KB in 1 document in 0.2587 sec (3.87 documents/s)
+Total successfully imported documents 1 (3.87 documents/s)
+
+ 📗 Scripting avec API
+ 
+📌 Using MySQL Python
+
+docker container exec --interactive some-mysqlds mysqlsh --py \
+                        --host localhost --user CHEIKH -ppassword \
+                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300111766/b300111766.py
+
+          
+          
+          
+                        
+                        
+
+  
 
 
 

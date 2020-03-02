@@ -26,7 +26,7 @@ PS > docker container run `
          --env MYSQL_ROOT_PASSWORD=password `
          --publish 3306:3306 `
          --publish 33060:33060 `
-         --volume C:\Users\Ador\developer\INF1086-200-20H-02\4.SQL-NoSQL\300112917:/var/lib/mysql-files `
+         --volume C:\Users\djumaster\developer\INF1086-200-20H-02\4.SQL-NoSQL\300112917:/var/lib/mysql-files `
          --detach `
          mysql/mysql-server:latest
 ```
@@ -38,7 +38,7 @@ $ docker container exec --interactive some-mysqlds sh -c "ls /var/lib/mysql-file
 300112917-data.sql
 300112917-schema.sql
 README.md
-Moto.json
+products.json
 ```
 
 
@@ -56,7 +56,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'ador'@'127.0.0.1' IDENTIFIED BY 'password';"
+                        --execute "CREATE USER 'djumaster'@'127.0.0.1' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "GRANT ALL ON magasin.* TO 'ador'@'127.0.0.1';"
 ```
@@ -94,7 +94,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 - [] Chercher des données `JSON`
 
 ```
-$ curl https://raw.githubusercontent.com/MarinescuEvghenii/Cars-Motorcycles-DataBase-JSON/master/moto_brands.json > Moto.json
+$ curl https://raw.githubusercontent.com/pbrain19/VitoMazzaSAlon/master/public/js/data/products.json
 ```
 
 - [] Importer ces données dans vos propres collections
@@ -108,7 +108,7 @@ $ docker container exec --interactive --tty some-mysqlds bash
 :pushpin: Se connecter à mysql SH en utilisant `JavaScript`
 
 ```
-bash-4.2# mysqlsh --js --host localhost --user ador --password
+bash-4.2# mysqlsh --js --host localhost --user djumaster --password
 ```
 
 :pushpin: Importer les fichiers `json` (i.e. ETL)
@@ -117,10 +117,10 @@ bash-4.2# mysqlsh --js --host localhost --user ador --password
 
 ```
 MySQL JS> util.importJson(
-              "/var/lib/mysql-files/Moto.json", 
+              "/var/lib/mysql-files/products.json", 
               {
                   schema: "magasin", 
-                  collection: "Moto"
+                  collection: "products"
               }
           )
 ```
@@ -128,6 +128,6 @@ MySQL JS> util.importJson(
 :pushpin: Tester la collection
 
 ```
-MySQL  JS > \use magasin;
-MySQL  JS > db.Moto.find()
+MySQL  JS > \use hairasset;
+MySQL  JS > db.products.find()
 ```

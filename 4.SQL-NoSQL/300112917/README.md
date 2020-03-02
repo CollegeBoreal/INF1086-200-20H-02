@@ -131,3 +131,13 @@ MySQL JS> util.importJson(
 MySQL  JS > \use hairasset;
 MySQL  JS > db.products.find()
 ```
+
+### :four: Modèlisation
+
+Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (i.e. forward engineering)
+
+- [] présenter votre modèle relationel
+
+- [] présenter votre modèle présentant les collections `dans un dossier`
+
+<img src="djumaster.PNG" witdth=920 height=791 ></img>

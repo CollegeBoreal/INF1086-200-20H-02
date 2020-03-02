@@ -86,7 +86,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-         djumaster < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112917/300112917-data.sql
+         hairasset < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112917/300112917-data.sql
 ```
 
 ### :two: ETL
@@ -113,13 +113,13 @@ bash-4.2# mysqlsh --js --host localhost --user djumaster --password
 
 :pushpin: Importer les fichiers `json` (i.e. ETL)
 
-* Moto.json
+* products.json
 
 ```
 MySQL JS> util.importJson(
               "/var/lib/mysql-files/products.json", 
               {
-                  schema: "magasin", 
+                  schema: "hairasset", 
                   collection: "products"
               }
           )

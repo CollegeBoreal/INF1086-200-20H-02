@@ -36,8 +36,10 @@ b300110500.py
 immigration.json
 
 
-- [ ] Créer votre base de données [MySQL/Server](../3.ETL/.docs/MySQLDS.md)
+- Créer votre base de données [MySQL/Server](../3.ETL/.docs/MySQLDS.md)
 
+ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+              --execute "CREATE DATABASEimmigration_consulting;"
 
 - [ ] Assurez vous qu'il utilise un volume pour importer de nouvelles données
 ```

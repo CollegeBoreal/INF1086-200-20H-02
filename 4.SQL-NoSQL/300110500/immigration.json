@@ -1,0 +1,96 @@
+{
+  "dataset_type": "wrongdoing",
+  "title": {
+    "en": "Proactive Disclosure - Acts of Founded Wrongdoing",
+    "fr": "Divulgation proactive – Dossiers sur les actes répréhensibles fondés"
+  },
+  "notes": {
+    "en": "Access, upload and modify the Acts of Founded Wrongdoing reports for your organization",
+    "fr": "Accès, téléversement et modifications des dossiers sur les actes répréhensibles fondés pour votre organisation"
+  },
+  "resources": [
+    {
+      "resource_name": "wrongdoing",
+      "title": {
+        "en": "Proactive Disclosure - Founded Wrongdoing",
+        "fr": "Divulgation proactive – Dossiers sur les actes répréhensibles fondés"
+      },
+      "primary_key": [
+        "ref_number"
+      ],
+      "fields": [
+        {
+          "id": "ref_number",
+          "label": {
+            "en": "Reference Number",
+            "fr": "Reference Number"
+          },
+          "description": {
+            "fr": "Cette zone est remplie par chaque organisation. Un identificateur unique est attribué à chaque poste dans le tableur. Un identificateur unique pour chaque poste permettra aux utilisateurs de repérer un article en particulier s’ils doivent le modifier ou le supprimer.",
+            "en": "This field is populated by the user. It is a unique reference number given to each line item in the spreadsheet. Having a unique identifier for each item will allow users locate a specific item in the registry should they need to modify or delete."
+          },
+          "obligation": "mandatory",
+          "datastore_type": "text"
+        },
+        {
+          "id": "file_id_number",
+          "label": {
+            "en": "File Identification Number",
+            "fr": "Numéro d’identification du fichier"
+          },
+          "description": {
+            "fr": "Cette zone renferme le numéro d’identification du dossier de l’acte répréhensible constaté.",
+            "en": "This field will contain the file identification number of the founded wrongdoing file."
+          },
+          "obligation": "optional",
+          "datastore_type": "text"
+        },
+        {
+          "id": "file_id_date",
+          "label": {
+            "en": "File Identification date",
+            "fr": "Date d’identification du ficher"
+          },
+          "description": {
+            "fr": "Cette zone renferme la date à laquelle le dossier a été créé ou reçu.",
+            "en": "This field will provide the date that the file was created/received."
+          },
+          "obligation": "optional",
+          "datastore_type": "date"
+        },
+        {
+          "id": "case_description_en",
+          "label": {
+            "en": "English Case Description",
+            "fr": "Description anglaise"
+          },
+          "description": {
+            "fr": "Cette zone renferme la description du cas en anglais.",
+            "en": "The field will contain the case description, in English."
+          },
+          "obligation": "optional",
+          "datastore_type": "text"
+        },
+        {
+          "id": "case_description_fr",
+          "label": {
+            "en": "French Case Description",
+            "fr": "Description française"
+          },
+          "description": {
+            "fr": "Cette zone renferme la description du cas en français.",
+            "en": "This field will contain the case description, in French."
+          },
+          "obligation": "optional",
+          "datastore_type": "text"
+        },
+        {
+          "id": "findings_conclusions",
+          "label": {
+            "en": "Findings and Conclusions",
+            "fr": "Constatations et Conclusions"
+          },
+          "description": {
+            "fr": "Le champ contiendra une (des) valeur(s) a – f, séparées par une virgule s´il y en a plus d´une.",
+            "en": "The field will contain value(s) a – f, separated by commas if more than one value."
+          }

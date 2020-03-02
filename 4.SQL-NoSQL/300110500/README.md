@@ -24,7 +24,7 @@ $ docker container run \
     ```
    27a38d871e3d75b1ee2c9b5ba1ee6f7ae20a1b30837cb113b9f30b8deff843fe
          
-   -- visualiser mes fichiers
+   -- visualiserle  volume pour import
    
    $ docker container exec --interactive some-mysqlds sh -c "ls /var/lib/mysql-files"
    
@@ -36,12 +36,12 @@ b300110500.py
 immigration.json
 
 
-- Créer votre base de données [MySQL/Server](../3.ETL/.docs/MySQLDS.md)
+- Créer votre base de données[MySQL
 
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-              --execute "CREATE DATABASEimmigration_consulting;"
+              --execute "CREATE DATABASE immigration_consulting;"
 
-- [ ] Assurez vous qu'il utilise un volume pour importer de nouvelles données
+- [ ] Assurez vous qu'il utilise un s
 ```
         --volume ${SRC}:/var/lib/mysql-files \
           --name some-mysqlds \

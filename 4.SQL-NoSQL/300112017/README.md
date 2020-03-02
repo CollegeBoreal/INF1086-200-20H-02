@@ -128,6 +128,40 @@ MySQL JS> util.importJson(
 :pushpin: Tester la collection
 
 ```
-MySQL  JS > \use magasin;
+MySQL  JS > \use magasin
 MySQL  JS > db.Moto.find()
+```
+### :three: Scripting avec API
+
+:pushpin: Utilisation de MySQL Python : XDEVAPI 
+
+- [x] La fonction mashup doit gérer une table produite par des collections
+
+Écrire le programme python [b300112017.py](b300112017.py) permettant de rajouter des étudiants importés par le fichier `Moto.json`
+
+```
+$ docker container exec --interactive some-mysqlds mysqlsh --py \
+                        --host localhost --user ador -password \
+                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112017/b300112017.py
+```
+
+### :four: Modèlisation
+
+Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (i.e. forward engineering)
+
+- [x] présenter votre modèle relationel
+
+- [x] présenter votre modèle présentant les collections `dans un dossier`
+
+<img src="motojs.JPG" witdth=920 height=791 ></img>
+
+
+### :five: Backup
+
+- [x] Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql
+ 
+```
+$ docker container exec some-mysqlds \
+    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" magasin ' \
+    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112017/300112017-dump.sql
 ```

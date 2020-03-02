@@ -12,6 +12,7 @@
 ### :zero: Administration 
 ```
 -- creer le container
+
 $ docker container run \
          --name some-mysqlds \
          --env MYSQL_ROOT_PASSWORD=password \
@@ -22,6 +23,18 @@ $ docker container run \
          mysql/mysql-server:latest
          
          ```
+         
+   -- visualiser mes fichiers
+   
+   $ docker container exec --interactive some-mysqlds sh -c "ls /var/lib/mysql-files"
+   
+300110500-data.sql
+300110500-dump.sql
+300110500-schema.sql
+README.md
+b300110500.py
+immigration.json
+
 
 - [ ] Créer votre base de données [MySQL/Server](../3.ETL/.docs/MySQLDS.md)
 

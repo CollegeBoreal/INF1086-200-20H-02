@@ -99,6 +99,10 @@ MySQL  JS > db.import_phone.find()
 docker container exec --interactive some-mysqlds mysqlsh --py \
                         --host localhost --user CHEIKH -ppassword \
                    < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300111766/b300111766.py
+                   
+ <img src="my db json.PNG" witdth=920 height=791 ></img>
+
+                  
 
           
           

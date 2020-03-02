@@ -1,5 +1,7 @@
 # My Project nosql
 
+gitbash:
+$ SRC=`pwd -W`
 
 :bulb: Creer son projet dans un repertoire avec son :id:
 
@@ -47,14 +49,14 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 📌 Contexte permettant d'utiliser mysqlsh
 
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'guigma'@'127.0.0.1' IDENTIFIED BY 'etudiants_1';"
+                        --execute "CREATE USER 'guigma'@'127.0.0.1' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "GRANT ALL ON immigration_consulting.* TO 'guigma'@'127.0.0.1';"
                         
  📌 Contexte permettant d'utiliser Mysql Workbench
 
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'guigma'@'%' IDENTIFIED BY 'etudiants_1';"
+                        --execute "CREATE USER 'guigma'@'%' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "GRANT ALL ON immigration_consulting.* TO 'guigma'@'%';"
                     

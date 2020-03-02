@@ -6,9 +6,8 @@ Created on 2020
 """
 
 # Connecting to MySQL Server and working with a Collection
+
 import mysqlx
-
-
 
 def mashup(myDb):
 
@@ -20,7 +19,7 @@ def mashup(myDb):
 
     for obj in objs.fetch_all():
 
-      for product_list in obj.cisco.product_list:
+       for product_list in obj.cisco.product_list:
 
          print("INSERT INTO network_IT (Nom_produit, date) VALUES ('"+product_list.type.product_type+"', '"+ product_list.date.release_date+"')")
 
@@ -28,7 +27,11 @@ def mashup(myDb):
 
          myTable.insert(['Nom_produit','date']).values(product_list.type.product_type, product_list.date.release_date).execute()
 
-         mashup(myDb)
 
+mySession = mysqlx.get_session( {
 
+'host': 'localhost', 'port': 33060,
 
+'user': 'AEK', 'password': 'etudiants_1'} )
+
+myDb = mySession.get_schema('network_IT')

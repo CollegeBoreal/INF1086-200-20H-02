@@ -6,32 +6,33 @@ Created on 2020
 """
 
 # Connecting to MySQL Server and working with a Collection
+from mysqlsh import mysqlx
 
-import mysqlx
-
+# La fonction mashup
 def mashup(myDb):
+   # Create a new collection 'my_collection'
+   myColl = myDb.get_collection('import_students')
 
-    myColl = myDb.get_collection('cisco')
+   # Accessing an existing table
+   myTable = myDb.get_table('ETUDIANTS')
 
-    myTable = myDb.get_table('network_IT')
+   # Find objects from document
+   objs = myColl.find().execute()
 
-    objs = myColl.find().execute()
-
-    for obj in objs.fetch_all():
-
-       for product_list in obj.cisco.product_list:
-
-         print("INSERT INTO network_IT (Nom_produit, date) VALUES ('"+product_list.type.product_type+"', '"+ product_list.date.release_date+"')")
-
+   for obj in objs.fetch_all():
+      for student in obj.students.student:
+         print("INSERT INTO ETUDIANTS (initiale,nom) VALUES ('"+student.name.first_name+"', '"+ student.name.last_name+"')")
          # Insert SQL Table data
+         myTable.insert(['initiale','nom']).values(student.name.first_name, student.name.last_name).execute()
 
-         myTable.insert(['Nom_produit','date']).values(product_list.type.product_type, product_list.date.release_date).execute()
-
-
+# Connect to server
 mySession = mysqlx.get_session( {
-
 'host': 'localhost', 'port': 33060,
+'user': 'etudiants', 'password': 'etudiants_1'} )
 
-'user': 'AEK', 'password': 'etudiants_1'} )
+myDb = mySession.get_schema('etudiants')
 
-myDb = mySession.get_schema('network_IT')
+mashup(myDb)
+
+
+

@@ -11,7 +11,7 @@
 
 ### :zero: Administration 
 ```
--- creer le container
+-- creer le container(sous git bash)
 
 $ docker container run \
          --name some-mysqlds \
@@ -38,7 +38,7 @@ immigration.json
 
 - Créer votre base de données [MySQL/Server](../3.ETL/.docs/MySQLDS.md)
 
- docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
               --execute "CREATE DATABASEimmigration_consulting;"
 
 - [ ] Assurez vous qu'il utilise un volume pour importer de nouvelles données

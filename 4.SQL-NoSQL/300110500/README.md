@@ -10,6 +10,18 @@
 
 
 ### :zero: Administration 
+```
+-- creer le container
+$ docker container run \
+         --name some-mysqlds \
+         --env MYSQL_ROOT_PASSWORD=password \
+         --publish 3306:3306 \
+         --publish 33060:33060 \
+         --volume ${SRC}:/var/lib/mysql-files \
+         --detach \
+         mysql/mysql-server:latest
+         
+         ```
 
 - [ ] Créer votre base de données [MySQL/Server](../3.ETL/.docs/MySQLDS.md)
 

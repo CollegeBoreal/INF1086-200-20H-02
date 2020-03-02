@@ -16,15 +16,15 @@
 
 - [ ] Assurez vous qu'il utilise un volume pour importer de nouvelles données
 ```
+        --volume ${SRC}:/var/lib/mysql-files \
+          --name some-mysqlds \
+         --env MYSQL_ROOT_PASSWORD=password \
+          --publish 3306:3306 \
+          --publish 33060:33060 \
+          --volume ${SRC}:/var/lib/mysql-files \
+          --detach \
+          mysql/mysql-server:latest
 
-docker container run `
-         --name some-mysqlds `
-         --env MYSQL_ROOT_PASSWORD=password `
-         --publish 3306:3306 `
-         --publish 33060:33060 `
-         --volume C:\Users\didie\Developer\INF1086-200-20H-02\4.SQL-NoSQL\300110500:/var/lib\mysql-files `
-         --detach `
-         mysql/mysql-server:latest
 
 ```
 

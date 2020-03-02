@@ -89,6 +89,7 @@ Total successfully imported documents 1 (3.87 documents/s)
  📗 Tester la collection
 
 MySQL  JS > \use vente_portable
+
 MySQL  JS > db.import_phone.find()
 
  📗 Scripting avec API

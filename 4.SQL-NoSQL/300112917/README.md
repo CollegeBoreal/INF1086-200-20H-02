@@ -131,3 +131,24 @@ MySQL JS> util.importJson(
 MySQL  JS > \use hairasset;
 MySQL  JS > db.products.find()
 ```
+
+### :four: Modèlisation
+
+Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (i.e. forward engineering)
+
+- [] présenter votre modèle relationel
+
+- [] présenter votre modèle présentant les collections `dans un dossier`
+
+<img src="djumaster.PNG" witdth=920 height=791 ></img>
+
+
+### :five: Backup
+
+- [x] Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql
+ 
+```
+$ docker container exec some-mysqlds \
+    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" hairasset ' \
+    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112917/300112917-dump.sql
+```

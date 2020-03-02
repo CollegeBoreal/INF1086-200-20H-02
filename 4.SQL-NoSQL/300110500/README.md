@@ -41,27 +41,34 @@ immigration.json
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
               --execute "CREATE DATABASE immigration_consulting;"
 
-- [ ] Assurez vous qu'il utilise un s
-```
-        --volume ${SRC}:/var/lib/mysql-files \
-          --name some-mysqlds \
-         --env MYSQL_ROOT_PASSWORD=password \
-          --publish 3306:3306 \
-          --publish 33060:33060 \
-          --volume ${SRC}:/var/lib/mysql-files \
-          --detach \
-          mysql/mysql-server:latest
 
+ création de l'utilisateur
+ 
+📌 Contexte permettant d'utiliser mysqlsh
 
-```
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "CREATE USER 'guigma'@'127.0.0.1' IDENTIFIED BY 'etudiants_1';"
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "GRANT ALL ON immigration_consulting.* TO 'guigma'@'127.0.0.1';"
+                        
+ 📌 Contexte permettant d'utiliser Mysql Workbench
 
-- [ ] Créer l'utilisateur permettant d'accéder au Document Store (DCL)
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "CREATE USER 'guigma'@'%' IDENTIFIED BY 'etudiants_1';"
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "GRANT ALL ON immigration_consulting.* TO 'guigma'@'%';"
+                    
+ ### :one: Migration
+                                
+    💡 Récupération et chargement de la base de données Etudiants
 
+ Charger le schema
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+          immigration_consulting < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110500/300110500-schema.sql                     
 
-### :one: Migration
-
-- [ ] Récupérer votre ancien projet [SQL](https://github.com/CollegeBoreal/INF1006-202-19A-01/tree/master/4.DML)
-
+Charger les données SQL
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+        immigration_consulting  < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110500/300110500-data.sql
 
 - [ ] Importer votre base de données SQL
 

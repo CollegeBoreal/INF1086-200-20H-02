@@ -12,11 +12,11 @@ Created on Sat Feb 29 19:58:50 2020
 	# La fonction mashup
 	def mashup(myDb):
 	   # Create a new collection 'my_collection'
-	   myColl = myDb.get_collection('import_moto')
+	   myColl = myDb.get_collection('Moto')
 	
 
 	   # Accessing an existing table
-	   myTable = myDb.get_table('CLIENTS')
+	   myTable = myDb.get_table('MODELS')
 	
 
 	   # Find objects from document
@@ -24,10 +24,10 @@ Created on Sat Feb 29 19:58:50 2020
 	
 
 	   for obj in objs.fetch_all():
-	      for moto in obj.moto.moto:
-	         print("INSERT INTO CLIENTS (client,nom,prenom) VALUES ('"+client.name.first_name+"', '"+ clients.name.last_name+"')")
+	      for name in obj.data.name:
+	         print("INSERT INTO MODELS (Models) VALUES ('"+data.name+"')")
 	         # Insert SQL Table data
-	         myTable.insert([' client,nom,prenom ']).values(clients.name.first_name, clients.name.last_name).execute()
+	         myTable.insert(['Models']).values(data.name).execute()
 	
 
 	# Connect to server

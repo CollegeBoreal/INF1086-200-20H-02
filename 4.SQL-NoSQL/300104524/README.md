@@ -130,3 +130,29 @@ MySQL JS> util.importJson(
 MySQL  JS > \use technical_support;
 MySQL  JS > db.computer.find()
 ```
+:pushpin: Utilisation de MySQL Python : XDEVAPI 
+
+- [x] La fonction mashup doit gérer une table produite par des collections
+
+Écrire le programme python [b300104524.py](b300104524.py) permettant de rajouter des étudiants importés par le fichier `computer.json`
+
+```
+$ docker container exec --interactive some-mysqlds mysqlsh --py \
+                        --host localhost --user Geneus -password \
+                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300104524/b300104524.py
+```
+
+### :four: IMAGE
+
+<img src="technical_support.JPG" witdth=920 height=791 ></img>
+
+
+### :five: Backup
+
+-Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql
+ 
+```
+$ docker container exec some-mysqlds \
+    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" technical_support ' \
+    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300104524/300104524-dump.sql
+```

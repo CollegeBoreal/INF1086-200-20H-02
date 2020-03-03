@@ -101,7 +101,7 @@ WARNING: Using a password on the command line interface can be insecure.
 
 ### :four: Modelisation
 
-<img src="schema.png"></img>
+<img src="schema.PNG"></img>
 
 
 

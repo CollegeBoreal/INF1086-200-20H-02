@@ -112,8 +112,6 @@ WARNING: Using a password on the command line interface can be insecure.
 ```
 $ docker container exec some-mysqlds     sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" immigration_consulting '    
 > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110500/300110500-dump.sql
-
-mysqldump: [Warning] Using a password on the command line interface can be insecure.
 ```
 
 

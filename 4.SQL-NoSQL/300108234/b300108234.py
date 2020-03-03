@@ -19,11 +19,11 @@ def mashup(myDb):
    # Find objects from document
    objs = myColl.find().execute()
 
-   for obj in objs.fetch_one():
-      for tissu in obj.tissu:
-         print("INSERT INTO TISSUS (tissu, pays_de_fabrication) VALUES ('"+id+"', '"+pays_de_fabrication+"')")
-         # Insert SQL Table data
-         myTable.insert(['tissu','pays_de_fabrication']).values(tissu.id, tissu.country).execute()
+   obj = objs.fetch_one()
+   for tissu in obj.tissu:
+      #print("INSERT INTO TISSUS (tissu, pays_de_fabrication) VALUES ('"+id+"', '"+pays_de_fabrication+"')")
+      # Insert SQL Table data
+      myTable.insert(['tissu','pays_de_fabrication']).values(tissu.id, tissu.country).execute()
 
 # Connect to server
 mySession = mysqlx.get_session( {

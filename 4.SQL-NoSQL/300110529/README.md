@@ -101,4 +101,7 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
                    < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110529/b300110529.py
 ```
 
+cela permet d'écrire le programme python b300110529.py qui vas rajouter les details des cartes graphiques importés par le fichier `Carte_graphique.json`
+
 ### :five: Modèlisation
+

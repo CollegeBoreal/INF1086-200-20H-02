@@ -22,7 +22,7 @@ def mashup(myDb):
       for description in obj.description:
          print("INSERT INTO IMAGES (Images) VALUES ("'+description+'")")
          # Insert SQL Table data
-         myTable.insert(['Images']).values(url.format).execute()
+         myTable.insert(['Images']).values(description).execute()
 
 # Connect to server
 mySession = mysqlx.get_session( {

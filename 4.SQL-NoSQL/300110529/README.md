@@ -81,14 +81,19 @@ Se connecter au conteneur
 Se connecter à mysqlSH en utilisant `JavaScript`
 
 ```
-bash-4.2# mysqlsh --js --user etudiants -ppassword
+bash-4.2# mysqlsh --js --user THK -ppassword
 ```
 
 Importation les fichier Json
 
 ```
-MySQL  localhost:33060+ ssl  JS > util.importJson("/var/lib/mysql-files/Carte_graphique.json", {schema: "Carte_graphique", collection: "Carte"})
-Importing from file "/var/lib/mysql-files/Carte_graphique.json" to collection `Carte_graphique`.`Carte` in MySQL Server at localhost:33060
+MySQL JS> util.importJson(
+              "/var/lib/mysql-files/Carte_graphique.json", 
+              {
+                  schema: "Carte_graphique", 
+                  collection: "Carte_graphique"
+              }
+          )
 ```
 
 ### :four: Scripting avec API

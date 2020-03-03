@@ -150,6 +150,7 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
 <img src="technical_support.JPG" witdth=920 height=791 ></img>
 
 
+
 ### :five: Backup
 
 -Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql

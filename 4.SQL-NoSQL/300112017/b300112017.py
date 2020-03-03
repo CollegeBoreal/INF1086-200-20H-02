@@ -16,7 +16,7 @@ Created on Sat Feb 29 19:58:50 2020
 	
 
 	   # Accessing an existing table
-	   myTable = myDb.get_table('ClIENTS')
+	   myTable = myDb.get_table('CLIENTS')
 	
 
 	   # Find objects from document

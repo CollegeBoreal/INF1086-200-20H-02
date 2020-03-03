@@ -1,9 +1,9 @@
 
-# magasin
+# Base de donnée magasin
 
-### :zero: Administration
+### :1: Administration
 
-- [] Créer son projet dans un répertoire :id:
+- 😍 Créer son projet dans un répertoire :id:
 
 ```
 $ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL
@@ -11,14 +11,12 @@ $ mkdir 300112017 && cd 300112017
 ```
 
 
-- [] Créer le conteneur avec un volume (dans le répertoire de son projet)
+- ☠ Créer le conteneur avec un volume (dans le répertoire de son projet)
 
 
-:bulb: Le volume sert à charger le fichier `.json`
+👉 Le volume sert à charger le fichier `.json`
 
-
-
-<sup>:m:</sup> sous `Powershell`
+🎅 sous `Powershell`
 
 ```
 PS > docker container run `
@@ -31,7 +29,7 @@ PS > docker container run `
          mysql/mysql-server:latest
 ```
 
-* En éxécutant la commande suivante vos fichiers dans les conteneurs devraient s'afficher
+🚗 En éxécutant cette commande qui suive vos fichiers dans les conteneurs devraient s'afficher comme ceci
 
 ```
 $ docker container exec --interactive some-mysqlds sh -c "ls /var/lib/mysql-files"
@@ -43,16 +41,14 @@ Moto.json
 
 
 
-- [] Création de la base de données `magasin`
+🌞 Création de ma base de données `magasin`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "CREATE DATABASE magasin;"
 ```
 
-- []  DCL création de l'utilisateur
-
-:pushpin: Contexte permettant d'utiliser `mysqlsh` 
+ 🕕 création de l'utilisateur
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \

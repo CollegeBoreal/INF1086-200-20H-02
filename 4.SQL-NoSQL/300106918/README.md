@@ -77,3 +77,5 @@ $ docker container exec some-mysqlds \
     > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300106918/300106918-dump.sql
 
 
+# Modèlisation
+

@@ -141,5 +141,9 @@ MySQL JS> util.importJson(
 MySQL  JS > \use widesign;
 MySQL  JS > db.photographie.find()
 ```
+### :four: Modeling
+💡 
+
+<img src="screenshot322.png"></img>
 
 

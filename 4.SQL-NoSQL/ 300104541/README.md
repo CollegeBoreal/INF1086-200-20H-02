@@ -78,7 +78,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-          Jeuxvideos < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112917/300112917-schema.sql
+          Jeuxvideos < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300104541/300104541-schema.sql
 ```
 
 - [] Charger les données SQL

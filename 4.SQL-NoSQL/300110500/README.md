@@ -7,7 +7,7 @@ $ SRC=`pwd -W`
 
 ``$ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL``
 
-``$ mkdir 300107361`` && `$ cd 300110500`
+``$ mkdir 300110500`` && `$ cd 300110500`
 
 
 
@@ -73,63 +73,38 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
         immigration_consulting  < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110500/300110500-data.sql
 
 - [ ] Importer votre base de données SQL
-
-
-### :two: E.T.L
-
-- [ ] Chercher des données `json` correspondant à votre domaine d'activités
-
-
-- [ ] Importer ces données dans vos propres collections
-
-
-### :three: Scripting avec API
-
-:bulb: En vous aidant de python, démontrer que vous utilisez le XDEVAPI
-
-:pushpin: Nom de fichier votre :id: précéder par un b
-
-:pushpin: avec un nom de fonction nommé
-
-```python
-def mashup(myDb):
-
 ```
 
+### :two: E.T.L
+```
+$ winpty docker container exec --interactive --tty some-mysqlds bash
+# bash-4.2# mysqlsh --js --host localhost --user guigma --password
+```
 
-- [ ] La fonction `mashup` doit gérer une table produite par des collections
+- [ ] Importer ces données dans vos propres collections
+```
+util.importJson(               "/var/lib/mysql-files/immigr
+ation.json",                {                   schema: "immigration_consulting",
+       collection: "import_immigration"               }           )
+```
 
-
-- [ ] ` ou ` La fonction `mashup` doit créer une collection produite par des collections `importées `
+### :three: Scripting avec API
+```
+$ docker container exec --interactive some-mysqlds mysqlsh --py                         --host localhost --user guigma -ppassword                    < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110500/b300110500.py
+WARNING: Using a password on the command line interface can be insecure.
+```
 
 
 ### :four: Modelisation
 
-:bulb: À l'aide de MySQL Workbench,
-
-- [ ] présenter votre modèle relationel
-
-
-- [ ] présenter votre modèle présentant les collections `dans un dossier`
+<img src="schema.png" ></img>
 
 
 
 ### :five: Backup
-
-- [ ] Sauvegarder la base de données dans un fichier SQL nommé :id:-dump.sql
-
 ```
-$ docker exec some-mysqlds \
-    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" world_x ' \
-    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-dump.sql
+$ docker container exec some-mysqlds     sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" immigration_consulting '     > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110500/300110500-dump.sql
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
 ```
 
-### :o: Présenter le tout dans un fichier README.md
-
-# [Participation](.scripts/Participation.md)
-
-
-# References
-
-[Learn API Documentation with JSON and XML](https://www.linkedin.com/learning/learn-api-documentation-with-json-and-xml)
 

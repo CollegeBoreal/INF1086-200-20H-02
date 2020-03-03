@@ -147,28 +147,53 @@ INSERT INTO `SOLUTIONS` VALUES (21,'2020-01-01','configuration'),(31,'2019-01-10
 UNLOCK TABLES;
 
 --
--- Table structure for table `cisco`
+-- Table structure for table `import_cisco`
 --
 
-DROP TABLE IF EXISTS `cisco`;
+DROP TABLE IF EXISTS `import_cisco`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `cisco` (
+CREATE TABLE `import_cisco` (
   `doc` json DEFAULT NULL,
   `_id` varbinary(32) GENERATED ALWAYS AS (json_unquote(json_extract(`doc`,_utf8mb4'$._id'))) STORED NOT NULL,
   `_json_schema` json GENERATED ALWAYS AS (_utf8mb4'{"type":"object"}') VIRTUAL,
   PRIMARY KEY (`_id`),
-  CONSTRAINT `$val_strict_310AF8D67AE450FB86125F07FF75D1583528B45F` CHECK (json_schema_valid(`_json_schema`,`doc`)) /*!80016 NOT ENFORCED */
+  CONSTRAINT `$val_strict_34CD39E2921E145F835EACF2B4BE4DE95B7BEED8` CHECK (json_schema_valid(`_json_schema`,`doc`)) /*!80016 NOT ENFORCED */
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `cisco`
+-- Dumping data for table `import_cisco`
 --
 
-LOCK TABLES `cisco` WRITE;
-/*!40000 ALTER TABLE `cisco` DISABLE KEYS */;
-/*!40000 ALTER TABLE `cisco` ENABLE KEYS */;
+LOCK TABLES `import_cisco` WRITE;
+/*!40000 ALTER TABLE `import_cisco` DISABLE KEYS */;
+/*!40000 ALTER TABLE `import_cisco` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `my_collection`
+--
+
+DROP TABLE IF EXISTS `my_collection`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `my_collection` (
+  `doc` json DEFAULT NULL,
+  `_id` varbinary(32) GENERATED ALWAYS AS (json_unquote(json_extract(`doc`,_utf8mb4'$._id'))) STORED NOT NULL,
+  `_json_schema` json GENERATED ALWAYS AS (_utf8mb4'{"type":"object"}') VIRTUAL,
+  PRIMARY KEY (`_id`),
+  CONSTRAINT `$val_strict_0701039582AD6DF2CC0D8111682BD3CBD1432FDD` CHECK (json_schema_valid(`_json_schema`,`doc`)) /*!80016 NOT ENFORCED */
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `my_collection`
+--
+
+LOCK TABLES `my_collection` WRITE;
+/*!40000 ALTER TABLE `my_collection` DISABLE KEYS */;
+/*!40000 ALTER TABLE `my_collection` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -180,4 +205,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-03  5:47:05
+-- Dump completed on 2020-03-03 16:37:51

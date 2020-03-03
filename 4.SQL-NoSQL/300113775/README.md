@@ -140,10 +140,33 @@ MySQL JS> util.importJson(
 ```
 MySQL  JS > \use widesign;
 MySQL  JS > db.photographie.find()
+
+```
+
+### :three: Scripting avec API
+
+:pushpin: Utilisation de MySQL Python : XDEVAPI 
+
+- [x] La fonction mashup doit gérer une table produite par des collections
+
+Écrire le programme python [b300113775.py](b300113775.py) permettant de rajouter des étudiants importés par le fichier `widesign.json`
+
+```
+$ docker container exec --interactive some-mysqlds mysqlsh --py \
+                        --host localhost --user widby -pPassword123 \
+                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300113775/b300113775.py
+
 ```
 ### :four: Modeling
 💡 
 
 <img src="modele.png"></img>
+
+### :five: Backup
+
+- [x] Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql
+docker container exec some-mysqlds \
+    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" widesign ' \
+    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300113775/300113775-dump.sql
 
 

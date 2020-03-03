@@ -92,3 +92,13 @@ Importing from file "/var/lib/mysql-files/Carte_graphique.json" to collection `C
 ```
 
 ### :four: Scripting avec API
+
+Utilisation de MySQL Python : XDEVAPI
+
+```
+$ docker container exec --interactive some-mysqlds mysqlsh --py \
+                        --host localhost --user etudiants -petudiants_1 \
+                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110529/b300110529.py
+```
+
+### :five: Modèlisation

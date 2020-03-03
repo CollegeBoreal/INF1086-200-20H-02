@@ -24,10 +24,10 @@ def mashup(myDb):
 
 
     for obj in objs.fetch_all():
-      for data in obj.data:
-        print("INSERT INTO MODELS (Models) VALUES ('"+data.name+"')")
+      for name in obj.data.name:
+        print("INSERT INTO MODELS (Models) VALUES ('"+name+"')")
         # Insert SQL Table data
-        myTable.insert(['Models']).values(data.name).execute()
+        myTable.insert(['Models']).values(name).execute()
 
 
 # Connect to server

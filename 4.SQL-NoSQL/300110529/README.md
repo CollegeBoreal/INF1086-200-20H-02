@@ -64,7 +64,7 @@ $  docker container exec --interactive some-mysqlds mysql --user root -ppassword
            Carte_graphique < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110529/300110529-data.sql
 ```
 
-### :tree: E.T.L
+### :three: E.T.L
 
 Recherche du fichier `json` Carte_graphique
 

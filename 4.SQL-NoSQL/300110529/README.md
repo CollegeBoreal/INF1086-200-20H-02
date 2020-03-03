@@ -84,7 +84,7 @@ Se connecter à mysqlSH en utilisant `JavaScript`
 bash-4.2# mysqlsh --js --user THK -ppassword
 ```
 
-Importation les fichier Json
+Importation du fichier Json
 
 ```
 MySQL JS> util.importJson(

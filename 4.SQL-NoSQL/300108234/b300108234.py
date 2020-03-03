@@ -14,7 +14,7 @@ def mashup(myDb):
    myColl = myDb.get_collection('import_hijab')
 
    # Accessing an existing table
-   myTable = myDb.get_table('TISSU')
+   myTable = myDb.get_table('TISSUS')
 
    # Find objects from document
    objs = myColl.find().execute()

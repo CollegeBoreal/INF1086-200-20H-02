@@ -1,6 +1,8 @@
 
 # WIDESIGN 
 
+####Les relations ne s'affichent pas sur mon workbench
+
 ### :zero: Administration
 
 - [x] Créer son projet dans un répertoire :id:

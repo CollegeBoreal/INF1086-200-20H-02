@@ -14,7 +14,7 @@ def mashup(myDb):
    myColl = myDb.get_collection('import_hijab')
 
    # Accessing an existing table
-   myTable = myDb.get_table('TISSUS')
+   myTable = myDb.get_table('PAYS_DE_FABRICATION')
 
    # Find objects from document
    objs = myColl.find().execute()
@@ -23,7 +23,7 @@ def mashup(myDb):
    for tissu in obj.tissu:
       #print("INSERT INTO TISSUS (tissu, pays_de_fabrication) VALUES ('"+id+"', '"+pays_de_fabrication+"')")
       # Insert SQL Table data
-      myTable.insert(['tissu','pays_de_fabrication']).values(tissu.id, tissu.country).execute()
+      myTable.insert(['nom','devise']).values(tissu.country, 'usd').execute()
 
 # Connect to server
 mySession = mysqlx.get_session( {

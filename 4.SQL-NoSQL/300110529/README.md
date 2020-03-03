@@ -103,7 +103,7 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
 
 Cela permet d'écrire le programme python b300110529.py qui vas rajouter les details des cartes graphiques importés par le fichier `Carte_graphique.json`
 
-### :NB: Renomer le fichier avec votre numero précéder par un "b" b300110529.py
+### Renomer le fichier avec votre numero précéder par un "b" b300110529.py
 
 ### :five: Modèlisation
 

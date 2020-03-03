@@ -9,7 +9,7 @@ from mysqlsh import mysqlx
 
 # Connect to server
 def connect():
-  return mysqlx.get_session( { 'host': 'localhost', 'port': 33060, 'user': 'etudiants', 'password': 'password'} )
+  return mysqlx.get_session( { 'host': 'localhost', 'port': 33060, 'user': 'CEIKH', 'password': 'password'} )
 
 # Connect to DB
 def dbConnect(session, myDb):

@@ -11,23 +11,23 @@ from mysqlsh import mysqlx
 
 # La fonction mashup
 def mashup(myDb):
-# Create a new collection 'my_collection'
-myColl = myDb.get_collection('Moto')
+    # Create a new collection 'my_collection'
+    myColl = myDb.get_collection('Moto')
 
 
-# Accessing an existing table
-myTable = myDb.get_table('MODELS')
+    # Accessing an existing table
+    myTable = myDb.get_table('MODELS')
 
 
-# Find objects from document
-objs = myColl.find().execute()
+    # Find objects from document
+    objs = myColl.find().execute()
 
 
-for obj in objs.fetch_all():
-for name in obj.data.name:
-print("INSERT INTO MODELS (Models) VALUES ('"+data.name+"')")
-# Insert SQL Table data
-myTable.insert(['Models']).values(data.name).execute()
+    for obj in objs.fetch_all():
+      for name in obj.data.name:
+        print("INSERT INTO MODELS (Models) VALUES ('"+data.name+"')")
+        # Insert SQL Table data
+        myTable.insert(['Models']).values(data.name).execute()
 
 
 # Connect to server

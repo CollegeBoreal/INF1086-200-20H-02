@@ -165,8 +165,8 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
 ### :five: Backup
 
 - [x] Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql
-docker container exec some-mysqlds \
+```docker container exec some-mysqlds \
     sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" widesign ' \
     > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300113775/300113775-dump.sql
-
+```
 

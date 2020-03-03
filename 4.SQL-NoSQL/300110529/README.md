@@ -37,7 +37,7 @@ création de l'utilisateur
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "CREATE USER 'etudiants'@'127.0.0.1' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "GRANT ALL ON Carte_graphique.* TO 'joker'@'127.0.0.1';"
+                        --execute "GRANT ALL ON Carte_graphique.* TO 'etudiants'@'127.0.0.1';"
 ```
 
 utilisation `Mysql Workbench`

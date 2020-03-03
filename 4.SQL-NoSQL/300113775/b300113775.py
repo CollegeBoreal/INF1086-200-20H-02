@@ -19,8 +19,8 @@ def mashup(myDb):
    objs = myColl.find().execute()
 
    for obj in objs.fetch_all():
-      for url in obj.properties.url:
-         print("INSERT INTO IMAGES (Images) VALUES ('+url.format+')")
+      for description in obj.description:
+         print("INSERT INTO IMAGES (Images) VALUES ("'+description+'")")
          # Insert SQL Table data
          myTable.insert(['Images']).values(url.format).execute()
 

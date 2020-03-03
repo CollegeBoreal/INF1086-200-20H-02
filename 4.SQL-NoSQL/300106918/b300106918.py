@@ -9,8 +9,7 @@ Created on Tue Jan 21 10:45:03 2020
 @author: acer
 
 """
-
-import mysqlx
+from mysqlsh import mysqlx
 
 def mashup(myDb):
 

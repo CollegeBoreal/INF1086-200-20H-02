@@ -15,7 +15,7 @@ Created on 2020
 	
 
 	   # Accessing an existing table
-	   myTable = myDb.get_table('vente_portable')
+	   myTable = myDb.get_table('MARK')
 # Accessing an existing table
    myTable = myDb.get_table('MARK')
 

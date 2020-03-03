@@ -22,14 +22,13 @@ def mashup(myDb):
 
     for obj in objs.fetch_all():
 
-       for product_list in obj.cisco.product_list:
+       for pagination_response_record in obj.product_list.product_name:
 
-         print("INSERT INTO network_IT (Nom_produit, date) VALUES ('"+product_list.type.product_type+"', '"+ product_list.date.release_date+"')")
+         print("INSERT INTO network_IT (PRODUCTS.Nom_produit) VALUES ('"+product_list.type.product_type+"')")
 
          # Insert SQL Table data
 
-         myTable.insert(['Nom_produit','date']).values(product_list.type.product_type, product_list.date.release_date).execute()
-
+        myTable.insert(['Nom_produit']).values(product_list.type.product_type).execute()
 
 mySession = mysqlx.get_session( {
 

@@ -14,9 +14,9 @@ import mysqlx
 
 def mashup(myDb):
 
-    myColl = myDb.get_collection('cisco')
+    myColl = myDb.get_collection('import_cisco')
 
-    myTable = myDb.get_table('network_IT')
+    myTable = myDb.get_table('PRODUCTS')
 
     objs = myColl.find().execute()
 

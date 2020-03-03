@@ -23,7 +23,7 @@ def mashup(myDb):
 
        for pagination_response_record in obj.product_list.product_name:
 
-         print("INSERT INTO network_IT (PRODUCTS.Nom_produit) VALUES ('"+product_list.type.product_type+"')")
+         print("INSERT INTO network_IT (PRODUCTS.Nom_produit) VALUES ('"+product_list.product_type+"')")
 
          # Insert SQL Table data
 

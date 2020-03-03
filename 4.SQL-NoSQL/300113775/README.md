@@ -161,6 +161,9 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
 💡 
 
 <img src="modele.png"></img>
+<img src="photographie.png"></img>
+<img src="photographie1.png"></img>
+<img src="photographie2.png"></img>
 
 ### :five: Backup
 

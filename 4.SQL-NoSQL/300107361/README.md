@@ -1,4 +1,4 @@
-# GAME ON 
+﻿# GAME OVER 
 
 # Projet
 
@@ -46,32 +46,46 @@ car.json
 
 - [ ] Ceer votre base de données
 ```
-$   docker container exec --interactive some-mysqlds mysql --user root -ppassword                        --execute "CREATE DATABASE Car_Center;"
+$   docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                          --execute "CREATE DATABASE Car_Center;"
 
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
 
 * Creer l'utilisateur permettant d'acceder au Document Store
 
-```
- docker container exec --interactive some-mysqlds mysql --user root -ppassword \
->                         --execute "CREATE USER 'joker'@'%' IDENTIFIED BY 'password';"
+:pushpin: Contexte permettant d'utiliser `mysqlsh`
 
-docker container exec --interactive some-mysqlds mysql --user root -ppassword                        --execute "GRANT ALL ON Car_Center.* TO 'joker'@'%';"
+```
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "CREATE USER 'joker'@'127.0.0.1' IDENTIFIED BY 'password';"
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "GRANT ALL ON Car_Center.* TO 'joker'@'127.0.0.1';"
+```
+
+:pushpin: Contexte permettant d'utiliser `Mysql Workbench`
+
+
+```
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+                        --execute "CREATE USER 'joker'@'%' IDENTIFIED BY 'password';"
+
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword  \
+                        --execute "GRANT ALL ON Car_Center.* TO 'joker'@'%';"
 ```
 
 - [ ] Importer votre base de données SQL
 - [ ] Charger le `schema`
  ```
 $  docker container exec --interactive some-mysqlds mysql --user root -ppassword \
->           Car_Center < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/300107361-schema.sql
+              Car_Center < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/300107361-schema.sql
 
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
 - [ ] Charger les `données` SQL
 ```
 $  docker container exec --interactive some-mysqlds mysql --user root -ppassword \
->           Car_Center < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/300107361-data.sql
+           Car_Center < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/300107361-data.sql
 ```
 
 
@@ -91,9 +105,9 @@ Tochgaly-K.J.Etienne@XXX MINGW64 ~/developer/INF1086-200-20H-02/4.SQL-NoSQL/3001
 
 :a: Se connecter au conteneur
 ```
-$ docker container exec --interactive --tty some-mysqlds bash
+* $ docker container exec --interactive --tty some-mysqlds bash
 
-$ winpty  docker container exec --interactive --tty some-mysqlds bash
+* $ winpty  docker container exec --interactive --tty some-mysqlds bash
 ```
 
 :b: Se connecter à mysqlSH en utilisant `JavaScript`
@@ -116,7 +130,7 @@ Total successfully imported documents 1 (17.75 documents/s)
 :bulb: En vous aidant de python, démontrer que vous utilisez le XDEVAPI
 
 :pushpin: Nom de fichier votre :id: précéder par un b
-
+[b300107361.py](b300107361.py)
 :pushpin: avec un nom de fonction nommé
 
 ```python
@@ -128,7 +142,9 @@ def mashup():
 - [ ] La fonction `mashup` doit créer une table produite par des collections
 
 
-- [ ] ` ou ` La fonction `mashup` doit créer une collection produite par des collections `importées`
+- J'ai cree la fonction mashup qui permet de rajouter des pays de fabrication de voitures importes par le fichier `car.json` dans la table des services.
+
+![image](jsonInsert.PNG)
 
 
 ### :four: Modelisation
@@ -139,7 +155,7 @@ def mashup():
 
 
 - [ ] présenter votre modèle présentant les collections `dans un dossier`
-
+![image](import.PNG)
 
 
 ### :five: Backup
@@ -148,8 +164,7 @@ def mashup():
 
 ```
 $ docker exec some-mysqlds \
-    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" world_x ' \
-    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-dump.sql
+    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" Car_Center ' \
+    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/300107361-dump.sql
 ```
 
-### :o: Présenter le tout dans un fichier README.md

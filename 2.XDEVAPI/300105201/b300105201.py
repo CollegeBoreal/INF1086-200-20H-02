@@ -56,4 +56,8 @@ def main():
   run(myDb, musichop)
 
 if __name__== "__main__":
+<<<<<<< HEAD
     main()
+=======
+    main()
+>>>>>>> ef29f17d03b786321c303d71a5e2490d4a265d65

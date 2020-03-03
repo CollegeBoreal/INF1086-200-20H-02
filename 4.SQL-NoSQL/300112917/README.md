@@ -1,4 +1,5 @@
-# technical_supprot
+
+# hairasset
 
 ### :zero: Administration
 
@@ -6,7 +7,7 @@
 
 ```
 $ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL
-$ mkdir 300104524&& cd 300104524
+$ mkdir 300112917 && cd 300112917
 ```
 
 
@@ -25,7 +26,7 @@ PS > docker container run `
          --env MYSQL_ROOT_PASSWORD=password `
          --publish 3306:3306 `
          --publish 33060:33060 `
-         --volume C:\Users\Geneus\developer\INF1086-200-20H-02\4.SQL-NoSQL\300104524:/var/lib/mysql-files `
+         --volume C:\Users\djumaster\developer\INF1086-200-20H-02\4.SQL-NoSQL\300112917:/var/lib/mysql-files `
          --detach `
          mysql/mysql-server:latest
 ```
@@ -34,19 +35,19 @@ PS > docker container run `
 
 ```
 $ docker container exec --interactive some-mysqlds sh -c "ls /var/lib/mysql-files"
-300104524-data.sql
-300104524-schema.sql
+300112917-data.sql
+300112917-schema.sql
 README.md
-computer.json
+products.json
 ```
 
 
 
-- [] Création de la base de données `technical_support`
+- [] Création de la base de données `hairasset`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE DATABASE technical_support;"
+                        --execute "CREATE DATABASE magasin;"
 ```
 
 - []  DCL création de l'utilisateur
@@ -55,9 +56,9 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'Geneus'@'127.0.0.1' IDENTIFIED BY 'password';"
+                        --execute "CREATE USER 'djumaster'@'127.0.0.1' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "GRANT ALL ON technical_support.* TO 'Geneus'@'127.0.0.1';"
+                        --execute "GRANT ALL ON magasin.* TO 'ador'@'127.0.0.1';"
 ```
 
 :pushpin: Contexte permettant d'utiliser `Mysql Workbench` 
@@ -65,27 +66,27 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'Geneus'@'%' IDENTIFIED BY 'password';"
+                        --execute "CREATE USER 'djumaster'@'%' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "GRANT ALL ON technical_support.* TO 'Geneus'@'%';"
+                        --execute "GRANT ALL ON hairasset.* TO 'djumaster'@'%';"
 ```
 
 ### :one: Migration
 
-:bulb: Récupération et chargement de la base de données `technical_support`
+:bulb: Récupération et chargement de la base de données `hairasset`
 
 - [] Charger le `schema`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-          technical_support < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300104524/300104524-schema.sql
+          hairasset < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112917/300112917-schema.sql
 ```
 
 - [] Charger les données SQL
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-         technical_support < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300104524/300104524-data.sql
+         hairasset < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112917/300112917-data.sql
 ```
 
 ### :two: ETL
@@ -93,7 +94,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 - [] Chercher des données `JSON`
 
 ```
-$ curl https://raw.githubusercontent.com/danielgtaylor/arista/master/presets/computer.json
+$ curl https://raw.githubusercontent.com/pbrain19/VitoMazzaSAlon/master/public/js/data/products.json
 ```
 
 - [] Importer ces données dans vos propres collections
@@ -107,19 +108,19 @@ $ docker container exec --interactive --tty some-mysqlds bash
 :pushpin: Se connecter à mysql SH en utilisant `JavaScript`
 
 ```
-bash-4.2# mysqlsh --js --host localhost --user Geneus --password
+bash-4.2# mysqlsh --js --host localhost --user djumaster --password
 ```
 
 :pushpin: Importer les fichiers `json` (i.e. ETL)
 
-* computer.json
+* products.json
 
 ```
 MySQL JS> util.importJson(
-              "/var/lib/mysql-files/computer.json", 
+              "/var/lib/mysql-files/products.json", 
               {
-                  schema: "technical_support", 
-                  collection: "computer"
+                  schema: "hairasset", 
+                  collection: "products"
               }
           )
 ```
@@ -127,8 +128,8 @@ MySQL JS> util.importJson(
 :pushpin: Tester la collection
 
 ```
-MySQL  JS > \use technical_support;
-MySQL  JS > db.computer.find()
+MySQL  JS > \use hairasset;
+MySQL  JS > db.products.find()
 ```
 
 ### :three: Scripting avec API
@@ -137,26 +138,31 @@ MySQL  JS > db.computer.find()
 
 - [x] La fonction mashup doit gérer une table produite par des collections
 
-Écrire le programme python [b300104524.py](b300104524.py) permettant de rajouter des étudiants importés par le fichier `computer.json`
+Écrire le programme python [b300112917.py](b300112917.py) permettant de rajouter des étudiants importés par le fichier `products.json`
 
 ```
 $ docker container exec --interactive some-mysqlds mysqlsh --py \
-                        --host localhost --user Geneus -password \
-                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300104524/b300104524.py
+                        --host localhost --user djumaster -ppassword \
+                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112917/b300112917.py
 ```
 
-### :four: IMAGE
+### :four: Modèlisation
 
-<img src="technical_support.JPG" witdth=920 height=791 ></img>
+Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (i.e. forward engineering)
 
+- [] présenter votre modèle relationel
+
+- [] présenter votre modèle présentant les collections `dans un dossier`
+
+<img src="djumaster.PNG" witdth=920 height=791 ></img>
 
 
 ### :five: Backup
 
--Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql
+- [x] Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql
  
 ```
 $ docker container exec some-mysqlds \
-    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" technical_support ' \
-    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300104524/300104524-dump.sql
+    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" hairasset ' \
+    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112917/300112917-dump.sql
 ```

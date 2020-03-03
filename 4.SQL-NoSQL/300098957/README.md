@@ -168,7 +168,7 @@ MySQL JS> util.importJson(
 :pushpin: Tester la collection
 
 ```
-MySQL  JS > \use etudiants;
+MySQL  JS > \use etudiants
 MySQL  JS > db.import_students.find()
 ```
 

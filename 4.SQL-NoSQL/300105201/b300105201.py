@@ -19,10 +19,10 @@ def mashup(myDb):
    objs = myColl.find().execute()
 
    for obj in objs.fetch_all():
-      for instruments in obj.instruments:
-         print("INSERT INTO INSTRUMENTS (Name) VALUES ('"+obj.instruments+"')")
+      for instruments in obj.music.instruments:
+         print("INSERT INTO INSTRUMENTS (Name) VALUES ('"+music.instruments+"')")
          # Insert SQL Table data
-         myTable.insert(['Name']).values(obj.instruments).execute()
+         myTable.insert(['Name']).values(music.instruments).execute()
 
 # Connect to server
 mySession = mysqlx.get_session( {

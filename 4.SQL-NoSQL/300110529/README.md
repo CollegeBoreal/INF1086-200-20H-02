@@ -61,5 +61,5 @@ Charger les `données` SQL
 
 ```
 $  docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-           Car_Center < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110529/300110529-data.sql
+           Carte_graphique < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110529/300110529-data.sql
 ```

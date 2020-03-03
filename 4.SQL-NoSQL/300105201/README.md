@@ -93,7 +93,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 - [] Chercher des données `JSON`
 
 ```
-$ curl https://raw.githubusercontent.com/danielgtaylor/arista/master/presets/computer.json
+$ curl https://raw.githubusercontent.com/dariusk/corpora/master/data/music/instruments.json > instruments.json
 ```
 
 - [] Importer ces données dans vos propres collections
@@ -127,6 +127,6 @@ MySQL JS> util.importJson(
 :pushpin: Tester la collection
 
 ```
-MySQL  JS > \use musicshop;
+MySQL  JS > \use musicshop
 MySQL  JS > db.instruments.find()
 ```

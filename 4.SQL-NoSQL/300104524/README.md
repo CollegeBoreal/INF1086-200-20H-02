@@ -130,6 +130,9 @@ MySQL JS> util.importJson(
 MySQL  JS > \use technical_support;
 MySQL  JS > db.computer.find()
 ```
+
+### :three: Scripting avec API
+
 :pushpin: Utilisation de MySQL Python : XDEVAPI 
 
 - [x] La fonction mashup doit gérer une table produite par des collections

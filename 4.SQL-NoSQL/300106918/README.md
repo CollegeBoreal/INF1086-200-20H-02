@@ -63,7 +63,7 @@ MySQL JS> util.importJson(
               "/var/lib/mysql-files/cisco.json" 
               {
                   schema: "network_IT"
-                  collection: "cisco"
+                  collection: "import_cisco"
               }
           )
 

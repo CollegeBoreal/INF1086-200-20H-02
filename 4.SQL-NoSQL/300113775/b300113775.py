@@ -20,7 +20,7 @@ def mashup(myDb):
 
    for obj in objs.fetch_all():
       for description in obj.description:
-         print("INSERT INTO IMAGES (Images) VALUES ("'+description+'")")
+         print("INSERT INTO IMAGES (Images) VALUES ('"+description+"')")
          # Insert SQL Table data
          myTable.insert(['Images']).values(description).execute()
 

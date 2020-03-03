@@ -79,3 +79,4 @@ $ docker container exec some-mysqlds \
 
 # Modèlisation
 
+![](abd/collection.png)

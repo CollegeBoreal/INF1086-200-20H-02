@@ -55,9 +55,9 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'yamaha'@'127.0.0.1' IDENTIFIED BY 'jacques_1';"
+                        --execute "CREATE USER 'roland'@'127.0.0.1' IDENTIFIED BY 'jacques_1';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "GRANT ALL ON musicshop.* TO 'yamaha'@'127.0.0.1';"
+                        --execute "GRANT ALL ON musicshop.* TO 'roland'@'127.0.0.1';"
 ```
 
 :pushpin: Contexte permettant d'utiliser `Mysql Workbench` 
@@ -67,7 +67,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "CREATE USER 'yamaha'@'%' IDENTIFIED BY 'Jacques';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "GRANT ALL ON musicshop.* TO 'yamaha'@'%';"
+                        --execute "GRANT ALL ON musicshop.* TO 'roland'@'%';"
 ```
 
 ### :one: Migration
@@ -107,7 +107,7 @@ $ docker container exec --interactive --tty some-mysqlds bash
 :pushpin: Se connecter à mysql SH en utilisant `JavaScript`
 
 ```
-bash-4.2# mysqlsh --js --host localhost --user yamaha --Jacques
+bash-4.2# mysqlsh --js --host localhost --user roland --Jacques
 ```
 
 :pushpin: Importer les fichiers `json` (i.e. ETL)

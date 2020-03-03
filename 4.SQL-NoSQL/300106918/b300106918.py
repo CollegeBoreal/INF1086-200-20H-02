@@ -21,7 +21,7 @@ def mashup(myDb):
 
     for obj in objs.fetch_all():
 
-       for pagination_response_record in obj.product_list.product_name:
+       for product_list in obj pagination_response_record.product_list:
 
          print("INSERT INTO (PRODUCTS.Nom_produit) VALUES ('"+product_list.product_type+"')")
 

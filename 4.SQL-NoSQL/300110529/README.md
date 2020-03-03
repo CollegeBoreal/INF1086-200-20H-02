@@ -54,18 +54,6 @@ Importation de la base de données SQL
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-          etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-schema.sql
-```
-
-```
-$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-         etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-data.sql
-```
-
-Charger les `données` SQL
-
-```
-$  docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-           Car_Center < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/300107361-data.sql
+          etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/3000110529/3000110529-schema.sql
 ```
 

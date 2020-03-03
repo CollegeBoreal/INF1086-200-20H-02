@@ -113,4 +113,5 @@ Cela permet d'écrire le programme python b300110529.py qui vas rajouter les det
 docker container exec some-mysqlds \
     sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" Carte_graphique ' \
     > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110529/300110529-dump.sql    
-    ```
+   
+```

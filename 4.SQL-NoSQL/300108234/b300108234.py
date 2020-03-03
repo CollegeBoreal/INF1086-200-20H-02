@@ -20,10 +20,10 @@ def mashup(myDb):
    objs = myColl.find().execute()
 
    for obj in objs.fetch_one():
-      for TISSUS in obj.TISSUS:
-         print("INSERT INTO TISSUS (tissu, pays_de_fabrication) VALUES ('"+tissu+"', '"+pays_de_fabrication+"')")
+      for tissu in obj.tissu:
+         print("INSERT INTO TISSUS (tissu, pays_de_fabrication) VALUES ('"+id+"', '"+pays_de_fabrication+"')")
          # Insert SQL Table data
-         myTable.insert(['tissu','pays_de_fabrication']).values(TISSUS.tissu, TISSUS.pays_de_fabrication).execute()
+         myTable.insert(['tissu','pays_de_fabrication']).values(tissu.id, tissu.country).execute()
 
 # Connect to server
 mySession = mysqlx.get_session( {

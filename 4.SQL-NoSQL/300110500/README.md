@@ -1,14 +1,15 @@
 # My Project nosql
 
 gitbash:
+```
 $ SRC=`pwd -W`
-
+```
 :bulb: Creer son projet dans un repertoire avec son :id:
-
+```
 ``$ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL``
 
 ``$ mkdir 300110500`` && `$ cd 300110500`
-
+```
 
 
 ### :zero: Administration 
@@ -25,9 +26,10 @@ $ docker container run \
          mysql/mysql-server:latest
     ```
    27a38d871e3d75b1ee2c9b5ba1ee6f7ae20a1b30837cb113b9f30b8deff843fe
+```
          
    -- visualiserle  volume pour import
-   
+```   
    $ docker container exec --interactive some-mysqlds sh -c "ls /var/lib/mysql-files"
    
 300110500-data.sql
@@ -36,44 +38,46 @@ $ docker container run \
 README.md
 b300110500.py
 immigration.json
-
+```
 
 - Créer votre base de données[MySQL
-
+```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
               --execute "CREATE DATABASE immigration_consulting;"
+```
 
-
- création de l'utilisateur
+- création de l'utilisateur
  
 📌 Contexte permettant d'utiliser mysqlsh
-
+```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "CREATE USER 'guigma'@'127.0.0.1' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "GRANT ALL ON immigration_consulting.* TO 'guigma'@'127.0.0.1';"
-                        
+ ```                       
  📌 Contexte permettant d'utiliser Mysql Workbench
-
+```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "CREATE USER 'guigma'@'%' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "GRANT ALL ON immigration_consulting.* TO 'guigma'@'%';"
-                    
+                       --execute "GRANT ALL ON immigration_consulting.* TO 'guigma'@'%';"
+```                    
  ### :one: Migration
                                 
     💡 Récupération et chargement de la base de données Etudiants
 
  Charger le schema
+ ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
           immigration_consulting < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110500/300110500-schema.sql                     
-
+```
 Charger les données SQL
+```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
         immigration_consulting  < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110500/300110500-data.sql
-
-- [ ] Importer votre base de données SQL
 ```
+
+- [ ] Importer votre base de données SQl
 
 ### :two: E.T.L
 ```
@@ -97,7 +101,7 @@ WARNING: Using a password on the command line interface can be insecure.
 
 ### :four: Modelisation
 
-<img src="schema.png" ></img>
+<img src="schema.png"></img>
 
 
 

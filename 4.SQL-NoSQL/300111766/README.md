@@ -32,7 +32,7 @@ phone.json
   📌 Contexte permettant d'utiliser mysqlsh
 
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'cheikh'@'127.0.0.1' IDENTIFIED BY 'password';"
+                        --execute "CREATE USER 'CHEIKH'@'127.0.0.1' IDENTIFIED BY 'password';"
 
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "GRANT ALL ON vente_portable.* TO 'CHEIKH'@'127.0.0.1';"

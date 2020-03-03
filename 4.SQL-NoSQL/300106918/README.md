@@ -1,7 +1,7 @@
 
 ### Projet 300106918
 
-##0️⃣ Administration
+## Administration
 Créer votre base de données MySQL/Server
 # Créer le conteneur avec un volume
  
@@ -51,15 +51,29 @@ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
        mysqlsh --js --host localhost --user AEK --password
        
        
-       
-       
 ##  Importer les fichiers json (i.e. ETL)
 cisco.json
 MySQL JS> util.importJson(
-              "/var/lib/mysql-files/cisco.json", 
+              "/var/lib/mysql-files/cisco.json" 
               {
-                  schema: "network_IT", 
+                  schema: "network_IT"
                   collection: "cisco"
               }
           )
+
+## Tester la collection
+MySQL  Py > \use network_IT
+MySQL  Py > db.cisco.find()
+
+## Utilisation de MySQL Python : XDEVAPI
+docker container exec --interactive some-mysqlds mysqlsh --py \
+                        --host localhost --user AEK -etudiants_1 \
+                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300106918/b300106918.py
+                   
+##  Backup, Sauvegarder la base de données dans un fichier SQL nommé ??-dump.sql
+
+$ docker container exec some-mysqlds \
+    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" network_IT ' \
+    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300106918/300106918-dump.sql
+
 

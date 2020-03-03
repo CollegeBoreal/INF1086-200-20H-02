@@ -49,8 +49,9 @@ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
      
 ##  Se connecter à mysql SH en utilisant 
        mysqlsh --js --host localhost --user AEK --password
-       
+ #
        ![](abd/py.png)
+  #
        
        
 ##  Importer les fichiers json (i.e. ETL)
@@ -82,3 +83,6 @@ $ docker container exec some-mysqlds \
 # Modèlisation
 
 ![](abd/collection.png)
+
+
+![](abd/py.png)

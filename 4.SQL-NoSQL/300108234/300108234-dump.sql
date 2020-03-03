@@ -135,7 +135,7 @@ CREATE TABLE `PAYS_DE_FABRICATION` (
   `devise` varchar(30) NOT NULL,
   `livraison` date DEFAULT NULL,
   PRIMARY KEY (`pays_de_fabrication`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -144,7 +144,7 @@ CREATE TABLE `PAYS_DE_FABRICATION` (
 
 LOCK TABLES `PAYS_DE_FABRICATION` WRITE;
 /*!40000 ALTER TABLE `PAYS_DE_FABRICATION` DISABLE KEYS */;
-INSERT INTO `PAYS_DE_FABRICATION` VALUES (1,'maroc','dirham','2019-11-15'),(2,'yemen','riyal','2019-11-30'),(3,'arabie saoudite','riyal','2019-12-30');
+INSERT INTO `PAYS_DE_FABRICATION` VALUES (1,'maroc','dirham','2019-11-15'),(2,'yemen','riyal','2019-11-30'),(3,'arabie saoudite','riyal','2019-12-30'),(4,'Canada','usd',NULL),(5,'Maroc','usd',NULL),(6,'Maroc','usd',NULL),(7,'Canada','usd',NULL),(8,'France','usd',NULL);
 /*!40000 ALTER TABLE `PAYS_DE_FABRICATION` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -277,7 +277,7 @@ CREATE TABLE `import_hijab` (
 
 LOCK TABLES `import_hijab` WRITE;
 /*!40000 ALTER TABLE `import_hijab` DISABLE KEYS */;
-INSERT INTO `import_hijab` (`doc`) VALUES ('{\"_id\": \"00005e557a6b0000000000000001\", \"tissu\": [{\"id\": \"134\", \"city\": \"toronto\", \"type\": \"coton\", \"state\": \"ON\", \"acronym\": null, \"country\": \"Canada\"}, {\"id\": \"123\", \"city\": \"Agadir\", \"type\": \"muslin\", \"state\": \"AG\", \"acronym\": null, \"country\": \"Maroc\"}, {\"id\": \"190\", \"city\": \"Agadir\", \"type\": \"muslin\", \"state\": \"AG\", \"acronym\": null, \"country\": \"Maroc\"}, {\"id\": \"34\", \"city\": \"ottawa\", \"type\": \"printed\", \"state\": \"ON\", \"acronym\": null, \"country\": \"Canada\"}, {\"id\": \"908\", \"city\": \"Paris\", \"type\": \"cotton\", \"state\": \"PR\", \"acronym\": null, \"country\": \"France\"}]}'),('{\"_id\": \"00005e557a6b0000000000000002\", \"tissu\": [{\"id\": \"134\", \"city\": \"toronto\", \"type\": \"coton\", \"state\": \"ON\", \"acronym\": null, \"country\": \"Canada\"}, {\"id\": \"123\", \"city\": \"Agadir\", \"type\": \"muslin\", \"state\": \"AG\", \"acronym\": null, \"country\": \"Maroc\"}, {\"id\": \"190\", \"city\": \"Agadir\", \"type\": \"muslin\", \"state\": \"AG\", \"acronym\": null, \"country\": \"Maroc\"}, {\"id\": \"34\", \"city\": \"ottawa\", \"type\": \"printed\", \"state\": \"ON\", \"acronym\": null, \"country\": \"Canada\"}, {\"id\": \"908\", \"city\": \"Paris\", \"type\": \"cotton\", \"state\": \"PR\", \"acronym\": null, \"country\": \"France\"}]}'),('{\"_id\": \"00005e557a6b0000000000000003\", \"tissu\": [{\"id\": \"134\", \"city\": \"toronto\", \"type\": \"coton\", \"state\": \"ON\", \"acronym\": null, \"country\": \"Canada\"}, {\"id\": \"123\", \"city\": \"Agadir\", \"type\": \"muslin\", \"state\": \"AG\", \"acronym\": null, \"country\": \"Maroc\"}, {\"id\": \"190\", \"city\": \"Agadir\", \"type\": \"muslin\", \"state\": \"AG\", \"acronym\": null, \"country\": \"Maroc\"}, {\"id\": \"34\", \"city\": \"ottawa\", \"type\": \"printed\", \"state\": \"ON\", \"acronym\": null, \"country\": \"Canada\"}, {\"id\": \"908\", \"city\": \"Paris\", \"type\": \"cotton\", \"state\": \"PR\", \"acronym\": null, \"country\": \"France\"}]}'),('{\"_id\": \"00005e557a6b0000000000000004\", \"tissu\": [{\"id\": \"134\", \"city\": \"toronto\", \"type\": \"coton\", \"state\": \"ON\", \"acronym\": null, \"country\": \"Canada\"}, {\"id\": \"123\", \"city\": \"Agadir\", \"type\": \"muslin\", \"state\": \"AG\", \"acronym\": null, \"country\": \"Maroc\"}, {\"id\": \"190\", \"city\": \"Agadir\", \"type\": \"muslin\", \"state\": \"AG\", \"acronym\": null, \"country\": \"Maroc\"}, {\"id\": \"34\", \"city\": \"ottawa\", \"type\": \"printed\", \"state\": \"ON\", \"acronym\": null, \"country\": \"Canada\"}, {\"id\": \"908\", \"city\": \"Paris\", \"type\": \"cotton\", \"state\": \"PR\", \"acronym\": null, \"country\": \"France\"}]}'),('{\"_id\": \"00005e557a6b0000000000000005\", \"tissu\": [{\"id\": \"134\", \"city\": \"toronto\", \"type\": \"coton\", \"state\": \"ON\", \"acronym\": null, \"country\": \"Canada\"}, {\"id\": \"123\", \"city\": \"Agadir\", \"type\": \"muslin\", \"state\": \"AG\", \"acronym\": null, \"country\": \"Maroc\"}, {\"id\": \"190\", \"city\": \"Agadir\", \"type\": \"muslin\", \"state\": \"AG\", \"acronym\": null, \"country\": \"Maroc\"}, {\"id\": \"34\", \"city\": \"ottawa\", \"type\": \"printed\", \"state\": \"ON\", \"acronym\": null, \"country\": \"Canada\"}, {\"id\": \"908\", \"city\": \"Paris\", \"type\": \"cotton\", \"state\": \"PR\", \"acronym\": null, \"country\": \"France\"}]}');
+INSERT INTO `import_hijab` (`doc`) VALUES ('{\"_id\": \"00005e557a6b0000000000000005\", \"tissu\": [{\"id\": \"134\", \"city\": \"toronto\", \"type\": \"coton\", \"state\": \"ON\", \"acronym\": null, \"country\": \"Canada\"}, {\"id\": \"123\", \"city\": \"Agadir\", \"type\": \"muslin\", \"state\": \"AG\", \"acronym\": null, \"country\": \"Maroc\"}, {\"id\": \"190\", \"city\": \"Agadir\", \"type\": \"muslin\", \"state\": \"AG\", \"acronym\": null, \"country\": \"Maroc\"}, {\"id\": \"34\", \"city\": \"ottawa\", \"type\": \"printed\", \"state\": \"ON\", \"acronym\": null, \"country\": \"Canada\"}, {\"id\": \"908\", \"city\": \"Paris\", \"type\": \"cotton\", \"state\": \"PR\", \"acronym\": null, \"country\": \"France\"}]}');
 /*!40000 ALTER TABLE `import_hijab` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -313,4 +313,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-03 17:20:08
+-- Dump completed on 2020-03-03 22:25:26

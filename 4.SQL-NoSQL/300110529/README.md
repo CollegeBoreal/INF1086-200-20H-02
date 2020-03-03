@@ -29,25 +29,25 @@ Création de la base de données `Carte_graphique`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE DATABASE etudiants;"
+                        --execute "CREATE DATABASE Carte_graphique;"
 ```
 création de l'utilisateur
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'joker'@'127.0.0.1' IDENTIFIED BY 'password';"
+                        --execute "CREATE USER 'etudiants'@'127.0.0.1' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "GRANT ALL ON Car_Center.* TO 'joker'@'127.0.0.1';"
+                        --execute "GRANT ALL ON Carte_graphique.* TO 'joker'@'127.0.0.1';"
 ```
 
 utilisation `Mysql Workbench`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'joker'@'%' IDENTIFIED BY 'password';"
+                        --execute "CREATE USER 'etudiants'@'%' IDENTIFIED BY 'password';"
 
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword  \
-                        --execute "GRANT ALL ON Car_Center.* TO 'joker'@'%';"
+                        --execute "GRANT ALL ON Carte_graphique.* TO 'etudiants'@'%';"
 ```
 
 Importation de la base de données SQL

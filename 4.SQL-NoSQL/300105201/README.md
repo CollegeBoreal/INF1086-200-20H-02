@@ -65,7 +65,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'yamaha'@'%' IDENTIFIED BY 'Jacques';"
+                        --execute "CREATE USER 'roland'@'%' IDENTIFIED BY 'Jacques';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "GRANT ALL ON musicshop.* TO 'roland'@'%';"
 ```

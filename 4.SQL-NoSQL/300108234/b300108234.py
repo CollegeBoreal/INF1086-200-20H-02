@@ -19,8 +19,8 @@ def mashup(myDb):
    # Find objects from document
    objs = myColl.find().execute()
 
-   for obj in objs.fetch_all():
-      for tissu in obj.tissu:
+   for obj in objs.fetch_one():
+      for TISSUS in obj.TISSUS:
          print("INSERT INTO TISSUS (tissu, pays_de_fabrication) VALUES ('"+tissu+"', '"+pays_de_fabrication+"')")
          # Insert SQL Table data
          myTable.insert(['tissu','pays_de_fabrication']).values(TISSUS.tissu, TISSUS.pays_de_fabrication).execute()

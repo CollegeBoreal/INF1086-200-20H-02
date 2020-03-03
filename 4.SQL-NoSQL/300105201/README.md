@@ -107,7 +107,7 @@ $ docker container exec --interactive --tty some-mysqlds bash
 :pushpin: Se connecter à mysql SH en utilisant `JavaScript`
 
 ```
-bash-4.2# mysqlsh --js --host localhost --user roland --Jacques
+bash-4.2# mysqlsh --js --host localhost --user roland --jacques_1
 ```
 
 :pushpin: Importer les fichiers `json` (i.e. ETL)

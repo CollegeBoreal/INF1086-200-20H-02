@@ -1,7 +1,7 @@
 
 # Base de donnée magasin
 
-### :1: Administration
+### 🆗 Administration
 
 - 😍 Créer son projet dans un répertoire :id:
 
@@ -49,6 +49,8 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 ```
 
  🕕 création de l'utilisateur
+ 
+ Pour la création des utilisateurs il faut executé les commandes ci-dessous
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
@@ -57,7 +59,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
                         --execute "GRANT ALL ON magasin.* TO 'ador'@'127.0.0.1';"
 ```
 
-:pushpin: Contexte permettant d'utiliser `Mysql Workbench` 
+🔺 Contexte permettant d'utiliser `Mysql Workbench` 
 
 
 ```
@@ -67,47 +69,43 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
                         --execute "GRANT ALL ON magasin.* TO 'ador'@'%';"
 ```
 
-### :one: Migration
+### 💨 Migration
 
-:bulb: Récupération et chargement de la base de données `magasin`
-
-- [] Charger le `schema`
+Récupération et chargement de la base de données `magasin`
+ 
+-✔ il faut d'abord Charger le `schema`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
           magasin < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112017/300112017-schema.sql
 ```
 
-- [] Charger les données SQL
+-😎 ensuite  Charger les données SQL
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
          magasin < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112017/300112017-data.sql
 ```
 
-### :two: ETL
-
-- [] Chercher des données `JSON`
+- 😱 Chercher des données `JSON`
 
 ```
 $ curl https://raw.githubusercontent.com/MarinescuEvghenii/Cars-Motorcycles-DataBase-JSON/master/moto_brands.json > Moto.json
 ```
 
-- [] Importer ces données dans vos propres collections
+- 👣 Importer ces données dans vos propres collections
 
-:pushpin: Se connecter au conteneur
+Se connecter au conteneur
 
 ```
 $ docker container exec --interactive --tty some-mysqlds bash
 ```
-
-:pushpin: Se connecter à mysql SH en utilisant `JavaScript`
+👅 Se connecter à mysql SH en utilisant `JavaScript`
 
 ```
 bash-4.2# mysqlsh --js --host localhost --user ador --password
 ```
-
-:pushpin: Importer les fichiers `json` (i.e. ETL)
+😂 Importer les fichiers `json` (i.e. ETL)
 
 * Moto.json
 
@@ -121,17 +119,17 @@ MySQL JS> util.importJson(
           )
 ```
 
-:pushpin: Tester la collection
+😴 Tester la collection
 
 ```
 MySQL  JS > \use magasin
 MySQL  JS > db.Moto.find()
 ```
-### :three: Scripting avec API
+### 😡 Scripting avec API
 
-:pushpin: Utilisation de MySQL Python : XDEVAPI 
+Utilisation de MySQL Python : XDEVAPI 
 
-- [x] La fonction mashup doit gérer une table produite par des collections
+- La fonction mashup doit gérer une table produite par des collections
 
 Écrire le programme python [b300112017.py](b300112017.py) permettant de rajouter des étudiants importés par le fichier `Moto.json`
 
@@ -141,12 +139,12 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
                    < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112017/b300112017.py
 ```
 
-### :four: IMAGE
+### 🤬 L'image de ma base de donnée
 
 <img src="magasin.JPG" witdth=920 height=791 ></img>
 
 
-### :five: Backup
+### 👺 enfin faire le Backup
 
 -Sauvegarder la base de données dans un fichier SQL nommé 🆔-dump.sql
  

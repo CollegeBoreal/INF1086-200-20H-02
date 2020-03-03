@@ -26,7 +26,8 @@ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
 docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "GRANT ALL ON network_IT.* TO 'AEK'@'127.0.0.1';"
 
-## Contexte permettant d'utiliser Mysql Workbench
+# Contexte permettant d'utiliser Mysql Workbench
+
 docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "CREATE USER 'AEK'@'%' IDENTIFIED BY 'etudiants_1';"
                         
@@ -34,9 +35,10 @@ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "GRANT ALL ON network_IT.* TO 'AEK'@'%';"
 
 
-### Migration
+# Migration
 
-## Charger le schema
+# Charger le schema
+
 docker container exec --interactive some-mysqlds mysql --user root -ppassword \
           network_IT < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300106918/300106918-schema.sql
 
@@ -54,7 +56,8 @@ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
   #
        
        
-##  Importer les fichiers json (i.e. ETL)
+#  Importer les fichiers json (i.e. ETL)
+
 cisco.json
 MySQL JS> util.importJson(
               "/var/lib/mysql-files/cisco.json" 
@@ -64,20 +67,22 @@ MySQL JS> util.importJson(
               }
           )
 
-## Tester la collection
+# Tester la collection
+
 MySQL  Py > \use network_IT
 MySQL  Py > db.cisco.find()
 
-## Utilisation de MySQL Python : XDEVAPI
+# Utilisation de MySQL Python : XDEVAPI
+
 docker container exec --interactive some-mysqlds mysqlsh --py \
                         --host localhost --user AEK -etudiants_1 \
-                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300106918/b300106918.py
+                        < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300106918/b300106918.py
                    
-##  Backup, Sauvegarder la base de données dans un fichier SQL nommé ??-dump.sql
+#  Backup, Sauvegarder la base de données dans un fichier SQL nommé ??-dump.sql
 
 $ docker container exec some-mysqlds \
-    sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" network_IT ' \
-    > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300106918/300106918-dump.sql
+               sh -c 'exec mysqldump --user root -p"$MYSQL_ROOT_PASSWORD" network_IT ' \
+                > ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300106918/300106918-dump.sql
 
 
 # Modèlisation

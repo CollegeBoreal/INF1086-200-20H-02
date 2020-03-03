@@ -29,38 +29,76 @@ Création de la base de données `Carte_graphique`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE DATABASE etudiants;"
+                        --execute "CREATE DATABASE Carte_graphique;"
 ```
 création de l'utilisateur
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'joker'@'127.0.0.1' IDENTIFIED BY 'password';"
+                        --execute "CREATE USER 'etudiants'@'127.0.0.1' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "GRANT ALL ON Car_Center.* TO 'joker'@'127.0.0.1';"
+                        --execute "GRANT ALL ON Carte_graphique.* TO 'etudiants'@'127.0.0.1';"
 ```
 
 utilisation `Mysql Workbench`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE USER 'joker'@'%' IDENTIFIED BY 'password';"
+                        --execute "CREATE USER 'etudiants'@'%' IDENTIFIED BY 'password';"
 
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword  \
-                        --execute "GRANT ALL ON Car_Center.* TO 'joker'@'%';"
+                        --execute "GRANT ALL ON Carte_graphique.* TO 'etudiants'@'%';"
 ```
 
 Importation de la base de données SQL
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-          etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-schema.sql
+          Carte_graphique < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110529/300110529-schema.sql
 ```
 
+Charger les `données` SQL
+
 ```
-$ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-         etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-data.sql
+$  docker container exec --interactive some-mysqlds mysql --user root -ppassword \
+           Carte_graphique < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110529/300110529-data.sql
 ```
 
+### :three: E.T.L
 
+Recherche du fichier `json` Carte_graphique
 
+Importation du fichier dans notre collections
+
+Se connecter au conteneur
+
+```
+* $ docker container exec --interactive --tty some-mysqlds bash
+
+* $ winpty  docker container exec --interactive --tty some-mysqlds bash
+```
+
+Se connecter à mysqlSH en utilisant `JavaScript`
+
+```
+bash-4.2# mysqlsh --js --user etudiants -ppassword
+```
+
+Importation les fichier Json
+
+```
+MySQL  localhost:33060+ ssl  JS > util.importJson("/var/lib/mysql-files/Carte_graphique.json", {schema: "Carte_graphique", collection: "Carte"})
+Importing from file "/var/lib/mysql-files/Carte_graphique.json" to collection `Carte_graphique`.`Carte` in MySQL Server at localhost:33060
+```
+
+### :four: Scripting avec API
+
+Utilisation de MySQL Python : XDEVAPI
+
+```
+$ docker container exec --interactive some-mysqlds mysqlsh --py \
+                        --host localhost --user etudiants -petudiants_1 \
+                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300110529/b300110529.py
+```
+
+### :five: Modèlisation

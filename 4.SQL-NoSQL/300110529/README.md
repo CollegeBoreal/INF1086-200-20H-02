@@ -23,7 +23,7 @@ $ docker container run `
          mysql/mysql-server:latest
 ```
 
-### :one: Migration
+### :two: Migration
 
 Création de la base de données `Carte_graphique`
 
@@ -50,14 +50,14 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
                         --execute "GRANT ALL ON Car_Center.* TO 'joker'@'%';"
 ```
 
-- [ ] Importation de la base de données SQL
+Importation de la base de données SQL
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
           etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-schema.sql
 ```
 
-``
+```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
          etudiants < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300098957/300098957-data.sql
 ```

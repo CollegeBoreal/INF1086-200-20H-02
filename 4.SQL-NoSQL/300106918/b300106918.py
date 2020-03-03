@@ -23,11 +23,11 @@ def mashup(myDb):
 
        for pagination_response_record in obj.product_list.product_name:
 
-         print("INSERT INTO network_IT (PRODUCTS.Nom_produit) VALUES ('"+product_list.product_type+"')")
+         print("INSERT INTO (PRODUCTS.Nom_produit) VALUES ('"+product_list.product_type+"')")
 
          # Insert SQL Table data
 
-        myTable.insert(['Nom_produit']).values(product_list.type.product_type).execute()
+        myTable.insert(['Nom_produit']).values(product_list.product_type).execute()
 
 mySession = mysqlx.get_session( {
 

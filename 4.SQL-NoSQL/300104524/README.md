@@ -147,7 +147,7 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
 
 ### :four: IMAGE
 
-<img src="technical_support.JPG" witdth=920 height=791 ></img>
+<img src="ts.PNG" witdth=920 height=791 ></img>
 
 
 

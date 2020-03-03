@@ -47,7 +47,7 @@ products.json
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "CREATE DATABASE magasin;"
+                        --execute "CREATE DATABASE hairasset;"
 ```
 
 - []  DCL création de l'utilisateur
@@ -58,7 +58,7 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "CREATE USER 'djumaster'@'127.0.0.1' IDENTIFIED BY 'password';"
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
-                        --execute "GRANT ALL ON magasin.* TO 'ador'@'127.0.0.1';"
+                        --execute "GRANT ALL ON magasin.* TO 'djumaster'@'127.0.0.1';"
 ```
 
 :pushpin: Contexte permettant d'utiliser `Mysql Workbench` 

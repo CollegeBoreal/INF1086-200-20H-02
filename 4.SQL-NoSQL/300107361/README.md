@@ -138,6 +138,11 @@ def mashup():
 
 ```
 
+```
+$ docker container exec --interactive some-mysqlds mysqlsh --py \
+                        --host localhost --user joker -ppassword \
+                   < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/b300107361.py
+```
 
 - [ ] La fonction `mashup` doit créer une table produite par des collections
 

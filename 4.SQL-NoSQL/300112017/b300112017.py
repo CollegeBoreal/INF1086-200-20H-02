@@ -24,7 +24,7 @@ def mashup(myDb):
 
 
     for obj in objs.fetch_all():
-      for name in obj.data.name:
+      for data in obj.data:
         print("INSERT INTO MODELS (Models) VALUES ('"+data.name+"')")
         # Insert SQL Table data
         myTable.insert(['Models']).values(data.name).execute()

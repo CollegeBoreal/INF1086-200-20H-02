@@ -91,3 +91,4 @@ MySQL  localhost:33060+ ssl  JS > util.importJson("/var/lib/mysql-files/Carte_gr
 Importing from file "/var/lib/mysql-files/Carte_graphique.json" to collection `Carte_graphique`.`Carte` in MySQL Server at localhost:33060
 ```
 
+### :four: Scripting avec API

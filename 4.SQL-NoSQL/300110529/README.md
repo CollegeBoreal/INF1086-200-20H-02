@@ -122,6 +122,8 @@ Cela permet d'écrire le programme python b300110529.py qui vas rajouter les det
 
 ### :five: Modèlisation
 
+<img src="images/graphique.png" witdth=920 height=791 ></img>
+
 ### Pour le backup
 
 ```

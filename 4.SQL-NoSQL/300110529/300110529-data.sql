@@ -4,9 +4,9 @@ use Carte_graphique;
 
 -- Données de la table VENTES
 
-INSERT INTO VENTES ( idvente, Num_vente, date ) VALUES (774, '10', '2010-01-15');
-INSERT INTO VENTES ( idvente, Num_vente, date ) VALUES (554, '10', '2011-05-04');
-INSERT INTO VENTES ( idvente, Num_vente, date ) VALUES (664, '10', '2014-03-07');
+INSERT INTO VENTES ( idvente, Num_vente, date ) VALUES (666, '10', '2010-01-15');
+INSERT INTO VENTES ( idvente, Num_vente, date ) VALUES (564, '10', '2011-05-04');
+INSERT INTO VENTES ( idvente, Num_vente, date ) VALUES (674, '10', '2014-03-07');
 
 
 -- Données de la table CLIENTS

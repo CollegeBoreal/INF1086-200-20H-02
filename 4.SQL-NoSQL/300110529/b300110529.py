@@ -4,6 +4,7 @@ Created on Thu Feb 13 11:50:15 2020
 
 @author: THK
 """
+
 # Connecting to MySQL Server and working with a Collection
 from mysqlsh import mysqlx
 

@@ -25,12 +25,12 @@ CREATE TABLE VENTES (idvente INT NOT NULL AUTO_INCREMENT, date Date,
                        );
 
 
- CREATE TABLE CLIENTS (Idclient INT NOT NULL AUTO_INCREMENT,
-		       Nom_client VARCHAR(30) NOT NULL, Ville VARCHAR(30) NOT NULL, 
-		       tlphone  INT,
-                       PRIMARY KEY(idclient)                    
-		      );
-		      
+CREATE TABLE CLIENTS (IDclient INT NOT NULL AUTO_INCREMENT, 
+                      Nom_client VARCHAR(30) NOT NULL, Ville VARCHAR(30) NOT NULL,
+                      PRIMARY KEY(IDclient)
+                     );
+
+		    
 		      
 
 CREATE TABLE MARCHANDISES ( marchandise INT NOT NULL AUTO_INCREMENT, 
@@ -43,16 +43,17 @@ CREATE TABLE MARCHANDISES ( marchandise INT NOT NULL AUTO_INCREMENT,
   
   
   
-CREATE TABLE PAYMENT (Idclient INT,
+CREATE TABLE PAYMENT (IDclient INT,
 			      marchandise INT,
 			      Idvente INT,
 			      payment INT, 
-			      PRIMARY KEY (Idclient, marchandise, idvente), 
-			      FOREIGN KEY(idclient) 
+			      PRIMARY KEY (IDclient, marchandise, idvente), 
+			      FOREIGN KEY(iDclient) 
 			      REFERENCES CLIENTS(Idclient),
+		              FOREIGN KEY(idvente) 
+			      REFERENCES VENTES(idvente) ,
 			      FOREIGN KEY(marchandise) 
-			      REFERENCES MARCHANDISES(marchandise),
-			      FOREIGN KEY(idvente) 
-			      REFERENCES VENTES(idvente)  
+			      REFERENCES MARCHANDISES(marchandise)
+			      
 			     );
 

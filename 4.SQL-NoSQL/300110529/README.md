@@ -23,7 +23,7 @@ $ docker container run `
          mysql/mysql-server:latest
 ```
 
-Verification des fichiers dans le coteneurs 
+Verification des fichiers dans le conteneurs 
 
 ```
 $ docker container exec --interactive some-mysqlds sh -c "ls /var/lib/mysql-files"

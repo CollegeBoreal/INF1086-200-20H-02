@@ -14,13 +14,23 @@ cd <300110529>
 
 ```
 $ docker container run `
-         --name some-mysql `
+         --name some-mysqlds `
          --env MYSQL_ROOT_PASSWORD=password `
          --publish 3306:3306 `
          --publish 33060:33060 `
          --volume C:\Users\THK\developer\INF1086-200-20H-02\4.SQL-NoSQL\300110529:/var/lib/mysql-files `
          --detach `
-         mysql/:  latest
+         mysql/mysql-server:latest
+```
+
+Verification des fichiers dans le coteneurs 
+
+```
+$ docker container exec --interactive some-mysqlds sh -c "ls /var/lib/mysql-files"
+300110529-data.sql
+300110529-schema.sql
+README.md
+Carte_graphique.json
 ```
 
 ### :two: Migration

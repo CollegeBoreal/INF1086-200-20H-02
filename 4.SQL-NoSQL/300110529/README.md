@@ -20,7 +20,7 @@ $ docker container run `
          --publish 33060:33060 `
          --volume C:\Users\THK\developer\INF1086-200-20H-02\4.SQL-NoSQL\300110529:/var/lib/mysql-files `
          --detach `
-         mysql/:latest
+         mysql/:  latest
 ```
 
 ### :two: Migration

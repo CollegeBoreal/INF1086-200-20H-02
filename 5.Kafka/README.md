@@ -14,17 +14,26 @@
 
 * soumettre votre répertoire de travail vers github `(git add, commit, push)` 
 
-## :o: Création d'une machine virtuelle Kafka sur le serveur windows
+## :a: Dans votre Serveur Windows du laboratoire
+
+### :one: Création d'une nouvelle machine virtuelle Kafka `CB-KAFKA`
 
 [Installer la VM CB-KAFKA](../K.Kafka)
-
-## :a: Création des conteneurs Kafka sur le serveur windows
 
 ### :zero: Cloner le cours sur le serveur Windows
 
 ```
+PS > cd $HOME
+PS > cd Developer
 PS > git clone https://github.com/CollegeBoreal/INF1086-200-20H-02.git
 ```
+
+`PS > cd .\INF1086-200-20H-02\5.Kafka\`:id:
+
+
+
+## :a: Création des conteneurs Kafka sur le serveur windows
+
 
 ### :three: Dans votre répertoire, construire l'image `Docker`
 

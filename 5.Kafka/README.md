@@ -37,13 +37,13 @@ PS > git clone https://github.com/CollegeBoreal/INF1086-200-20H-02.git
 
 ### :one: Construire les images et démarrer les conteneurs avec `docker-compose`
 
-:pushpin: Assurez vous que vous pointez sur la VM `CB-KAFKA`
+- [ ]  Assurez vous que vous pointez sur la VM `CB-KAFKA`
 
 ```
 PS > docker-machine env CB-KAFKA | Invoke-Expression
 ```
 
-:pushpin: Vérifiez l'étoile dans la colonne `ACTIVE` 
+- [ ] Vérifiez l'étoile dans la colonne `ACTIVE` 
 
 
 ```
@@ -56,6 +56,10 @@ CB-KAFKA     *        hyperv   Running   tcp://10.13.4.228:2376           v19.03
 
 :pushpin: Dans votre répertoire de travail, lancer les conteneurs
 
+- [ ] lancer les conteneurs
+
 ```
 PS > docker-compose up --detach --build
 ```
+
+- [ ] Vérifier les conteneurs

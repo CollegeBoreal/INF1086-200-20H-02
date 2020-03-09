@@ -5,7 +5,7 @@
 
 https://www.linkedin.com/learning/learn-apache-kafka-for-beginners
 
-## Installation
+## :a: Installation
 
 :pushpin: Créer une machine virtuelle
 
@@ -31,7 +31,7 @@ CB-KAFKA     *        hyperv   Running   tcp://10.13.4.228:2376           v19.03
 ```
 
 
-## Compose
+## :b: Docker Compose
 
 ```
 PS > choco install docker-compose

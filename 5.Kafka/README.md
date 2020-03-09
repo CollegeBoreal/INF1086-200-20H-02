@@ -126,7 +126,7 @@ ou plus simplement
 PS > docker-compose exec broker 
 ```
 
-## :x: Kafka Broker CLI
+## :part_alternation_mark: Kafka Broker CLI
 
 - [ ] Créer un topic appellé `first_topic`
 

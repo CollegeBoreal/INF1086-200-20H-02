@@ -128,6 +128,15 @@ PS > docker-compose exec broker
 
 ## :x: Kafka Broker CLI
 
+- [ ] Créer un topic appellé `first_topic`
+
+```
+root@broker:/# kafka-topics --zookeeper zookeeper:2181 \
+                            --create --replication-factor 1 --partitions 1 --topic first_topic
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. 
+To avoid issues it is best to use either, but not both.
+Created topic first_topic.
+```
 - [ ]  Liste des `topics` 
 
 ```
@@ -139,14 +148,6 @@ _schemas
 docker-connect-configs
 docker-connect-offsets
 docker-connect-status
+first_topic
 ```
 
-- [ ] Créer un topic appellé `users`
-
-```
-root@broker:/# kafka-topics --zookeeper zookeeper:2181 \
-                            --create --replication-factor 1 --partitions 1 --topic first_topic
-WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. 
-To avoid issues it is best to use either, but not both.
-Created topic first_topic.
-```

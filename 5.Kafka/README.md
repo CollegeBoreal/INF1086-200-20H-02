@@ -56,10 +56,22 @@ CB-KAFKA     *        hyperv   Running   tcp://10.13.4.228:2376           v19.03
 
 :pushpin: Dans votre répertoire de travail, lancer les conteneurs
 
-- [ ] lancer les conteneurs
+- [ ] lancer les conteneurs (prend quelques minutes)
 
 ```
 PS > docker-compose up --detach --build
+...
+...
+...
+Status: Downloaded newer image for confluentinc/cp-kafka-rest:5.4.0
+Creating zookeeper ... done
+Creating broker    ... done
+Creating schema-registry ... done
+Creating connect         ... done
+Creating rest-proxy      ... done
+Creating ksql-server     ... done
+Creating ksql-cli        ... done
+Creating ksql-datagen    ... done
 ```
 
 - [ ] Vérifier les conteneurs

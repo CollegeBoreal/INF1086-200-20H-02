@@ -74,7 +74,9 @@ Creating ksql-cli        ... done
 Creating ksql-datagen    ... done
 ```
 
-- [ ] Vérifier les conteneurs
+## :two: Vérifier la santé des conteneurs
+
+- [ ] Vérification
 
 
 ```
@@ -92,13 +94,25 @@ schema-registry   /etc/confluent/docker/run      Exit 1
 zookeeper         /etc/confluent/docker/run      Up                      0.0.0.0:2181->2181/tcp, 2888/tcp, 3888/tcp
 ```
 
-## :ab: kafka-cli
+- [ ] Si un conteneur n'est pas `up`, relancer la commande
+
+
+```
+PS > docker-compose up --detach --build
+```
+
+## :ab: Se connecter au `broker` Kafka
+
+* par <b>docker</b> `exec`
 
 ```
 PS > docker container exec --interactive --tty broker bash
 ```
 
-ou
+ou plus simplement 
+
+* par <b>docker-compose</b> `exec`
+
 
 ```
 PS > docker-compose exec broker 

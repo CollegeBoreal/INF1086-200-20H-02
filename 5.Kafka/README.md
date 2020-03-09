@@ -75,3 +75,20 @@ Creating ksql-datagen    ... done
 ```
 
 - [ ] Vérifier les conteneurs
+
+
+```
+PS > docker-compose ps
+     Name                   Command                      State                      Ports
+----------------------------------------------------------------------------------------------------
+broker            /etc/confluent/docker/run      Up                      0.0.0.0:29092->29092/tcp, 0.0.0.0:9092->9092/tcp
+connect           /etc/confluent/docker/run      Up (health: starting)   0.0.0.0:8083->8083/tcp, 9092/tcp
+ksql-cli          /bin/sh                        Up
+ksql-datagen      bash -c echo Waiting for K     Up
+                  ...
+ksql-server       /etc/confluent/docker/run      Up (healthy)            0.0.0.0:8088->8088/tcp
+rest-proxy        /etc/confluent/docker/run      Up                      0.0.0.0:8082->8082/tcp
+schema-registry   /etc/confluent/docker/run      Exit 1
+zookeeper         /etc/confluent/docker/run      Up                      0.0.0.0:2181->2181/tcp, 2888/tcp, 3888/tcp
+```
+

@@ -35,7 +35,26 @@ PS > git clone https://github.com/CollegeBoreal/INF1086-200-20H-02.git
 
 ## :b: Créer les conteneurs `Kafka` sur le serveur windows
 
-### :one: Dans votre répertoire de travail, construire les images et démarrer les conteneurs avec `docker-compose`
+### :one: Construire les images et démarrer les conteneurs avec `docker-compose`
+
+:pushpin: Assurez vous que vous pointez sur la VM `CB-KAFKA`
+
+```
+PS > docker-machine env CB-KAFKA | Invoke-Expression
+```
+
+:pushpin: Vérifiez l'étoile dans la colonne `ACTIVE` 
+
+
+```
+> docker-machine ls
+NAME         ACTIVE   DRIVER   STATE     URL                      SWARM   DOCKER     ERRORS
+CB-HYPERV    -        hyperv   Running   tcp://10.13.2.14:2376            v19.03.5
+CB-HYPERV2   -        hyperv   Running   tcp://10.13.5.54:2376            v19.03.5
+CB-KAFKA     *        hyperv   Running   tcp://10.13.4.228:2376           v19.03.5
+```
+
+:pushpin: Dans votre répertoire de travail, lancer les conteneurs
 
 ```
 PS > docker-compose up --detach --build

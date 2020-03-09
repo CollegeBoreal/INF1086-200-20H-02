@@ -95,7 +95,7 @@ zookeeper         /etc/confluent/docker/run      Up                      0.0.0.0
 ## :ab: kafka-cli
 
 ```
-PS docker container --interactive --tty broker bash
+PS docker container exec --interactive --tty broker bash
 ```
 
 ou

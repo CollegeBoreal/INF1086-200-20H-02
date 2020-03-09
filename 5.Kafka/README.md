@@ -103,7 +103,7 @@ PS > docker-compose up --detach --build
 
 ## :ab: Se connecter au `broker` Kafka
 
-* par <b>docker</b> `exec`
+- [ ]  par <b>docker</b> `exec`
 
 ```
 PS > docker container exec --interactive --tty broker bash
@@ -111,7 +111,7 @@ PS > docker container exec --interactive --tty broker bash
 
 ou plus simplement 
 
-* par <b>docker-compose</b> `exec`
+- [ ]  par <b>docker-compose</b> `exec`
 
 
 ```
@@ -120,7 +120,7 @@ PS > docker-compose exec broker
 
 ## :x: Kafka Broker CLI
 
-* Liste des `topics` 
+- [ ]  Liste des `topics` 
 
 ```
 root@broker:/# kafka-topics --zookeeper zookeeper:2181 --list
@@ -132,6 +132,8 @@ docker-connect-configs
 docker-connect-offsets
 docker-connect-status
 ```
+
+- [ ] Créer un topic appellé `users`
 
 ```
 root@broker:/# kafka-topics --zookeeper zookeeper:2181 \

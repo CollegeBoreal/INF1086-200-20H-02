@@ -101,6 +101,12 @@ zookeeper         /etc/confluent/docker/run      Up                      0.0.0.0
 PS > docker-compose up --detach --build
 ```
 
+- [ ] Voir le log (trace) du broker avoir la commande suivante (CTRL-C pour arreter)
+
+```
+PS > docker-compose logs --follow broker
+```
+
 ## :ab: Se connecter au `broker` Kafka
 
 - [ ]  par <b>docker</b> `exec`

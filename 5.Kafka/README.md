@@ -38,5 +38,5 @@ PS > git clone https://github.com/CollegeBoreal/INF1086-200-20H-02.git
 ### :one: Dans votre répertoire de travail, construire les images et démarrer les conteneurs avec `docker-compose`
 
 ```
-PS > docker-compose up --dedatch --build
+PS > docker-compose up --detach --build
 ```

@@ -117,3 +117,18 @@ ou plus simplement
 ```
 PS > docker-compose exec broker 
 ```
+
+## :x: Kafka Broker CLI
+
+* Liste des `topics` 
+
+```
+root@broker:/# kafka-topics --zookeeper zookeeper:2181 --list
+__confluent.support.metrics
+__consumer_offsets
+_confluent-ksql-default__command_topic
+_schemas
+docker-connect-configs
+docker-connect-offsets
+docker-connect-status
+```

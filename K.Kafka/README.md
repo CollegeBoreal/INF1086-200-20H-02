@@ -16,7 +16,7 @@ PS > docker-machine create --driver hyperv `
                            CB-KAFKA
 ```
 
-:pushpin: POinter vers une machine virtuelle
+:pushpin: Pointer vers une machine virtuelle
 
 ```
 PS > docker-machine env CB-KAFKA | Invoke-Expression
@@ -36,3 +36,9 @@ CB-KAFKA     *        hyperv   Running   tcp://10.13.4.228:2376           v19.03
 ```
 PS > choco install docker-compose
 ```
+
+
+## Quick Start
+
+https://docs.confluent.io/current/quickstart/cos-docker-quickstart.html#
+

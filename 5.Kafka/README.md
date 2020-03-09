@@ -155,7 +155,7 @@ first_topic
 
 https://www.linkedin.com/learning/learn-apache-kafka-for-beginners
 
-* Visionnez en particulier:
+:m: Visionnez en particulier:
 
 - [ ] 1. Kafka Theory
 

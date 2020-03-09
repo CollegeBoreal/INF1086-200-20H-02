@@ -5,7 +5,7 @@
 ### :zero: Cloner le cours sur le serveur Windows
 
 ```
-PS > git clone
+PS > git clone https://github.com/CollegeBoreal/INF1086-200-20H-02.git
 ```
 
 ### :one: Creer un répertoire avec comme nom votre :id:

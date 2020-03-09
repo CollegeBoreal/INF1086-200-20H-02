@@ -154,3 +154,7 @@ first_topic
 💡 Suivre le cours en ligne
 
 https://www.linkedin.com/learning/learn-apache-kafka-for-beginners
+
+- [ ] 1. Kafka Theory
+
+- [ ] 3. Command Line Interface (CLI) 101

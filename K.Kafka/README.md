@@ -33,6 +33,8 @@ CB-KAFKA     *        hyperv   Running   tcp://10.13.4.228:2376           v19.03
 
 ## :b: Docker Compose
 
+:star: Installer `docker-compose` outil permettant de composer avec un ensemble de conteneurs
+
 ```
 PS > choco install docker-compose
 ```

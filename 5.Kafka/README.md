@@ -16,26 +16,27 @@
 
 ## :a: Dans votre Serveur Windows du laboratoire
 
-### :one: Création d'une nouvelle machine virtuelle Kafka `CB-KAFKA`
+### :one: Créer une nouvelle machine virtuelle `CB-KAFKA` et `docker-compose`
 
 :star: [Installer la VM CB-KAFKA](../K.Kafka)
 
-### :zero: Cloner le cours sur le serveur Windows
+### :two: Cloner le cours
 
 ```
 PS > cd $HOME\Developer
 PS > git clone https://github.com/CollegeBoreal/INF1086-200-20H-02.git
 ```
 
+### :three: Aller dans votre répertoire de travail
+
+
 `PS > cd .\INF1086-200-20H-02\5.Kafka\`:id:
 
 
+## :b: Créer les conteneurs `Kafka` sur le serveur windows
 
-## :a: Création des conteneurs Kafka sur le serveur windows
-
-
-### :three: Dans votre répertoire, construire l'image `Docker`
+### :one: Dans votre répertoire de travail, construire les images et démarrer les conteneurs avec `docker-compose`
 
 ```
-PS > docker build --tag mssql-server-windows-developer-fti .
+PS > docker-compose up --dedatch --build
 ```

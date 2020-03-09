@@ -109,6 +109,8 @@ PS > docker-compose logs --follow broker
 
 ## :ab: Se connecter au `broker` Kafka
 
+:bulb: Dans une autre fenetre Powershell
+
 - [ ]  par <b>docker</b> `exec`
 
 ```

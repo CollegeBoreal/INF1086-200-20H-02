@@ -29,3 +29,10 @@ CB-HYPERV    -        hyperv   Running   tcp://10.13.2.14:2376            v19.03
 CB-HYPERV2   -        hyperv   Running   tcp://10.13.5.54:2376            v19.03.5
 CB-KAFKA     *        hyperv   Running   tcp://10.13.4.228:2376           v19.03.5
 ```
+
+
+## Compose
+
+```
+PS > choco install docker-compose
+```

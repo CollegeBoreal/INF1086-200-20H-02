@@ -134,6 +134,7 @@ docker-connect-status
 ```
 
 ```
-root@broker:/# kafka-topics --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic users
+root@broker:/# kafka-topics --zookeeper zookeeper:2181 \
+                            --create --replication-factor 1 --partitions 1 --topic users
 Created topic users.
 ```

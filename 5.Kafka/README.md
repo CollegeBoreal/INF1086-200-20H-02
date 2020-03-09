@@ -151,3 +151,6 @@ docker-connect-status
 first_topic
 ```
 
+💡 Suivre le cours en ligne
+
+https://www.linkedin.com/learning/learn-apache-kafka-for-beginners

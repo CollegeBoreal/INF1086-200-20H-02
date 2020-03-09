@@ -1,5 +1,9 @@
 # Kafka
 
+## :o: Création d'une machine virtuelle Kafka sur le serveur windows
+
+[Installer la VM CB-KAFKA](../K.Kafka)
+
 ## :a: Création des conteneurs Kafka sur le serveur windows
 
 ### :zero: Cloner le cours sur le serveur Windows

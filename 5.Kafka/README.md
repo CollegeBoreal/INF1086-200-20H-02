@@ -92,3 +92,14 @@ schema-registry   /etc/confluent/docker/run      Exit 1
 zookeeper         /etc/confluent/docker/run      Up                      0.0.0.0:2181->2181/tcp, 2888/tcp, 3888/tcp
 ```
 
+## :ab: kafka-cli
+
+```
+PS docker container --interactive --tty broker bash
+```
+
+ou
+
+```
+PS > docker-compose exec broker 
+```

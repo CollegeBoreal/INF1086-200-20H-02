@@ -126,7 +126,7 @@ ou plus simplement
 PS > docker-compose exec broker 
 ```
 
-## :eight_pointed_black_star: Kafka Broker CLI
+## :desktop_computer: Kafka Broker CLI
 
 - [ ] Créer un topic appellé `first_topic`
 
@@ -151,7 +151,7 @@ docker-connect-status
 first_topic
 ```
 
-💡 Suivre le cours en ligne
+# :eight_pointed_black_star:  Suivre le cours en ligne
 
 https://www.linkedin.com/learning/learn-apache-kafka-for-beginners
 

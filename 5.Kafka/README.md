@@ -23,8 +23,7 @@
 ### :zero: Cloner le cours sur le serveur Windows
 
 ```
-PS > cd $HOME
-PS > cd Developer
+PS > cd $HOME\Developer
 PS > git clone https://github.com/CollegeBoreal/INF1086-200-20H-02.git
 ```
 

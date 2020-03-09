@@ -18,7 +18,7 @@
 
 ### :one: Création d'une nouvelle machine virtuelle Kafka `CB-KAFKA`
 
-[Installer la VM CB-KAFKA](../K.Kafka)
+:star: [Installer la VM CB-KAFKA](../K.Kafka)
 
 ### :zero: Cloner le cours sur le serveur Windows
 

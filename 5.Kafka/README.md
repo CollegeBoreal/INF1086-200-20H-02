@@ -2,13 +2,19 @@
 
 ## :a: Création des conteneurs Kafka sur le serveur windows
 
+### :zero: Cloner le cours sur le serveur Windows
+
+```
+PS > git clone
+```
+
 ### :one: Creer un répertoire avec comme nom votre :id:
 
-`PS > mkdir ` :id:
+`$ mkdir ` :id:
 
 ### :two: Copier les fichiers se trouvant dans le repretoire `.src` dans votre répertoire
 
-`PS > cp -r .\src\* `:id:` `
+`$ cp -r .src/* `:id:` `
 
 ### :three: Dans votre répertoire, construire l'image `Docker`
 

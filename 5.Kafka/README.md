@@ -123,7 +123,7 @@ ou plus simplement
 
 
 ```
-PS > docker-compose exec broker 
+PS > docker-compose exec broker bash
 ```
 
 ## :desktop_computer: Kafka Broker CLI

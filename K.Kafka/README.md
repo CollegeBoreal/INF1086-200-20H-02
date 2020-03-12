@@ -5,7 +5,7 @@
 
 https://www.linkedin.com/learning/learn-apache-kafka-for-beginners
 
-## :b: Docker Machine
+## :o: Docker Machine
 
 :star: Installer `docker-machine` outil permettant de créer une machine virtuelle
 

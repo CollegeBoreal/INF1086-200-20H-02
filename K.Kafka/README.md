@@ -5,6 +5,15 @@
 
 https://www.linkedin.com/learning/learn-apache-kafka-for-beginners
 
+## :b: Docker Machine
+
+:star: Installer `docker-machine` outil permettant de créer une machine virtuelle
+
+```
+PS > choco install docker-machine
+```
+
+
 ## :a: Installation
 
 :pushpin: Créer une machine virtuelle

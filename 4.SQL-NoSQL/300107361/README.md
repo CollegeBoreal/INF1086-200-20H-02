@@ -10,9 +10,9 @@
 
 ### :zero: Administration 
 
-- [ ] Créer votre base de données [MySQL/Server](../3.ETL/.docs/MySQLDS.md)
+- [x] Créer votre base de données [MySQL/Server](../3.ETL/.docs/MySQLDS.md)
 
-- [ ] Assurez vous qu'il utilise un volume pour importer de nouvelles données
+- [x] Assurez vous qu'il utilise un volume pour importer de nouvelles données
  
 :bulb:  Le volume sert à charger les fichiers `.json`
 
@@ -44,7 +44,7 @@ car.json
 
 ### :one: Migration
 
-- [ ] Ceer votre base de données
+- [x] Ceer votre base de données
 ```
 $   docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                           --execute "CREATE DATABASE Car_Center;"
@@ -74,15 +74,15 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
                         --execute "GRANT ALL ON Car_Center.* TO 'joker'@'%';"
 ```
 
-- [ ] Importer votre base de données SQL
-- [ ] Charger le `schema`
+- [x] Importer votre base de données SQL
+- [x] Charger le `schema`
  ```
 $  docker container exec --interactive some-mysqlds mysql --user root -ppassword \
               Car_Center < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/300107361-schema.sql
 
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
-- [ ] Charger les `données` SQL
+- [x] Charger les `données` SQL
 ```
 $  docker container exec --interactive some-mysqlds mysql --user root -ppassword \
            Car_Center < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/300107361-data.sql
@@ -91,7 +91,7 @@ $  docker container exec --interactive some-mysqlds mysql --user root -ppassword
 
 ### :two: E.T.L
 
-- [ ] Chercher des données `json` correspondant à votre domaine d'activités
+- [x] Chercher des données `json` correspondant à votre domaine d'activités
 
 Tochgaly-K.J.Etienne@XXX MINGW64 ~/developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361 (master)
 
@@ -101,7 +101,7 @@ Tochgaly-K.J.Etienne@XXX MINGW64 ~/developer/INF1086-200-20H-02/4.SQL-NoSQL/3001
                                  Dload  Upload   Total   Spent    Left  Speed
 100 14168  100 14168    0     0  16192      0 --:--:-- --:--:-- --:--:-- 16192
 
-- [ ] Importer ces données dans vos propres collections
+- [x] Importer ces données dans vos propres collections
 
 :a: Se connecter au conteneur
 ```
@@ -144,7 +144,7 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
                    < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300107361/b300107361.py
 ```
 
-- [ ] La fonction `mashup` doit créer une table produite par des collections
+- [x] La fonction `mashup` doit créer une table produite par des collections
 
 
 - J'ai cree la fonction mashup qui permet de rajouter des pays de fabrication de voitures importes par le fichier `car.json` dans la table des services.
@@ -156,16 +156,16 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
 
 :bulb: À l'aide de MySQL Workbench,
 
-- [ ] présenter votre modèle relationel
+- [x] présenter votre modèle relationel
 
 
-- [ ] présenter votre modèle présentant les collections `dans un dossier`
+- [x] présenter votre modèle présentant les collections `dans un dossier`
 ![image](import.PNG)
 
 
 ### :five: Backup
 
-- [ ] Sauvegarder la base de données dans un fichier SQL nommé :id:-dump.sql
+- [x] Sauvegarder la base de données dans un fichier SQL nommé :id:-dump.sql
 
 ```
 $ docker exec some-mysqlds \

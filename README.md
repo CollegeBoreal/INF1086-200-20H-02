@@ -1,6 +1,28 @@
 # INF1086-200-20H-02
 Administration de base de données
 
+```
+Topic: CBCV-218170  INF1086/2/Face à face  Administration de base de données - Brice Robert
+Time: This is a recurring meeting Meet anytime
+
+Join Zoom Meeting
+https://collegeboreal.zoom.us/j/193120028
+
+One tap mobile
++16473744685,,193120028# Canada
++16475580588,,193120028# Canada
+
+Dial by your location
+        +1 647 374 4685 Canada
+        +1 647 558 0588 Canada
+        +1 778 907 2071 Canada
+        +1 438 809 7799 Canada
+        +1 587 328 1099 Canada
+        855 703 8985 Canada Toll-free
+Meeting ID: 193 120 028
+Find your local number: https://collegeboreal.zoom.us/u/axPBnQGUF
+```
+
 ## Devoirs
 
 | Date   |                     |     Commentaires                                                                         |

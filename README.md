@@ -2,7 +2,7 @@
 Administration de base de données
 
 ```
-Topic: CBCV-218170  INF1086/2/Face à face  Administration de base de données - Brice Robert
+Topic: CBCV-218170  INF1086/2/Face à face  Administration de base de données
 Time: This is a recurring meeting Meet anytime
 
 Join Zoom Meeting

@@ -151,6 +151,13 @@ docker-connect-status
 first_topic
 ```
 
+- [ ] Utiliser la console du producteur
+
+```
+root@broker:/#  kafka-console-producer --broker-list broker:9092 --topic first_topic
+>
+```
+
 # :eight_pointed_black_star:  Suivre le cours en ligne
 
 https://www.linkedin.com/learning/learn-apache-kafka-for-beginners

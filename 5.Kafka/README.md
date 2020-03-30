@@ -155,7 +155,13 @@ first_topic
 
 ```
 root@broker:/#  kafka-console-producer --broker-list broker:9092 --topic first_topic
->
+> Bonjour la bas
+```
+
+- [ ] Utiliser la console du consommateur
+
+```
+root@broker:/#  kafka-console-consumer --bootstrap-server broker:9092 --topic first_topic 
 ```
 
 # :eight_pointed_black_star:  Suivre le cours en ligne

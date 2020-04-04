@@ -18,7 +18,7 @@
 
 ### :one: Créer une nouvelle machine virtuelle `CB-KAFKA` et `docker-compose`
 
-:star: [Installer la VM CB-KAFKA](../K.Kafka)
+:star: [Installer la VM CB-KAFKA](../K.Kafka/VM)
 
 ### :two: Cloner le cours
 

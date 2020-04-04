@@ -2,7 +2,7 @@
 
 :o: Prérequis
 
-Installation de la [VM](VM)
+Installation de la [VM](VM) - Serveur Local et Azure
 
 ## Kafka Theory
 

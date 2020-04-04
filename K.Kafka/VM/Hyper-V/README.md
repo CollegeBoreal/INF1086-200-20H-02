@@ -1,6 +1,6 @@
 # Sur le serveur du Collège
 
-## :a: Installation
+## :a: Installation Windows Server
 
 :pushpin: Créer une machine virtuelle
 

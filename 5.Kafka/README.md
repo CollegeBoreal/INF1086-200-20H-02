@@ -176,3 +176,10 @@ https://www.linkedin.com/learning/learn-apache-kafka-for-beginners
 - [ ] 1. Kafka Theory
 
 - [ ] 3. Command Line Interface (CLI) 101
+
+
+# Azure
+
+Ceux qui doivent utiliser Azure
+
+https://github.com/CollegeBoreal/Tutoriels/tree/master/2.Virtualisation/4.Cloud/2.Public/2.Azure

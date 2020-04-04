@@ -19,7 +19,7 @@ Deux types d'installations son recommandées :
 
 * Localement avec [Hyper-V](Hyper-V) i.e. votre serveur du Collège en accédant au VNP
 
-* publiquement avec [Azure](https://raw.githubusercontent.com/CollegeBoreal/Tutoriels/master/2.Virtualisation/4.Cloud/2.Public/2.Azure/README.md)
+* publiquement avec [Azure](https://raw.githubusercontent.com/CollegeBoreal/Tutoriels/master/2.Virtualisation/4.Cloud/2.Public/2.Azure)
 
 
 :pushpin: Pointer vers une machine virtuelle

@@ -44,7 +44,7 @@ https://www.linkedin.com/learning/learn-apache-kafka-for-beginners/kafka-theory-
 
 ![alt tag](./images/zookeeper.png)
 
-## achitecture résilient (Distributive) et élastique (Scalability)
+## Achitecture résiliente (Distributed) et élastique (Scalability)
 
 ![alt tag](./images/cluster.png)
 
@@ -56,6 +56,6 @@ https://www.linkedin.com/learning/learn-apache-kafka-for-beginners/kafka-theory-
 
 ![alt tag](./images/consumer-group.png)
 
-## Les messages sont appellé offsets et contenu dans des fichier logs
+## Les messages sont appellé `offsets` et contenu dans des fichier logs
 
 ![alt tag](./images/consumer-offset.png)

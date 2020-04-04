@@ -11,3 +11,12 @@
 |:three:|Épreuve  | Programmation SQL                                   | 10|:x:|
 |:three:|Épreuve  | Programmation NoSQL                                 | 10|:x:|
 |:three:| Quiz    | Programmation                                       | 10|:x:|
+
+| Titre | Description                                         | Match | Statut           |
+|-------|-----------------------------------------------------|-------|------------------|
+| :zero:| Administration                                      | :one: |:x:|
+| :one: | Migration                                           | :one: |:x:|
+| :two: | E.T.L Json                                          | :one: |:x:|
+|:three:| Scripting avec API Python                           | :one: |:x:|
+| :four:| Modelisation MySQL                                  | :one: |:x:|
+| :five:| Backup                                              | :one: |:x:|

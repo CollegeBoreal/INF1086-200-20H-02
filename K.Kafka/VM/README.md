@@ -20,9 +20,20 @@ PS > choco install docker-machine
 
 :pushpin: Pointer vers une machine virtuelle
 
+:computer: Sous PowerShell
+
 ```
 PS > docker-machine env CB-KAFKA | Invoke-Expression
 ```
+
+:apple: Sous `bash` ou `zsh`
+
+```
+% eval $(docker-machine env CB-KAFKA)
+```
+
+:pushpin: Lister les machines virtuelles
+
 
 ```
 PS > docker-machine ls

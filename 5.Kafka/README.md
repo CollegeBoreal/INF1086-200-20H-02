@@ -22,15 +22,17 @@
 
 ### :two: Cloner le cours
 
+:warning: Les commandes ci-dessous peuvent être utilisées avec `PowerShell` ou `bash`
+
 ```
-PS > cd $HOME\Developer
-PS > git clone https://github.com/CollegeBoreal/INF1086-200-20H-02.git
+$ cd $HOME\Developer
+$ git clone https://github.com/CollegeBoreal/INF1086-200-20H-02.git
 ```
 
 ### :three: Aller dans votre répertoire de travail
 
 
-`PS > cd .\INF1086-200-20H-02\5.Kafka\`:id:
+`$ cd .\INF1086-200-20H-02\5.Kafka\`:id:
 
 
 ## :b: Créer les conteneurs `Kafka` sur le serveur windows
@@ -39,15 +41,23 @@ PS > git clone https://github.com/CollegeBoreal/INF1086-200-20H-02.git
 
 - [ ]  Assurez vous que vous pointez sur la VM `CB-KAFKA`
 
+:computer: Sous `PowerShell` uniquement
+
 ```
 PS > docker-machine env CB-KAFKA | Invoke-Expression
+```
+
+:apple: Sous `bash`
+
+```
+$ eval $(docker-machine env CB-KAFKA)
 ```
 
 - [ ] Vérifiez l'étoile dans la colonne `ACTIVE` 
 
 
 ```
-> docker-machine ls
+$ docker-machine ls
 NAME         ACTIVE   DRIVER   STATE     URL                      SWARM   DOCKER     ERRORS
 CB-HYPERV    -        hyperv   Running   tcp://10.13.2.14:2376            v19.03.5
 CB-HYPERV2   -        hyperv   Running   tcp://10.13.5.54:2376            v19.03.5
@@ -59,7 +69,7 @@ CB-KAFKA     *        hyperv   Running   tcp://10.13.4.228:2376           v19.03
 - [ ] lancer les conteneurs (prend quelques minutes)
 
 ```
-PS > docker-compose up --detach --build
+$ docker-compose up --detach
 ...
 ...
 ...
@@ -80,7 +90,7 @@ Creating ksql-datagen    ... done
 
 
 ```
-PS > docker-compose ps
+$ docker-compose ps
      Name                   Command                      State                      Ports
 ----------------------------------------------------------------------------------------------------
 broker            /etc/confluent/docker/run      Up                      0.0.0.0:29092->29092/tcp, 0.0.0.0:9092->9092/tcp
@@ -98,13 +108,13 @@ zookeeper         /etc/confluent/docker/run      Up                      0.0.0.0
 
 
 ```
-PS > docker-compose up --detach --build
+$ docker-compose up --detach
 ```
 
 - [ ] Voir le log (trace) du broker avoir la commande suivante (CTRL-C pour arreter)
 
 ```
-PS > docker-compose logs --follow broker
+$ docker-compose logs --follow broker
 ```
 
 ## :ab: Se connecter au `broker` Kafka
@@ -114,7 +124,7 @@ PS > docker-compose logs --follow broker
 - [ ]  par <b>docker</b> `exec`
 
 ```
-PS > docker container exec --interactive --tty broker bash
+$ docker container exec --interactive --tty broker bash
 ```
 
 ou plus simplement 
@@ -123,12 +133,12 @@ ou plus simplement
 
 
 ```
-PS > docker-compose exec broker bash
+$ docker-compose exec broker bash
 ```
 
 ## :desktop_computer: Kafka Broker CLI
 
-- [ ] Créer un topic appellé `first_topic`
+- [ ] Dans le `broker` conteneur, créer un topic appellé `first_topic`
 
 ```
 root@broker:/# kafka-topics --zookeeper zookeeper:2181 \
@@ -151,7 +161,7 @@ docker-connect-status
 first_topic
 ```
 
-- [ ] Utiliser la console du producteur
+- [ ] Utiliser la console du producteur 
 
 ```
 root@broker:/#  kafka-console-producer --broker-list broker:9092 --topic first_topic
@@ -159,7 +169,9 @@ root@broker:/#  kafka-console-producer --broker-list broker:9092 --topic first_t
 > ^C
 ```
 
-- [ ] Utiliser la console du consommateur
+- [ ] Dans une autre console, utiliser la console du consommateur
+
+:warning: N'oubliez pas de pointer vers votre VM `docker-machine` et de vous connecter avec `docker-compose`
 
 ```
 root@broker:/#  kafka-console-consumer --bootstrap-server broker:9092 --topic first_topic 

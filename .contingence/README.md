@@ -9,7 +9,7 @@
 | :two: | Épreuve | Modélisation SQL                                    | 10|:+1:|
 | :two: | Quiz    | Modélisation                                        | 15|:x: KSQL| 
 |:three:|Épreuve  | Programmation SQL                                   | 10|:x: KSQL|
-|:three:|Épreuve  | Programmation NoSQL                                 | 10|:x:|
+|:three:|Épreuve  | Programmation NoSQL                                 | 10|:x: Python XDev|
 |:three:| Quiz    | Programmation                                       | 10|:x:|
 
 | Titre | Description                                         | Match                                       | Statut     |

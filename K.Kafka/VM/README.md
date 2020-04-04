@@ -13,6 +13,9 @@ https://www.linkedin.com/learning/learn-apache-kafka-for-beginners
 PS > choco install docker-machine
 ```
 
+## :a: Installer la VM
+
+[Hyper-V](Hyper-V)
 
 
 :pushpin: Pointer vers une machine virtuelle

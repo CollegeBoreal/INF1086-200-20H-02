@@ -169,7 +169,7 @@ root@broker:/#  kafka-console-producer --broker-list broker:9092 --topic first_t
 > ^C
 ```
 
-- [ ] Dans une autre console, utiliser la console du consommateur
+- [ ] Dans un autre terminal, utiliser la console du consommateur
 
 :warning: N'oubliez pas de pointer vers votre VM `docker-machine` et de vous connecter avec `docker-compose`
 

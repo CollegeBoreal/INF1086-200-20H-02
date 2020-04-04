@@ -1,61 +1,57 @@
-# Kafka
+# Architecture
+
+## Kafka Theory
+
+https://www.lynda.com/Kafka-tutorials/Kafka-theory-overview/777399/803705-4.html
 
 
-:bulb: Cours en ligne
+## Realtime
 
-https://www.linkedin.com/learning/learn-apache-kafka-for-beginners
+![image](./images/timeseries.png)
 
-## :o: Docker Machine
+## DB Types
 
-:star: Installer `docker-machine` outil permettant de créer une machine virtuelle
+![image](./images/rdbns-types.png)
 
-```
-PS > choco install docker-machine
-```
+## Req/Res vs Pub/Sub
 
+![image](./images/_model.png)
 
-## :a: Installation
+## Kafka Architecture
 
-:pushpin: Créer une machine virtuelle
+![image](./images/architectures.png)
 
-```
-PS > docker-machine create --driver hyperv `
-                           --hyperv-cpu-count "2" `
-                           --hyperv-memory "4096" `
-                           CB-KAFKA
-```
+## Kafka Cluster
 
-Si vous voulez debugger la creation de la machine rajouter `--debug` juste apres `docker-machine` 
+![image](./images/cluster.png)
 
-```
-PS > docker-machine --debug ...
-```
+## Kafka Patterns
 
-:pushpin: Pointer vers une machine virtuelle
-
-```
-PS > docker-machine env CB-KAFKA | Invoke-Expression
-```
-
-```
-PS > docker-machine ls
-NAME         ACTIVE   DRIVER   STATE     URL                      SWARM   DOCKER     ERRORS
-CB-HYPERV    -        hyperv   Running   tcp://10.13.2.14:2376            v19.03.5
-CB-HYPERV2   -        hyperv   Running   tcp://10.13.5.54:2376            v19.03.5
-CB-KAFKA     *        hyperv   Running   tcp://10.13.4.228:2376           v19.03.5
-```
+![image](./images/es-cqrs.png)
 
 
-## :b: Docker Compose
+# Base 
 
-:star: Installer `docker-compose` outil permettant de composer avec un ensemble de conteneurs
+## Equivalent d'un Message Broker
 
-```
-PS > choco install docker-compose
-```
+![alt tag](./images/pubsub.png)
 
+## Géré en grappes (Cluster)
 
-## Quick Start
+![alt tag](./images/zookeeper.png)
 
-https://docs.confluent.io/current/quickstart/cos-docker-quickstart.html#
+## Géré en grappes (Cluster)
 
+![alt tag](./images/cluster.png)
+
+## Les Topics peuvent etre vu comme une table
+
+![alt tag](./images/Topic.png)
+
+## Les topics peuvent etre lus en groupes
+
+![alt tag](./images/consumer-group.png)
+
+## Les messages sont appellé offsets et contenu dans des fichier logs
+
+![alt tag](./images/consumer-offset.png)

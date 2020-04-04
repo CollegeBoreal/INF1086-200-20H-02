@@ -1,5 +1,9 @@
 # Architecture
 
+:o: Prérequis
+
+Installation de la [VM](VM)
+
 ## Kafka Theory
 
 https://www.lynda.com/Kafka-tutorials/Kafka-theory-overview/777399/803705-4.html

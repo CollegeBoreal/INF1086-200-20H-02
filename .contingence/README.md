@@ -8,7 +8,7 @@
 | :one: | Quiz    | Administration                                      | 15|:heavy_check_mark: Kafka|
 | :two: | Épreuve | Modélisation SQL                                    | 10|:+1:|
 | :two: | Quiz    | Modélisation                                        | 15|:x: KSQL| 
-|:three:|Épreuve  | Programmation SQL                                   | 10|:x:|
+|:three:|Épreuve  | Programmation SQL                                   | 10|:x: KSQL|
 |:three:|Épreuve  | Programmation NoSQL                                 | 10|:x:|
 |:three:| Quiz    | Programmation                                       | 10|:x:|
 

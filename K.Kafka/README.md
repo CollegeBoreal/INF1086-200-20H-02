@@ -44,7 +44,7 @@ https://www.linkedin.com/learning/learn-apache-kafka-for-beginners/kafka-theory-
 
 ![alt tag](./images/zookeeper.png)
 
-## achitecture résilient et élastique (Scalability)
+## achitecture résilient (Distributive) et élastique (Scalability)
 
 ![alt tag](./images/cluster.png)
 

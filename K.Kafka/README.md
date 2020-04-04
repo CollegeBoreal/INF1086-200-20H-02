@@ -44,7 +44,7 @@ https://www.linkedin.com/learning/learn-apache-kafka-for-beginners/kafka-theory-
 
 ![alt tag](./images/zookeeper.png)
 
-## Géré en grappes (Cluster)
+## achitecture résilient et élastique (Scalability)
 
 ![alt tag](./images/cluster.png)
 

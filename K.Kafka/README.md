@@ -6,7 +6,7 @@ Installation de la [VM](VM)
 
 ## Kafka Theory
 
-https://www.lynda.com/Kafka-tutorials/Kafka-theory-overview/777399/803705-4.html
+https://www.linkedin.com/learning/learn-apache-kafka-for-beginners/kafka-theory-overview?u=56968449
 
 
 ## Realtime
@@ -17,7 +17,7 @@ https://www.lynda.com/Kafka-tutorials/Kafka-theory-overview/777399/803705-4.html
 
 ![image](./images/rdbns-types.png)
 
-## Req/Res vs Pub/Sub
+## Req/Res (Request and Respond - web) vs Pub/Sub (publish and subscribe - Kafka)
 
 ![image](./images/_model.png)
 
@@ -34,7 +34,7 @@ https://www.lynda.com/Kafka-tutorials/Kafka-theory-overview/777399/803705-4.html
 ![image](./images/es-cqrs.png)
 
 
-# Base 
+# Composants de Base 
 
 ## Equivalent d'un Message Broker
 

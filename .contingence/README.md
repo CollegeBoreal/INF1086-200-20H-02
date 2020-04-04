@@ -5,9 +5,9 @@
 |-------|---------|-----------------------------------------------------|---|------------------|
 | :one: | Épreuve | DCL (GRANT/REVOKE, CREATE USER, DROP USER)          | 10|:+1:|
 | :one: | Épreuve | Migration et récupération                           | 10|:+1:|
-| :one: | Quiz    | Administration                                      | 15|:o:|
+| :one: | Quiz    | Administration                                      | 15|:heavy_check_mark: Kafka|
 | :two: | Épreuve | Modélisation SQL                                    | 10|:+1:|
-| :two: | Quiz    | Modélisation                                        | 15|:heavy_check_mark: Kafka| 
+| :two: | Quiz    | Modélisation                                        | 15|:x: KSQL| 
 |:three:|Épreuve  | Programmation SQL                                   | 10|:x:|
 |:three:|Épreuve  | Programmation NoSQL                                 | 10|:x:|
 |:three:| Quiz    | Programmation                                       | 10|:x:|

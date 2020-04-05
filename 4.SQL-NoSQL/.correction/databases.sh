@@ -1,0 +1,15 @@
+DATABASES=(
+technical_support
+Jeuxvideos
+musicshop
+network_IT
+Car_Center
+Hijabfashion
+immigration_consulting
+Carte_graphique
+Boubou
+vente_portable
+magasin
+hairasset
+widesign
+)

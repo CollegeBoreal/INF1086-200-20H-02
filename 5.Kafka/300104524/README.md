@@ -39,7 +39,7 @@ $ git clone https://github.com/CollegeBoreal/INF1086-200-20H-02.git
 
 ### :one: Construire les images et démarrer les conteneurs avec `docker-compose`
 
-- [ ]  Assurez vous que vous pointez sur la VM `CB-KAFKA`
+- [X]  Assurez vous que vous pointez sur la VM `CB-KAFKA`
 
 :computer: Sous `PowerShell` uniquement
 

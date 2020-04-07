@@ -7,7 +7,7 @@
 | :one: | Épreuve | Migration et récupération                           | 10|:+1:|
 | :one: | Quiz    | Administration                                      | 15|:+1: ETL/Import/Backup|
 | :two: | Épreuve | Modélisation SQL                                    | 10|:+1:|
-| :two: | Quiz    | Modélisation                                        | 15|:x: Kafka|
+| :two: | Quiz    | Modélisation                                        | 15|:+1: Kafka|
 |:three:|Épreuve  | Programmation SQL                                   | 10|:x: KSQL|
-|:three:|Épreuve  | Programmation NoSQL                                 | 10|:x: Scripting avec API Python|
+|:three:|Épreuve  | Programmation NoSQL                                 | 10|:+1: Scripting avec API Python|
 |:three:| Quiz    | Programmation                                       | 10|:x:|

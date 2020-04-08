@@ -25,9 +25,17 @@ Find your local number: https://collegeboreal.zoom.us/u/axPBnQGUF
 
 ## Devoirs
 
-| Date   |                     |     Commentaires                                                                         |
-|:------:|:--------------------|:-----------------------------------------------------------------------------------------|
-|14-01-20| [DS](./1.DS)        | MySQL Document Store                                                                     |
+:o: Pendant travail à la maison
+
+| Date   | Cours                        |     Commentaires                                                                  |
+|--------|:-----------------------------|:----------------------------------------------------------------------------------|
+|14-04-20|[7.BFS](7.BFS#Participation)  | Programmation MySQL Document Store                                                |
+
+:x: Avant travail à la maison
+
+| Date   |                              |     Commentaires                                                                  |
+|:------:|:-----------------------------|:----------------------------------------------------------------------------------|
+|14-01-20| [DS](./1.DS)                 | MySQL Document Store                                                              |
 
 
 

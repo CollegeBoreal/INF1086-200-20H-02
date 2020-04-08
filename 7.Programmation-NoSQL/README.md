@@ -42,6 +42,6 @@ Example d'amélioration:
 
 * Rajouter votre propre collection, sans oublier de la sauver dans le `backup` de la base de données
 
-* bien d'autres à explorer
+* bien d'autres à explorer, je vous laisse imaginer
 
 

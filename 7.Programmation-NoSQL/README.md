@@ -14,12 +14,9 @@ Example b300098957.py
 
 :one: Écrire le programme Python en suivant le laboratoire ci-dessous dans [Github Leaning Lab](https://lab.github.com/CollegeBoreal):
 
-https://lab.github.com/CollegeBoreal/lab-github-actions:-bonjour-monde
-
+https://lab.github.com/CollegeBoreal/lab-programmation-mysql-x-devapi-en-python
 
 :two: Copier votre scripts dans le cours en remplaçant :id: par votre :id: github :octocat: :
-
-https://lab.github.com/CollegeBoreal/lab-programmation-mysql-x-devapi-en-python
 
 - [ ] Copier le programme et le script SQL:
 

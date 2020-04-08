@@ -22,9 +22,9 @@ https://lab.github.com/CollegeBoreal/lab-programmation-mysql-x-devapi-en-python
 
 Par example:
 
-  - [ ] Copier le fichier `b000000000.py` dans votre :id: `Boréal` et le renommer avec votre :id: `b`:id`.py`
+  - [ ] Copier le fichier `b000000000.py` dans votre :id: `Boréal` et le renommer avec votre :id: `b`:id:`.py`
 
-  - [ ] Copier le fichier `b000000000.sql` dans votre :id: `Boréal` et le renommer avec votre :id: `b`:id`.sql`
+  - [ ] Copier le fichier `b000000000.sql` dans votre :id: `Boréal` et le renommer avec votre :id: `b`:id:`.sql`
 
 
 - [ ] Créer votre fichier README.md

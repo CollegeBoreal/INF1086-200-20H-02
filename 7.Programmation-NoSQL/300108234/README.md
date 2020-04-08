@@ -55,6 +55,7 @@ PS > pip install mysql-connector-python
 ```
 PS > pip show mysql-connector-python 
 ```
+* Version: 8.0.19
 
 ## ✔ Cloner le référentiel
 

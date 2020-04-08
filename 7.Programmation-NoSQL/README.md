@@ -27,7 +27,7 @@ Par example:
   - [ ] Copier le fichier `b000000000.sql` dans votre :id: `Boréal` et le renommer avec votre :id: `b`:id:`.sql`
 
 
-- [ ] Créer votre fichier README.md
+- [ ] Créer votre fichier README.md expliquant votre programme
 
 
 En un mot, récupérer le travail que vous avez fait à travers [Github Leaning Lab](https://lab.github.com/CollegeBoreal) et le mettre dans celui du cours [7.Programmation-NoSQL](../7.Programmation-NoSQL)

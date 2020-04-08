@@ -43,9 +43,12 @@ PS > docker container exec --interactive some-mysqlds `
                 --execute "GRANT ALL ON *.* TO 'root'@'172.17.0.1';"
 ```
 
-##  [X DevAPI](https://dev.mysql.com/doc/x-devapi-userguide/en/) en Python
+##  X DevAPI en Python
 
-
+* Installer pip 
+```
+choco install pip
+```
 :four: Installer MySQL Connector Python avec pip
 
 ```
@@ -57,7 +60,7 @@ PS > pip install mysql-connector-python
 PS > pip show mysql-connector-python 
 ```
 
-## :✔: Cloner le référentiel
+## ✔ Cloner le référentiel
 
 Dans un terminal tapes `git clone https://github.com/halimabzn/lab-programmation-mysqlsh-en-python`, en chosissant la version `SSH` 
 

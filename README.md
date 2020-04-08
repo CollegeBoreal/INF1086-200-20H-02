@@ -29,7 +29,7 @@ Find your local number: https://collegeboreal.zoom.us/u/axPBnQGUF
 
 | Date   | Cours                        |     Commentaires                                                                  |
 |--------|:-----------------------------|:----------------------------------------------------------------------------------|
-|14-04-20|[7.BFS](7.BFS#Participation)  | Programmation MySQL Document Store                                                |
+|14-04-20|[7.Programmation-NoSQLS]      | Programmation MySQL Document Store                                                |
 
 :x: Avant travail à la maison
 

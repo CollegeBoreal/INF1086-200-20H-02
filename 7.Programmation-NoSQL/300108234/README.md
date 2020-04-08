@@ -45,10 +45,6 @@ PS > docker container exec --interactive some-mysqlds `
 
 ##  X DevAPI en Python
 
-* Installer pip 
-```
-choco install pip
-```
 :four: Installer MySQL Connector Python avec pip
 
 ```

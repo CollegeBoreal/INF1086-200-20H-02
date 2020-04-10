@@ -9,7 +9,7 @@
 | :two: | Épreuve | Modélisation SQL                                    | 10|:+1:|
 | :two: | Épreuve | Modélisation NoSQL                                  | 10|:-1:|
 | :two: | Quiz    | Modélisation                                        | 15|:+1: Kafka|
-|:three:|Épreuve  | Programmation SQL                                   | 10|:+1: Scripting avec API Python |
+|:three:|Épreuve  | Programmation SQL                                   | 10|:x: |
 |:three:|Épreuve  | Programmation NoSQL                                 | 10|:+1: Scripting avec API Python |
 |:three:| Quiz    | Programmation                                       | 10|:x:|
 

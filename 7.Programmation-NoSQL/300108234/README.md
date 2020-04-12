@@ -1,4 +1,4 @@
-🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈
+🎈
 
 
 
@@ -75,7 +75,7 @@ Dans un terminal tapes `git clone https://github.com/halimabzn/lab-programmation
 
 
 
-:one: Écrire le programme Python
+## :one: Écrire le programme Python
 
 📌 Utilisation de variables: Dans cette section, on va créer deux variables session et db
 
@@ -100,7 +100,7 @@ En utilisant la fonction fetch. fetch se décline en deux configurations:
 En utilisant "maColl.add"
 
 
-:two: Vérification: 
+## :two: Vérification: 
 
 - [x] Copier le programme et le script SQL:	
 
@@ -108,7 +108,7 @@ En utilisant "maColl.add"
 
 
 
-:three: Amélioration	
+## :three: Amélioration	
 
 
 
@@ -117,4 +117,4 @@ En utilisant "maColl.add"
 
 
 
-🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈
+🎈

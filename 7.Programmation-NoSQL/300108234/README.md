@@ -1,4 +1,5 @@
-✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+
 
 # Programmation MySQLsh en Python
 
@@ -75,7 +76,27 @@ Dans un terminal tapes `git clone https://github.com/halimabzn/lab-programmation
 
 :one: Écrire le programme Python
 
- # A FAIRE 
+📌 Utilisation de variables: Dans cette section, on va créer deux variables session et db
+
+* "la variable session" : permet d'obtenir une session d'entrée auprès de la base world_x .
+
+* "la variable db": permet de guarder l'information de la base .
+
+📌 Charger la collection temporaire:
+
+* lire et convertir le fichier en format JSON en format du Document Store en utilisant la fonction "lectur", Ce Document sera stoqué dans une collection
+ 
+📌Traverser la collection: 
+
+En utilisant la fonction fetch. fetch se décline en deux configurations:
+
+- par la récupération entière (d'un coup) des documents fetch_all
+
+- par la récupération individuelle fetch_one
+
+📌Rajouter manuellement un document
+
+En utilisant "maColl.add"
 
 
 :two: Vérification: 
@@ -93,6 +114,5 @@ Dans un terminal tapes `git clone https://github.com/halimabzn/lab-programmation
 * Extraire une autre la collection de world_x que les chefs de gouvernements	
 
 
-* Rajouter votre propre collection, sans oublier de la sauver dans le `backup` de la base de données	
 
-✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨

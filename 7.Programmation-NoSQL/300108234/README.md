@@ -1,6 +1,7 @@
 ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
 
 
+
 # Programmation MySQLsh en Python
 
 Salut, 
@@ -68,7 +69,7 @@ PS > pip show mysql-connector-python
 ```
 Version: 8.0.19
 
-## :✔: Cloner le référentiel
+## Cloner le référentiel
 
 Dans un terminal tapes `git clone https://github.com/halimabzn/lab-programmation-mysqlsh-en-python`, en chosissant la version `SSH` 
 
@@ -111,7 +112,8 @@ En utilisant "maColl.add"
 
 
 
-* Extraire une autre la collection de world_x que les chefs de gouvernements	
+* Extraire une autre collection de world_x que les chefs de gouvernements	
+
 
 
 

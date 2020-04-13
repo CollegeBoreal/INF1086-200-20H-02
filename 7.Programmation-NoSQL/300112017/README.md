@@ -108,9 +108,12 @@ PS > pip show mysql-connector-python
 ```
 🆗 Cloner le référentiel
 
+
 Cloner le repertoire avec la commande 
+
 ```
 git clone https://github.com/ordenrosae/lab-programmation-mysqlsh-en-python
+```
 
 ## Etape 3 Ecrivons le programme python
 
@@ -144,7 +147,8 @@ PS > docker container exec some-mysqlds `
         mysqldump --user root --password=password world_x `
         > $ENV:UserProfile\--MON-REPERTOIRE--\lab-programmation-mysqlsh-en-python\b000000000.sql
 ```
-Enfin copie le programme et script sql.
+
+## Enfin copie le programme et le script sql.
 
 
 

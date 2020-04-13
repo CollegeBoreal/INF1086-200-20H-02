@@ -35,6 +35,7 @@ Si non,utiliser powershell pour l'installer avec la commande suivante
 ```
 choco install git.install
 ```
+
 ## 3 Verification et Installion de doker
 
 Ouvrir un terminal et vérifier la version de docker avec la commande suivante
@@ -47,6 +48,7 @@ Si non,utiliser powershell pour l'installer avec la commande suivante
 
 ```
 PS > choco install docker-desktop -y
+
 ```
 ## ETAPE 2
 
@@ -55,6 +57,7 @@ PS > choco install docker-desktop -y
 1-Créer le conteneur some-mysqlds
 
 A-sous Powershell
+
 ```
 PS> docker container run `
          --name some-mysqlds `
@@ -63,15 +66,18 @@ PS> docker container run `
          --publish 33060:33060 `
          --detach `
          mysql/mysql-server:latest
-         ```
+ ```
+
 2-Créer la base de données world_x
 
 B-sous PowerShell
+
 ```
 PS > docker container exec --interactive some-mysqlds mysql `
                         --user root --password=password `
                         --execute "CREATE DATABASE world_x;"
 ```
+
 3-Créer l'utilisateur root sous le sous-réseau déterminé par le pont Bridge du conteneur Docker
 
 -Créons l'utilisateur 'root'@'172.17.0.1'

@@ -1,8 +1,15 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jan 21 11:08:32 2020
 
-@author: Geneus
-"""
 
-bhbh  n 
+# Seive
+
+from itertools import count, takewhile
+
+def primes():
+  def sieve(numbers):
+      head = next(numbers)
+      yield head 
+      yield from sieve(n for n in numbers if n % head)
+  return sieve(count(2))
+
+#list(takewhile(lambda x: x < 40, primes() ))
+

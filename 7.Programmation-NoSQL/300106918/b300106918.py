@@ -14,7 +14,7 @@ def charge(fichier):
 
 import mysqlx
 session = mysqlx.get_session({
-    "host": "192.168.99.100",
+    "host": "localhost",
     "port": 33060,
     "user": "root",
     "password": "password"

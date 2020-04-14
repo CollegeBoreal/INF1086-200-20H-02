@@ -1,4 +1,7 @@
-
+# -*- coding: utf-8 -*-
+"""
+@author: 300108234
+"""
 
 
 import json
@@ -68,7 +71,7 @@ def former_des_chefs(docs):
 
 
 def main():
-  docs = lecture('b000000000.json')
+  docs = lecture('b300108234.json')
   chefs = former_des_chefs(docs)
   print(len(chefs.fetch_all()))
   # Ne pas oublier de remercier le gestionnaire de BD
@@ -76,3 +79,4 @@ def main():
 
 if __name__== "__main__":
     main()
+

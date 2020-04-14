@@ -137,6 +137,34 @@ Nous allons installe la librairie qui nous permettrad'acceder a la base de donne
 
 🟥 Installer MYSQL ConnectorPython avec pip
 
+Si mysql-connector-python est installé, nous aurons le résultat la version qui doit être de 8.x.x
+
+
+     PS > pip show mysql-connector-python 
+     
+     
+ 🟥 Cloner le referentiel
+ 
+ 
+ Cloner le repertoire avec la commande 
+ 
+ 
+     git clone https://github.com/ordenrosae/lab-programmation-mysqlsh-en-python
+
+
+
+## Etape 3 Ecrire le programme python
+
+
+## Exécuter un programme Python
+
+il y aura  une fonction main qui contiendra toutes les instructions pour écrire le programme et une fonction charge servant à importer les données du fichier json.
+
+
+
+
+   
+
 
 
 

@@ -161,6 +161,20 @@ Si mysql-connector-python est installé, nous aurons le résultat la version qui
 il y aura  une fonction main qui devra contenir  toutes les instructions pour écrire le programme et une fonction charge qui servira  à importer les données du fichier json.
 
 
+## Utilisation de Variables
+Dans cette partie, nous allons creer deux variables session et db qu'on va utiliser dans notre programme. Ensuite lire le fichier charge dams le document Store.
+
+## Extraire une autre la collection de world_x que les chefs de gouvernements
+
+
+
+
+
+
+
+
+
+
 
 
    

@@ -64,8 +64,32 @@ def former_des_chefs(docs):
 
   # Détruit la collection
   db.drop_collection(nomColl)
-
+  
   return docs
+
+ 
+# Create a new collection 'my_collegues'
+myColl = db.create_collection('my_collegues')
+
+# Insert documents
+myColl.add({'_id': '300110500', 'name': 'Didier', 'age': 29}).execute()
+myColl.add({'_id': '3001112917', 'name': 'Djuma', 'age': 35}).execute()
+myColl.add({'_id': '300111671', 'name': 'Abbas', 'age': 29}).execute()
+
+# Find a document
+docs = myColl.find('name like :param1 AND age < :param2') \
+          .limit(1) \
+          .bind('param1','L%') \
+          .bind('param2',20) \
+          .execute()
+
+# Print document
+doc = docs.fetch_one()
+print(doc)
+
+# Drop the collection
+# myDb.drop_collection('my_collection')
+  
 
 def main():
   docs = lecture('b000000000.json')

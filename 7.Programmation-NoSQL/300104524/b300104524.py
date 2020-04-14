@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # -*- coding: utf-8 -*-
 """
 
@@ -78,6 +79,9 @@ def main():
 
 if __name__== "__main__":
     main()
+=======
+
+>>>>>>> b8579a95ded5274352cbd4c9bba4aa94db41a268
 =======
 
 >>>>>>> b8579a95ded5274352cbd4c9bba4aa94db41a268

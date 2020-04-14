@@ -1,5 +1,7 @@
 # :seven: Programmation NoSQL
 
+## [Participation](.scripts/Participation.md)
+
 ## :a: :id:
 
 * Créer un répertoire avec votre :id:
@@ -8,7 +10,6 @@
 
 Example b300098957.py
 
-[Participation](Participation.md)
 
 ## :b: Laboratoire
 

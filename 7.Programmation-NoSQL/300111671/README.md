@@ -1,12 +1,8 @@
-🎈
-
 
 
 # Programmation MySQLsh en Python
 
-Salut, 
 
-Dans ce tutoriel, je vas créer un programme utilisant les APIs de MySQL X Dev API en Python
 
 
 ## installer la base de donnée MySQL Server
@@ -71,7 +67,7 @@ Version: 8.0.19
 
 ## Cloner le référentiel
 
-Dans un terminal tapes `git clone https://github.com/halimabzn/lab-programmation-mysqlsh-en-python`, en chosissant la version `SSH` 
+Dans un terminal tapes `git@github.com:AbbasSadissou/lab-programmation-mysqlsh-en-python.git`, en chosissant la version `SSH` 
 
 
 
@@ -112,9 +108,12 @@ En utilisant "maColl.add"
 
 
 
-* Extraire une autre collection de world_x que les chefs de gouvernements	
+ * Extraire une autre collection de world_x que les chefs de gouvernements
+ 
+ - [x]  Creation d'une autre  collection 'my_collegues'
+ 
 
 
 
 
-🎈
+

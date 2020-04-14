@@ -76,21 +76,20 @@ PS > choco install docker-desktop -y
 🟥 Sous powerShell
 
 
-
-
-PS> docker container run `
-
+     PS> docker container run `
+     
          --name some-mysqlds `
-
+         
          --env MYSQL_ROOT_PASSWORD=password `
-
+         
          --publish 3306:3306 `
-
+         
          --publish 33060:33060 `
-
+         
          --detach `
-
+         
          mysql/mysql-server:latest
+  
 
 
 
@@ -102,9 +101,11 @@ PS> docker container run `
 🟥 Sous powerShell
 
 
-PS > docker container exec --interactive some-mysqlds mysql `
-                        --user root --password=password `
-                        --execute "CREATE DATABASE world_x;"
+     PS > docker container exec --interactive some-mysqlds mysql `
+
+                             --user root --password=password `
+                        
+                             --execute "CREATE DATABASE world_x;"
                         
                         
  3- Creer l'utilisateur root sous-reseau determine par le pont Bridge du container Docker
@@ -113,16 +114,18 @@ PS > docker container exec --interactive some-mysqlds mysql `
  -Créons l'utilisateur 'root'@'172.17.0.1'
  
  
- PS > docker container exec --interactive some-mysqlds `
-                mysql --user root --password=password `
-                --execute "CREATE USER 'root'@'172.17.0.1' IDENTIFIED BY 'password';"
+     PS > docker container exec --interactive some-mysqlds `
+                     mysql --user root --password=password `
+                     --execute "CREATE USER 'root'@'172.17.0.1' IDENTIFIED BY 'password';"
                 
                 
  - Donner les droits d'acces 
  
  
  PS > docker container exec --interactive some-mysqlds `
+ 
                 mysql --user root --password=password `
+                
                 --execute "GRANT ALL ON *.* TO 'root'@'172.17.0.1';"
                 
                 

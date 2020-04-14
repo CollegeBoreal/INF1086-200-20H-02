@@ -75,7 +75,10 @@ PS > choco install docker-desktop -y
 
 🟥 Sous powerShell
 
+
+
 PS> docker container run `
+
          --name some-mysqlds `
          
          --env MYSQL_ROOT_PASSWORD=password `

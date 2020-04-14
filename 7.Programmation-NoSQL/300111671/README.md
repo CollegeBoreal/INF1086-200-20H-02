@@ -113,7 +113,7 @@ En utilisant "maColl.add"
  - [x]  Creation d'une autre  collection 'my_collegues'
  
 
-
+    <img src="Cap.PNG"></img>
 
 
 

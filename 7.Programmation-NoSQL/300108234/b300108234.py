@@ -51,6 +51,7 @@ def former_des_chefs(docs):
   # Crée une nouvelle collection 'chefs_de_gouvernement'
   nomColl = 'chefs_de_gouvernement'
   maColl = db.create_collection(nomColl)
+
 # Ajout manuel
   maColl.add({"HeadOfState": "Marc Ravalomanana","GovernmentForm": "Republic"}).execute()
 

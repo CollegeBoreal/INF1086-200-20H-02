@@ -1,8 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
 
-@author: 300108234
-"""
 
 
 import json

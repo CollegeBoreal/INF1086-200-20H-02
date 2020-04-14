@@ -158,7 +158,7 @@ Si mysql-connector-python est installé, nous aurons le résultat la version qui
 
 ## Exécuter un programme Python
 
-il y aura  une fonction main qui contiendra toutes les instructions pour écrire le programme et une fonction charge servant à importer les données du fichier json.
+il y aura  une fonction main qui devra contenir  toutes les instructions pour écrire le programme et une fonction charge qui servira  à importer les données du fichier json.
 
 
 

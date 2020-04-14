@@ -110,7 +110,7 @@ En utilisant "maColl.add"
 
  * Extraire une autre collection de world_x que les chefs de gouvernements
  
- [x] Creation d'une autre  collection 'my_collegues'
+ - [x]  Creation d'une autre  collection 'my_collegues'
  
 
 

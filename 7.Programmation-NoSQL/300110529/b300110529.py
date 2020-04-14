@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 
-@author: 300111766
+@author: 300110529
 """
 
 import json
@@ -18,7 +18,7 @@ session = mysqlx.get_session({
     "user": "root",
     "password": "password"
 })
-
+    
 db = session.get_schema("world_x")
 
 def lecture(fichier):
@@ -68,7 +68,6 @@ def former_des_chefs(docs):
   return docs
 
 
-
 def main():
   docs = lecture('b000000000.json')
   chefs = former_des_chefs(docs)
@@ -78,4 +77,3 @@ def main():
 
 if __name__== "__main__":
     main()
-

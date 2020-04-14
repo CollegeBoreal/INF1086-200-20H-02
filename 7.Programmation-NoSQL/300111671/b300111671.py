@@ -1,28 +1,26 @@
+
 # -*- coding: utf-8 -*-
 """
 
 @author: AbbasSadissou
-qq2"""
+"""
 
 import json
 
 def charge(fichier):
    with open(fichier) as f:
       return json.load(f)
-
-
-
+  
 import mysqlx
-
+ 
 session = mysqlx.get_session({
     "host": "localhost",
     "port": 33060,
     "user": "root",
     "password": "password"
 })
-
+    
 db = session.get_schema("world_x")
-
 def lecture(fichier):
 
   # Le nom de la collection temporaire
@@ -52,7 +50,7 @@ def former_des_chefs(docs):
   nomColl = 'chefs_de_gouvernement'
   maColl = db.create_collection(nomColl)
   
-  # Ajout manuel
+   # Ajout manuel
   maColl.add({"HeadOfState": "Marc Ravalomanana","GovernmentForm": "Republic"}).execute()
 
   # Manipuler la collection et la rajouter à la nouvelle
@@ -70,15 +68,14 @@ def former_des_chefs(docs):
   return docs
 
 def main():
-    docs = lecture('b000000000.json')
-    chefs = former_des_chefs(docs)
-    print(len(chefs.fetch_all()))
-    # Ne pas oublier de remercier le gestionnaire de BD
-    session.close
-
+  docs = lecture('b000000000.json')
+  chefs = former_des_chefs(docs)
+  print(len(chefs.fetch_all()))
+  # Ne pas oublier de remercier le gestionnaire de BD
+  session.close
+ 
 
 if __name__== "__main__":
-          main()
-        
+    main()
 
-       
+

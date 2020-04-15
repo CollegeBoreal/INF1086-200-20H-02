@@ -10,7 +10,6 @@
 :one: Créer le conteneur `some-mysqlds` 
 
 :pushpin: sous Powershell
-[x]
 ```
 PS> docker container run `
          --name some-mysqlds `
@@ -22,7 +21,6 @@ PS> docker container run `
 ```
 
 :two: Créer la base de données `world_x` 
-[x]
 :pushpin: sous PowerShell
 
 ```
@@ -33,7 +31,6 @@ PS > docker container exec --interactive some-mysqlds mysql `
 
 
 :three: Créer l'utilisateur `root` sous le sous-réseau déterminé par le pont  
-[x]
 * Pour creer l'utilisateur : `'root'@'172.17.0.1'`
 
 ```
@@ -54,7 +51,6 @@ PS > docker container exec --interactive some-mysqlds `
 
 
 :four: Installer MySQL Connector Python avec pip 
-[x]
 Sous Anaconda Powershell Propmt
 
 ```
@@ -121,7 +117,7 @@ mysqldump: [Warning] Using a password on the command line interface can be insec
 
 * Extraire une autre collection de world_x que les chefs de gouvernements
  
-- [x]  Extraction d'une autre  collection 'systeme_politique' 
+- [x]  Extraction d'une autre  collection `systeme_politique` 
 
 A l'execution du programme `b300107361.py` il va chercher dans la collection `systeme_politique` pour afficher le 
 pays dont le nom commence par un `H` et qui a comme systeme de gouvernement une `Republique`.

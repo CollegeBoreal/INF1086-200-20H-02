@@ -7,10 +7,10 @@
 
 ## installer la base de donnée MySQL Server
 
-:one: Créer le conteneur `some-mysqlds` [x]
+:one: Créer le conteneur `some-mysqlds` 
 
 :pushpin: sous Powershell
-
+[x]
 ```
 PS> docker container run `
          --name some-mysqlds `
@@ -21,8 +21,8 @@ PS> docker container run `
          mysql/mysql-server:latest
 ```
 
-:two: Créer la base de données `world_x` [x]
-
+:two: Créer la base de données `world_x` 
+[x]
 :pushpin: sous PowerShell
 
 ```
@@ -32,8 +32,8 @@ PS > docker container exec --interactive some-mysqlds mysql `
 ```
 
 
-:three: Créer l'utilisateur `root` sous le sous-réseau déterminé par le pont  [x]
-
+:three: Créer l'utilisateur `root` sous le sous-réseau déterminé par le pont  
+[x]
 * Pour creer l'utilisateur : `'root'@'172.17.0.1'`
 
 ```
@@ -53,8 +53,8 @@ PS > docker container exec --interactive some-mysqlds `
 ## X DevAPI en Python
 
 
-:four: Installer MySQL Connector Python avec pip [x]
-
+:four: Installer MySQL Connector Python avec pip 
+[x]
 Sous Anaconda Powershell Propmt
 
 ```
@@ -67,9 +67,9 @@ PS > pip show mysql-connector-python
 ```
 Version: 8.0.19
 
-## Dans son referentiel INF1087\7.Programm\:id:
+## Dans son referentiel INF1087\7.Programm\ :id:
 
-Recuperer les fichiers .Json et .Python du lab-github:lab-mysql-python-DevAPI avec b:id: comme nom
+Recuperer les fichiers `.json` et `.python` du `lab-github:lab-mysql-python-DevAPI` avec b:id: comme nom
 
 
 ## :one: Écrire le programme Python
@@ -102,7 +102,16 @@ En utilisant "myColl.add"
 - [x] Copier le programme et le script SQL:	
 
 * [b300107361.py](b300107361.py)
+
+Sous Powershell lancer la commande
+```
+PS C:\Users\Tochgaly-K.J.Etienne\developer\INF1086-200-20H-02\7.Programmation-NoSQL\300107361>  docker container exec some-mysqlds `
+>>         mysqldump --user root --password=password world_x `
+>>         > C:\Users\Tochgaly-K.J.Etienne\developer\INF1086-200-20H-02\7.Programmation-NoSQL\300107361\b300107361.sql
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+```
 * [b300107361.sql](b300107361.sql)
+
 
 - [x] Créer votre fichier README.md expliquant votre programme	
 
@@ -114,7 +123,8 @@ En utilisant "myColl.add"
  
 - [x]  Extraction d'une autre  collection 'systeme_politique' 
 
-A l'execution du programme b300107361.py il va chercher dans la collection `systeme_politique` pour afficher le pays dont le nom commence par un H et qui a comme systeme de gouvernement une Republique.
+A l'execution du programme `b300107361.py` il va chercher dans la collection `systeme_politique` pour afficher le 
+pays dont le nom commence par un `H` et qui a comme systeme de gouvernement une `Republique`.
  
 ![image](test.PNG)
  

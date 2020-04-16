@@ -14,7 +14,7 @@ def charge(fichier):
 
 import mysqlx
 session = mysqlx.get_session({
-    "host": "192.168.99.100",
+    "host": "localhost",
     "port": 33060,
     "user": "root",
     "password": "password"
@@ -91,7 +91,7 @@ def former_des_population(docs):
 
 
 def main():
-  docs = lecture('b000000000.json')
+  docs = lecture('b300106918.json')
   chefs = former_des_chefs(docs)
   population = former_des_population(docs)
   print(len(docs.fetch_all()))

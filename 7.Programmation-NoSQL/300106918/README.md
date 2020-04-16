@@ -106,17 +106,18 @@ En utilisant "maColl.add"
 
 - [x] Créer votre fichier README.md expliquant votre programme	
 
+* [x] Extraire une autre collection de world_x que les chefs de gouvernements	
 
+
+![](image/collection.png )
 
 ## :three: Amélioration	
 
 
-
-* [x] Extraire une autre collection de world_x que les chefs de gouvernements	
-
-
-
 * [x] Extraire une autre collection de world_x que Population
+
+
+![](image/collection2.png )
 
 
 

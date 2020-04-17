@@ -21,6 +21,7 @@ session = mysqlx.get_session({
 db = session.get_schema("world_x")
 
 
+
 def lecture(fichier):
 
   # Le nom de la collection temporaire

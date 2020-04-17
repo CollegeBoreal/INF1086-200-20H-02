@@ -1,6 +1,6 @@
 # Programmation MySQLsh en Python
 
-
+## [Participation](.scripts/Participation.md)
 
 ## installer la base de donnée MySQL Server
 

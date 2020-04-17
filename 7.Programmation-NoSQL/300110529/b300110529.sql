@@ -25,12 +25,19 @@ DROP TABLE IF EXISTS `chefs_de_gouvernement`;
 CREATE TABLE `chefs_de_gouvernement` (
   `doc` json DEFAULT NULL,
   `_id` varbinary(32) GENERATED ALWAYS AS (json_unquote(json_extract(`doc`,_utf8mb4'$._id'))) STORED NOT NULL,
-  `_json_schema` json GENERATED ALWAYS AS (_utf8mb4'{"type":"object"}') VIRTUAL,
-  PRIMARY KEY (`_id`),
-  CONSTRAINT `$val_strict_4F3089EC51AED678E8E191B720400D45A96EE0A1` CHECK (json_schema_valid(`_json_schema`,`doc`)) /*!80016 NOT ENFORCED */
+  PRIMARY KEY (`_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+--
+-- Dumping data for table `chefs_de_gouvernement`
+--
+
+LOCK TABLES `chefs_de_gouvernement` WRITE;
+/*!40000 ALTER TABLE `chefs_de_gouvernement` DISABLE KEYS */;
+INSERT INTO `chefs_de_gouvernement` (`doc`) VALUES ('{\"_id\": \"00005e94e31a000000000000003a\", \"HeadOfState\": \"Marc Ravalomanana\", \"GovernmentForm\": \"Republic\"}'),('{\"_id\": \"00005e94e31a000000000000003b\", \"HeadOfState\": \"Thabo Mbeki\", \"GovernmentForm\": \"Republic\"}'),('{\"_id\": \"00005e94e31a000000000000003c\", \"HeadOfState\": \"Jean-Bertrand Aristide\", \"GovernmentForm\": \"Republic\"}'),('{\"_id\": \"00005e94e31a000000000000003d\", \"HeadOfState\": \"Elisabeth II\", \"GovernmentForm\": \"Constitutional Monarchy\"}'),('{\"_id\": \"00005e94e31a000000000000003e\", \"HeadOfState\": \"Mohammed VI\", \"GovernmentForm\": \"Constitutional Monarchy\"}'),('{\"_id\": \"00005e94e31a000000000000003f\", \"HeadOfState\": \"Akihito\", \"GovernmentForm\": \"Constitutional Monarchy\"}'),('{\"_id\": \"00005e94e31a0000000000000040\", \"HeadOfState\": \"Sellapan Rama Nathan\", \"GovernmentForm\": \"Republic\"}'),('{\"_id\": \"00005e94e31a0000000000000041\", \"HeadOfState\": \"Blaise Compaor├â┬⌐\", \"GovernmentForm\": \"Republic\"}'),('{\"_id\": \"00005e94e31a0000000000000042\", \"HeadOfState\": \"Joseph Kabila Kabange\", \"GovernmentForm\": \"Republic\"}'),('{\"_id\": \"00005e94e31a0000000000000043\", \"HeadOfState\": \"Mathieu K├â┬⌐r├â┬⌐kou\", \"GovernmentForm\": \"Republic\"}'),('{\"_id\": \"00005e94e31a0000000000000044\", \"HeadOfState\": \"Abdoulaye Wade\", \"GovernmentForm\": \"Republic\"}'),('{\"_id\": \"00005e94e31a0000000000000045\", \"HeadOfState\": \"Pierre Buyoya\", \"GovernmentForm\": \"Republic\"}');
+/*!40000 ALTER TABLE `chefs_de_gouvernement` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

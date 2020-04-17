@@ -113,7 +113,9 @@ En utilisant "maColl.add"
 * [x] Extraire une autre collection de world_x que Population
 
 
-![](image/ami.png )
+![](image/ami.p
+
+![image](r1.PNG)ng )
 
 
 

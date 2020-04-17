@@ -2,52 +2,120 @@
 
 Salut, 
 
-Dans ce tutoriel, tu vas créer un programme utilisant les APIs de MySQL X Dev API en Python
-# :seven: Programmation NoSQL
-
-## [Participation](.scripts/Participation.md)
-
-## :a: :id:
-
-* Créer un répertoire avec votre :id:
-
-* Créer votre script Python en donnant le nom b:id:.py
-
-Example b300098957.py
+Dans ce tutoriel, je vas créer un programme utilisant les APIs de MySQL X Dev API en Python
 
 
-## :b: Laboratoire
+## installer la base de donnée MySQL Server
 
-:one: Écrire le programme Python en suivant le laboratoire ci-dessous dans [Github Leaning Lab](https://lab.github.com/CollegeBoreal):
+:one: Créer le conteneur `some-mysqlds`
 
-https://lab.github.com/CollegeBoreal/lab-programmation-mysql-x-devapi-en-python
+:pushpin: sous Powershell
 
-:two: Copier votre scripts dans le cours en remplaçant :id: par votre :id: github :octocat: :
+```
+PS> docker container run `
+         --name some-mysqlds `
+         --env MYSQL_ROOT_PASSWORD=password `
+         --publish 3306:3306 `
+         --publish 33060:33060 `
+         --detach `
+         mysql/mysql-server:latest
+```
 
-- [ ] Copier le programme et le script SQL:
+:two: Créer la base de données `world_x`
 
-Par example:
+:pushpin: sous PowerShell
 
-  - [ ] Copier le fichier `b000000000.py` dans votre :id: `Boréal` et le renommer avec votre :id: `b`:id:`.py`
-
-  - [ ] Copier le fichier `b000000000.sql` dans votre :id: `Boréal` et le renommer avec votre :id: `b`:id:`.sql`
-
-
-- [ ] Créer votre fichier README.md expliquant votre programme
-
-
-En un mot, récupérer le travail que vous avez fait à travers [Github Leaning Lab](https://lab.github.com/CollegeBoreal) et le mettre dans celui du cours [7.Programmation-NoSQL](../7.Programmation-NoSQL)
-
-:three: Amélioration
-
-Le laboratoire vous garantit une note de passage, ajouter du code en améliorant le programme embellira la note.
-
-Example d'amélioration:
-
-* Extraire une autre la collection de world_x que les chefs de gouvernements
-
-* Rajouter votre propre collection, sans oublier de la sauver dans le `backup` de la base de données
-
-* bien d'autres à explorer, je vous laisse imaginer
+```
+PS > docker container exec --interactive some-mysqlds mysql `
+                        --user root --password=password `
+                        --execute "CREATE DATABASE world_x;"
+```
 
 
+:three: Créer l'utilisateur `root` sous le sous-réseau déterminé par le pont 
+
+* Pour creer l'utilisateur : `'root'@'172.17.0.1'`
+
+```
+PS > docker container exec --interactive some-mysqlds `
+                mysql --user root --password=password `
+                --execute "CREATE USER 'root'@'172.17.0.1' IDENTIFIED BY 'password';"
+```
+
+* Pour donner les droits d'accès à n'importe quelle base de données
+
+```
+PS > docker container exec --interactive some-mysqlds `
+                mysql --user root --password=password `
+                --execute "GRANT ALL ON *.* TO 'root'@'172.17.0.1';"
+```
+
+## X DevAPI en Python
+
+
+:four: Installer MySQL Connector Python avec pip
+
+```
+PS > pip install mysql-connector-python
+```
+:round_pushpin: Vérifier l'installaiton du connecteur MySQL 
+
+```
+PS > pip show mysql-connector-python 
+```
+Version: 8.0.19
+
+## Cloner le référentiel
+
+Dans un terminal tapes `git clone https://github.com/halimabzn/lab-programmation-mysqlsh-en-python`, en chosissant la version `SSH` 
+
+
+
+## :one: Écrire le programme Python
+
+📌 Utilisation de variables: Dans cette section, on va créer deux variables session et db
+
+* "la variable session" : permet d'obtenir une session d'entrée auprès de la base world_x .
+
+* "la variable db": permet de guarder l'information de la base .
+
+📌 Charger la collection temporaire:
+
+* lire et convertir le fichier en format JSON en format du Document Store en utilisant la fonction "lectur", Ce Document sera stoqué dans une collection
+ 
+📌Traverser la collection: 
+
+En utilisant la fonction fetch. fetch se décline en deux configurations:
+
+- par la récupération entière (d'un coup) des documents fetch_all
+
+- par la récupération individuelle fetch_one
+
+📌Rajouter manuellement un document
+
+En utilisant "maColl.add"
+
+
+## :two: Vérification: 
+
+- [x] Copier le programme et le script SQL:	
+
+- [x] Créer votre fichier README.md expliquant votre programme	
+
+* [x] Extraire une autre collection de world_x que les chefs de gouvernements	
+
+
+![](image/collection.png )
+
+## :three: Amélioration	
+
+
+* [x] Extraire une autre collection de world_x que Population
+
+
+![](image/ami.png )
+
+
+
+
+🎈

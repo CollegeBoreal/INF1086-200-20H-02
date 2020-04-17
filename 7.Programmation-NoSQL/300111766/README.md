@@ -15,7 +15,8 @@ Pour commencer, nous allons d'abord vérifier si Python, Gi Docker Desktop sont 
 Ouvrir un terminalet verifier la version de Python avec la commande suivante :
 
 
-% python --version
+      % python --version
+
 
 
 Si Python est installé, vous aurez un resultat de la version comme 3.x.x
@@ -24,7 +25,8 @@ Si Python est installé, vous aurez un resultat de la version comme 3.x.x
 Si Python n'est pas installé, tapez sous Powershell la commande suivante suivante:
 
 
-PS > choco install anaconda3
+      PS > choco install anaconda3
+
 
 
 2️⃣ Verification et installation de Git
@@ -33,7 +35,7 @@ PS > choco install anaconda3
 Vérifier la version de Git avec la commande suivante:
 
 
-% git --version
+      % git --version
 
 
 Si vous avez Git vous verrez la version .
@@ -52,7 +54,8 @@ choco install git.install
 Verifier la version de docker avec la commande suivante:
 
 
-% docker --version
+
+         % docker --version
 
 
 Si docker est intaller vous aurez la versin . Si non taper la commande suivante sur
@@ -61,7 +64,7 @@ Si docker est intaller vous aurez la versin . Si non taper la commande suivante 
 powershell pour l'installation
 
 
-PS > choco install docker-desktop -y
+         PS > choco install docker-desktop -y
 
 
 # ETAPE 2
@@ -140,7 +143,7 @@ Nous allons installe la librairie qui nous permettrad'acceder a la base de donne
 Si mysql-connector-python est installé, nous aurons le résultat la version qui doit être de 8.x.x
 
 
-     PS > pip show mysql-connector-python 
+        PS > pip show mysql-connector-python   
      
      
  🟥 Cloner le referentiel

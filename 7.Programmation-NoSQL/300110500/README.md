@@ -112,7 +112,7 @@ En utilisant "maColl.add"
 
 * [x] Extraire une autre collection de world_x que Population
 
-* [x] a nouvelle cllection les_regions
+* [x] Ma nouvelle collection les_regions
 
 
 ![image](r1.PNG)ng )

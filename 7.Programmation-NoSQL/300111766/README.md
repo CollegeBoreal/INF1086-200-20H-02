@@ -109,7 +109,7 @@ En utilisant "maColl.add"
 * [x] Extraire une autre collection de world_x que les chefs de gouvernements	
 
 
-![](image/Capture word_x.PNG.png )
+![](image/Capture word_x.png )
 
 ## :three: Amélioration	
 

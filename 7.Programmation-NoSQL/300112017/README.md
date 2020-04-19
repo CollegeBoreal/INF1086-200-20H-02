@@ -148,7 +148,27 @@ PS > docker container exec some-mysqlds `
         > $ENV:UserProfile\--MON-REPERTOIRE--\lab-programmation-mysqlsh-en-python\b000000000.sql
 ```
 
-## Enfin copie le programme et le script sql.
+## :two: Vérification: 
+
+- [x] Copier le programme et le script SQL:	
+
+- [x] Créer votre fichier README.md expliquant votre programme	
+
+👍 Vérification de la collection dans Mysql workbench
+
+![](image/w1.JPG )
+
+![](image/w2.JPG )
+* [x] Extraire une autre collection de world_x que les chefs de gouvernements	
+
+
+![](image/w1.JPG )
+
+## :three: Amélioration	
+
+
+* [x] Extraire une autre collection de world_x que Population
+
 
 
 

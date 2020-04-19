@@ -1,241 +1,125 @@
 
-## Programme MySQLsh en Python
-
-Salut,
-
-Dans ce tutoriel, tu vas créer un programme utilisant les APIs de MySQL X Dev API en Python
-
-
-## ETAPE 1
-Pour commencer, nous allons d'abord vérifier si Python, Gi Docker Desktop sont déjà configurés
-
-1️⃣ Verification et l'installation de Python
-
-
-Ouvrir un terminalet verifier la version de Python avec la commande suivante :
-
-
-      % python --version
 
 
 
-Si Python est installé, vous aurez un resultat de la version comme 3.x.x
+# Programmation MySQLsh en Python
+
+Salut, 
+
+Dans ce tutoriel, je vas créer un programme utilisant les APIs de MySQL X Dev API en Python
 
 
-Si Python n'est pas installé, tapez sous Powershell la commande suivante suivante:
+## installer la base de donnée MySQL Server
 
+:one: Créer le conteneur `some-mysqlds`
 
-      PS > choco install anaconda3
+:pushpin: sous Powershell
 
-
-
-2️⃣ Verification et installation de Git
-
-
-Vérifier la version de Git avec la commande suivante:
-
-
-      % git --version
-
-
-Si vous avez Git vous verrez la version .
-
-
-Si non utiliser powrshell et tapez la commmande suivantee pour l'installation
-
-
-
-choco install git.install
-
-
-3️⃣ Verification et installation de docker
-
-
-Verifier la version de docker avec la commande suivante:
-
-
-
-         % docker --version
-
-
-Si docker est intaller vous aurez la versin . Si non taper la commande suivante sur
-
-
-powershell pour l'installation
-
-
-         PS > choco install docker-desktop -y
-
-
-# ETAPE 2
-
-
-## Installer la Base se Donnée MySQL Server
-
-
-1- Creer le container some-mysqlds
-
-
-🟥 Sous powerShell
-
-
-     PS> docker container run `
-     
+```
+PS> docker container run `
          --name some-mysqlds `
-         
          --env MYSQL_ROOT_PASSWORD=password `
-         
          --publish 3306:3306 `
-         
          --publish 33060:33060 `
-         
          --detach `
-         
          mysql/mysql-server:latest
-  
+```
+
+:two: Créer la base de données `world_x`
+
+:pushpin: sous PowerShell
+
+```
+PS > docker container exec --interactive some-mysqlds mysql `
+                        --user root --password=password `
+                        --execute "CREATE DATABASE world_x;"
+```
 
 
+:three: Créer l'utilisateur `root` sous le sous-réseau déterminé par le pont 
 
-         
-         
- 2- Creer la base de donnee world_X
- 
- 
-🟥 Sous powerShell
+* Pour creer l'utilisateur : `'root'@'172.17.0.1'`
 
-
-     PS > docker container exec --interactive some-mysqlds mysql `
-
-                             --user root --password=password `
-                        
-                             --execute "CREATE DATABASE world_x;"
-                        
-                        
- 3- Creer l'utilisateur root sous-reseau determine par le pont Bridge du container Docker
- 
- 
- -Créons l'utilisateur 'root'@'172.17.0.1'
- 
- 
-     PS > docker container exec --interactive some-mysqlds `
-                     mysql --user root --password=password `
-                     --execute "CREATE USER 'root'@'172.17.0.1' IDENTIFIED BY 'password';"
-                
-                
- - Donner les droits d'acces 
- 
- 
- PS > docker container exec --interactive some-mysqlds `
- 
+```
+PS > docker container exec --interactive some-mysqlds `
                 mysql --user root --password=password `
-                
+                --execute "CREATE USER 'root'@'172.17.0.1' IDENTIFIED BY 'password';"
+```
+
+* Pour donner les droits d'accès à n'importe quelle base de données
+
+```
+PS > docker container exec --interactive some-mysqlds `
+                mysql --user root --password=password `
                 --execute "GRANT ALL ON *.* TO 'root'@'172.17.0.1';"
-                
-                
- X DevAPI en Python
+```
+
+## X DevAPI en Python
+
+
+:four: Installer MySQL Connector Python avec pip
+
+```
+PS > pip install mysql-connector-python
+```
+:round_pushpin: Vérifier l'installaiton du connecteur MySQL 
+
+```
+PS > pip show mysql-connector-python 
+```
+Version: 8.0.19
+
+## Cloner le référentiel
+
+Dans un terminal tapes `git clone https://github.com/halimabzn/lab-programmation-mysqlsh-en-python`, en chosissant la version `SSH` 
+
+
+
+## :one: Écrire le programme Python
+
+📌 Utilisation de variables: Dans cette section, on va créer deux variables session et db
+
+* "la variable session" : permet d'obtenir une session d'entrée auprès de la base world_x .
+
+* "la variable db": permet de guarder l'information de la base .
+
+📌 Charger la collection temporaire:
+
+* lire et convertir le fichier en format JSON en format du Document Store en utilisant la fonction "lectur", Ce Document sera stoqué dans une collection
  
- 
-Nous allons installe la librairie qui nous permettrad'acceder a la base de donnees sous Python
+📌Traverser la collection: 
+
+En utilisant la fonction fetch. fetch se décline en deux configurations:
+
+- par la récupération entière (d'un coup) des documents fetch_all
+
+- par la récupération individuelle fetch_one
+
+📌Rajouter manuellement un document
+
+En utilisant "maColl.add"
 
 
-🟥 Installer MYSQL ConnectorPython avec pip
+## :two: Vérification: 
 
-Si mysql-connector-python est installé, nous aurons le résultat la version qui doit être de 8.x.x
+- [x] Copier le programme et le script SQL:	
 
+- [x] Créer votre fichier README.md expliquant votre programme	
 
-        PS > pip show mysql-connector-python   
-     
-     
- 🟥 Cloner le referentiel
- 
- 
- Cloner le repertoire avec la commande 
- 
- 
-     git clone https://github.com/ordenrosae/lab-programmation-mysqlsh-en-python
+* [x] Extraire une autre collection de world_x que les chefs de gouvernements	
 
 
+![](image/collection.png )
 
-## Etape 3 Ecrire le programme python
-
-
-## Exécuter un programme Python
-
-il y aura  une fonction main qui devra contenir  toutes les instructions pour écrire le programme et une fonction charge qui servira  à importer les données du fichier json.
+## :three: Amélioration	
 
 
-## Utilisation de Variables
-Dans cette partie, nous allons creer deux variables session et db qu'on va utiliser dans notre programme. Ensuite lire le fichier charge dams le document Store.
+* [x] Extraire une autre collection de world_x que Population
 
-## Extraire une autre la collection de world_x que les chefs de gouvernements
+
+![](image/ami.png )
 
 
 
 
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
- 
- 
- 
- 
- 
-                
-                
- 
- 
- 
- 
-                
-                
-  
- 
- 
- 
- 
-                        
-                        
-                        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+🎈

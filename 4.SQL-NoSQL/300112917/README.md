@@ -3,7 +3,7 @@
 
 ### :zero: Administration
 
-- [] Créer son projet dans un répertoire :id:
+- [X] Créer son projet dans un répertoire :id:
 
 ```
 $ cd ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL
@@ -11,7 +11,7 @@ $ mkdir 300112917 && cd 300112917
 ```
 
 
-- [] Créer le conteneur avec un volume (dans le répertoire de son projet)
+- [X] Créer le conteneur avec un volume (dans le répertoire de son projet)
 
 
 :bulb: Le volume sert à charger le fichier `.json`
@@ -43,14 +43,14 @@ products.json
 
 
 
-- [] Création de la base de données `hairasset`
+- [X] Création de la base de données `hairasset`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
                         --execute "CREATE DATABASE hairasset;"
 ```
 
-- []  DCL création de l'utilisateur
+- [X]  DCL création de l'utilisateur
 
 :pushpin: Contexte permettant d'utiliser `mysqlsh` 
 
@@ -75,14 +75,14 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 :bulb: Récupération et chargement de la base de données `hairasset`
 
-- [] Charger le `schema`
+- [X] Charger le `schema`
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
           hairasset < ~/Developer/INF1086-200-20H-02/4.SQL-NoSQL/300112917/300112917-schema.sql
 ```
 
-- [] Charger les données SQL
+- [X] Charger les données SQL
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword \
@@ -91,13 +91,13 @@ $ docker container exec --interactive some-mysqlds mysql --user root -ppassword 
 
 ### :two: ETL
 
-- [] Chercher des données `JSON`
+- [X] Chercher des données `JSON`
 
 ```
 $ curl https://raw.githubusercontent.com/pbrain19/VitoMazzaSAlon/master/public/js/data/products.json
 ```
 
-- [] Importer ces données dans vos propres collections
+- [X] Importer ces données dans vos propres collections
 
 :pushpin: Se connecter au conteneur
 
@@ -150,9 +150,9 @@ $ docker container exec --interactive some-mysqlds mysqlsh --py \
 
 Le modèle doit comporter l'image du schema et le fichier export :id:-dumb.sql (i.e. forward engineering)
 
-- [] présenter votre modèle relationel
+- [X] présenter votre modèle relationel
 
-- [] présenter votre modèle présentant les collections `dans un dossier`
+- [X] présenter votre modèle présentant les collections `dans un dossier`
 
 <img src="djumaster.PNG" witdth=920 height=791 ></img>
 

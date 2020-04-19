@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 # -*- coding: utf-8 -*-
 """
-
-@author: 300104524
+@author: romeomian
 """
+
 
 import json
 
@@ -19,8 +18,9 @@ session = mysqlx.get_session({
     "user": "root",
     "password": "password"
 })
-    
+
 db = session.get_schema("world_x")
+
 
 def lecture(fichier):
 
@@ -45,39 +45,59 @@ def lecture(fichier):
   # Retourne un dictionnaire Python du fichier json converti
   return docs
 
+
 def former_des_chefs(docs):
 
   # Crée une nouvelle collection 'chefs_de_gouvernement'
   nomColl = 'chefs_de_gouvernement'
   maColl = db.create_collection(nomColl)
 
-  # Manipuler la collection et la rajouter à la nouvelle
+# Ajout manuel
+  maColl.add({"HeadOfState": "Marc Ravalomanana","GovernmentForm": "Republic"}).execute()
+
+# Manipuler la collection et la rajouter à la nouvelle
   for doc in docs.fetch_all():
     for country in doc.countries:
       # Insert des documents JSON de type government
       maColl.add(country['government']).execute()
+  # Trouver tous les documents JSON et les mettre en mémoire
+  docs = maColl.find().execute()
 
+# Détruit la collection
+  #db.drop_collection(nomColl)
+
+  return docs
+
+def former_des_regions(docs):
+
+  # Crée une nouvelle collection 'les_regions'
+  nomColl = 'les_regions'
+  maColl = db.create_collection(nomColl)
+
+# Ajout manuel
+  maColl.add({"Region": "Amerique du nord","Continent": "Amerique","SurfaceArea": 24000071}).execute()
+  
+# Manipuler la collection et la rajouter à la nouvelle
+  for doc in docs.fetch_all():
+    for country in doc.countries:
+      # Insert des documents JSON de type geography
+      maColl.add(country['geography']).execute()
   # Trouver tous les documents JSON et les mettre en mémoire
   docs = maColl.find().execute()
 
   # Détruit la collection
-  db.drop_collection(nomColl)
+  #db.drop_collection(nomColl)
 
   return docs
 
 
-
-
-
 def main():
-  docs = lecture('b000000000.json')
+  docs = lecture('b300104541.json')
   chefs = former_des_chefs(docs)
-  print(len(chefs.fetch_all()))
+  regions = former_des_regions(docs)
+  print(len(docs.fetch_all()))
   # Ne pas oublier de remercier le gestionnaire de BD
   session.close
 
 if __name__== "__main__":
     main()
-=======
-
->>>>>>> b8579a95ded5274352cbd4c9bba4aa94db41a268

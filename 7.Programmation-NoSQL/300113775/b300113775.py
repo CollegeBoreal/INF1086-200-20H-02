@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 # -*- coding: utf-8 -*-
 """
-
-@author: 300104524
+@author: 8dbe
 """
 
 import json
@@ -19,7 +17,7 @@ session = mysqlx.get_session({
     "user": "root",
     "password": "password"
 })
-    
+
 db = session.get_schema("world_x")
 
 def lecture(fichier):
@@ -51,6 +49,9 @@ def former_des_chefs(docs):
   nomColl = 'chefs_de_gouvernement'
   maColl = db.create_collection(nomColl)
 
+# Ajout manuel
+  maColl.add({"HeadOfState": "Marc Ravalomanana","GovernmentForm": "Republic"}).execute()
+
   # Manipuler la collection et la rajouter à la nouvelle
   for doc in docs.fetch_all():
     for country in doc.countries:
@@ -61,13 +62,9 @@ def former_des_chefs(docs):
   docs = maColl.find().execute()
 
   # Détruit la collection
-  db.drop_collection(nomColl)
+  #db.drop_collection(nomColl)
 
   return docs
-
-
-
-
 
 def main():
   docs = lecture('b000000000.json')
@@ -76,8 +73,7 @@ def main():
   # Ne pas oublier de remercier le gestionnaire de BD
   session.close
 
+
+
 if __name__== "__main__":
     main()
-=======
-
->>>>>>> b8579a95ded5274352cbd4c9bba4aa94db41a268

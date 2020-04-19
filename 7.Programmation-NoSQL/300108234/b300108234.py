@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-
 @author: 300108234
 """
 
@@ -56,12 +55,33 @@ def former_des_chefs(docs):
 # Ajout manuel
   maColl.add({"HeadOfState": "Marc Ravalomanana","GovernmentForm": "Republic"}).execute()
 
-  # Manipuler la collection et la rajouter à la nouvelle
+# Manipuler la collection et la rajouter à la nouvelle
   for doc in docs.fetch_all():
     for country in doc.countries:
       # Insert des documents JSON de type government
       maColl.add(country['government']).execute()
+  # Trouver tous les documents JSON et les mettre en mémoire
+  docs = maColl.find().execute()
 
+# Détruit la collection
+  #db.drop_collection(nomColl)
+
+  return docs
+
+def former_des_regions(docs):
+
+  # Crée une nouvelle collection 'les_regions'
+  nomColl = 'les_regions'
+  maColl = db.create_collection(nomColl)
+
+# Ajout manuel
+  maColl.add({"Region": "Amerique du nord","Continent": "Amerique","SurfaceArea": 24000071}).execute()
+  
+# Manipuler la collection et la rajouter à la nouvelle
+  for doc in docs.fetch_all():
+    for country in doc.countries:
+      # Insert des documents JSON de type geography
+      maColl.add(country['geography']).execute()
   # Trouver tous les documents JSON et les mettre en mémoire
   docs = maColl.find().execute()
 
@@ -72,11 +92,13 @@ def former_des_chefs(docs):
 
 
 def main():
-  docs = lecture('b000000000.json')
+  docs = lecture('b300108234.json')
   chefs = former_des_chefs(docs)
-  print(len(chefs.fetch_all()))
+  regions = former_des_regions(docs)
+  print(len(docs.fetch_all()))
   # Ne pas oublier de remercier le gestionnaire de BD
   session.close
 
 if __name__== "__main__":
     main()
+

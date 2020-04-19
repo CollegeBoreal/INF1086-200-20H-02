@@ -112,9 +112,9 @@ En utilisant "maColl.add"
 
 
 
-* Extraire une autre collection de world_x que les chefs de gouvernements	
+* [x] Extraire une autre collection de world_x que les chefs de gouvernements	
 
-
+<img src="Ncollec.png"></img>
 
 
 🎈

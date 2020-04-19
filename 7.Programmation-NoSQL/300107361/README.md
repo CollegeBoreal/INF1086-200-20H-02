@@ -1,3 +1,10 @@
+
+
+# Programmation MySQLsh en Python
+
+
+
+
 ## installer la base de donnée MySQL Server
 
 :one: Créer le conteneur `some-mysqlds` 
@@ -90,16 +97,16 @@ En utilisant "myColl.add"
 
 - [x] Copier le programme et le script SQL:	
 
-* [b300110529.py](b300110529.py)
+* [b300107361.py](b300107361.py)
 
 Sous Powershell lancer la commande
 ```
-PS C:\Users\THK@DESKTOP-25MPHDJ\developer\INF1086-200-20H-02\7.Programmation-NoSQL\300110529>  docker container exec some-mysqlds `
+PS C:\Users\Tochgaly-K.J.Etienne\developer\INF1086-200-20H-02\7.Programmation-NoSQL\300107361>  docker container exec some-mysqlds `
 >>         mysqldump --user root --password=password world_x `
->>         > C:\Users\THK@DESKTOP-25MPHDJ\developer\INF1086-200-20H-02\7.Programmation-NoSQL\300110529\b300110529.sql
+>>         > C:\Users\Tochgaly-K.J.Etienne\developer\INF1086-200-20H-02\7.Programmation-NoSQL\300107361\b300107361.sql
 mysqldump: [Warning] Using a password on the command line interface can be insecure.
 ```
-* [b300110529.sql](b300110529.sql)
+* [b300107361.sql](b300107361.sql)
 
 
 - [x] Créer votre fichier README.md expliquant votre programme	
@@ -112,5 +119,8 @@ mysqldump: [Warning] Using a password on the command line interface can be insec
  
 - [x]  Extraction d'une autre  collection `systeme_politique` 
 
-A l'execution du programme `b300110529.py` il va chercher dans la collection `systeme_politique` pour afficher le 
+A l'execution du programme `b300107361.py` il va chercher dans la collection `systeme_politique` pour afficher le 
 pays dont le nom commence par un `H` et qui a comme systeme de gouvernement une `Republique`.
+ 
+![image](test.PNG)
+ 

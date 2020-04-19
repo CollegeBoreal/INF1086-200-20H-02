@@ -109,17 +109,24 @@ En utilisant "maColl.add"
 * [x] Extraire une autre collection de world_x que les chefs de gouvernements	
 
 
-![](image/Capture word_x.png )
+![](image/word_x.PNG)
+
+
+## : Dump
+
+![](image/dump.PNG)
 
 ## :three: Amélioration	
 
 
+* [x] Extraire une autre collection de world_x que les chefs de gouvernements	
+
+<img src="cap select.PNG"></img>
+
 * [x] Extraire une autre collection de world_x que Population
 
 
-![](image/ami.png )
 
 
 
 
-🎈

@@ -156,18 +156,18 @@ PS > docker container exec some-mysqlds `
 
 👍 Vérification de la collection dans Mysql workbench
 
-![](image/w1.JPG )
+<img src="w1.JPG"></img>
 
-![](image/w2.JPG )
+<img src="w2.JPG"></img>
+
+3️⃣ Amélioration
+
 * [x] Extraire une autre collection de world_x que les chefs de gouvernements	
 
-
-![](image/w1.JPG )
-
-## :three: Amélioration	
+<img src="w3.JPG"></img>
 
 
-* [x] Extraire une autre collection de world_x que Population
+
 
 
 

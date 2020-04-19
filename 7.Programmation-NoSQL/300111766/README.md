@@ -109,7 +109,7 @@ En utilisant "maColl.add"
 * [x] Extraire une autre collection de world_x que les chefs de gouvernements	
 
 
-![](image/Capture word_x.png )
+![](image/word_x.PNG)
 
 
 ## : Dump
@@ -121,8 +121,6 @@ En utilisant "maColl.add"
 
 * [x] Extraire une autre collection de world_x que Population
 
-
-![](image/dump.PNG)
 
 
 

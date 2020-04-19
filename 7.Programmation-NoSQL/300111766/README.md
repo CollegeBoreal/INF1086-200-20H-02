@@ -111,13 +111,18 @@ En utilisant "maColl.add"
 
 ![](image/Capture word_x.png )
 
+
+## : Dump
+
+![](image/dump.PNG)
+
 ## :three: Amélioration	
 
 
 * [x] Extraire une autre collection de world_x que Population
 
 
-![](image/ami.png )
+![](image/dump.PNG)
 
 
 

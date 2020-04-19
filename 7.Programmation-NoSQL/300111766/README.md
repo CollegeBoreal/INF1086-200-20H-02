@@ -119,10 +119,14 @@ En utilisant "maColl.add"
 ## :three: Amélioration	
 
 
+* [x] Extraire une autre collection de world_x que les chefs de gouvernements	
+
+<img src="cap select.PNG"></img>
+
 * [x] Extraire une autre collection de world_x que Population
 
 
 
 
 
-🎈
+

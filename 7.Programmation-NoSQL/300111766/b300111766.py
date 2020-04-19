@@ -70,7 +70,7 @@ def former_des_chefs(docs):
 
 
 def main():
-  docs = lecture('b000000000.json')
+  docs = lecture('b300111766.json')
   chefs = former_des_chefs(docs)
   print(len(chefs.fetch_all()))
   # Ne pas oublier de remercier le gestionnaire de BD
